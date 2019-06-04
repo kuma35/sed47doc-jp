@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx11.dtd">
+<tmx version="1.1">
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="3.6.0_11_r10546" segtype="sentence" srclang="EN-US"/>
+  <body>
+<!-- Default translations -->
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Multiline-techniques</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T191821Z" creationid="hideo" creationdate="20190602T191821Z">
+        <seg>#Multiline-techniqu</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>$ seq 3 | sed ':x ; bx'
+
+# The above command requires gnu sed (which supports additional
+# commands following a label, without a newline).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T202725Z" creationid="hideo" creationdate="20190602T202558Z">
+        <seg>$ seq 3 | sed ':x ; bx'
+
+# 上記コマンド実行には gnu sed が必要です。
+# （ラベル定義のあとで改行しないでいいのは gnu 拡張です。）</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>1 Introduction</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T093330Z" creationid="hideo" creationdate="20190602T093330Z">
+        <seg>1 はじめに</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>2 Running sed</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T093139Z" creationid="hideo" creationdate="20190602T093139Z">
+        <seg>2 sedの実行</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>3 sed scripts</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T093455Z" creationid="hideo" creationdate="20190602T093455Z">
+        <seg>3 sedスクリプト</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>3.1 sed script overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T093609Z" creationid="hideo" creationdate="20190602T093609Z">
+        <seg>3.1 sedスクリプト概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>3.2 sed commands summary</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T093637Z" creationid="hideo" creationdate="20190602T093637Z">
+        <seg>3.2 sedコマンドまとめ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>5 Regular Expressions: selecting text</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T160638Z" creationid="hideo" creationdate="20190602T160638Z">
+        <seg>5 正規表現: テキストの選択</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>6 Advanced sed: cycles and buffers</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T183509Z" creationid="hideo" creationdate="20190602T095354Z">
+        <seg>6 sedの高度な話題: サイクルとバッファ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>7 Some Sample Scripts</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T095011Z" creationid="hideo" creationdate="20190602T095011Z">
+        <seg>7 スクリプト例をいくつか</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>sed does not support a typical if/then construct.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T200613Z" creationid="hideo" creationdate="20190602T200613Z">
+        <seg>sedには典型的なif/then構文がありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>sed maintains two data buffers: the active pattern space, and the auxiliary hold space.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T161658Z" creationid="hideo" creationdate="20190602T161658Z">
+        <seg>sedは2つのバッファを保持しています。それは現に活動中のパターンスペースと補助のホールドスペースです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>sed operates by performing the following cycle on each line of input: first, sed reads one line from the input stream, removes any trailing newline, and places it in the pattern space.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T162543Z" creationid="hideo" creationdate="20190602T162543Z">
+        <seg>sedは入力の各行ごとに以下のサイクルを実行します。最初にsedは入力ストリームから1行読み取り、末尾の改行を削除し、パターンスペースに入れます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>sed starts by reading the first line into the pattern space (i.e. ‘1’).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T191901Z" creationid="hideo" creationdate="20190602T170656Z">
+        <seg>sedは最初の1行をパターンスペースに読み込み（すなわちパターンスペースの内容は‘1’）</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>appends line from the hold space to the pattern space, with a newline before it.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T195404Z" creationid="hideo" creationdate="20190602T195404Z">
+        <seg>パターンスペースの末尾に改行を追加し更にホールドスペースから1行パターンスペースに追加します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>appends line from the input file to the pattern space.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T170331Z" creationid="hideo" creationdate="20190602T170331Z">
+        <seg>1行追加。入力ストリームから1行パターンスペースに追加する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>appends line from the pattern space to the hold space, with a newline before it.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T195519Z" creationid="hideo" creationdate="20190602T195519Z">
+        <seg>ホールドスペースの末尾に改行を追加し更にパターンスペースから1行追加します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>deletes line from the pattern space until the first newline, and restarts the cycle.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T195038Z" creationid="hideo" creationdate="20190602T195038Z">
+        <seg>パターンスペースから最初の改行まで(改行含む)1行を削除する。パターンスペースのプリントや全削除をスキップして次のサイクルを開始する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>prints line from the pattern space until the first newline.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T195638Z" creationid="hideo" creationdate="20190602T195638Z">
+        <seg>パターンスペースの最初の改行(改行含む)までの1行をプリントする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A common technique to process blocks of text such as paragraphs (instead of line-by-line) is using the following construct:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T192757Z" creationid="hideo" creationdate="20190602T192757Z">
+        <seg>（行ごとではなく）段落などのテキストブロックを処理するには以下のような構文を使用するのが一般的です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A portable equivalent:
+#     sed -e ':x' -e bx</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T202833Z" creationid="hideo" creationdate="20190602T202833Z">
+        <seg>gnu sed 以外でも動くようにするには以下のようにします。
+#     sed -e ':x' -e bx</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Addresses and regular expressions can be used as an if/then conditional: If [addr] matches the current pattern space, execute the command(s).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T174142Z" creationid="hideo" creationdate="20190602T174142Z">
+        <seg>アドレスや正規表現はif/then構文として使える。If パターンスペースの内容が[addr]  に合致 then コマンド実行。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>At the beginning of every cycle, the N command appends a newline and the next line to the pattern space (i.e. ‘1’, ‘\n’, ‘2’ in the first cycle).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T191928Z" creationid="hideo" creationdate="20190602T171506Z">
+        <seg>毎度のサイクルを始めます。Nコマンドは(最初の1行をパターンスペースに読み込む時に取り除いた)改行を追加し、更に次の1行をパターンスペースに読み込みます( すなわちパターンスペースの内容は‘1’, ‘\n’, ‘2’ となる）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>At the next cycle the N command appends a newline and the next input line to the pattern space (e.g. ‘2’, ‘\n’, ‘3’).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T192314Z" creationid="hideo" creationdate="20190602T172631Z">
+        <seg>そのサイクルでNコマンドは同様に削除してあった改行追加し入力行をパターンスペースに追加します（すなわち、‘2’, ‘\n’, ‘3’).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Before reading the next input line, n prints the current pattern space then empties it, while N appends a newline and the next input line to the pattern space.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T203740Z" creationid="hideo" creationdate="20190602T203740Z">
+        <seg> nコマンドはパターンスペースの内容をプリントして、そしてパターンスペースの内容を全削除してから入力ストリームから次の1行を読み込みます。一方、 Nコマンドはひたすら改行と次の入力行をパターンスペースに追加していきます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Both are initially empty.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T161818Z" creationid="hideo" creationdate="20190602T161818Z">
+        <seg>両方とも最初は空です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Both examples do not inf-loop, despite never starting a new cycle.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T204000Z" creationid="hideo" creationdate="20190602T204000Z">
+        <seg>両例とも、決して新しいサイクルを始めることは無いにもかかわらず無限ループになりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Branching and Cycles</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T094928Z" creationid="hideo" creationdate="20190602T094928Z">
+        <seg>分岐とサイクル</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Branching and Flow Control</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T094910Z" creationid="hideo" creationdate="20190602T094910Z">
+        <seg>分岐と制御構文</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Branching example: joining lines</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T094947Z" creationid="hideo" creationdate="20190602T094947Z">
+        <seg>分岐例: 行連結</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Branching is often complemented with the n or N commands: both commands read the next input line into the pattern space without waiting for the cycle to restart.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T203402Z" creationid="hideo" creationdate="20190602T203239Z">
+        <seg>分岐はしばしばnコマンドやNコマンドと一緒に使われます。両コマンドは次のサイクルを開始することなしに入力ストリームから1行入力行をパターンスペースに入れます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>By default, sed reads an input line into the pattern buffer, then continues to processes all commands in order.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T200257Z" creationid="hideo" creationdate="20190602T200257Z">
+        <seg>デフォルトではsedは入力行をパターンスペースに読み込み、それから全てのコマンドを順番に実行します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Centering Lines</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T095325Z" creationid="hideo" creationdate="20190602T095325Z">
+        <seg>センタリング</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Combined with an address, the branch can be conditionally executed on matched lines.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T175807Z" creationid="hideo" creationdate="20190602T175807Z">
+        <seg>分岐はアドレスと組み合わせると、条件に適合した時だけジャンプさせることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Command-Line Options</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T093357Z" creationid="hideo" creationdate="20190602T093357Z">
+        <seg>コマンドラインオプション</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Commands Specific to GNU sed</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T094401Z" creationid="hideo" creationdate="20190602T094401Z">
+        <seg>GNU sed 固有のコマンド</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Commands for sed gurus</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T094309Z" creationid="hideo" creationdate="20190602T094309Z">
+        <seg>sed導師のためのコマンド群</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Commands with addresses affect only matching lines.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T200421Z" creationid="hideo" creationdate="20190602T200421Z">
+        <seg>アドレス指定のあるコマンドはアドレス指定に合致する行に対してだけ実行されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Commands without addresses affect all lines.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T200341Z" creationid="hideo" creationdate="20190602T200341Z">
+        <seg>アドレス指定の無いコマンドは全ての行で実行されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Consider the following two examples:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T203832Z" creationid="hideo" creationdate="20190602T203832Z">
+        <seg>ここで以下の2つの例について考えてみます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Exit status</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T093422Z" creationid="hideo" creationdate="20190602T093422Z">
+        <seg>終了ステータス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example: The command /^#/d means: if the current pattern matches the regular expression ^# (a line starting with a hash), then execute the d command: delete the line without printing it, and restart the program cycle immediately.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T174510Z" creationid="hideo" creationdate="20190602T174510Z">
+        <seg>例：/^#/d は、if パターンスペースが正規表現^#（行頭が#）に合致する then d コマンド実行（当該行を削除し、プリントせず、次のサイクルを開始する）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For more annotated examples, see Text search across multiple lines and Line length adjustment.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T194619Z" creationid="hideo" creationdate="20190602T194619Z">
+        <seg>注釈付きの例については、複数行にわたるテキスト検索や行の長さを揃えるを参照下さい。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Hold and Pattern Buffers</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T160732Z" creationid="hideo" creationdate="20190602T094556Z">
+        <seg>ホールドとパターン用のバッファ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>How sed Works</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T100044Z" creationid="hideo" creationdate="20190602T100044Z">
+        <seg>sedはどのように動いているか</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>How sed works</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T095451Z" creationid="hideo" creationdate="20190602T095451Z">
+        <seg>sedはどのように動いているか</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the label is omitted the branch commands restart the cycle.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T201029Z" creationid="hideo" creationdate="20190602T183312Z">
+        <seg>なお、ブランチコマンドでラベルを省略すると次のサイクルを開始します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the first example, the n commands first prints the content of the pattern space, empties the pattern space then reads the next input line.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T204201Z" creationid="hideo" creationdate="20190602T204201Z">
+        <seg>最初の例ではnコマンドは最初にパターンスペースの内容をプリントし、それからパターンスペースの内容を全削除し、それから次の入力行を読み込みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the second example, the N commands appends the next input line to the pattern space (with a newline).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T204254Z" creationid="hideo" creationdate="20190602T204254Z">
+        <seg>２番目の例では、Nコマンドはひたすら次の行を（改行付きで）パターンスペースに追加していきます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Instead, some commands can be used as conditionals or to change the default flow control:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T200952Z" creationid="hideo" creationdate="20190602T200952Z">
+        <seg>代わりにいくつかのコマンドは、条件文や、制御の流れを変えるために使えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Joining lines</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T095034Z" creationid="hideo" creationdate="20190602T095034Z">
+        <seg>行連結</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Labels are defined with a colon followed by one or more letters (e.g. ‘:x’).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T182445Z" creationid="hideo" creationdate="20190602T182445Z">
+        <seg>ラベルはコロン(:)に続く1文字またはそれ以上の文字列です（例えば‘:x’）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Less Frequently-Used Commands</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T094026Z" creationid="hideo" creationdate="20190602T094026Z">
+        <seg>あまり使われないコマンド群</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Lines are accumulated in the pattern space until there are no more input lines to read, then the N command terminates the sed program.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T204439Z" creationid="hideo" creationdate="20190602T204439Z">
+        <seg>入力ストリームからこれ以上入力行が読み込めなくなるまで入力行をパターンスペースに蓄積します。そしてNコマンドはsedを終了させます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Multiline techniques - using D,G,H,N,P to process multiple lines</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T094836Z" creationid="hideo" creationdate="20190602T094836Z">
+        <seg>複数行テクニック - D,G,H,N,P コマンドで複数行処理</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Multiple lines can be processed as one buffer using the D,G,H,N,P.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T165119Z" creationid="hideo" creationdate="20190602T165119Z">
+        <seg>複数行は D,G,H,N,P コマンドを使って1つのバッファで処理できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Next: Hold and Pattern Buffers, Up: advanced sed   [Contents][Index]</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T161214Z" creationid="hideo" creationdate="20190602T161214Z">
+        <seg>次: Hold and Pattern Buffers, Up: advanced sed   [Contents][Index]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note the difference between branching to a label and restarting the cycle: when a cycle is restarted, sed first prints the current content of the pattern space, then reads the next input line into the pattern space; Jumping to a label (even if it is at the beginning of the program) does not print the pattern space and does not read the next input line.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T201545Z" creationid="hideo" creationdate="20190602T201545Z">
+        <seg>ブランチコマンドによるジャンプと次のサイクルの開始との違いに注意して下さい。次のサイクルの開始時はsedはまずパターンスペースの内容をプリントして次に入力ストリームから1行パターンスペースに読み込みます。一方ラベルへのジャンプは（それがたとえプログラムの先頭へジャンプしたとしても）、パターンスペースの内容はプリントされませんし入力ストリームから次の1行を読み込む事もありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Often-Used Commands</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T093756Z" creationid="hideo" creationdate="20190602T093756Z">
+        <seg>よく使われるコマンド群</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>On all lines except the last, the pattern space is deleted and the cycle is restarted.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T193415Z" creationid="hideo" creationdate="20190602T193415Z">
+        <seg>$!によって最終行以外ではパターンスペースの内容の全削除と残りの処理をスキップして次のサイクルを開始します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>On each cycle, the pattern space is printed and the next input line is read:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T201858Z" creationid="hideo" creationdate="20190602T201858Z">
+        <seg>よってどのサイクルでもパターンスペースの内容がプリントされて入力ストリームから次の入力行を読み取ります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T093309Z" creationid="hideo" creationdate="20190602T093309Z">
+        <seg>概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Range Addresses</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T160448Z" creationid="hideo" creationdate="20190602T160448Z">
+        <seg>範囲アドレス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See Execution Cycle and Addresses overview.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T200528Z" creationid="hideo" creationdate="20190602T200528Z">
+        <seg>実行サイクルとアドレス概要も参照下さい。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Selecting lines by numbers</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T160333Z" creationid="hideo" creationdate="20190602T160333Z">
+        <seg>数による行の選択</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Table of Contents</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T093119Z" creationid="hideo" creationdate="20190602T093119Z">
+        <seg>目次</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Table of contents</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T095821Z" creationid="hideo" creationdate="20190602T095821Z">
+        <seg>目次</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The D command then removes the content of pattern space up to the first newline (leaving ‘2’ at the end of the first cycle).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T192202Z" creationid="hideo" creationdate="20190602T171931Z">
+        <seg>Dコマンドはパターンスペースの内容を最初の改行まで(その改行含む)削除し、そしてDパターンスペースの削除をスキップして次のサイクルを開始します （よって、次のサイクルは(2行目の)2’だけ状態から始まる）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The b command (the only command in the program) does not have a label, and thus simply restarts the cycle.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T201745Z" creationid="hideo" creationdate="20190602T201745Z">
+        <seg>（このプログラム唯一のコマンドである）bコマンドは飛び先ラベルが書かれていないので次のサイクルを開始します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The b command jumps to the ‘x’ label, and a new cycle is never started:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T202242Z" creationid="hideo" creationdate="20190602T202242Z">
+        <seg>bコマンドは‘x’ラベルにジャンプし、そして永遠に最初のサイクルにとどまり決して新しいサイクルが始まることはありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The b,t and T commands can be followed by a label (typically a single letter).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T182323Z" creationid="hideo" creationdate="20190602T182218Z">
+        <seg>bコマンドやtコマンドやTコマンドは、コマンドに続くジャンプ先ラベルが必要です（通常はアルファベット1文字）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The l command prints the content of the pattern space unambiguously.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T192014Z" creationid="hideo" creationdate="20190602T171750Z">
+        <seg>lコマンドはパターンスペースの内容を非表示文字等含めて目に見える形でプリントします(削除はしない)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The s Command</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T093704Z" creationid="hideo" creationdate="20190602T093704Z">
+        <seg>s コマンド</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The x command fetches the accumulated lines from the hold space back to the pattern space.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T193959Z" creationid="hideo" creationdate="20190602T193959Z">
+        <seg>xコマンドはパターンスペースの内容をホールドスペースの内容（累積した行）で置き換えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The s/// command then operates on all the text in the paragraph (including the embedded newlines).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T194109Z" creationid="hideo" creationdate="20190602T194109Z">
+        <seg>s///は（改行を含んだ）段落内の全てのテキストに対して実行されます 。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The y/// command is still executed on all lines:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T181914Z" creationid="hideo" creationdate="20190602T181914Z">
+        <seg>いずれにせよy///コマンドは全ての行で実行されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The branching commands b, t, and T enable changing the flow of sed programs.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T200047Z" creationid="hideo" creationdate="20190602T200047Z">
+        <seg>分岐コマンドのbやtやTはsedプログラムの流れを変える事を可能にします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The first (contrived) example uses the b command to skip the s/// command on lines containing ‘1’.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T181421Z" creationid="hideo" creationdate="20190602T181421Z">
+        <seg>最初の（わざとらしい）例は‘1’を含む行の時にs///をスキップするためにbコマンドを使っています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The first expression, /./{H;$!d} operates on all non-empty lines, and adds the current line (in the pattern space) to the hold space.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T192953Z" creationid="hideo" creationdate="20190602T192908Z">
+        <seg>スクリプト1行目の/./{H;$!d}は空行以外の全ての行に対して実行され、（パターンスペース内の) 現在行をホールドスペースに追加します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The following example demonstrates this technique:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T194148Z" creationid="hideo" creationdate="20190602T194148Z">
+        <seg>以下の例はこのテクニックのデモです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The following example illustrates the operation of N and D commands:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T195846Z" creationid="hideo" creationdate="20190602T195846Z">
+        <seg>次の例は、NコマンドやDコマンドの動作を示しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The following example is an infinite-loop - it doesn’t terminate and doesn’t print anything.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T202110Z" creationid="hideo" creationdate="20190602T202110Z">
+        <seg>次のサンプルは無限ループに陥ります。一切プリントすることなく終了もしません（訳注：CTRL+C等で強制停止させる）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The following program is a no-op.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T201755Z" creationid="hideo" creationdate="20190602T201611Z">
+        <seg>以下のプログラム自身は何もしません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The following two sed programs are equivalent.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T180857Z" creationid="hideo" creationdate="20190602T180857Z">
+        <seg>以下の2つのsedプログラムは等価です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The hold space, on the other hand, keeps its data between cycles (see commands ‘h’, ‘H’, ‘x’, ‘g’, ‘G’ to move data between both buffers).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T194825Z" creationid="hideo" creationdate="20190602T164957Z">
+        <seg>一方ホールドスペースの内容はサイクル毎に削除しません。以降の新しいサイクルが始まっても内容を保持しています（両バッファの間でデータを移動させるためのコマンド、 ‘h’, ‘H’, ‘x’, ‘g’, ‘G’ も参照下さい）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The other expressions x and s are executed only on empty lines (i.e. paragraph separators).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T193613Z" creationid="hideo" creationdate="20190602T193613Z">
+        <seg>残りのスクリプトx と s は空行（すなわち段落の区切り）に対してだけ実行されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The second example uses an address with negation (‘!’) to perform substitution only on desired lines.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T181752Z" creationid="hideo" creationdate="20190602T181752Z">
+        <seg>2番目の例ではアドレスの否定（ '！'）を使用して、目的の行のみs///コマンドを実行します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Then commands are executed; each command can have an address associated to it: addresses are a kind of condition code, and a command is only executed if the condition is verified before the command is to be executed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T163259Z" creationid="hideo" creationdate="20190602T163259Z">
+        <seg>次にコマンド群を実行します。各コマンドはそのコマンドに関連付けられたアドレスを持つこともできます。アドレスは一種の条件コードで、条件に合致した時だけそのコマンドが実行されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They are similar to their lowercase counterparts (d,g, h,n,p), except that these commands append or subtract data while respecting embedded newlines - allowing adding and removing lines from the pattern and hold spaces.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T165551Z" creationid="hideo" creationdate="20190602T165551Z">
+        <seg>これらに対応する小文字の（d,g, h,n,p）は), except that these commands append or subtract data while respecting embedded newlines - allowing adding and removing lines from the pattern and hold spaces.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They operate as follows:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T165924Z" creationid="hideo" creationdate="20190602T165924Z">
+        <seg>これらのコマンドの動作は以下の通り。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unless special commands (like ‘D’) are used, the pattern space is deleted between two cycles.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T164504Z" creationid="hideo" creationdate="20190602T164504Z">
+        <seg>（Dコマンドのような)特殊コマンドが使われてない限り、次のサイクルを開始する前にパターンスペースの内容を削除します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Using D,G,H,N,P to process multiple lines</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T095649Z" creationid="hideo" creationdate="20190602T095649Z">
+        <seg>D,G,H,N,P コマンドで複数行処理</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When the end of the script is reached, unless the -n option is in use, the contents of pattern space are printed out to the output stream, adding back the trailing newline if it was removed.8 Then the next cycle starts for the next input line.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T164112Z" creationid="hideo" creationdate="20190602T163935Z">
+        <seg>スクリプトの最後まで到達した時(-nが指定されてなければ)、最初に一行読み込む時に削除した行末の改行を戻してから(読み込む時に行末の改行を削除してなかったらそのまま)、パターンスペースの内容を出力ストリームにプリントアウトします。8 それから次の入力行の為のサイクルを開始します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When the program terminates, the end-of-cycle actions are performed, and the entire pattern space is printed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T204557Z" creationid="hideo" creationdate="20190602T204557Z">
+        <seg>プログラムが終了する時はサイクル終了のアクションが実行されます。つまりパターンスペースの内容がプリントされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>branch conditionally (that is: jump to a label) only if a s/// command has succeeded since the last input line was read or another conditional branch was taken.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T180531Z" creationid="hideo" creationdate="20190602T175916Z">
+        <seg>条件分岐。最後に読み込まれた入力行のs///コマンドが成功し、かつ、まだ他の条件分岐が実行されてない場合に分岐実行する（指定のラベルへジャンプ)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>branch unconditionally (that is: always jump to a label, skipping or repeating other commands, without restarting a new cycle).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T175619Z" creationid="hideo" creationdate="20190602T175619Z">
+        <seg>無条件分岐（指定のラベルへジャンプ。当該スクリプトの中で前にジャンプしてループを構成するのに使ったり、条件と組み合わせてelse部分をスキップするのに使える。あくまで当該スクリプトの中でジャンプするだけで当該サイクルを終了したり次のサイクルを開始することはない）</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>delete (clears) the current pattern space, and restart the program cycle without processing the rest of the commands and without printing the pattern space.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T173616Z" creationid="hideo" creationdate="20190602T173616Z">
+        <seg>パターンスペースの内容を全部クリアし、このコマンド以降のスクリプトの実行をスキップしてパターンスペースの内容をプリントせずに次のサイクルを開始する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>delete the contents of the pattern space up to the first newline, and restart the program cycle without processing the rest of the commands and without printing the pattern space.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T173853Z" creationid="hideo" creationdate="20190602T173853Z">
+        <seg>パターンスペースの最初の改行まで(その改行含む)削除し、このコマンド以降のスクリプトの実行をスキップしてパターンスペースの内容をプリントせずに次のサイクルを開始する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>sed, a stream editor</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T093039Z" creationid="hideo" creationdate="20190602T093039Z">
+        <seg>ストリームエディタsed</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>similar but opposite to the t command: branch only if there has been no successful substitutions since the last input line was read.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T180651Z" creationid="hideo" creationdate="20190602T180450Z">
+        <seg>tコマンドと逆に、最後に読み込まれた入力行のs///コマンドが失敗した場合に分岐する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>• Branching and flow control:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T095750Z" creationid="hideo" creationdate="20190602T095750Z">
+        <seg>• 分岐と制御構文:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>• Execution Cycle:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T095422Z" creationid="hideo" creationdate="20190602T095422Z">
+        <seg>• 実行サイクル:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>• Hold and Pattern Buffers:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T183540Z" creationid="hideo" creationdate="20190602T095518Z">
+        <seg>• ホール用バッファとパターン用バッファ:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>• Multiline techniques:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190602T095543Z" creationid="hideo" creationdate="20190602T095543Z">
+        <seg>• 複数行テクニック:</seg>
+      </tuv>
+    </tu>
+<!-- Alternative translations -->
+  </body>
+</tmx>

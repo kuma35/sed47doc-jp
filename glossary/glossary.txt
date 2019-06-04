@@ -1,0 +1,6 @@
+sed	sed
+regular expression	正規表現
+Next:	次:
+Text search across multiple lines	複数行にわたるテキスト検索
+unambiguously	非表示文字等含めて目に見える形で
+introduction	はじめに
