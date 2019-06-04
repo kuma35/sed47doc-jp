@@ -664,6 +664,14 @@ x</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>$ echo | sed 'Q42' ; echo $?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T224327Z" creationid="hideo" creationdate="20190604T224327Z">
+        <seg>$ echo | sed 'Q42' ; echo $?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>$ seq 2 | sed '1aHello ; 2d'
 1
 Hello ; 2d
@@ -1158,6 +1166,22 @@ END-OF-CYCLE:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>0</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T223538Z" creationid="hideo" creationdate="20190604T223538Z">
+        <seg>0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T223553Z" creationid="hideo" creationdate="20190604T223553Z">
+        <seg>1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>1 Introduction</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190602T093330Z" creationid="hideo" creationdate="20190602T093330Z">
@@ -1170,6 +1194,14 @@ END-OF-CYCLE:
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T145217Z" creationid="hideo" creationdate="20190603T145217Z">
         <seg>10</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>2</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T223738Z" creationid="hideo" creationdate="20190604T223738Z">
+        <seg>2</seg>
       </tuv>
     </tu>
     <tu>
@@ -1286,6 +1318,14 @@ END-OF-CYCLE:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>4</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T223956Z" creationid="hideo" creationdate="20190604T223956Z">
+        <seg>4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>4 Addresses: selecting lines</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T165642Z" creationid="hideo" creationdate="20190603T165642Z">
@@ -1322,6 +1362,14 @@ END-OF-CYCLE:
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T141911Z" creationid="hideo" creationdate="20190603T141911Z">
         <seg>4.4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>42</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T224330Z" creationid="hideo" creationdate="20190604T224330Z">
+        <seg>42</seg>
       </tuv>
     </tu>
     <tu>
@@ -1750,6 +1798,14 @@ b eat</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;c0&gt;sed&lt;/c0&gt; commands summary</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T224523Z" creationid="hideo" creationdate="20190604T224523Z">
+        <seg>&lt;c0&gt;sed&lt;/c0&gt;コマンド要約です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;c0&gt;sed&lt;/c0&gt; does not support a typical &lt;c1&gt;if/then&lt;/c1&gt; construct.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190602T200613Z" creationid="hideo" creationdate="20190602T200613Z">
@@ -1794,6 +1850,14 @@ b eat</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190602T162543Z" creationid="hideo" creationdate="20190602T162543Z">
         <seg>&lt;c0&gt;sed&lt;/c0&gt;は入力の各行ごとに以下のサイクルを実行します。最初に&lt;c1&gt;sed&lt;/c1&gt;は入力ストリームから1行読み取り、末尾の改行を削除し、パターンスペースに入れます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;sed&lt;/c0&gt; script overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T224454Z" creationid="hideo" creationdate="20190604T224454Z">
+        <seg>&lt;c0&gt;sed&lt;/c0&gt;スクリプト概要</seg>
       </tuv>
     </tu>
     <tu>
@@ -2000,6 +2064,14 @@ b eat</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Additionally, the commands &lt;c0&gt;q&lt;/c0&gt; and &lt;c1&gt;Q&lt;/c1&gt; can be used to terminate &lt;c2&gt;sed&lt;/c2&gt; with a custom exit code value (this is a GNU &lt;c3&gt;sed&lt;/c3&gt; extension):</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T224324Z" creationid="hideo" creationdate="20190604T224324Z">
+        <seg>加えてsedコマンド'&lt;c0&gt;q&lt;/c0&gt;'や'&lt;c1&gt;Q&lt;/c1&gt;'は&lt;c2&gt;sed&lt;/c2&gt;を指定の終了コード値で終了させることが出来ます(これはGNU &lt;c3&gt;sed&lt;/c3&gt; 拡張です)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Addresses and regular expressions can be used as an &lt;c0&gt;if/then&lt;/c0&gt; conditional: If &lt;v1&gt;[addr]&lt;/v1&gt; matches the current pattern space, execute the command(s).</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190602T174142Z" creationid="hideo" creationdate="20190602T174142Z">
@@ -2096,10 +2168,26 @@ b eat</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>An I/O error, or a serious processing error during runtime, GNU &lt;c0&gt;sed&lt;/c0&gt; aborted immediately.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T224115Z" creationid="hideo" creationdate="20190604T224115Z">
+        <seg>I/Oエラーや実行中の深刻なエラー。GNU &lt;c0&gt;sed&lt;/c0&gt;は即座にアボートします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>An address range is specified with two addresses separated by a comma (&lt;c0&gt;,&lt;/c0&gt;).</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T170714Z" creationid="hideo" creationdate="20190603T170714Z">
         <seg>アドレス範囲を指定する時は2つのアドレスをカンマ(&lt;c0&gt;,&lt;/c0&gt;)で区切ります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An exit status of zero indicates success, and a nonzero value indicates failure.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T223345Z" creationid="hideo" creationdate="20190604T223345Z">
+        <seg>0の終了ステータスは成功を表し、0以外の値は失敗を表します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2376,6 +2464,14 @@ b eat</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Commands specific of GNU &lt;c0&gt;sed&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T224748Z" creationid="hideo" creationdate="20190604T224748Z">
+        <seg>GNU &lt;c0&gt;sed&lt;/c0&gt;固有のコマンド達</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Commands with addresses affect only matching lines.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190602T200421Z" creationid="hideo" creationdate="20190602T200421Z">
@@ -2496,6 +2592,14 @@ b eat</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Extension for easier scripting</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T224825Z" creationid="hideo" creationdate="20190604T224825Z">
+        <seg>スクリプトを書きやすくする拡張です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>F</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T225128Z" creationid="hideo" creationdate="20190603T225128Z">
@@ -2572,6 +2676,14 @@ b eat</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T080657Z" creationid="hideo" creationdate="20190603T080657Z">
         <seg>GNU &lt;c0&gt;sed&lt;/c0&gt;はマルチバイトロケール（例 &lt;c1&gt;UTF-8&lt;/c1&gt;）でマルチバイト文字を適切に処理できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>GNU &lt;c0&gt;sed&lt;/c0&gt; returns the following exit status error values:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T223534Z" creationid="hideo" creationdate="20190604T223534Z">
+        <seg>GNU &lt;c0&gt;sed&lt;/c0&gt;は以下の終了ステータス値を返します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2865,6 +2977,14 @@ b eat</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Invalid command, invalid syntax, invalid regular expression or a GNU &lt;c0&gt;sed&lt;/c0&gt; extension command used with &lt;s1&gt;--posix&lt;/s1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T223713Z" creationid="hideo" creationdate="20190604T223713Z">
+        <seg>不正なコマンドまたは不正な構文または不正な正規表現または、&lt;s1&gt;--posix&lt;/s1&gt;コマンドラインオプションが指定されているのにGNU &lt;c0&gt;sed&lt;/c0&gt;拡張が使われている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Invalid multibyte characters</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T081749Z" creationid="hideo" creationdate="20190603T081749Z">
@@ -2933,6 +3053,14 @@ b eat</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190602T094026Z" creationid="hideo" creationdate="20190602T094026Z">
         <seg>あまり使われないコマンド群</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Less frequently used commands</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T224628Z" creationid="hideo" creationdate="20190604T224628Z">
+        <seg>あんまり使われないコマンド達</seg>
       </tuv>
     </tu>
     <tu>
@@ -3073,6 +3201,14 @@ b eat</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Next: &lt;a0&gt;sed addresses&lt;/a0&gt;, Previous: &lt;a1&gt;Invoking sed&lt;/a1&gt;, Up: &lt;a2&gt;Top&lt;/a2&gt;   [&lt;a3&gt;Contents&lt;/a3&gt;][&lt;a4&gt;Index&lt;/a4&gt;]</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T224414Z" creationid="hideo" creationdate="20190604T224414Z">
+        <seg>次: &lt;a0&gt;sedアドレス&lt;/a0&gt;, 前: &lt;a1&gt;sedの起動&lt;/a1&gt;, 上: &lt;a2&gt;Top&lt;/a2&gt;   [&lt;a3&gt;目次&lt;/a3&gt;][&lt;a4&gt;索引&lt;/a4&gt;]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Next: &lt;a0&gt;sed regular expressions&lt;/a0&gt;, Previous: &lt;a1&gt;sed scripts&lt;/a1&gt;, Up: &lt;a2&gt;Top&lt;/a2&gt;   [&lt;a3&gt;Contents&lt;/a3&gt;][&lt;a4&gt;Index&lt;/a4&gt;]</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T165614Z" creationid="hideo" creationdate="20190603T165614Z">
@@ -3153,6 +3289,14 @@ b eat</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Often used commands</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T224641Z" creationid="hideo" creationdate="20190604T224608Z">
+        <seg>よく使われるコマンド達</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Often-Used Commands</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190602T093756Z" creationid="hideo" creationdate="20190602T093756Z">
@@ -3189,6 +3333,14 @@ b eat</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T101434Z" creationid="hideo" creationdate="20190603T101434Z">
         <seg>最終行(&lt;c3&gt;$&lt;/c3&gt;)では, the hold space is retrieved (&lt;c4&gt;x&lt;/c4&gt;), newlines are removed (&lt;c5&gt;s/\n//g&lt;/c5&gt;), and any remaining octets are printed unambiguously (&lt;c6&gt;l&lt;/c6&gt;).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>One or more of the input file specified on the command line could not be opened (e.g. if a file is not found, or read permission is denied).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T223901Z" creationid="hideo" creationdate="20190604T223901Z">
+        <seg>コマンドラインで指定した1つまたはそれ以上ファイルがオープンできなかった(例えばファイルが存在しなかった、また読み取り許可権限が無かった)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3317,6 +3469,14 @@ b eat</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T144232Z" creationid="hideo" creationdate="20190603T144232Z">
         <seg>末尾の数行をプリントする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Processing continued with other files.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T223953Z" creationid="hideo" creationdate="20190604T223953Z">
+        <seg>但し、オープンできた他のファイルに付いては処理が続行されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3509,6 +3669,14 @@ b eat</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T144705Z" creationid="hideo" creationdate="20190603T144705Z">
         <seg>連続する空白行を1行の空白行にする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Successful completion.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T223551Z" creationid="hideo" creationdate="20190604T223551Z">
+        <seg>完璧に成功。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4643,6 +4811,14 @@ cat input.txt | sed 's/hello/world/' - &gt; output.txt</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>• &lt;a0&gt;Common Commands&lt;/a0&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T224638Z" creationid="hideo" creationdate="20190604T224557Z">
+        <seg>• &lt;a0&gt;一般コマンド達&lt;/a0&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>• &lt;a0&gt;Concept Index&lt;/a0&gt;:</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190604T044931Z" creationid="hideo" creationdate="20190604T044931Z">
@@ -4671,6 +4847,14 @@ cat input.txt | sed 's/hello/world/' - &gt; output.txt</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190604T051046Z" creationid="hideo" creationdate="20190604T051046Z">
         <seg>• &lt;a0&gt;sed終了ステータス&lt;/a0&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>• &lt;a0&gt;Extended Commands&lt;/a0&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T224716Z" creationid="hideo" creationdate="20190604T224716Z">
+        <seg>• &lt;a0&gt;拡張コマンド&lt;/a0&gt;:</seg>
       </tuv>
     </tu>
     <tu>
@@ -4723,10 +4907,26 @@ cat input.txt | sed 's/hello/world/' - &gt; output.txt</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>• &lt;a0&gt;Multiple commands syntax&lt;/a0&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T224810Z" creationid="hideo" creationdate="20190604T224810Z">
+        <seg>• &lt;a0&gt;複数のsedコマンドを与える時の区切り方&lt;/a0&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>• &lt;a0&gt;Numeric Addresses&lt;/a0&gt;:</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T165724Z" creationid="hideo" creationdate="20190603T165724Z">
         <seg>• &lt;a0&gt;数値指定アドレス&lt;/a0&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>• &lt;a0&gt;Other Commands&lt;/a0&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T224646Z" creationid="hideo" creationdate="20190604T224616Z">
+        <seg>• &lt;a0&gt;他のコマンド達&lt;/a0&gt;:</seg>
       </tuv>
     </tu>
     <tu>
@@ -4743,6 +4943,14 @@ cat input.txt | sed 's/hello/world/' - &gt; output.txt</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190604T050934Z" creationid="hideo" creationdate="20190604T050934Z">
         <seg>• &lt;a0&gt;概要&lt;/a0&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>• &lt;a0&gt;Programming Commands&lt;/a0&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T224700Z" creationid="hideo" creationdate="20190604T224700Z">
+        <seg>• &lt;a0&gt;プログラミングコマンド達&lt;/a0&gt;:</seg>
       </tuv>
     </tu>
     <tu>
@@ -4771,6 +4979,14 @@ cat input.txt | sed 's/hello/world/' - &gt; output.txt</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>• &lt;a0&gt;The "s" Command&lt;/a0&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T224541Z" creationid="hideo" creationdate="20190604T224541Z">
+        <seg>• &lt;a0&gt;"s"コマンド&lt;/a0&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>• &lt;a0&gt;advanced sed&lt;/a0&gt;:</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T145857Z" creationid="hideo" creationdate="20190603T145857Z">
@@ -4787,10 +5003,26 @@ cat input.txt | sed 's/hello/world/' - &gt; output.txt</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>• &lt;a0&gt;sed commands list&lt;/a0&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T224508Z" creationid="hideo" creationdate="20190604T224508Z">
+        <seg>• &lt;a0&gt;sedコマンド一覧&lt;/a0&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>• &lt;a0&gt;sed regular expressions&lt;/a0&gt;:</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T145807Z" creationid="hideo" creationdate="20190603T145807Z">
         <seg>• &lt;a0&gt;sed正規表現&lt;/a0&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>• &lt;a0&gt;sed script overview&lt;/a0&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190604T224442Z" creationid="hideo" creationdate="20190604T224442Z">
+        <seg>• &lt;a0&gt;sedスクリプト概要&lt;/a0&gt;:</seg>
       </tuv>
     </tu>
     <tu>

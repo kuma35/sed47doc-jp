@@ -544,42 +544,29 @@ sed -ni 's/foo/bar/' FILE
 <a name="Exit-status-1"></a>
 <h3 class="section">2.3終了ステータス</h3>
 <a name="index-exit-status"></a>
-<p>An exit status of zero indicates success, and a nonzero value
-indicates failure. GNU <code>sed</code> returns the following exit status
-error values:
-
+<p>0の終了ステータスは成功を表し、0以外の値は失敗を表します。GNU <code>sed</code>は以下の終了ステータス値を返します。
 </p>
 <dl compact="compact">
 <dt>0</dt>
-<dd><p>Successful completion.
-
+<dd><p>完璧に成功。
 </p>
 </dd>
 <dt>1</dt>
-<dd><p>Invalid command, invalid syntax, invalid regular expression or a
-GNU <code>sed</code> extension command used with <samp>--posix</samp>.
-
+<dd><p>不正なコマンドまたは不正な構文または不正な正規表現または、<samp>--posix</samp>コマンドラインオプションが指定されているのにGNU <code>sed</code>拡張が使われている。
 </p>
 </dd>
 <dt>2</dt>
-<dd><p>One or more of the input file specified on the command line could not be
-opened (e.g. if a file is not found, or read permission is denied).
-Processing continued with other files.
-
+<dd><p>コマンドラインで指定した1つまたはそれ以上ファイルがオープンできなかった(例えばファイルが存在しなかった、また読み取り許可権限が無かった)。但し、オープンできた他のファイルに付いては処理が続行されます。
 </p>
 </dd>
 <dt>4</dt>
-<dd><p>An I/O error, or a serious processing error during runtime,
-GNU <code>sed</code> aborted immediately.
-
+<dd><p>I/Oエラーや実行中の深刻なエラー。GNU <code>sed</code>は即座にアボートします。
 </p></dd>
 </dl>
 
 <a name="index-Q_002c-example"></a>
 <a name="index-exit-status_002c-example"></a>
-<p>Additionally, the commands <code>q</code> and <code>Q</code> can be used to terminate
-<code>sed</code> with a custom exit code value (this is a GNU <code>sed</code> extension):
-
+<p>加えてsedコマンド'<code>q</code>'や'<code>Q</code>'は<code>sed</code>を指定の終了コード値で終了させることが出来ます(これはGNU <code>sed</code> 拡張です)。
 </p>
 <div class="example">
 <pre class="example">$ echo | sed 'Q42' ; echo $?
@@ -591,35 +578,29 @@ GNU <code>sed</code> aborted immediately.
 <a name="sed-scripts"></a>
 <div class="header">
 <p>
-
-Next: <a href="#sed-addresses" accesskey="n" rel="next">sed addresses</a>, Previous: <a href="#Invoking-sed" accesskey="p" rel="prev">Invoking sed</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="#SEC_Contents" title="目次" rel="contents">Contents</a>][<a href="#Concept-Index" title="索引" rel="index">Index</a>]</p>
+次: <a href="#sed-addresses" accesskey="n" rel="next">sedアドレス</a>, 前: <a href="#Invoking-sed" accesskey="p" rel="prev">sedの起動</a>, 上: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="#SEC_Contents" title="目次" rel="contents">目次</a>][<a href="#Concept-Index" title="索引" rel="index">索引</a>]</p>
 </div>
 <a name="sed-scripts-1"></a>
 <h2 class="chapter">3 <code>sed</code>スクリプト</h2>
 
 
 <table class="menu" border="0" cellspacing="0">
-<tr><td align="left" valign="top">• <a href="#sed-script-overview" accesskey="1">sed script overview</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top"><code>sed</code> script overview
+<tr><td align="left" valign="top">• <a href="#sed-script-overview" accesskey="1">sedスクリプト概要</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top"><code>sed</code>スクリプト概要
+</td></tr>
+<tr><td align="left" valign="top">• <a href="#sed-commands-list" accesskey="2">sedコマンド一覧</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top"><code>sed</code>コマンド要約です。
+</td></tr>
+<tr><td align="left" valign="top">• <a href="#The-_0022s_0022-Command" accesskey="3">"s"コマンド</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top"><code>sed</code>’s Swiss Army Knife
 
 </td></tr>
-<tr><td align="left" valign="top">• <a href="#sed-commands-list" accesskey="2">sed commands list</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top"><code>sed</code> commands summary
-
+<tr><td align="left" valign="top">• <a href="#Common-Commands" accesskey="4">一般コマンド達</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">よく使われるコマンド達
 </td></tr>
-<tr><td align="left" valign="top">• <a href="#The-_0022s_0022-Command" accesskey="3">The "s" Command</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top"><code>sed</code>’s Swiss Army Knife
-
+<tr><td align="left" valign="top">• <a href="#Other-Commands" accesskey="5">他のコマンド達</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">あんまり使われないコマンド達
 </td></tr>
-<tr><td align="left" valign="top">• <a href="#Common-Commands" accesskey="4">Common Commands</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Often used commands
-
+<tr><td align="left" valign="top">• <a href="#Programming-Commands" accesskey="6">プログラミングコマンド達</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top"><code>sed</code>導師のためのコマンド群
 </td></tr>
-<tr><td align="left" valign="top">• <a href="#Other-Commands" accesskey="5">Other Commands</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Less frequently used commands
-
+<tr><td align="left" valign="top">• <a href="#Extended-Commands" accesskey="7">拡張コマンド</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">GNU <code>sed</code>固有のコマンド達
 </td></tr>
-<tr><td align="left" valign="top">• <a href="#Programming-Commands" accesskey="6">Programming Commands</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top"><code>sed</code>導師のためのコマンド群
-</td></tr>
-<tr><td align="left" valign="top">• <a href="#Extended-Commands" accesskey="7">Extended Commands</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Commands specific of GNU <code>sed</code>
-</td></tr>
-<tr><td align="left" valign="top">• <a href="#Multiple-commands-syntax" accesskey="8">Multiple commands syntax</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Extension for easier scripting
-
+<tr><td align="left" valign="top">• <a href="#Multiple-commands-syntax" accesskey="8">複数のsedコマンドを与える時の区切り方</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">スクリプトを書きやすくする拡張です。
 </td></tr>
 </table>
 
