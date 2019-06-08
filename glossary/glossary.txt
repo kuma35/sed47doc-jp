@@ -1,6 +1,5 @@
-sed	sed
 regular expression	正規表現
-Next:	次:
-Text search across multiple lines	複数行にわたるテキスト検索
-unambiguously	非表示文字等含めて目に見える形で
-introduction	はじめに
+sequence	つづり	「エスケープシーケンス」は成句であるのでそのままにする。
+Character Classes	文字クラス
+
+bracket expression	角括弧式
