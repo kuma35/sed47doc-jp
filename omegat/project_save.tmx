@@ -11543,8 +11543,8 @@ of this license document, but changing it is not allowed.</seg>
       <tuv lang="EN-US">
         <seg>Addresses overview</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T074850Z" creationid="hideo" creationdate="20190603T074850Z">
-        <seg>アドレス概要</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224251Z" creationid="hideo" creationdate="20190603T074850Z">
+        <seg> アドレス概要</seg>
       </tuv>
     </tu>
     <tu>
@@ -11959,8 +11959,8 @@ of this license document, but changing it is not allowed.</seg>
       <tuv lang="EN-US">
         <seg>Back-references and Subexpressions</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190605T120552Z" creationid="hideo" creationdate="20190603T075345Z">
-        <seg>後方参照と部分式</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224555Z" creationid="hideo" creationdate="20190603T075345Z">
+        <seg> 後方参照と部分式</seg>
       </tuv>
     </tu>
     <tu>
@@ -11999,8 +11999,8 @@ of this license document, but changing it is not allowed.</seg>
       <tuv lang="EN-US">
         <seg>Basic (BRE) and extended (ERE) regular expression</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T075055Z" creationid="hideo" creationdate="20190603T075055Z">
-        <seg>基本正規表現(basic regular expression;BRE)と拡張正規表現(extended regular expression;ERE)</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224306Z" creationid="hideo" creationdate="20190603T075055Z">
+        <seg> 基本正規表現(basic regular expression;BRE)と拡張正規表現(extended regular expression;ERE)</seg>
       </tuv>
     </tu>
     <tu>
@@ -12141,16 +12141,16 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>Branching and Cycles</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T094928Z" creationid="hideo" creationdate="20190602T094928Z">
-        <seg>分岐とサイクル</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224404Z" creationid="hideo" creationdate="20190602T094928Z">
+        <seg> 分岐とサイクル</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Branching and Flow Control</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T094910Z" creationid="hideo" creationdate="20190602T094910Z">
-        <seg>分岐と制御構文</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224401Z" creationid="hideo" creationdate="20190602T094910Z">
+        <seg> 分岐と制御構文</seg>
       </tuv>
     </tu>
     <tu>
@@ -12165,8 +12165,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>Branching example: joining lines</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T094947Z" creationid="hideo" creationdate="20190602T094947Z">
-        <seg>分岐例: 行連結</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224407Z" creationid="hideo" creationdate="20190602T094947Z">
+        <seg> 分岐例: 行連結</seg>
       </tuv>
     </tu>
     <tu>
@@ -12293,16 +12293,16 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>Centering Lines</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T095325Z" creationid="hideo" creationdate="20190602T095325Z">
-        <seg>センタリング</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224411Z" creationid="hideo" creationdate="20190602T095325Z">
+        <seg> センタリング</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Character Classes and Bracket Expressions</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190607T215345Z" creationid="hideo" creationdate="20190603T075248Z">
-        <seg>文字クラスと角括弧式</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224318Z" creationid="hideo" creationdate="20190603T075248Z">
+        <seg> 文字クラスと角括弧式</seg>
       </tuv>
     </tu>
     <tu>
@@ -12325,8 +12325,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>Command-Line Options</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T093357Z" creationid="hideo" creationdate="20190602T093357Z">
-        <seg>コマンドラインオプション</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224148Z" creationid="hideo" creationdate="20190602T093357Z">
+        <seg> コマンドラインオプション</seg>
       </tuv>
     </tu>
     <tu>
@@ -12341,16 +12341,16 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>Commands Requiring a newline</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T155552Z" creationid="hideo" creationdate="20190603T155552Z">
-        <seg>sedコマンドに改行が必要な時</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224234Z" creationid="hideo" creationdate="20190603T155552Z">
+        <seg> sedコマンドに改行が必要な時</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Commands Specific to GNU &lt;c0&gt;sed&lt;/c0&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T094401Z" creationid="hideo" creationdate="20190602T094401Z">
-        <seg>GNU &lt;c0&gt;sed&lt;/c0&gt; 固有のコマンド</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224227Z" creationid="hideo" creationdate="20190602T094401Z">
+        <seg> GNU &lt;c0&gt;sed&lt;/c0&gt; 固有のコマンド</seg>
       </tuv>
     </tu>
     <tu>
@@ -12365,8 +12365,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>Commands for &lt;c0&gt;sed&lt;/c0&gt; gurus</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T094309Z" creationid="hideo" creationdate="20190602T094309Z">
-        <seg>&lt;c0&gt;sed&lt;/c0&gt;導師のためのコマンド群</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224222Z" creationid="hideo" creationdate="20190602T094309Z">
+        <seg> &lt;c0&gt;sed&lt;/c0&gt;導師のためのコマンド群</seg>
       </tuv>
     </tu>
     <tu>
@@ -12501,24 +12501,24 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>Counting Characters</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T144105Z" creationid="hideo" creationdate="20190603T144105Z">
-        <seg>文字数を数える</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224440Z" creationid="hideo" creationdate="20190603T144105Z">
+        <seg> 文字数を数える</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Counting Lines</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T144142Z" creationid="hideo" creationdate="20190603T144142Z">
-        <seg>行数を数える</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224447Z" creationid="hideo" creationdate="20190603T144142Z">
+        <seg> 行数を数える</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Counting Words</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T144129Z" creationid="hideo" creationdate="20190603T144120Z">
-        <seg>単語数を数える</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224443Z" creationid="hideo" creationdate="20190603T144120Z">
+        <seg> 単語数を数える</seg>
       </tuv>
     </tu>
     <tu>
@@ -12671,8 +12671,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>Escape Sequences - specifying special characters</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T142957Z" creationid="hideo" creationdate="20190603T142957Z">
-        <seg>エスケープシーケンス - 特殊文字の指定</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224324Z" creationid="hideo" creationdate="20190603T142957Z">
+        <seg> エスケープシーケンス - 特殊文字の指定</seg>
       </tuv>
     </tu>
     <tu>
@@ -12695,8 +12695,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>Escaping Precedence</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190604T043728Z" creationid="hideo" creationdate="20190604T043728Z">
-        <seg>エスケープ文字の打ち消し</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224330Z" creationid="hideo" creationdate="20190604T043728Z">
+        <seg> エスケープ文字の打ち消し</seg>
       </tuv>
     </tu>
     <tu>
@@ -12879,8 +12879,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>Exit status</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T093422Z" creationid="hideo" creationdate="20190602T093422Z">
-        <seg>終了ステータス</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224156Z" creationid="hideo" creationdate="20190602T093422Z">
+        <seg> 終了ステータス</seg>
       </tuv>
     </tu>
     <tu>
@@ -13295,8 +13295,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>Hold and Pattern Buffers</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190605T151210Z" creationid="hideo" creationdate="20190602T094556Z">
-        <seg>ホールド用とパターン用のバッファ</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224352Z" creationid="hideo" creationdate="20190602T094556Z">
+        <seg> ホールド用とパターン用のバッファ</seg>
       </tuv>
     </tu>
     <tu>
@@ -14184,8 +14184,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>Increment a Number</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T052906Z" creationid="hideo" creationdate="20190604T044003Z">
-        <seg>数のインクリメント</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224414Z" creationid="hideo" creationdate="20190604T044003Z">
+        <seg> 数のインクリメント</seg>
       </tuv>
     </tu>
     <tu>
@@ -14248,8 +14248,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>Invalid multibyte characters</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T081749Z" creationid="hideo" creationdate="20190603T081749Z">
-        <seg>不正なマルチバイト文字</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224337Z" creationid="hideo" creationdate="20190603T081749Z">
+        <seg> 不正なマルチバイト文字</seg>
       </tuv>
     </tu>
     <tu>
@@ -14518,8 +14518,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Less Frequently-Used Commands</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T094026Z" creationid="hideo" creationdate="20190602T094026Z">
-        <seg>あまり使われないコマンド群</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224218Z" creationid="hideo" creationdate="20190602T094026Z">
+        <seg> あまり使われないコマンド群</seg>
       </tuv>
     </tu>
     <tu>
@@ -14558,8 +14558,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Line length adjustment</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T143912Z" creationid="hideo" creationdate="20190603T143912Z">
-        <seg>行の長さを揃える</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224429Z" creationid="hideo" creationdate="20190603T143912Z">
+        <seg> 行の長さを揃える</seg>
       </tuv>
     </tu>
     <tu>
@@ -14614,8 +14614,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Make Duplicate Lines Unique</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T144323Z" creationid="hideo" creationdate="20190603T144323Z">
-        <seg>同一行を1つにまとめる</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224456Z" creationid="hideo" creationdate="20190603T144323Z">
+        <seg> 同一行を1つにまとめる</seg>
       </tuv>
     </tu>
     <tu>
@@ -14878,8 +14878,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Multibyte characters and Locale Considerations</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T080506Z" creationid="hideo" creationdate="20190603T080506Z">
-        <seg>マルチバイト文字とロケールに関する考慮事項</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224334Z" creationid="hideo" creationdate="20190603T080506Z">
+        <seg> マルチバイト文字とロケールに関する考慮事項</seg>
       </tuv>
     </tu>
     <tu>
@@ -14894,8 +14894,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Multibyte regexp character classes</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190607T190117Z" creationid="hideo" creationdate="20190603T143513Z">
-        <seg>マルチバイト正規表現文字クラス</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224346Z" creationid="hideo" creationdate="20190603T143513Z">
+        <seg> マルチバイト正規表現文字クラス</seg>
       </tuv>
     </tu>
     <tu>
@@ -14910,16 +14910,16 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Multiline techniques - using D,G,H,N,P to process multiple lines</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T094836Z" creationid="hideo" creationdate="20190602T094836Z">
-        <seg>複数行テクニック - D,G,H,N,P コマンドで複数行処理</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224357Z" creationid="hideo" creationdate="20190602T094836Z">
+        <seg> 複数行テクニック - D,G,H,N,P コマンドで複数行処理</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Multiple commands syntax</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190605T074312Z" creationid="hideo" creationdate="20190603T153403Z">
-        <seg>複数コマンド構文</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224231Z" creationid="hideo" creationdate="20190603T153403Z">
+        <seg> 複数コマンド構文</seg>
       </tuv>
     </tu>
     <tu>
@@ -15574,16 +15574,16 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Numbering Lines</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190604T044145Z" creationid="hideo" creationdate="20190604T044145Z">
-        <seg>行番号を付ける</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224434Z" creationid="hideo" creationdate="20190604T044145Z">
+        <seg> 行番号を付ける</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Numbering Non-blank Lines</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190604T044221Z" creationid="hideo" creationdate="20190603T144045Z">
-        <seg>空行以外の行に行番号を付ける</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224437Z" creationid="hideo" creationdate="20190603T144045Z">
+        <seg> 空行以外の行に行番号を付ける</seg>
       </tuv>
     </tu>
     <tu>
@@ -15638,8 +15638,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Often-Used Commands</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T093756Z" creationid="hideo" creationdate="20190602T093756Z">
-        <seg>よく使われるコマンド群</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224213Z" creationid="hideo" creationdate="20190602T093756Z">
+        <seg> よく使われるコマンド群</seg>
       </tuv>
     </tu>
     <tu>
@@ -15782,8 +15782,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Overview</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T093309Z" creationid="hideo" creationdate="20190602T093309Z">
-        <seg>概要</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224140Z" creationid="hideo" creationdate="20190602T093309Z">
+        <seg> 概要</seg>
       </tuv>
     </tu>
     <tu>
@@ -15798,16 +15798,16 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Overview of basic regular expression syntax</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T075150Z" creationid="hideo" creationdate="20190603T075150Z">
-        <seg>基本正規表現文法概要</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224310Z" creationid="hideo" creationdate="20190603T075150Z">
+        <seg> 基本正規表現文法概要</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Overview of extended regular expression syntax</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T075205Z" creationid="hideo" creationdate="20190603T075205Z">
-        <seg>拡張正規表現文法概要</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224315Z" creationid="hideo" creationdate="20190603T075205Z">
+        <seg> 拡張正規表現文法概要</seg>
       </tuv>
     </tu>
     <tu>
@@ -15984,16 +15984,16 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Print &lt;c0&gt;bash&lt;/c0&gt; Environment</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T143753Z" creationid="hideo" creationdate="20190603T143753Z">
-        <seg>&lt;c0&gt;bash&lt;/c0&gt;の環境変数をプリント</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224421Z" creationid="hideo" creationdate="20190603T143753Z">
+        <seg> &lt;c0&gt;bash&lt;/c0&gt;の環境変数をプリント</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Print Duplicated Lines of Input</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190604T044333Z" creationid="hideo" creationdate="20190604T044333Z">
-        <seg>重複した行のみプリントする。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224500Z" creationid="hideo" creationdate="20190604T044333Z">
+        <seg> 重複した行のみプリントする。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16112,16 +16112,16 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Printing the First Lines</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T144240Z" creationid="hideo" creationdate="20190603T144212Z">
-        <seg>最初の数行をプリントする</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224451Z" creationid="hideo" creationdate="20190603T144212Z">
+        <seg> 最初の数行をプリントする</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Printing the Last Lines</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T144232Z" creationid="hideo" creationdate="20190603T144232Z">
-        <seg>末尾の数行をプリントする</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224454Z" creationid="hideo" creationdate="20190603T144232Z">
+        <seg> 末尾の数行をプリントする</seg>
       </tuv>
     </tu>
     <tu>
@@ -16320,8 +16320,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Range Addresses</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190605T134642Z" creationid="hideo" creationdate="20190602T160448Z">
-        <seg>範囲アドレス</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224301Z" creationid="hideo" creationdate="20190602T160448Z">
+        <seg> 範囲アドレス</seg>
       </tuv>
     </tu>
     <tu>
@@ -16368,8 +16368,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Remove All Duplicated Lines</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190604T044440Z" creationid="hideo" creationdate="20190604T044440Z">
-        <seg>重複行を全て取り除く（重複してない行のみプリントする）</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224503Z" creationid="hideo" creationdate="20190604T044440Z">
+        <seg> 重複行を全て取り除く（重複してない行のみプリントする）</seg>
       </tuv>
     </tu>
     <tu>
@@ -16384,8 +16384,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Rename Files to Lower Case</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T143700Z" creationid="hideo" creationdate="20190603T143700Z">
-        <seg>ファイル名を小文字にする</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224417Z" creationid="hideo" creationdate="20190603T143700Z">
+        <seg> ファイル名を小文字にする</seg>
       </tuv>
     </tu>
     <tu>
@@ -16440,8 +16440,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Reporting Bugs</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T145247Z" creationid="hideo" creationdate="20190603T145247Z">
-        <seg>報告済のバグ</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224512Z" creationid="hideo" creationdate="20190603T145247Z">
+        <seg> 報告済のバグ</seg>
       </tuv>
     </tu>
     <tu>
@@ -16456,16 +16456,16 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Reverse Characters of Lines</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T143821Z" creationid="hideo" creationdate="20190603T143821Z">
-        <seg>行の文字を逆順にする</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224423Z" creationid="hideo" creationdate="20190603T143821Z">
+        <seg> 行の文字を逆順にする</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Reverse Lines of Files</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T144032Z" creationid="hideo" creationdate="20190603T144032Z">
-        <seg>ファイルの行の順番を逆順にする</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224432Z" creationid="hideo" creationdate="20190603T144032Z">
+        <seg> ファイルの行の順番を逆順にする</seg>
       </tuv>
     </tu>
     <tu>
@@ -16696,8 +16696,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Selecting lines by numbers</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T160333Z" creationid="hideo" creationdate="20190602T160333Z">
-        <seg>数による行の選択</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224256Z" creationid="hideo" creationdate="20190602T160333Z">
+        <seg> 数による行の選択</seg>
       </tuv>
     </tu>
     <tu>
@@ -16824,8 +16824,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Squeezing Blank Lines</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T144705Z" creationid="hideo" creationdate="20190603T144705Z">
-        <seg>連続する空白行を1行の空白行にする</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224506Z" creationid="hideo" creationdate="20190603T144705Z">
+        <seg> 連続する空白行を1行の空白行にする</seg>
       </tuv>
     </tu>
     <tu>
@@ -16976,8 +16976,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Text search across multiple lines</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T143851Z" creationid="hideo" creationdate="20190603T143851Z">
-        <seg>複数行にわたるテキスト検索</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224426Z" creationid="hideo" creationdate="20190603T143851Z">
+        <seg> 複数行にわたるテキスト検索</seg>
       </tuv>
     </tu>
     <tu>
@@ -17120,8 +17120,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>The &lt;c0&gt;s&lt;/c0&gt; Command</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T093704Z" creationid="hideo" creationdate="20190602T093704Z">
-        <seg>&lt;c0&gt;s&lt;/c0&gt; コマンド</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224207Z" creationid="hideo" creationdate="20190602T093704Z">
+        <seg> &lt;c0&gt;s&lt;/c0&gt; コマンド</seg>
       </tuv>
     </tu>
     <tu>
@@ -19035,8 +19035,8 @@ t a
       <tuv lang="EN-US">
         <seg>Upper/Lower case conversion</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T143435Z" creationid="hideo" creationdate="20190603T143435Z">
-        <seg>(英語の)大文字小文字変換</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190608T224342Z" creationid="hideo" creationdate="20190603T143435Z">
+        <seg> (英語の)大文字小文字変換</seg>
       </tuv>
     </tu>
     <tu>
