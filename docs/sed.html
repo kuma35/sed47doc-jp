@@ -3875,11 +3875,9 @@ the age of wisdom,
 <a name="Line-length-adjustment-1"></a>
 <h3 class="section">7.8 行の長さを揃える</h3>
 
-<p>This section uses <code>N</code> and <code>D</code> commands to search for consecutive words spanning multiple lines, and the <code>b</code> command for branching. 参照：<a href="#Multiline-techniqu">複数行テクニック</a>、<a href="#Branching-and-flow-control">分岐とフロー制御</a>.
+<p>この節では、<code>N</code>および <code>D</code>コマンドを使用して複数行にわたる連続した単語を検索し、<code>b</code> コマンドを使用して分岐します。参照：<a href="#Multiline-techniqu">複数行テクニック</a>、<a href="#Branching-and-flow-control">分岐とフロー制御</a>.
 </p>
-<p>This (somewhat contrived) example deal with formatting and wrapping
-lines of text of the following input file:
-
+<p>この(多少工夫された)例は、以下の入力ファイルのテキストのフォーマッティングと行の折り返しを扱います。
 </p>
 <div class="example">
 <pre class="example">$ cat two-cities-mix.txt
@@ -3899,7 +3897,7 @@ of foolishness,
 # outer loop
 :x
 
-# 改行につついて次の入力行をパターンスペースに追加
+# 改行と続く次の入力行をパターンスペースに追加
 N
 
 # パターンスペース内の全ての改行を削除
@@ -3915,26 +3913,25 @@ s/(.{40,40})/\1\n/
 # もしパターンスペースに改行があれば
 # (すなわち、前の置換が改行を追加していれば)
 /\n/ {
-    # There are newlines in the pattern buffer -
-    # print the content until the first newline.
+    # パターンスペースには改行があり -
+    # 最初の改行までの内容をプリントします。
     P
 
-   # Remove the printed characters and the first newline
+   # 印刷した文字達と最初の改行を削除します
    s/.*\n//
 
-   # branch to label 'y' - repeat inner loop
+   # ラベル'y'へ無条件ジャンプ - 内部ループの繰り返し
    by
  }
 
-# No newlines in the pattern buffer - Branch to label 'x' (outer loop)
-# and read the next input line
+# パターンスペースに改行が無い - ラベル'x'へ無条件ジャンプ(外部ループ)
+# そして次の入力行を読み込む
 bx
 </pre></div>
 
 
 
-<p>The wrapped output:
-
+<p>以下は折り曲げられた出力です。
 </p><div class="example">
 <pre class="example">$ sed -E -f wrap40.sed two-cities-mix.txt
 It was the best of times, it was the wor
@@ -3954,30 +3951,25 @@ t was the age of foolishness,
 <a name="Reverse-Lines-of-Files"></a>
 <h3 class="section">7.9 ファイルの行の順番を逆順にする</h3>
 
-<p>This one begins a series of totally useless (yet interesting)
-scripts emulating various Unix commands.  This, in particular,
-is a <code>tac</code> workalike.
-
+<p>これは、さまざまなUnixコマンドをエミュレートする、まったく役に立たない(それでも面白い)スクリプトのシリーズの始まりです。これは特に<code> tac </code>の動作に似ています。
 </p>
-<p>Note that on implementations other than GNU <code>sed</code>
-this script might easily overflow internal buffers.
-
+<p>GNU <code> sed </code>以外の実装では、このスクリプトはすぐに内部バッファをオーバーフローさせるかもしれません。
 </p>
 <div class="example">
 <pre class="example">#!/usr/bin/sed -nf
 
-# reverse all lines of input, i.e. first line became last, ...
+＃入力のすべての行を反転します。つまり、最初の行が最後になりました...
 
-</pre><pre class="example"># from the second line, the buffer (which contains all previous lines)
-# is *appended* to current line, so, the order will be reversed
+</pre><pre class="example"># 2行目以降、バッファ(前の行をすべて含む)は
+# 現在の行に「追加」されるので、順序は逆になります。
 1!G
 </pre><pre class="example">
 
-</pre><pre class="example"># on the last line we're done -- print everything
+</pre><pre class="example"># 最終行に居るなら、作業終了したのです -- 全てをプリントします。
 $ p
 </pre><pre class="example">
 
-</pre><pre class="example"># store everything on the buffer again
+</pre><pre class="example"># すべてを再びバッファに保存する
 h
 </pre></div>
 
@@ -3990,15 +3982,9 @@ h
 <a name="Numbering-Lines"></a>
 <h3 class="section">7.10 行番号を付ける</h3>
 
-<p>This script replaces ‘<samp>cat -n</samp>’; in fact it formats its output
-exactly like GNU <code>cat</code> does.
-
+<p>このスクリプトは‘<samp>cat -n</samp>’を置き換えます。 実際、GNU <code>cat</code>とまったく同じフォーマットで出力します。
 </p>
-<p>Of course this is completely useless and for two reasons:  first,
-because somebody else did it in C, second, because the following
-Bourne-shell script could be used for the same purpose and would
-be much faster:
-
+<p>もちろん、これはまったく役に立ちません。2つの理由があります。1つは誰かが既にC言語で書いためであり、2つ目は、次のBourneシェルスクリプトが同じ目的で使用でき、はるかに高速だからです。
 </p>
 <div class="example">
 <pre class="example">#!/bin/sh
@@ -4009,29 +3995,19 @@ sed -e "=" $@ | sed -e '
 '
 </pre></div>
 
-<p>It uses <code>sed</code> to print the line number, then groups lines two
-by two using <code>N</code>.  Of course, this script does not teach as much as
-the one presented below.
-
+<p><code>sed</code>を使用して行番号を印刷し、次に<code>N</code>を使用して2行ずつグループ化します。もちろん、このスクリプトは以下に提示されているものほど多くは教えていません。
 </p>
-<p>The algorithm used for incrementing uses both buffers, so the line
-is printed as soon as possible and then discarded.  The number
-is split so that changing digits go in a buffer and unchanged ones go
-in the other; the changed digits are modified in a single step
-(using a <code>y</code> command).  The line number for the next line
-is then composed and stored in the hold space, to be used in the
-next iteration.
-
+<p>インクリメントに使用されるアルゴリズムは両方のバッファーを使用するので、行はできるだけ早く印刷されてから廃棄されます。数字は分割されているので、変更された数字はバッファに入り、変更されていない数字はもう一方に入ります。 変更された桁は(<code>y</code>コマンドを使用して)単一のステップで変更されます。. 次の行の行番号が構成され、ホールドスペースに格納されて、次の反復で使用されます。
 </p>
 <div class="example">
 <pre class="example">#!/usr/bin/sed -nf
 
-</pre><pre class="example"># Prime the pump on the first line
+</pre><pre class="example"># 最初のラインでポンプを吸い込む
 x
 /^$/ s/^.*$/1/
 </pre><pre class="example">
 
-</pre><pre class="example"># Add the correct line number before the pattern
+</pre><pre class="example"># パターンの前に正しい行番号を追加
 G
 h
 </pre><pre class="example">
@@ -4041,29 +4017,29 @@ s/^/      /
 s/^ *\(......\)\n/\1  /p
 </pre><pre class="example">
 
-</pre><pre class="example"># Get the line number from hold space; add a zero
-# if we're going to add a digit on the next line
+</pre><pre class="example"># ホールドスペースから行番号を取得
+# 次の行に数字を追加する場合0(ゼロ)を追加
 g
 s/\n.*$//
 /^9*$/ s/^/0/
 </pre><pre class="example">
 
-</pre><pre class="example"># separate changing/unchanged digits with an x
+</pre><pre class="example"># x によって、変更/未変更の数字を分ける
 s/.9*$/x&amp;/
 </pre><pre class="example">
 
-</pre><pre class="example"># keep changing digits in hold space
+</pre><pre class="example"># 変更した数字をホールドスペース内で保持
 h
 s/^.*x//
 y/0123456789/1234567890/
 x
 </pre><pre class="example">
 
-</pre><pre class="example"># keep unchanged digits in pattern space
+</pre><pre class="example"># 未変更の数字をパターンスペース内で保持
 s/x.*$//
 </pre><pre class="example">
 
-</pre><pre class="example"># compose the new number, remove the newline implicitly added by G
+</pre><pre class="example"># 新しい番号を作成し、Gが暗黙のうちに追加した改行を削除する
 G
 s/\n//
 h
@@ -4078,14 +4054,9 @@ h
 <a name="Numbering-Non_002dblank-Lines"></a>
 <h3 class="section">7.11 空行以外の行に行番号を付ける</h3>
 
-<p>Emulating ‘<samp>cat -b</samp>’ is almost the same as ‘<samp>cat -n</samp>’—we only
-have to select which lines are to be numbered and which are not.
-
+<p>'<samp> cat -b </samp>'をエミュレートすることは、 '<samp> cat -n </samp>'とほぼ同じです。どの行に番号を付け、どの行に番号を付けないかを選択するだけです。
 </p>
-<p>The part that is common to this script and the previous one is
-not commented to show how important it is to comment <code>sed</code>
-scripts properly...
-
+<p>このスクリプトと前のスクリプトに共通する部分は、<code> sed </code>スクリプトを正しくコメントすることがどれほど重要かを敢えて示すためにコメント化されていません...
 </p>
 <div class="example">
 <pre class="example">#!/usr/bin/sed -nf
@@ -4126,21 +4097,11 @@ h
 <a name="Counting-Characters"></a>
 <h3 class="section">7.12 文字数を数える</h3>
 
-<p>This script shows another way to do arithmetic with <code>sed</code>.
-In this case we have to add possibly large numbers, so implementing
-this by successive increments would not be feasible (and possibly
-even more complicated to contrive than this script).
-
+<p>このスクリプトは<code> sed </code>を使って算術演算を行う別の方法を示しています。この場合、私たちはおそらくもっと大きな数を追加しなければならないので、その実装を連続的なインクリメントで行うのはうまくいきそうにありません（そしておそらくこのスクリプトよりもさらに複雑になります）。
 </p>
-<p>The approach is to map numbers to letters, kind of an abacus
-implemented with <code>sed</code>.  ‘<samp>a</samp>’s are units, ‘<samp>b</samp>’s are
-tens and so on: we simply add the number of characters
-on the current line as units, and then propagate the carry
-to tens, hundreds, and so on.
-
+<p>この、別のアプローチは、数字を文字にマッピングすることです。これは、<code> sed </code>で実装されたそろばんのようなものです。'<samp> a </samp>'は1の位の数、 '<samp> b </samp>'は10の位の数などです。現在の行の文字数を1の位の数として追加してから、桁上がり(キャリー)を伝播します。 数十、数百などに。
 </p>
-<p>As usual, running totals are kept in hold space.
-
+<p>通常どおり、積算合計はホールドスペースに保持されます。
 </p>
 <p>On the last line, we convert the abacus form back to decimal.
 For the sake of variety, this is done with a loop rather than

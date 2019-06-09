@@ -58,8 +58,8 @@ s/\n/a/</seg>
 G
 h</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T043407Z" creationid="hideo" creationdate="20190608T043407Z">
-        <seg># Add the correct line number before the pattern
+      <tuv lang="JA" changeid="hideo" changedate="20190609T135315Z" creationid="hideo" creationdate="20190608T043407Z">
+        <seg># パターンの前に正しい行番号を追加
 G
 h</seg>
       </tuv>
@@ -138,9 +138,9 @@ g
 s/\n.*$//
 /^9*$/ s/^/0/</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T043410Z" creationid="hideo" creationdate="20190608T043410Z">
-        <seg># Get the line number from hold space; add a zero
-# if we're going to add a digit on the next line
+      <tuv lang="JA" changeid="hideo" changedate="20190609T135512Z" creationid="hideo" creationdate="20190608T043410Z">
+        <seg># ホールドスペースから行番号を取得
+# 次の行に数字を追加する場合0(ゼロ)を追加
 g
 s/\n.*$//
 /^9*$/ s/^/0/</seg>
@@ -186,8 +186,8 @@ $b</seg>
 x
 /^$/ s/^.*$/1/</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T043405Z" creationid="hideo" creationdate="20190608T043405Z">
-        <seg># Prime the pump on the first line
+      <tuv lang="JA" changeid="hideo" changedate="20190609T135220Z" creationid="hideo" creationdate="20190608T043405Z">
+        <seg># 最初のラインでポンプを吸い込む
 x
 /^$/ s/^.*$/1/</seg>
       </tuv>
@@ -236,8 +236,8 @@ s/\n//g</seg>
       <tuv lang="EN-US">
         <seg># Remove the printed characters and the first newline</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T043253Z" creationid="hideo" creationdate="20190608T043253Z">
-        <seg># Remove the printed characters and the first newline</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190609T095318Z" creationid="hideo" creationdate="20190608T043253Z">
+        <seg># 印刷した文字達と最初の改行を削除します</seg>
       </tuv>
     </tu>
     <tu>
@@ -342,8 +342,8 @@ $b</seg>
       <tuv lang="EN-US">
         <seg># There are newlines in the pattern buffer -</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T043247Z" creationid="hideo" creationdate="20190608T043247Z">
-        <seg># There are newlines in the pattern buffer -</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190609T095213Z" creationid="hideo" creationdate="20190608T043247Z">
+        <seg># パターンスペースには改行があり -</seg>
       </tuv>
     </tu>
     <tu>
@@ -400,8 +400,8 @@ G</seg>
       <tuv lang="EN-US">
         <seg># branch to label 'y' - repeat inner loop</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T043257Z" creationid="hideo" creationdate="20190608T043257Z">
-        <seg># branch to label 'y' - repeat inner loop</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190609T095419Z" creationid="hideo" creationdate="20190608T043257Z">
+        <seg># ラベル'y'へ無条件ジャンプ - 内部ループの繰り返し</seg>
       </tuv>
     </tu>
     <tu>
@@ -423,8 +423,8 @@ G
 s/\n//
 h</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T043417Z" creationid="hideo" creationdate="20190608T043417Z">
-        <seg># compose the new number, remove the newline implicitly added by G
+      <tuv lang="JA" changeid="hideo" changedate="20190609T135746Z" creationid="hideo" creationdate="20190608T043417Z">
+        <seg># 新しい番号を作成し、Gが暗黙のうちに追加した改行を削除する
 G
 s/\n//
 h</seg>
@@ -490,9 +490,9 @@ s/["$`\\]/\\&amp;/g</seg>
 # is *appended* to current line, so, the order will be reversed
 1!</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T043336Z" creationid="hideo" creationdate="20190608T043336Z">
-        <seg># from the second line, the buffer (which contains all previous lines)
-# is *appended* to current line, so, the order will be reversed
+      <tuv lang="JA" changeid="hideo" changedate="20190609T100206Z" creationid="hideo" creationdate="20190608T043336Z">
+        <seg># 2行目以降、バッファ(前の行をすべて含む)は
+# 現在の行に「追加」されるので、順序は逆になります。
 1!</seg>
       </tuv>
     </tu>
@@ -536,8 +536,8 @@ s/^.*x//
 y/0123456789/1234567890/
 x</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T043413Z" creationid="hideo" creationdate="20190608T043413Z">
-        <seg># keep changing digits in hold space
+      <tuv lang="JA" changeid="hideo" changedate="20190609T135634Z" creationid="hideo" creationdate="20190608T043413Z">
+        <seg># 変更した数字をホールドスペース内で保持
 h
 s/^.*x//
 y/0123456789/1234567890/
@@ -560,8 +560,8 @@ s/^\(.\{81\}\).*$/\1/</seg>
         <seg># keep unchanged digits in pattern space
 s/x.*$//</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T043415Z" creationid="hideo" creationdate="20190608T043415Z">
-        <seg># keep unchanged digits in pattern space
+      <tuv lang="JA" changeid="hideo" changedate="20190609T135701Z" creationid="hideo" creationdate="20190608T043415Z">
+        <seg># 未変更の数字をパターンスペース内で保持
 s/x.*$//</seg>
       </tuv>
     </tu>
@@ -614,8 +614,8 @@ bx
         <seg># on the last line we're done -- print everything
 $ p</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T043339Z" creationid="hideo" creationdate="20190608T043339Z">
-        <seg># on the last line we're done -- print everything
+      <tuv lang="JA" changeid="hideo" changedate="20190609T100326Z" creationid="hideo" creationdate="20190608T043339Z">
+        <seg># 最終行に居るなら、作業終了したのです -- 全てをプリントします。
 $ p</seg>
       </tuv>
     </tu>
@@ -635,8 +635,8 @@ h</seg>
       <tuv lang="EN-US">
         <seg># print the content until the first newline.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T043249Z" creationid="hideo" creationdate="20190608T043249Z">
-        <seg># print the content until the first newline.</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190609T095233Z" creationid="hideo" creationdate="20190608T043249Z">
+        <seg># 最初の改行までの内容をプリントします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -700,8 +700,8 @@ h</seg>
         <seg># separate changing/unchanged digits with an x
 s/.9*$/x&amp;/</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T043412Z" creationid="hideo" creationdate="20190608T043412Z">
-        <seg># separate changing/unchanged digits with an x
+      <tuv lang="JA" changeid="hideo" changedate="20190609T135603Z" creationid="hideo" creationdate="20190608T043412Z">
+        <seg># x によって、変更/未変更の数字を分ける
 s/.9*$/x&amp;/</seg>
       </tuv>
     </tu>
@@ -710,8 +710,8 @@ s/.9*$/x&amp;/</seg>
         <seg># store everything on the buffer again
 h</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T043340Z" creationid="hideo" creationdate="20190608T043340Z">
-        <seg># store everything on the buffer again
+      <tuv lang="JA" changeid="hideo" changedate="20190609T100343Z" creationid="hideo" creationdate="20190608T043340Z">
+        <seg># すべてを再びバッファに保存する
 h</seg>
       </tuv>
     </tu>
@@ -817,10 +817,10 @@ h</seg>
 
 # reverse all lines of input, i.e. first line became last, ...</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T043333Z" creationid="hideo" creationdate="20190608T043333Z">
+      <tuv lang="JA" changeid="hideo" changedate="20190609T095956Z" creationid="hideo" creationdate="20190608T043333Z">
         <seg>#!/usr/bin/sed -nf
 
-# reverse all lines of input, i.e. first line became last, ...</seg>
+＃入力のすべての行を反転します。つまり、最初の行が最後になりました...</seg>
       </tuv>
     </tu>
     <tu>
@@ -5140,12 +5140,12 @@ s/(.{40,40})/\1\n/
 # (i.e. the previous substitution added a newline)
 /\n/ {</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T060123Z" creationid="hideo" creationdate="20190608T043244Z">
+      <tuv lang="JA" changeid="hideo" changedate="20190609T095107Z" creationid="hideo" creationdate="20190608T043244Z">
         <seg>$ cat wrap40.sed
 # outer loop
 :x
 
-# 改行につついて次の入力行をパターンスペースに追加
+# 改行と続く次の入力行をパターンスペースに追加
 N
 
 # パターンスペース内の全ての改行を削除
@@ -11909,6 +11909,14 @@ of this license document, but changing it is not allowed.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As usual, running totals are kept in hold space.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190609T225342Z" creationid="hideo" creationdate="20190609T225342Z">
+        <seg>通常どおり、積算合計はホールドスペースに保持されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As with the r command, the special value /dev/stdin is supported for the file name, which reads a line from the standard input.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T235253Z" creationid="hideo" creationdate="20190603T235253Z">
@@ -12665,6 +12673,14 @@ s/^.*$/\
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190608T051237Z" creationid="hideo" creationdate="20190608T051237Z">
         <seg>標準のユーティリティをエミュレート:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Emulating ‘cat -b’ is almost the same as ‘cat -n’—we only have to select which lines are to be numbered and which are not.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190609T135832Z" creationid="hideo" creationdate="20190609T135832Z">
+        <seg>' cat -b 'をエミュレートすることは、 ' cat -n 'とほぼ同じです。どの行に番号を付け、どの行に番号を付けないかを選択するだけです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14142,6 +14158,14 @@ s/^.*$/\
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In this case we have to add possibly large numbers, so implementing this by successive increments would not be feasible (and possibly even more complicated to contrive than this script).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190609T224848Z" creationid="hideo" creationdate="20190609T224848Z">
+        <seg>この場合、私たちはおそらくもっと大きな数を追加しなければならないので、その実装を連続的なインクリメントで行うのはうまくいきそうにありません（そしておそらくこのスクリプトよりもさらに複雑になります）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In this case, if the file that is specified on the command line is a symbolic link, sed will follow the link and edit the ultimate destination of the link.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190604T201743Z" creationid="hideo" creationdate="20190604T201359Z">
@@ -14370,6 +14394,14 @@ s/^.*$/\
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190607T154502Z" creationid="hideo" creationdate="20190607T154502Z">
         <seg>‘a’または‘b’にマッチします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It uses sed to print the line number, then groups lines two by two using N.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190609T134356Z" creationid="hideo" creationdate="20190609T134356Z">
+        <seg>sedを使用して行番号を印刷し、次にNを使用して2行ずつグループ化します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15484,6 +15516,14 @@ D</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note that on implementations other than GNU sed this script might easily overflow internal buffers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190609T095906Z" creationid="hideo" creationdate="20190609T095906Z">
+        <seg>GNU  sed 以外の実装では、このスクリプトはすぐに内部バッファをオーバーフローさせるかもしれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note that specifying the text to add (‘Hello’) immediately after a,c,i is itself a GNU sed extension.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T160454Z" creationid="hideo" creationdate="20190603T160454Z">
@@ -15624,6 +15664,22 @@ D</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190607T055509Z" creationid="hideo" creationdate="20190607T055509Z">
         <seg>次の2つの例の違いをよく見て下さい。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Of course this is completely useless and for two reasons: first, because somebody else did it in C, second, because the following Bourne-shell script could be used for the same purpose and would be much faster:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190609T134204Z" creationid="hideo" creationdate="20190609T134204Z">
+        <seg>もちろん、これはまったく役に立ちません。2つの理由があります。1つは誰かが既にC言語で書いためであり、2つ目は、次のBourneシェルスクリプトが同じ目的で使用でき、はるかに高速だからです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Of course, this script does not teach as much as the one presented below.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190609T134507Z" creationid="hideo" creationdate="20190609T134507Z">
+        <seg>もちろん、このスクリプトは以下に提示されているものほど多くは教えていません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17281,6 +17337,22 @@ D</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The algorithm used for incrementing uses both buffers, so the line is printed as soon as possible and then discarded.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190609T134705Z" creationid="hideo" creationdate="20190609T134705Z">
+        <seg>インクリメントに使用されるアルゴリズムは両方のバッファーを使用するので、行はできるだけ早く印刷されてから廃棄されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The approach is to map numbers to letters, kind of an abacus implemented with sed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190609T225017Z" creationid="hideo" creationdate="20190609T225017Z">
+        <seg>この、別のアプローチは、数字を文字にマッピングすることです。これは、 sed で実装されたそろばんのようなものです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The author(s) and publisher(s) of the Document do not by this License give permission to use their names for publicity for or to assert or imply endorsement of any Modified Version.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T122930Z" creationid="hideo" creationdate="20190605T122930Z">
@@ -17787,6 +17859,14 @@ D</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The line number for the next line is then composed and stored in the hold space, to be used in the next iteration.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190609T135056Z" creationid="hideo" creationdate="20190609T135056Z">
+        <seg>次の行の行番号が構成され、ホールドスペースに格納されて、次の反復で使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The list of these escapes is:</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190608T032132Z" creationid="hideo" creationdate="20190608T032132Z">
@@ -17827,6 +17907,14 @@ D</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The number is split so that changing digits go in a buffer and unchanged ones go in the other; the changed digits are modified in a single step (using a y command).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190609T134916Z" creationid="hideo" creationdate="20190609T134916Z">
+        <seg>数字は分割されているので、変更された数字はバッファに入り、変更されていない数字はもう一方に入ります。 変更された桁は(yコマンドを使用して)単一のステップで変更されます。.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The only difference between basic and extended regular expressions is in the behavior of a few characters: ‘?’, ‘+’, parentheses, braces (‘{}’), and ‘|’.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190607T152707Z" creationid="hideo" creationdate="20190607T152707Z">
@@ -17855,6 +17943,14 @@ D</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190607T230248Z" creationid="hideo" creationdate="20190607T230248Z">
         <seg>それらが参照する正規表現の一部は部分式と呼ばれ、丸括弧で示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The part that is common to this script and the previous one is not commented to show how important it is to comment sed scripts properly...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190609T135926Z" creationid="hideo" creationdate="20190609T135926Z">
+        <seg>このスクリプトと前のスクリプトに共通する部分は、 sed スクリプトを正しくコメントすることがどれほど重要かを敢えて示すためにコメント化されていません...</seg>
       </tuv>
     </tu>
     <tu>
@@ -18043,8 +18139,8 @@ t a
       <tuv lang="EN-US">
         <seg>The wrapped output:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T043305Z" creationid="hideo" creationdate="20190608T043305Z">
-        <seg>The wrapped output:</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190609T095602Z" creationid="hideo" creationdate="20190608T043305Z">
+        <seg>以下は折り曲げられた出力です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18301,6 +18397,14 @@ t a
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T232650Z" creationid="hideo" creationdate="20190605T232650Z">
         <seg>これらは‘/home/alice/documents/’で始まる行をプリントします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This (somewhat contrived) example deal with formatting and wrapping lines of text of the following input file:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190609T094937Z" creationid="hideo" creationdate="20190609T094904Z">
+        <seg>この(多少工夫された)例は、以下の入力ファイルのテキストのフォーマッティングと行の折り返しを扱います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18673,6 +18777,14 @@ t a
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This one begins a series of totally useless (yet interesting) scripts emulating various Unix commands.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190609T095733Z" creationid="hideo" creationdate="20190609T095733Z">
+        <seg>これは、さまざまなUnixコマンドをエミュレートする、まったく役に立たない(それでも面白い)スクリプトのシリーズの始まりです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This option can be used with commands like ‘sort -z’ and ‘find -print0’ to process arbitrary file names.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T152236Z" creationid="hideo" creationdate="20190603T152236Z">
@@ -18769,10 +18881,34 @@ t a
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This script replaces ‘cat -n’; in fact it formats its output exactly like GNU cat does.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190609T134024Z" creationid="hideo" creationdate="20190609T134024Z">
+        <seg>このスクリプトは‘cat -n’を置き換えます。 実際、GNU catとまったく同じフォーマットで出力します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This script shows another way to do arithmetic with sed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190609T140023Z" creationid="hideo" creationdate="20190609T140023Z">
+        <seg>このスクリプトは sed を使って算術演算を行う別の方法を示しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This script strips the definition of the shell functions from the output of the set Bourne-shell command.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190608T110146Z" creationid="hideo" creationdate="20190608T110146Z">
         <seg>このスクリプトは、 set  Bourne-shellコマンドの出力からシェル関数の定義を取り除きます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This section uses N and D commands to search for consecutive words spanning multiple lines, and the b command for branching.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190609T094557Z" creationid="hideo" creationdate="20190609T094557Z">
+        <seg>この節では、Nおよび Dコマンドを使用して複数行にわたる連続した単語を検索し、b コマンドを使用して分岐します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18813,6 +18949,14 @@ t a
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190606T200624Z" creationid="hideo" creationdate="20190606T200624Z">
         <seg>正規表現 regexp にマッチする全ての行を選択します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This, in particular, is a tac workalike.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190609T095824Z" creationid="hideo" creationdate="20190609T095824Z">
+        <seg>これは特に tac の動作に似ています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21619,11 +21763,11 @@ h</seg>
 # and read the next input line
 bx</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T043300Z" creationid="hideo" creationdate="20190608T043300Z">
+      <tuv lang="JA" changeid="hideo" changedate="20190609T095539Z" creationid="hideo" creationdate="20190608T043300Z">
         <seg>}
 
-# No newlines in the pattern buffer - Branch to label 'x' (outer loop)
-# and read the next input line
+# パターンスペースに改行が無い - ラベル'x'へ無条件ジャンプ(外部ループ)
+# そして次の入力行を読み込む
 bx</seg>
       </tuv>
     </tu>
@@ -21939,6 +22083,14 @@ bx</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T120923Z" creationid="hideo" creationdate="20190605T120923Z">
         <seg>‘abcdef’</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>‘a’s are units, ‘b’s are tens and so on: we simply add the number of characters on the current line as units, and then propagate the carry to tens, hundreds, and so on.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190609T225313Z" creationid="hideo" creationdate="20190609T225313Z">
+        <seg>' a 'は1の位の数、 ' b 'は10の位の数などです。現在の行の文字数を1の位の数として追加してから、桁上がり(キャリー)を伝播します。 数十、数百などに。</seg>
       </tuv>
     </tu>
     <tu>
