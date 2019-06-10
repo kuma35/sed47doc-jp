@@ -15516,440 +15516,440 @@ D</seg>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>BRE syntax<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Regular Expressions Overview<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>sed regular expressions<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190607T121303Z" creationid="hideo" creationdate="20190607T121303Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>BRE構文<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>正規表現概要<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>sedの正規表現<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192733Z" creationid="hideo" creationdate="20190607T121303Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>BRE vs ERE<ept i="0">&lt;/a0&gt;</ept>, Up: <bpt i="1" x="1">&lt;a1&gt;</bpt>sed regular expressions<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>Contents<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>Index<ept i="3">&lt;/a3&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T120751Z" creationid="hideo" creationdate="20190605T120751Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>BRE vs ERE<ept i="0">&lt;/a0&gt;</ept>, 上: <bpt i="1" x="1">&lt;a1&gt;</bpt>sed正規表現<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>目次<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>索引<ept i="3">&lt;/a3&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192730Z" creationid="hideo" creationdate="20190605T120751Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Back-references and Subexpressions<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Character Classes and Bracket Expressions<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>sed regular expressions<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190607T222448Z" creationid="hideo" creationdate="20190607T222448Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>後方参照と部分式<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>文字クラスと角括弧式<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>sedの正規表現<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192749Z" creationid="hideo" creationdate="20190607T222448Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Branching and flow control<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Hold and Pattern Buffers<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>advanced sed<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T151457Z" creationid="hideo" creationdate="20190605T151457Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>分岐とフロー制御<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>ホールド用とパターン用のバッファ<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>sedの高度な話題<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192806Z" creationid="hideo" creationdate="20190605T151457Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Centering lines<ept i="0">&lt;/a0&gt;</ept>, Up: <bpt i="1" x="1">&lt;a1&gt;</bpt>Examples<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>Contents<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>Index<ept i="3">&lt;/a3&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T051921Z" creationid="hideo" creationdate="20190608T051847Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>センタリング<ept i="0">&lt;/a0&gt;</ept>, 上: <bpt i="1" x="1">&lt;a1&gt;</bpt>例<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>目次<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>索引<ept i="3">&lt;/a3&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192812Z" creationid="hideo" creationdate="20190608T051847Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Character Classes and Bracket Expressions<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>BRE syntax<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>sed regular expressions<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T160843Z" creationid="hideo" creationdate="20190607T152520Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>文字クラスと角括弧式<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>BRE 文法<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>sedの正規表現<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192744Z" creationid="hideo" creationdate="20190607T152520Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Command and Option Index<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>GNU Free Documentation License<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Top<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T152215Z" creationid="hideo" creationdate="20190604T045513Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>sedコマンドとコマンドラインオプションの索引<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>GNU Free Documentation License<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>Top<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192910Z" creationid="hideo" creationdate="20190604T045513Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Command-Line Options<ept i="0">&lt;/a0&gt;</ept>, Up: <bpt i="1" x="1">&lt;a1&gt;</bpt>Invoking sed<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>Contents<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>Index<ept i="3">&lt;/a3&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190604T051143Z" creationid="hideo" creationdate="20190604T051143Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>コマンドラインオプション<ept i="0">&lt;/a0&gt;</ept>, 上: <bpt i="1" x="1">&lt;a1&gt;</bpt>sedの起動<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>目次<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>索引<ept i="3">&lt;/a3&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192643Z" creationid="hideo" creationdate="20190604T051143Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Common Commands<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>sed commands list<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>sed scripts<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T113817Z" creationid="hideo" creationdate="20190605T113817Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>一般コマンド<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>sedコマンド一覧<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>sedスクリプト<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192659Z" creationid="hideo" creationdate="20190605T113817Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Concept Index<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Reporting Bugs<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Top<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T045914Z" creationid="hideo" creationdate="20190608T045914Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>概念索引<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>バグの報告<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>Top<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192907Z" creationid="hideo" creationdate="20190608T045914Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>ERE syntax<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>BRE vs ERE<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>sed regular expressions<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190607T123337Z" creationid="hideo" creationdate="20190607T123337Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>ERE構文<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>BRE vs ERE<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>sedの正規表現<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192736Z" creationid="hideo" creationdate="20190607T123337Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Escapes<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>regexp extensions<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>sed regular expressions<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T054121Z" creationid="hideo" creationdate="20190607T225607Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>エスケープ<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>正規表現<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>sedの正規表現<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192752Z" creationid="hideo" creationdate="20190607T225607Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Examples<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>sed regular expressions<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Top<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190607T155444Z" creationid="hideo" creationdate="20190607T155444Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>例<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>sedの正規表現<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>Top<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192757Z" creationid="hideo" creationdate="20190607T155444Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Exit status<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Overview<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Invoking sed<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190604T055027Z" creationid="hideo" creationdate="20190604T054918Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>終了ステータス<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>概要<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>sedの起動<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192645Z" creationid="hideo" creationdate="20190604T054918Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Extended Commands<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Other Commands<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>sed scripts<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T152630Z" creationid="hideo" creationdate="20190605T135757Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>拡張コマンド達<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>Other Commands<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>sedスクリプト<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192710Z" creationid="hideo" creationdate="20190605T135757Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>GNU Free Documentation License<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Other Resources<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Top<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T054846Z" creationid="hideo" creationdate="20190608T053511Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>GNU Free Documentation License<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>資料<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>Top<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192904Z" creationid="hideo" creationdate="20190608T053511Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Hold and Pattern Buffers<ept i="0">&lt;/a0&gt;</ept>, Up: <bpt i="1" x="1">&lt;a1&gt;</bpt>advanced sed<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>Contents<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>Index<ept i="3">&lt;/a3&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190607T155756Z" creationid="hideo" creationdate="20190602T161214Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>ホールド用バッファとパターン用バッファ<ept i="0">&lt;/a0&gt;</ept>, 上: <bpt i="1" x="1">&lt;a1&gt;</bpt>sedの高度な話題<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>目次<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>索引<ept i="3">&lt;/a3&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192759Z" creationid="hideo" creationdate="20190602T161214Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Increment a number<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Joining lines<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Examples<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T052038Z" creationid="hideo" creationdate="20190608T052038Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>数をインクリメントする<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>行連結<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>例<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192814Z" creationid="hideo" creationdate="20190608T052038Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Introduction<ept i="0">&lt;/a0&gt;</ept>, Up: <bpt i="1" x="1">&lt;a1&gt;</bpt>(dir)<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>Contents<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>Index<ept i="3">&lt;/a3&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190604T044701Z" creationid="hideo" creationdate="20190603T145502Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>はじめに<ept i="0">&lt;/a0&gt;</ept>, 上: <bpt i="1" x="1">&lt;a1&gt;</bpt>(dir)<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>目次<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>索引<ept i="3">&lt;/a3&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192613Z" creationid="hideo" creationdate="20190603T145502Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Invoking sed<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Top<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Top<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190604T045849Z" creationid="hideo" creationdate="20190604T045849Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>sedの起動<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>Top<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>Top<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192622Z" creationid="hideo" creationdate="20190604T045849Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Limitations<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>advanced sed<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Top<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T050734Z" creationid="hideo" creationdate="20190608T050734Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>制限<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>sedの高度な話題<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>Top<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192809Z" creationid="hideo" creationdate="20190608T050734Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Line length adjustment<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Reverse chars of lines<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Examples<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T054710Z" creationid="hideo" creationdate="20190608T053406Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>行の長さを揃える<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>行の文字列を逆順にする<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>例<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192827Z" creationid="hideo" creationdate="20190608T053406Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Locale Considerations<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Back-references and Subexpressions<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>sed regular expressions<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T011457Z" creationid="hideo" creationdate="20190608T011457Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>ロケールへの配慮<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>後方参照と部分式<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>sedの正規表現<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192754Z" creationid="hideo" creationdate="20190608T011457Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Multiline techniques<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Execution Cycle<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>advanced sed<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T151957Z" creationid="hideo" creationdate="20190605T151327Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>複数行テクニック<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>実行サイクル<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>sedの高度な話題<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192802Z" creationid="hideo" creationdate="20190605T151327Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Multiple commands syntax<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Programming Commands<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>sed scripts<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T115642Z" creationid="hideo" creationdate="20190605T115642Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>複数コマンド構文<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>プログラミングコマンド<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>sedスクリプト<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192713Z" creationid="hideo" creationdate="20190605T115642Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Numeric Addresses<ept i="0">&lt;/a0&gt;</ept>, Up: <bpt i="1" x="1">&lt;a1&gt;</bpt>sed addresses<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>Contents<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>Index<ept i="3">&lt;/a3&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190607T155651Z" creationid="hideo" creationdate="20190603T165957Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>数値指定アドレス<ept i="0">&lt;/a0&gt;</ept>, 上: <bpt i="1" x="1">&lt;a1&gt;</bpt>sed アドレス<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>目次<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>索引<ept i="3">&lt;/a3&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192720Z" creationid="hideo" creationdate="20190603T165957Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Other Commands<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>The "s" Command<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>sed scripts<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190606T134111Z" creationid="hideo" creationdate="20190606T134111Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>他のコマンド<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>"s" コマンド<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>sedスクリプト<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192702Z" creationid="hideo" creationdate="20190606T134111Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Other Resources<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Examples<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Top<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T054813Z" creationid="hideo" creationdate="20190608T053502Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>資料<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>例<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>Top<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192900Z" creationid="hideo" creationdate="20190608T053502Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Print bash environment<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Increment a number<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Examples<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T053333Z" creationid="hideo" creationdate="20190608T053056Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>bash環境変数プリント<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>数のインクリメント<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>例<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192819Z" creationid="hideo" creationdate="20190608T053056Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Programming Commands<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Common Commands<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>sed scripts<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T152629Z" creationid="hideo" creationdate="20190605T140047Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>プログラミングコマンド<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>一般コマンド達<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>sedスクリプト<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192705Z" creationid="hideo" creationdate="20190605T140047Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Range Addresses<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Numeric Addresses<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>sed addresses<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T115750Z" creationid="hideo" creationdate="20190605T115750Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>範囲アドレス<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>数値指定アドレス<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>sedアドレス<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192725Z" creationid="hideo" creationdate="20190605T115750Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Regexp Addresses<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Addresses overview<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>sed addresses<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T092048Z" creationid="hideo" creationdate="20190605T092048Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>正規表現アドレス<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>アドレス概要<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>sedアドレス<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192722Z" creationid="hideo" creationdate="20190605T092048Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Rename files to lower case<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Centering lines<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Examples<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T052229Z" creationid="hideo" creationdate="20190608T052229Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>ファイル名を小文字にリネーム<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>センタリング<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>例<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192817Z" creationid="hideo" creationdate="20190608T052229Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Reporting Bugs<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Limitations<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Top<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T054835Z" creationid="hideo" creationdate="20190608T053506Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>バグの報告<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>制限<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>Top<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192902Z" creationid="hideo" creationdate="20190608T053506Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Reverse chars of lines<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Rename files to lower case<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Examples<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T054559Z" creationid="hideo" creationdate="20190608T053339Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>行の文字列を逆順にする<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>ファイル名を小文字にリネームする<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>例<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192822Z" creationid="hideo" creationdate="20190608T053339Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>Text search across multiple lines<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Print bash environment<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Examples<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T054635Z" creationid="hideo" creationdate="20190608T053344Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>複数行に渡るテキスト検索<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>bash環境変数のプリント<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>例<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192824Z" creationid="hideo" creationdate="20190608T053344Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>The "s" Command<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>sed script overview<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>sed scripts<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T074709Z" creationid="hideo" creationdate="20190605T074709Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>"s"コマンド<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>sedスクリプト概要<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>sedスクリプト<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192656Z" creationid="hideo" creationdate="20190605T074709Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>advanced sed<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>sed addresses<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Top<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T120103Z" creationid="hideo" creationdate="20190605T120103Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>sedの高度な話題<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>sedアドレス<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>Top<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192727Z" creationid="hideo" creationdate="20190605T120103Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>cat -b<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>tac<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Examples<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T054310Z" creationid="hideo" creationdate="20190608T053420Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>cat -b<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>tac<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>例<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192834Z" creationid="hideo" creationdate="20190608T053420Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>cat -n<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Line length adjustment<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Examples<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T054738Z" creationid="hideo" creationdate="20190608T053417Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>cat -n<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>行の長さを揃える<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>例<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192831Z" creationid="hideo" creationdate="20190608T053417Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>cat -s<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>uniq -d<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Examples<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T054316Z" creationid="hideo" creationdate="20190608T053453Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>cat -s<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>uniq -d<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>例<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192857Z" creationid="hideo" creationdate="20190608T053453Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>head<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>wc -w<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Examples<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T054314Z" creationid="hideo" creationdate="20190608T053434Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>head<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>wc -w<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>例<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192844Z" creationid="hideo" creationdate="20190608T053434Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>regexp extensions<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>ERE syntax<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>sed regular expressions<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190607T154626Z" creationid="hideo" creationdate="20190607T154626Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>正規表現拡張<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>ERE構文<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>sedの正規表現<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192746Z" creationid="hideo" creationdate="20190607T154626Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>sed addresses<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Invoking sed<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Top<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190604T224414Z" creationid="hideo" creationdate="20190604T224414Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>sedアドレス<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>sedの起動<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>Top<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192648Z" creationid="hideo" creationdate="20190604T224414Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>sed commands list<ept i="0">&lt;/a0&gt;</ept>, Up: <bpt i="1" x="1">&lt;a1&gt;</bpt>sed scripts<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>Contents<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>Index<ept i="3">&lt;/a3&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T064214Z" creationid="hideo" creationdate="20190605T064214Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>sedコマンド一覧<ept i="0">&lt;/a0&gt;</ept>, 上: <bpt i="1" x="1">&lt;a1&gt;</bpt>sedスクリプト<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>目次<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>索引<ept i="3">&lt;/a3&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192653Z" creationid="hideo" creationdate="20190605T064214Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>sed regular expressions<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>sed scripts<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Top<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T152110Z" creationid="hideo" creationdate="20190603T165614Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>sed正規表現<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>sedスクリプト<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>Top<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192717Z" creationid="hideo" creationdate="20190603T165614Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>sed scripts<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Introduction<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Top<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190604T050646Z" creationid="hideo" creationdate="20190604T050646Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>sedスクリプト<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>はじめに<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>Top<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192639Z" creationid="hideo" creationdate="20190604T050646Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>tac<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>Text search across multiple lines<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Examples<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T054725Z" creationid="hideo" creationdate="20190608T053413Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>tac<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>複数行に渡るテキスト検索<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>例<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192829Z" creationid="hideo" creationdate="20190608T053413Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>tail<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>wc -l<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Examples<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T054314Z" creationid="hideo" creationdate="20190608T053437Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>tail<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>wc -l<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>例<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192846Z" creationid="hideo" creationdate="20190608T053437Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>uniq -d<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>tail<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Examples<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T050005Z" creationid="hideo" creationdate="20190608T050005Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>uniq -d<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>tail<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>例<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192851Z" creationid="hideo" creationdate="20190608T050005Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>uniq -u<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>uniq<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Examples<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T054316Z" creationid="hideo" creationdate="20190608T053446Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>uniq -u<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>uniq<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>例<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192854Z" creationid="hideo" creationdate="20190608T053446Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>uniq<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>head<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Examples<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T054315Z" creationid="hideo" creationdate="20190608T053440Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>uniq<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>head<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>例<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192849Z" creationid="hideo" creationdate="20190608T053440Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>wc -c<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>cat -n<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Examples<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T054311Z" creationid="hideo" creationdate="20190608T053424Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>wc -c<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>cat -n<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>例<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192837Z" creationid="hideo" creationdate="20190608T053424Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>wc -l<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>wc -c<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Examples<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T054313Z" creationid="hideo" creationdate="20190608T053431Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>wc -l<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>wc -c<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>例<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192842Z" creationid="hideo" creationdate="20190608T053431Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Next: <bpt i="0" x="0">&lt;a0&gt;</bpt>wc -w<ept i="0">&lt;/a0&gt;</ept>, Previous: <bpt i="1" x="1">&lt;a1&gt;</bpt>cat -b<ept i="1">&lt;/a1&gt;</ept>, Up: <bpt i="2" x="2">&lt;a2&gt;</bpt>Examples<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>Contents<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>Index<ept i="4">&lt;/a4&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T054312Z" creationid="hideo" creationdate="20190608T053428Z">
-        <seg>次: <bpt i="0" x="0">&lt;a0&gt;</bpt>wc -w<ept i="0">&lt;/a0&gt;</ept>, 前: <bpt i="1" x="1">&lt;a1&gt;</bpt>cat -b<ept i="1">&lt;/a1&gt;</ept>, 上: <bpt i="2" x="2">&lt;a2&gt;</bpt>例<ept i="2">&lt;/a2&gt;</ept>   [<bpt i="3" x="3">&lt;a3&gt;</bpt>目次<ept i="3">&lt;/a3&gt;</ept>][<bpt i="4" x="4">&lt;a4&gt;</bpt>索引<ept i="4">&lt;/a4&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T192839Z" creationid="hideo" creationdate="20190608T053428Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
@@ -16566,56 +16566,56 @@ D</seg>
       <tuv xml:lang="EN-US">
         <seg>Previous: <bpt i="0" x="0">&lt;a0&gt;</bpt>Command-Line Options<ept i="0">&lt;/a0&gt;</ept>, Up: <bpt i="1" x="1">&lt;a1&gt;</bpt>Invoking sed<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>Contents<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>Index<ept i="3">&lt;/a3&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190604T210328Z" creationid="hideo" creationdate="20190604T210328Z">
-        <seg>前: <bpt i="0" x="0">&lt;a0&gt;</bpt>コマンドラインオプション<ept i="0">&lt;/a0&gt;</ept>, 上: <bpt i="1" x="1">&lt;a1&gt;</bpt>sedの起動<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>目次<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>索引<ept i="3">&lt;/a3&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T193110Z" creationid="hideo" creationdate="20190604T210328Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Previous: <bpt i="0" x="0">&lt;a0&gt;</bpt>Concept Index<ept i="0">&lt;/a0&gt;</ept>, Up: <bpt i="1" x="1">&lt;a1&gt;</bpt>Top<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>Contents<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>Index<ept i="3">&lt;/a3&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190606T022101Z" creationid="hideo" creationdate="20190606T022036Z">
-        <seg>前: <bpt i="0" x="0">&lt;a0&gt;</bpt>概念索引<ept i="0">&lt;/a0&gt;</ept>, 上: <bpt i="1" x="1">&lt;a1&gt;</bpt>Top<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>目次<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>索引<ept i="3">&lt;/a3&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T193101Z" creationid="hideo" creationdate="20190606T022036Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Previous: <bpt i="0" x="0">&lt;a0&gt;</bpt>Escapes<ept i="0">&lt;/a0&gt;</ept>, Up: <bpt i="1" x="1">&lt;a1&gt;</bpt>sed regular expressions<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>Contents<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>Index<ept i="3">&lt;/a3&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T050241Z" creationid="hideo" creationdate="20190608T050241Z">
-        <seg>前: <bpt i="0" x="0">&lt;a0&gt;</bpt>エスケープ<ept i="0">&lt;/a0&gt;</ept>, 上: <bpt i="1" x="1">&lt;a1&gt;</bpt>sedの正規表現<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>目次<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>索引<ept i="3">&lt;/a3&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T193125Z" creationid="hideo" creationdate="20190608T050241Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Previous: <bpt i="0" x="0">&lt;a0&gt;</bpt>Extended Commands<ept i="0">&lt;/a0&gt;</ept>, Up: <bpt i="1" x="1">&lt;a1&gt;</bpt>sed scripts<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>Contents<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>Index<ept i="3">&lt;/a3&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T091940Z" creationid="hideo" creationdate="20190605T091940Z">
-        <seg>前: <bpt i="0" x="0">&lt;a0&gt;</bpt>拡張コマンド<ept i="0">&lt;/a0&gt;</ept>, 上: <bpt i="1" x="1">&lt;a1&gt;</bpt>sedスクリプト<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>目次<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>索引<ept i="3">&lt;/a3&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T193121Z" creationid="hideo" creationdate="20190605T091940Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Previous: <bpt i="0" x="0">&lt;a0&gt;</bpt>Multiline techniques<ept i="0">&lt;/a0&gt;</ept>, Up: <bpt i="1" x="1">&lt;a1&gt;</bpt>advanced sed<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>Contents<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>Index<ept i="3">&lt;/a3&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T151546Z" creationid="hideo" creationdate="20190605T151546Z">
-        <seg>前: <bpt i="0" x="0">&lt;a0&gt;</bpt>複数行テクニック<ept i="0">&lt;/a0&gt;</ept>, 上: <bpt i="1" x="1">&lt;a1&gt;</bpt>sedの高度な話題<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>目次<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>索引<ept i="3">&lt;/a3&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T193148Z" creationid="hideo" creationdate="20190605T151546Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Previous: <bpt i="0" x="0">&lt;a0&gt;</bpt>Regexp Addresses<ept i="0">&lt;/a0&gt;</ept>, Up: <bpt i="1" x="1">&lt;a1&gt;</bpt>sed addresses<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>Contents<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>Index<ept i="3">&lt;/a3&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T115913Z" creationid="hideo" creationdate="20190605T115913Z">
-        <seg>前: <bpt i="0" x="0">&lt;a0&gt;</bpt>正規表現アドレス<ept i="0">&lt;/a0&gt;</ept>, 上: <bpt i="1" x="1">&lt;a1&gt;</bpt>sedアドレス<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>目次<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>索引<ept i="3">&lt;/a3&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T193141Z" creationid="hideo" creationdate="20190605T115913Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Previous: <bpt i="0" x="0">&lt;a0&gt;</bpt>uniq -u<ept i="0">&lt;/a0&gt;</ept>, Up: <bpt i="1" x="1">&lt;a1&gt;</bpt>Examples<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>Contents<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>Index<ept i="3">&lt;/a3&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T054318Z" creationid="hideo" creationdate="20190608T053457Z">
-        <seg>前: <bpt i="0" x="0">&lt;a0&gt;</bpt>uniq -u<ept i="0">&lt;/a0&gt;</ept>, 上: <bpt i="1" x="1">&lt;a1&gt;</bpt>例<ept i="1">&lt;/a1&gt;</ept>   [<bpt i="2" x="2">&lt;a2&gt;</bpt>目次<ept i="2">&lt;/a2&gt;</ept>][<bpt i="3" x="3">&lt;a3&gt;</bpt>索引<ept i="3">&lt;/a3&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T193134Z" creationid="hideo" creationdate="20190608T053457Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
