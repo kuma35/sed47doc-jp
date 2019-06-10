@@ -3,3 +3,4 @@ sequence	つづり	「エスケープシーケンス」は成句であるので�
 Character Classes	文字クラス
 
 bracket expression	角括弧式
+POSIX standard	POSIX規格	国際規格ということなので規格と訳す。

@@ -104,6 +104,22 @@ s/ //g</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg># Else, we keep reading lines with N until we
+# find a different one
+s/.*\n//
+N
+/^\(.*\)\n\1$/ {</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T075403Z" creationid="hideo" creationdate="20190610T075403Z">
+        <seg># そうでなければ、私たちは N で行を読み続けます。
+# find a different one
+s/.*\n//
+N
+/^\(.*\)\n\1$/ {</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg># Format it and print it
 s/^/      /
 s/^ *\(......\)\n/\1  /p</seg>
@@ -294,6 +310,14 @@ h</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg># Search for a duplicate line --- until that, print what you find.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T075235Z" creationid="hideo" creationdate="20190610T075235Z">
+        <seg># 重複行を検索します---それまでは、見つけたものを印刷します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg># TODO: is there any real-world system/locale where 'A'
 #       is replaced by '-' ?</seg>
       </tuv>
@@ -398,6 +422,14 @@ G</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg># all empty lines were deleted/ignored, but we have a non empty.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T151300Z" creationid="hideo" creationdate="20190610T150948Z">
+        <seg># 全ての空行は削除/無視した。全く無くなった。しかし我々は空にしたい訳じゃない</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg># branch to label 'y' - repeat inner loop</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190609T095419Z" creationid="hideo" creationdate="20190608T043257Z">
@@ -452,6 +484,30 @@ $ echo 1 | sed 's/[:digit:]/X/'
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg># delete all (leading) blanks
+/./!d</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T145907Z" creationid="hideo" creationdate="20190610T145907Z">
+        <seg># 全ての(先導する)空白を削除
+/./!d</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg># delete all leading empty lines
+1,/^./{
+/./!d
+}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T075911Z" creationid="hideo" creationdate="20190610T075911Z">
+        <seg># 先行する全ての空行を削除
+1,/^./{
+/./!d
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg># delete leading and trailing spaces
 y/TAB/ /
 s/^ *//
@@ -494,6 +550,26 @@ s/["$`\\]/\\&amp;/g</seg>
         <seg># 2行目以降、バッファ(前の行をすべて含む)は
 # 現在の行に「追加」されるので、順序は逆になります。
 1!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg># get here: so there is a non empty
+:x
+# print it
+p
+# get next
+n
+# got chars?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T150207Z" creationid="hideo" creationdate="20190610T145950Z">
+        <seg># ここに居る、すなわち空でない
+:x
+# それをプリント
+p
+# 次の入力行を得る
+n
+# 文字(列)があった?</seg>
       </tuv>
     </tu>
     <tu>
@@ -567,6 +643,24 @@ s/x.*$//</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg># no, don't have chars: got an empty line
+:z
+# get next, if last line we finish here so no trailing
+# empty lines are written
+n
+# also empty?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T150728Z" creationid="hideo" creationdate="20190610T150709Z">
+        <seg># 文字が無かった。つまり空行を得た
+:z
+# 次を読み込んで、ここが最終行の場合は、
+# 後続の空行達は書き込みません
+n
+# 空かな？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg># now line contains original path+file, while
 # hold space contains the new filename
 x</seg>
@@ -579,6 +673,20 @@ x</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg># now, squeeze all '\n', this can be also done by:
+# s/^\(\n\)*/\1/
+s/\n*/\
+/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T075743Z" creationid="hideo" creationdate="20190610T075619Z">
+        <seg># 今、連続する'\n'を1つにする。無い時は何もしない
+# s/^\(\n\)*/\1/ と同等
+s/\n*/\
+/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg># now, transform path/fromfile\n, into
 # mv path/fromfile path/tofile and print it
 s/^\(.*\/\)\(.*\)\n\(.*\)$/mv "\1\2" "\1\3"/p</seg>
@@ -587,6 +695,28 @@ s/^\(.*\/\)\(.*\)\n\(.*\)$/mv "\1\2" "\1\3"/p</seg>
         <seg># now, transform path/fromfile\n, into
 # mv path/fromfile path/tofile and print it
 s/^\(.*\/\)\(.*\)\n\(.*\)$/mv "\1\2" "\1\3"/p</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg># on an empty line we remove it and all the following
+# empty lines, but one
+:x
+/./!{
+N
+s/^\n$//
+tx
+}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T145021Z" creationid="hideo" creationdate="20190610T145021Z">
+        <seg># 空行であればそれを削除し、
+# それに続く空行も同じです。
+:x
+/./!{
+N
+s/^\n$//
+tx
+}</seg>
       </tuv>
     </tu>
     <tu>
@@ -7333,6 +7463,14 @@ sed -e "=" $@ | sed -e '</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>0 is a special address that is only used to treat addresses like 0,/RE/ as active when the script starts: if you write 1,/abc/d and the first line includes the word ‘abc’, then that match would be ignored because address ranges must span at least two lines (barring the end of the file); but what you probably wanted is to delete every line up to the first one including ‘abc’, and this is obtained with 0,/abc/d.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T164833Z" creationid="hideo" creationdate="20190610T164833Z">
+        <seg>0は、スクリプトの起動時に 0,/RE/のようなアドレスをアクティブとして扱うためだけに使用される特殊なアドレスです。 1,/abc/dと書き、最初の行に ‘abc’という単語が含まれていると、アドレス範囲は少なくとも2行にわたる（ファイルの終わりを除く）ので、その一致は無視されます。アドレス範囲は少なくとも2行にわたる必要があるため（ファイルの終わりを除く）、その一致は無視されます。 しかし、おそらくあなたが望んでいたのは ‘abc’を含む最初の行まですべての行を削除することです。これは 0,/abc/dで得られます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>0,/regexp/</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T092317Z" creationid="hideo" creationdate="20190605T092317Z">
@@ -9103,8 +9241,8 @@ y/_/0/</seg>
       <tuv lang="EN-US">
         <seg>Extended regular expressions, syntax:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190606T014547Z" creationid="hideo" creationdate="20190606T014547Z">
-        <seg>Extended regular expressions, syntax(拡張正規表現とその構文):</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T160924Z" creationid="hideo" creationdate="20190606T014547Z">
+        <seg>Extended regular expressions, syntax(拡張正規表現とその文法):</seg>
       </tuv>
     </tu>
     <tu>
@@ -10095,8 +10233,8 @@ y/_/0/</seg>
       <tuv lang="EN-US">
         <seg>addresses, syntax:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190606T001556Z" creationid="hideo" creationdate="20190605T135114Z">
-        <seg>addresses, syntax(アドレス、その構文):</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T160907Z" creationid="hideo" creationdate="20190605T135114Z">
+        <seg>addresses, syntax(アドレス、その文法):</seg>
       </tuv>
     </tu>
     <tu>
@@ -10723,10 +10861,34 @@ of this license document, but changing it is not allowed.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>0a does not work (gives an error)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T164130Z" creationid="hideo" creationdate="20190610T164130Z">
+        <seg>0a が動作しない(エラーになる)問題</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>30,35 is an address range.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T065958Z" creationid="hideo" creationdate="20190605T065958Z">
         <seg>30,35はアドレス範囲です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>N command on the last line</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T154943Z" creationid="hideo" creationdate="20190610T154943Z">
+        <seg>最終行でのN コマンドの振る舞い</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[a-z] is case insensitive</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T164852Z" creationid="hideo" creationdate="20190610T164852Z">
+        <seg>[a-z] が大文字小文字を区別しない問題</seg>
       </tuv>
     </tu>
     <tu>
@@ -10759,6 +10921,14 @@ of this license document, but changing it is not allowed.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T160815Z" creationid="hideo" creationdate="20190603T160815Z">
         <seg>r,R,w,W (reading and writing files)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>s/.*// does not clear pattern space</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T170249Z" creationid="hideo" creationdate="20190610T170249Z">
+        <seg>s/.*// がパターンスペースを全削除しない問題</seg>
       </tuv>
     </tu>
     <tu>
@@ -10867,6 +11037,14 @@ of this license document, but changing it is not allowed.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>sed uses the POSIX basic regular expression syntax.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T161119Z" creationid="hideo" creationdate="20190610T160413Z">
+        <seg>sed は POSIX 基本正規表現文法を使います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>sed writes output to standard output.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190604T051726Z" creationid="hideo" creationdate="20190604T051726Z">
@@ -10955,6 +11133,14 @@ of this license document, but changing it is not allowed.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>abc\|def matches either ‘abc’ or ‘def’.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T161334Z" creationid="hideo" creationdate="20190610T161334Z">
+        <seg>abc\|def は‘abc’または‘def’のいずれかにマッチします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>q is the quit command.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T070553Z" creationid="hideo" creationdate="20190605T070553Z">
@@ -11035,6 +11221,34 @@ of this license document, but changing it is not allowed.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>while building frobme-1.3.4
+$ configure
+error→ sed: file sedscr line 1: Unknown option to 's'</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T153718Z" creationid="hideo" creationdate="20190610T153718Z">
+        <seg>while building frobme-1.3.4
+$ configure
+error→ sed: file sedscr line 1: Unknown option to 's'</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>-i clobbers read-only files</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T163248Z" creationid="hideo" creationdate="20190610T163248Z">
+        <seg>-i が読み込み専用ファイルを壊す問題</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>POSIX mandates that such sequences are not matched by ‘.’, so that ‘s/.*//’ will not clear pattern space as you would expect.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T170719Z" creationid="hideo" creationdate="20190610T170719Z">
+        <seg>POSIXは、そのようなシーケンスは ‘.’と一致しないことを強制しているので、 ‘s/.*//’はあなたが期待するようにパターンスペースを全削除しないでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>POSIX mandates that such sequences are not matched by ‘.’, so that there is no portable way to clear sed’s buffers in the middle of the script in most multibyte locales (including UTF-8 locales).</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190607T133831Z" creationid="hideo" creationdate="20190604T005212Z">
@@ -11103,6 +11317,14 @@ of this license document, but changing it is not allowed.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T120847Z" creationid="hideo" creationdate="20190605T120847Z">
         <seg>regexp1\|regexp2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>n is encoded in the second line, before the bang character.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T073354Z" creationid="hideo" creationdate="20190610T073354Z">
+        <seg>nは、スクリプト2行目の'!'(bang文字)の前に書いてあります(。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11333,6 +11555,14 @@ of this license document, but changing it is not allowed.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A stand-alone test case includes all the data necessary to perform the test, and the specific invocation of sed that causes the problem.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T154017Z" creationid="hideo" creationdate="20190610T154017Z">
+        <seg>独立したテストケースには、テストを実行するために必要なすべてのデータと、問題を引き起こす sed の特定の呼び出しを含めます。.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A stream editor is used to perform basic text transformations on an input stream (a file or input from a pipeline).</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T150531Z" creationid="hideo" creationdate="20190603T150531Z">
@@ -11353,6 +11583,14 @@ of this license document, but changing it is not allowed.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190608T212803Z" creationid="hideo" creationdate="20190608T212803Z">
         <seg>マッチした場合は、PATTERNが連続して2回繰り返されたことを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A test case should not involve something as far removed from sed as “try to configure frobme-1.3.4”.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T154254Z" creationid="hideo" creationdate="20190610T154254Z">
+        <seg>テストケースの sed から「frobme-1.3.4を設定してみてください」というようなものを削除してはいけません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11425,6 +11663,14 @@ of this license document, but changing it is not allowed.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T122729Z" creationid="hideo" creationdate="20190605T122729Z">
         <seg>APPLICABILITY AND DEFINITIONS</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>According to the standard, the meaning of some escape sequences is undefined in this syntax; notable in the case of sed are \|, \+, \?, \`, \', \&lt;, \&gt;, \b, \B, \w, and \W.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T161127Z" creationid="hideo" creationdate="20190610T160515Z">
+        <seg>規格によると、いくつかのエスケープシーケンスの意味はこの文法では定義されていません。  sed の場合、 \ | 、 \ + 、 \？、 \ `&lt; / c6&gt;、 \ '、 \ &lt;、\&gt; 、 \ b 、 \ B &lt; / c11&gt;、 \ w 、および \ W </seg>
       </tuv>
     </tu>
     <tu>
@@ -11565,6 +11811,22 @@ of this license document, but changing it is not allowed.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>After that, all the script does is: exiting on the last line of input, appending the next input line to pattern space, and removing the first line.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T074753Z" creationid="hideo" creationdate="20190610T074753Z">
+        <seg>その後、スクリプトはすべて、入力の最後の行で終了し、次の入力行をパターンスペースに追加して、最初の行を削除します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Again, the common parts are not commented to show the importance of commenting sed scripts.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T072253Z" creationid="hideo" creationdate="20190610T072253Z">
+        <seg>繰り返しますが、前のと共通部分は sed スクリプトにコメントすることの重要性を示すために敢えてコメントしていません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>All characters following a,c,i commands are taken as the text to append/change/insert.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T155846Z" creationid="hideo" creationdate="20190603T155846Z">
@@ -11601,6 +11863,14 @@ of this license document, but changing it is not allowed.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190607T195145Z" creationid="hideo" creationdate="20190607T195145Z">
         <seg>英数字を表すのは‘[:alpha:]’と‘[:digit:]’です。これは‘C’ロケールとACII文字エンコーディングでは‘[0-9A-Za-z]’と同じです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Also, please include the output of ‘sed --version’ in the body of your report if at all possible.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T153522Z" creationid="hideo" creationdate="20190610T153508Z">
+        <seg>また、可能なかぎり報告本文に‘sed --version’の出力を含めて下さい。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11697,6 +11967,14 @@ of this license document, but changing it is not allowed.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T122757Z" creationid="hideo" creationdate="20190605T122757Z">
         <seg>An image format is not Transparent if used for any substantial amount of text.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Another problem is that [a-z] tries to use collation symbols.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T165545Z" creationid="hideo" creationdate="20190610T165545Z">
+        <seg>別の問題は、[a-z] が照合記号を使おうとしていることです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11805,6 +12083,18 @@ of this license document, but changing it is not allowed.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As
+# what we want to do is to squeeze, insert a blank line artificially
+i\</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T151229Z" creationid="hideo" creationdate="20190610T151047Z">
+        <seg>
+# 我々は圧縮(squeeze)したいのだ。よって露骨に空行を挿入する。
+i\</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As *, but matches exactly i sequences (i is a decimal integer; for portability, keep it between 0 and 255 inclusive).</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190607T135433Z" creationid="hideo" creationdate="20190607T135433Z">
@@ -11893,6 +12183,14 @@ of this license document, but changing it is not allowed.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As a final example, here are three scripts, of increasing complexity and speed, that implement the same function as ‘cat -s’, that is squeezing blank lines.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T075445Z" creationid="hideo" creationdate="20190610T075445Z">
+        <seg>最後の例として、これは複雑さとスピードを増す3つのスクリプトです。これらは「 cat -s 」と同じ機能を実装しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As a real-world example of using branching, consider the case of quoted-printable files, typically used to encode email messages.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190608T082255Z" creationid="hideo" creationdate="20190608T082255Z">
@@ -11905,6 +12203,14 @@ of this license document, but changing it is not allowed.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190608T063529Z" creationid="hideo" creationdate="20190608T063233Z">
         <seg>‘[’のASCII値が‘0x5b'、‘]’のASCII値が‘0x5d’であるのだからと、次の通り書いたとします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As in all GNU programs that use POSIX basic regular expressions, sed interprets these escape sequences as special characters.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T161205Z" creationid="hideo" creationdate="20190610T161205Z">
+        <seg> POSIX 基本正規表現を使用するすべてのGNUプログラムと同様に、 sed はこれらのエスケープシーケンスを特殊文字として解釈します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11929,6 +12235,26 @@ of this license document, but changing it is not allowed.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T165240Z" creationid="hideo" creationdate="20190603T165240Z">
         <seg>r/R/w/W/eコマンドは改行で終わっていなければなりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As you can see, we maintain a 2-line window using P and D.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T075056Z" creationid="hideo" creationdate="20190610T075056Z">
+        <seg>ご覧のとおり、 P と D を使用して2行のウィンドウを管理しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>At the
+# end of the file we simply exit
+$d</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T075334Z" creationid="hideo" creationdate="20190610T075334Z">
+        <seg>
+# ファイルの終わりで、単に終了します
+$d</seg>
       </tuv>
     </tu>
     <tu>
@@ -12573,6 +12899,14 @@ s/^.*$/\
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Default behavior (gnu extension, non-POSIX conforming):</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T155515Z" creationid="hideo" creationdate="20190610T155515Z">
+        <seg>デフォルトの動作（GNU拡張、非POSIX準拠）：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Delete any section Entitled “Endorsements”.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T122917Z" creationid="hideo" creationdate="20190605T122917Z">
@@ -12665,6 +12999,14 @@ s/^.*$/\
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T123018Z" creationid="hideo" creationdate="20190605T123018Z">
         <seg>Each version of the License is given a distinguishing version number.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Email bug reports to bug-sed@gnu.org.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T153534Z" creationid="hideo" creationdate="20190610T153400Z">
+        <seg>バグ報告はこちらへ(もちろん英語で) bug-sed@gnu.org.</seg>
       </tuv>
     </tu>
     <tu>
@@ -13013,6 +13355,14 @@ s/^.*$/\
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, the behavior of</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T155741Z" creationid="hideo" creationdate="20190610T155741Z">
+        <seg>たとえば、次の振る舞い</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, the following are not equivalent:</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190608T050146Z" creationid="hideo" creationdate="20190608T050138Z">
@@ -13101,10 +13451,50 @@ s/^.*$/\
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For the sake of variety, this is done with a loop rather than with some 80 s commands11: first we convert units, removing ‘a’s from the number; then we rotate letters so that tens become ‘a’s, and so on until no more letters remain.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T071608Z" creationid="hideo" creationdate="20190610T071608Z">
+        <seg>多様性のために、これは80個のsコマンドではなくループで行われます。最初に1の位を変換し、数字から‘a’の並びを削除します。 それから、数十の位が‘a’の並びになるように文字をローテートさせ、文字がなくなるまで続けます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For this reason, GNU sed provides a ‘z’ command (for ‘zap’) as an extension.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T170817Z" creationid="hideo" creationdate="20190610T170817Z">
+        <seg>このため、GNU  sed では、（zap用の）zコマンドが拡張機能として提供されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For this reason, the current version of GNU sed interprets specially the presence of p options both before and after e, printing the pattern space before and after evaluation, while in general flags for the s command show their effect just once.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190606T102711Z" creationid="hideo" creationdate="20190606T095935Z">
         <seg>このために、sコマンドのフラグは一般には1度しか評価されませんが、デバッグに便利なようにGNU sedの現在の版は'e'の前後に’p'を置くことができます。そうするとeval前のパターンスペースの内容とeval後のパターンスペースの内容をプリントします。(訳注:手元のGNU sed 4.7では動作確認できず)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For this same reason, sed does not let you use -i on a writable file in a read-only directory, and will break hard or symbolic links when -i is used on such a file.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T164104Z" creationid="hideo" creationdate="20190610T164104Z">
+        <seg>同じ理由で、 sed は読み取り専用ディレクトリの書き込み可能なファイルに '-i'を使用させず、 '-i'がそのようなファイルに使用されるとハードリンクまたはシンボリックリンクを解除します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For those who want to write portable sed scripts, be aware that some implementations have been known to limit line lengths (for the pattern and hold spaces) to be no more than 4000 bytes.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T151912Z" creationid="hideo" creationdate="20190610T151546Z">
+        <seg>移植可能な sed スクリプトを書きたいという人は、(パターンスペースとホールドスペースのための)行の長さを4000バイト以下に制限する実装があることに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For up to date information about GNU sed please visit https://www.gnu.org/software/sed/.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T152603Z" creationid="hideo" creationdate="20190610T152603Z">
+        <seg>GNU sed の最新情報についてはこちら。https://www.gnu.org/software/sed/</seg>
       </tuv>
     </tu>
     <tu>
@@ -13221,6 +13611,22 @@ s/^.*$/\
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>GNU sed prints pattern space before exiting unless of course the -n command switch has been specified.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T155426Z" creationid="hideo" creationdate="20190610T155426Z">
+        <seg> -n コマンドラインオプションが指定されていない限り、GNU  sed は終了する前にパターンスペースを表示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>GNU sed has no built-in limit on line length; as long as it can malloc() more (virtual) memory, you can feed or construct lines as long as you like.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T152239Z" creationid="hideo" creationdate="20190610T152239Z">
+        <seg>GNU  sed には行の長さに関する制限は組み込まれていません。 より多くの(仮想)メモリをmalloc()できれば、好きなだけ行を注いだりしたり構築したりすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>GNU sed has accepted -E as an undocumented option for years, and *BSD seds have accepted -E for years as well, but scripts that use -E might not port to other older systems.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190604T210428Z" creationid="hideo" creationdate="20190604T204407Z">
@@ -13257,6 +13663,14 @@ s/^.*$/\
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T075010Z" creationid="hideo" creationdate="20190605T075010Z">
         <seg>H</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here are a few commonly reported bugs that are not bugs.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T154907Z" creationid="hideo" creationdate="20190610T154907Z">
+        <seg>以下は俗に言う「既知のバグ」であってわざわざ報告するようなバグではありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13357,6 +13771,14 @@ s/^.*$/\
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, recursion is used to handle subpatterns and indefinite repetition.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T152343Z" creationid="hideo" creationdate="20190610T152343Z">
+        <seg>ただし、再帰はサブパターンと不定の繰り返しを処理するために使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, strings like [.ch.], [=a=], and [:space:] are special within list and represent collating symbols, equivalence classes, and character classes, respectively, and [ is therefore special within list when it is followed by ., =, or :.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190607T221743Z" creationid="hideo" creationdate="20190607T221743Z">
@@ -13417,6 +13839,14 @@ s/^.*$/\
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190607T054719Z" creationid="hideo" creationdate="20190607T054719Z">
         <seg>regexp それ自身が'/'文字を含む時は、'\'でエスケープしなければなりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If GNU sed doesn’t configure your favorite package, take a few extra minutes to identify the specific problem and make a stand-alone test case.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T153820Z" creationid="hideo" creationdate="20190610T153820Z">
+        <seg>もしGNU  sed があなたのお気に入りのパッケージを設定しないならば、特定の問題を識別して、独立したテストケースを作るために数分余分に時間をかけてください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13894,6 +14324,14 @@ s/^.*$/\
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In a Danish locale, for example, the regular expression ^[a-z]$ matches the string ‘aa’, because this is a single collating symbol that comes after ‘a’ and before ‘b’; ‘ll’ behaves similarly in Spanish locales, or ‘ij’ in Dutch locales.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T170123Z" creationid="hideo" creationdate="20190610T170123Z">
+        <seg>たとえば、デンマーク語のロケールでは、正規表現 ^[a-z]$は文字列 ‘aa’と一致します。これは、 ‘a’の後で、 ‘b’の前にある単一の照合記号だからです。 ‘ll’はスペイン語のロケールでも‘ij’のオランダ語のロケールでも同じように動作します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In a regular expression pattern, back-references are used to match the same content as a previously matched subexpression.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190607T232615Z" creationid="hideo" creationdate="20190607T232615Z">
@@ -13914,6 +14352,14 @@ s/^.*$/\
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190606T134006Z" creationid="hideo" creationdate="20190606T134006Z">
         <seg>さらに、複数行モードではピリオド('.')は改行文字とマッチしません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In addition, this version of sed supports several escape characters (some of which are multi-character) to insert non-printable characters in scripts (\a, \c, \d, \o, \r, \t, \v, \x).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T163035Z" creationid="hideo" creationdate="20190610T163035Z">
+        <seg>さらに、このバージョンの sed では、スクリプトに印刷不可能な文字を挿入するための複数のエスケープ文字（そのうちのいくつかは複数文字）がサポートされています(\a, \c, \d, \o, \r, \t, \v, \x)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13942,6 +14388,14 @@ s/^.*$/\
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In any case, the simplest workaround is to use $d;N in scripts that rely on the traditional behavior, or to set the POSIXLY_CORRECT variable to a non-empty value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T160247Z" creationid="hideo" creationdate="20190610T160247Z">
+        <seg>いずれにせよ、最も簡単な回避策は、従来の振る舞いに依存するスクリプトで $ d; N を使うか、または POSIXLY_CORRECT 変数を空でない値に設定することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In basic regular expression mode, setting POSIXLY_CORRECT disables them inside bracket expressions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T220247Z" creationid="hideo" creationdate="20190605T220247Z">
@@ -13962,6 +14416,14 @@ s/^.*$/\
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T123004Z" creationid="hideo" creationdate="20190605T123004Z">
         <seg>In case of a disagreement between the translation and the original version of this License or a notice or disclaimer, the original version will prevail.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In fact, there is no way to clear sed’s buffers in the middle of the script in most multibyte locales (including UTF-8 locales).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T170756Z" creationid="hideo" creationdate="20190610T170756Z">
+        <seg>実際、ほとんどのマルチバイトロケール（UTF-8ロケールを含む）では、スクリプトの途中でsedのバッファを全削除することはできません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14042,6 +14504,14 @@ s/^.*$/\
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190604T205603Z" creationid="hideo" creationdate="20190604T205603Z">
         <seg>サンドボックスモードでは 'e'、'w'、'r'コマンドは弾かれます。それらを含むプログラムは実行されずにアボートします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In short, ‘sed -i’ will let you delete the contents of a read-only file, and in general the -i option (see Invocation) lets you clobber protected files.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T163612Z" creationid="hideo" creationdate="20190610T163612Z">
+        <seg>要するに、 ' sed -i 'を指定すると、読み取り専用ファイルの内容を削除できます。一般に、 -i オプション(起動を参照)を使用すると、保護されているファイルを破壊できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14294,6 +14764,22 @@ s/^.*$/\
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It displays the first 10 lines of input; the number of displayed lines is right before the q command.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T072414Z" creationid="hideo" creationdate="20190610T072414Z">
+        <seg>表示される行数は q コマンドの直前までです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It does leave a single blank line at end if one was there.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T075807Z" creationid="hideo" creationdate="20190610T075807Z">
+        <seg>最後に1行の空白行があったとしても、それは残ります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It does not affect the x character that is added to pattern space when replacing b- with xB.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T143214Z" creationid="hideo" creationdate="20190605T143201Z">
@@ -14310,10 +14796,26 @@ s/^.*$/\
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is also the fastest.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T145227Z" creationid="hideo" creationdate="20190610T145227Z">
+        <seg>それも最速です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is distributed together with sed.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T074515Z" creationid="hideo" creationdate="20190603T074515Z">
         <seg>それはsedと一緒に配布されました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is interesting that real wc programs have optimized loops for ‘wc -c’, so they are much slower at counting words rather than characters.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T072030Z" creationid="hideo" creationdate="20190610T072030Z">
+        <seg>本物の wc プログラムが ' wc -c 'のために最適化されたループを持っているのは興味深いですが、それらは文字よりもむしろ単語を数える方がはるかに遅いです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14644,6 +15146,14 @@ D</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Mainly, the scripts keeps a window of 10 lines and slides it by adding a line and deleting the oldest (the substitution command on the second line works like a D command but does not restart the loop).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T073606Z" creationid="hideo" creationdate="20190610T073606Z">
+        <seg>主に、スクリプトは10行のウィンドウを保持し、行を追加して最も古い行を削除することによってそれをスライドさせます（2行目の置換コマンドは D コマンドのように機能しますがループを再開しません）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Make Duplicate Lines Unique</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190608T224456Z" creationid="hideo" creationdate="20190603T144323Z">
@@ -14908,6 +15418,14 @@ D</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Most versions of sed exit without printing anything when the N command is issued on the last line of a file.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T155340Z" creationid="hideo" creationdate="20190610T155340Z">
+        <seg> sed のほとんどのバージョンは、ファイルの最後の行で N コマンドが発行されると、何も表示せずに終了します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Multibyte characters and Locale Considerations</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190608T224334Z" creationid="hideo" creationdate="20190603T080506Z">
@@ -15038,8 +15556,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Next: Character Classes and Bracket Expressions, Previous: BRE syntax, Up: sed regular expressions   [Contents][Index]</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T054120Z" creationid="hideo" creationdate="20190607T152520Z">
-        <seg>次: 文字クラスと角括弧式, 前: BRE syntax, 上: sedの正規表現   [目次][索引]</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T160843Z" creationid="hideo" creationdate="20190607T152520Z">
+        <seg>次: 文字クラスと角括弧式, 前: BRE 文法, 上: sedの正規表現   [目次][索引]</seg>
       </tuv>
     </tu>
     <tu>
@@ -15468,6 +15986,14 @@ D</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note how the first, second and fourth line are inactive after the first ten lines of input.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T074657Z" creationid="hideo" creationdate="20190610T074657Z">
+        <seg>最初の10行の入力後、1行目、2行目、4行目が非アクティブになっていることに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note how the script is parameterized using shell variables and proper quoting.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190608T110037Z" creationid="hideo" creationdate="20190608T110037Z">
@@ -15504,6 +16030,14 @@ D</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T235129Z" creationid="hideo" creationdate="20190603T235129Z">
         <seg>注意：filenameで指定したファイルから読み込みできなかったり、既にEOFに到達していたら何もしない。なおその時何のエラーも出しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that loops are completely done with n and b, without relying on sed to restart the script automatically at the end of a line.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T145828Z" creationid="hideo" creationdate="20190610T145828Z">
+        <seg>ループは n と b で全部処理され、各行末で次のサイクルに移る通常の自動的な動作が全くありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15600,6 +16134,14 @@ D</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190602T201545Z" creationid="hideo" creationdate="20190602T201545Z">
         <seg>ブランチコマンドによるジャンプと次のサイクルの開始との違いに注意して下さい。次のサイクルの開始時はsedはまずパターンスペースの内容をプリントして次に入力ストリームから1行パターンスペースに読み込みます。一方ラベルへのジャンプは（それがたとえプログラムの先頭へジャンプしたとしても）、パターンスペースの内容はプリントされませんし入力ストリームから次の1行を読み込む事もありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note these not maintained by GNU sed developers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T152937Z" creationid="hideo" creationdate="20190610T152937Z">
+        <seg>これらはGNU  sed 開発者によって保守されていないことに注意してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15740,10 +16282,26 @@ D</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>On the last line, we convert the abacus form back to decimal.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T071125Z" creationid="hideo" creationdate="20190610T071125Z">
+        <seg>最終行で、そろばん形式を10進数に戻します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>On the other hand, \l and \u do affect the remainder of the replacement text if they are followed by an empty substitution.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T223209Z" creationid="hideo" creationdate="20190605T223209Z">
         <seg>一方、'\l'や'\u'はそれに続く置換が空の場合はその後に続く置換テキストに影響を与えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>On the other hand, some scripts use s|abc\|def||g to remove occurrences of either abc or def.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T162230Z" creationid="hideo" creationdate="20190610T162230Z">
+        <seg>一方、スクリプトによっては s|abc\|def||g を使用して、abcまたはdefのどちらかの出現を削除します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15792,6 +16350,14 @@ D</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190604T054553Z" creationid="hideo" creationdate="20190604T054353Z">
         <seg>'-e'や'-f'コマンドラインオプションは混在かつ複数回記述することができ、実行されるスクリプトはそれぞれのスクリプトをそのコマンドラインオプションの順番どおりに連結したものになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Or, when writing a script to read the next few lines following a pattern match, traditional implementations of sed would force you to write something like</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T160014Z" creationid="hideo" creationdate="20190610T160014Z">
+        <seg>また、パターンマッチの後に続く数行を読むためのスクリプトを書くとき、伝統的な実装の sed はあなたに次のようなものを書くことを強いるでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15902,6 +16468,14 @@ D</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>POSIX mandates that [a-z] uses the current locale’s collation order – in C parlance, that means using strcoll(3) instead of strcmp(3).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T165430Z" creationid="hideo" creationdate="20190610T165430Z">
+        <seg>POSIXは[a-z] に現在のロケールの照合順序を使用することを強制しています。C言語で言えば strcmp(3)の代わりにstrcoll(3)を使用することを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>PREAMBLE</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T122717Z" creationid="hideo" creationdate="20190605T122717Z">
@@ -15922,6 +16496,14 @@ D</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T145530Z" creationid="hideo" creationdate="20190603T145530Z">
         <seg>Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Please do not send a bug report like this:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T153631Z" creationid="hideo" creationdate="20190610T153631Z">
+        <seg>以下のようなバグレポートは送らないでください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16190,6 +16772,14 @@ D</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Printing the last n lines rather than the first is more complex but indeed possible.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T072830Z" creationid="hideo" creationdate="20190610T072830Z">
+        <seg>最初の行ではなく最後の n 行を印刷するのは、より複雑だけども可能ではあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Printing the last lines</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190608T051558Z" creationid="hideo" creationdate="20190608T051558Z">
@@ -16382,6 +16972,14 @@ D</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Rather, it will work on a temporary file that is finally renamed to the original name: if you rename or delete files, you’re actually modifying the contents of the directory, so the operation depends on the permissions of the directory, not of the file.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T163906Z" creationid="hideo" creationdate="20190610T163906Z">
+        <seg>そうではなく、一時的なファイルに対して操作し最終的に元の名前に変更されます。ファイルの名前を変更または削除すると、実際にはディレクトリの内容が変更されるため、操作はファイルの権限ではなくディレクトリの権限に依存します。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Reads file filename.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T112925Z" creationid="hideo" creationdate="20190605T094307Z">
@@ -16394,6 +16992,14 @@ D</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190607T055815Z" creationid="hideo" creationdate="20190607T055815Z">
         <seg>正規表現アドレスの場合はパターンスペースの現在の内容に作用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Regex syntax clashes (problems with backslashes)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T160336Z" creationid="hideo" creationdate="20190610T160328Z">
+        <seg>正規表現クラッシュ(バックスラッシュ問題)</seg>
       </tuv>
     </tu>
     <tu>
@@ -16758,6 +17364,14 @@ D</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Send general questions and suggestions to sed-devel@gnu.org.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T152702Z" creationid="hideo" creationdate="20190610T152702Z">
+        <seg>一般的な質問や提案の送り先： sed-devel@gnu.org.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Separate the commands using -e or a newline:</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T160024Z" creationid="hideo" creationdate="20190603T160024Z">
@@ -16774,6 +17388,14 @@ D</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>So, x\+ matches one or more occurrences of ‘x’.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T161309Z" creationid="hideo" creationdate="20190610T161309Z">
+        <seg>x\+ は、1つまたはそれ以上現れる‘x’にマッチします。.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>So, if you want to make the ‘]’ character a list item, you must put it first.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190607T215929Z" creationid="hideo" creationdate="20190607T215929Z">
@@ -16786,6 +17408,14 @@ D</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190607T132111Z" creationid="hideo" creationdate="20190607T131910Z">
         <seg>だから、^#include は、行の最初に'#include'がある行のみに一致するものと単純化すると分かりやすいです。例えば、その前にスペースがある場合はマッチは失敗します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Some sed programs have been written with the assumption that \| and \+ match the literal characters | and +.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T161709Z" creationid="hideo" creationdate="20190610T161709Z">
+        <seg>いくつかのsed プログラムは \| や \+ は 文字| や + するものだと決めつけています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16810,6 +17440,14 @@ D</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T074728Z" creationid="hideo" creationdate="20190603T074728Z">
         <seg>いくつかのsed実装では1スクリプト辺りのコマンド数は199までという制限があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Some locales have a case-insensitive collation order, others don’t.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T165501Z" creationid="hideo" creationdate="20190610T165501Z">
+        <seg>大/小文字を区別しない照合順を持つロケールもあれば、そうでないロケールもあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16946,6 +17584,14 @@ D</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T123016Z" creationid="hideo" creationdate="20190605T123016Z">
         <seg>Such new versions will be similar in spirit to the present version, but may differ in detail to address new problems or concerns.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Such scripts must be modified by removing the spurious backslashes if they are to be used with modern implementations of sed, like GNU sed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T161902Z" creationid="hideo" creationdate="20190610T161902Z">
+        <seg>このようなスクリプトは、GNU  sed のような現代的な sed の実装で使用する場合には、誤ったバックスラッシュを削除して修正する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17200,6 +17846,14 @@ D</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The sed-users mailing list maintained by Sven Guckes: http://groups.yahoo.com/group/sed-users/ (note this is not the GNU sed mailing list).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T153243Z" creationid="hideo" creationdate="20190610T153243Z">
+        <seg>sed-users メーリングリストはSven Guckesが維持しています。 http://groups.yahoo.com/group/sed-users/ (注意これは GNU sed メーリングリストではありません)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The {,},b,t,T,: commands can be separated with a semicolon (this is a non-portable GNU sed extension).</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T214156Z" creationid="hideo" creationdate="20190603T154510Z">
@@ -17252,6 +17906,14 @@ D</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190608T213139Z" creationid="hideo" creationdate="20190608T213139Z">
         <seg>-Eオプションを使用すると、正規表現の構文が拡張され、丸括弧の前にバックスラッシュ'\'を追加する必要がなくなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The POSIX standard specifies that conforming sed implementations shall support at least 8192 byte line lengths.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T152019Z" creationid="hideo" creationdate="20190610T152019Z">
+        <seg> POSIX 規格では、準拠した sed の実装で少なくとも8192バイトの行の長さをサポートすることを規定しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17545,6 +18207,14 @@ D</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The first leaves a blank line at the beginning and end if there are some already.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T075507Z" creationid="hideo" creationdate="20190610T075507Z">
+        <seg>最初の行は最初と最後に空白行を残します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The first line adds a most-significant
 # digit of 1 if we have to add a digit.</seg>
       </tuv>
@@ -17803,6 +18473,14 @@ D</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The following resources provide information about sed (both GNU sed and other variations).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T152909Z" creationid="hideo" creationdate="20190610T152848Z">
+        <seg>以下、 sed （GNU  sed とその他のバリエーションの両方）に関する情報を提供します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The following sections explain the meaning and usage of special characters in regular expressions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190607T121158Z" creationid="hideo" creationdate="20190607T121158Z">
@@ -17955,6 +18633,14 @@ D</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The permissions on a file say what can happen to the data in that file, while the permissions on a directory say what can happen to the list of files in that directory.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T163707Z" creationid="hideo" creationdate="20190610T163707Z">
+        <seg>ファイルに対する許可は、そのファイル内のデータに何が起こり得るかを示し、ディレクトリに対する許可は、そのディレクトリ内のファイルのリストに何が起こりうるかを示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The power of regular expressions comes from the ability to include alternatives and repetitions in the pattern.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190607T120354Z" creationid="hideo" creationdate="20190607T120354Z">
@@ -18065,6 +18751,14 @@ tx</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T214548Z" creationid="hideo" creationdate="20190603T155257Z">
         <seg>次の例は移植性のある(GNU sedでなくても動く)同等例です</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The smaller a stand-alone test case is, the better.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T154134Z" creationid="hideo" creationdate="20190610T154134Z">
+        <seg>独立したテストケースは短いほどいいです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18193,6 +18887,14 @@ t a
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The “sliding window” technique is a very powerful way to write efficient and complex sed scripts, because commands like P would require a lot of work if implemented manually.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T073639Z" creationid="hideo" creationdate="20190610T073639Z">
+        <seg>「スライディングウィンドウ」技術は、効率的で複雑な sed スクリプトを書くための非常に強力な方法です。なぜなら、手動で実装した場合、 P のようなコマンドは多くの作業を必要とするからです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Their interpretation depends on the LC_CTYPE locale; for example, ‘[[:alnum:]]’ means the character class of numbers and letters in the current locale.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190608T065116Z" creationid="hideo" creationdate="20190608T065116Z">
@@ -18249,6 +18951,14 @@ t a
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There is no line 0.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T164212Z" creationid="hideo" creationdate="20190610T164212Z">
+        <seg>行番号0の行は存在しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There is no restriction on the appearance of non-printing characters in a sed script but when a script is being prepared in the shell or by text editing, it is usually easier to use one of the following escape sequences than the binary character it represents:</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190608T032106Z" creationid="hideo" creationdate="20190608T032106Z">
@@ -18285,6 +18995,14 @@ t a
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190607T223533Z" creationid="hideo" creationdate="20190607T222805Z">
         <seg>これらは基本と拡張の両方の正規表現で使用できます(つまり、 -E や -r の有無にかかわらず)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These can cause similar problems with scripts written for other seds.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T163135Z" creationid="hideo" creationdate="20190610T163135Z">
+        <seg>これらも他の sed 用に書かれたスクリプトで同様の問題を引き起こす可能性があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18497,6 +19215,14 @@ t a
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This choice is by design.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T155449Z" creationid="hideo" creationdate="20190610T155449Z">
+        <seg>この選択は仕様によるものです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This command accepts only one address.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T225556Z" creationid="hideo" creationdate="20190603T225538Z">
@@ -18593,6 +19319,14 @@ t a
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This happens if your input stream includes invalid multibyte sequences.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T170347Z" creationid="hideo" creationdate="20190610T170347Z">
+        <seg>これは入力ストリームが不正なマルチバイトつづりを含んでいると発生します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is a GNU sed extension.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T223912Z" creationid="hideo" creationdate="20190605T223912Z">
@@ -18649,10 +19383,26 @@ t a
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is again undefined behavior according to POSIX, and this interpretation is arguably more robust: older seds, for example, required that the regex matcher parsed \/ as / in the common case of escaping a slash, which is again undefined behavior; the new behavior avoids this, and this is good because the regex matcher is only partially under our control.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T162923Z" creationid="hideo" creationdate="20190610T162923Z">
+        <seg>POSIXによれば、これもまた未定義の振る舞いであり、この解釈は間違いなくより健全(robust)です。例えば、より古いsedでは、スラッシュをエスケープする一般的なケースでは正規表現照合プログラムが \/を /として解析する必要がありました。 新しい振る舞いはこれを避けています、そしてこれは良いことです。正規表現マッチ機構は部分的にしか私たちの管理下にないからです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is an alphabetical list of all sed commands and command-line options.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190607T160607Z" creationid="hideo" creationdate="20190607T160607Z">
         <seg>全てのsed コマンドとコマンドラインオプションのアルファベット順リストです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is an example of the art of using the N, P and D commands, probably the most difficult to master.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T074847Z" creationid="hideo" creationdate="20190610T074847Z">
+        <seg>これは N 、 P 、および D コマンドを使用する技術の例の中で、おそらく習得が最も困難です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18705,6 +19455,14 @@ t a
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is not a bug, but rather a consequence of how the Unix file system works.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T163638Z" creationid="hideo" creationdate="20190610T163638Z">
+        <seg>これはバグではなく、むしろUnixファイルシステムがどのように機能するかの結果です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is often needed to reset the flag that is tested by the t command.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190608T111331Z" creationid="hideo" creationdate="20190608T111331Z">
@@ -18725,6 +19483,14 @@ t a
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190606T142043Z" creationid="hideo" creationdate="20190606T142043Z">
         <seg>これは、単一アドレス(またはアドレス範囲)へのマッチによってコマンド群をトリガーしたいときに重宝します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This looks complicated but in fact the working is the same as the last script: after we have kicked in the appropriate number of lines, however, we stop using the hold space to keep inter-line state, and instead use N and D to slide pattern space by one line:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T074600Z" creationid="hideo" creationdate="20190610T074600Z">
+        <seg>これは複雑に見えますが、実際の作業はさっきのスクリプトと同じです。ただし、適切な行数を入力した後は、行間の状態を維持するためにホールドスペースを使用せず、代わりにN とD を使用して一行でパターンスペースをスライドします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18777,10 +19543,34 @@ t a
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This means that the available stack space may limit the size of the buffer that can be processed by certain patterns.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T152427Z" creationid="hideo" creationdate="20190610T152427Z">
+        <seg>これは、利用可能なスタックスペースが、特定のパターンで処理できるバッファのサイズを制限する可能性があることを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This one begins a series of totally useless (yet interesting) scripts emulating various Unix commands.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190609T095733Z" creationid="hideo" creationdate="20190609T095733Z">
         <seg>これは、さまざまなUnixコマンドをエミュレートする、まったく役に立たない(それでも面白い)スクリプトのシリーズの始まりです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This one is a bit more complex and removes all empty lines at the beginning.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T075642Z" creationid="hideo" creationdate="20190610T075642Z">
+        <seg>これはもう少し複雑で、最初に空の行をすべて削除します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This only happens if you are on the GNU system, using GNU libc’s regular expression matcher instead of compiling the one supplied with GNU sed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T165727Z" creationid="hideo" creationdate="20190610T165727Z">
+        <seg>これは、GNU sedを提供しているものをコンパイルするのではなく、GNU libcの正規表現マッチャーを使用して、GNUシステムを使用している場合にのみ発生します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18833,6 +19623,14 @@ t a
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This removes leading and trailing blank lines.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T145417Z" creationid="hideo" creationdate="20190610T145155Z">
+        <seg>これは先導する空行達と後続する空行達を削除します</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This requires another script to pad the output of banner; for example</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T215129Z" creationid="hideo" creationdate="20190605T215129Z">
@@ -18865,6 +19663,14 @@ t a
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This script is almost the same as the previous one, once each of the words on the line is converted to a single ‘a’ (in the previous script each letter was changed to an ‘a’).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T071818Z" creationid="hideo" creationdate="20190610T071818Z">
+        <seg>このスクリプトは、行の各単語が1つの ‘a’に変換されると、前のスクリプトとほぼ同じになります(前のスクリプトでは、各文字が ‘a’に変更されました)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This script is one of a few that demonstrate how to do arithmetic in sed.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190608T090436Z" creationid="hideo" creationdate="20190608T090436Z">
@@ -18877,6 +19683,30 @@ t a
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190608T060359Z" creationid="hideo" creationdate="20190608T060359Z">
         <seg>このスクリプトはおそらく最も簡単で便利な sed スクリプトです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This script is similar to the tac script in that it keeps the final output in the hold space and prints it at the end:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T073447Z" creationid="hideo" creationdate="20190610T073447Z">
+        <seg>このスクリプトは tac スクリプトと似ていますが、最終的な出力をホールドスペースに保持し、最後に出力するという点です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This script prints only duplicated lines, like ‘uniq -d’.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T075138Z" creationid="hideo" creationdate="20190610T075138Z">
+        <seg>このスクリプトは、 ' uniq -d 'のように、重複した行だけを出力します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This script prints only unique lines, like ‘uniq -u’.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T075211Z" creationid="hideo" creationdate="20190610T075211Z">
+        <seg>このスクリプトは ' uniq -u 'のようにユニークな行だけを印刷します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18901,6 +19731,14 @@ t a
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190608T110146Z" creationid="hideo" creationdate="20190608T110146Z">
         <seg>このスクリプトは、 set  Bourne-shellコマンドの出力からシェル関数の定義を取り除きます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This script’s bottleneck, instead, is arithmetic, and hence the word-counting one is faster (it has to manage smaller numbers).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T072150Z" creationid="hideo" creationdate="20190610T072150Z">
+        <seg>代わりに、このスクリプトのボトルネックは算術演算です。したがって、単語数を数えるほうが速くなります（小さい数を管理する必要はあります）。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18941,6 +19779,22 @@ t a
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190608T104508Z" creationid="hideo" creationdate="20190608T104508Z">
         <seg>Bruno Haibleによるこの解法は、単一のバッファを使用するため、非常に巧妙でスマートです。 この制限がない場合は、行番号をつけるで使用されるアルゴリズムのほうが速くなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This syntax may cause problems when running scripts written for other seds.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T161458Z" creationid="hideo" creationdate="20190610T161458Z">
+        <seg>これらの文法が問題を引き起こすのは他のsedの為に書かれたスクリプトを実行するときです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This technique is often used in advanced sed scripts.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T075110Z" creationid="hideo" creationdate="20190610T075110Z">
+        <seg>このテクニックは、高度な sed スクリプトでよく使われます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19025,6 +19879,14 @@ t a
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To force POSIX-conforming behavior:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T155558Z" creationid="hideo" creationdate="20190610T155558Z">
+        <seg>POSIX準拠の動作を強制：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To further examine the difference between the two examples, try the following commands:</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190608T082205Z" creationid="hideo" creationdate="20190608T082205Z">
@@ -19049,6 +19911,15 @@ t a
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To introduce the technique, which is fully demonstrated in the rest of this chapter and is based on the N, P and D commands, here is an implementation of tail using a simple “sliding window.”</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T074225Z" creationid="hideo" creationdate="20190610T074225Z">
+        <seg>191/5000
+N、P、D コマンドに基づいたテクニックをこの章の残りの部分で十分に紹介するために、ここでは「スライディングウィンドウ」を使ったtailを実装します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To know how to use sed, people should understand regular expressions (regexp for short).</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190607T115648Z" creationid="hideo" creationdate="20190607T115648Z">
@@ -19069,6 +19940,14 @@ t a
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T123046Z" creationid="hideo" creationdate="20190605T123046Z">
         <seg>To use this License in a document you have written, include a copy of the License in the document and put the following copyright and license notices just after the title page:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To work around these problems, which may cause bugs in shell scripts, set the LC_COLLATE and LC_CTYPE environment variables to ‘C’.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T170226Z" creationid="hideo" creationdate="20190610T170226Z">
+        <seg>シェルスクリプトでバグを引き起こす可能性があるこれらの問題を回避するには、 LC_COLLATE および LC_CTYPE 環境変数を ‘C’に設定してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19153,10 +20032,26 @@ t a
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Undo the effect of</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T075015Z" creationid="hideo" creationdate="20190610T074915Z">
+        <seg>効果を元に戻す - </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Unless special commands (like ‘D’) are used, the pattern space is deleted between two cycles.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190602T164504Z" creationid="hideo" creationdate="20190602T164504Z">
         <seg>（Dコマンドのような)特殊コマンドが使われてない限り、次のサイクルを開始する前にパターンスペースの内容を削除します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unlike other programs such as C compilers, making such test cases for sed is quite simple.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T154045Z" creationid="hideo" creationdate="20190610T154045Z">
+        <seg>Cコンパイラのような他のプログラムとは異なり、 sed のためのそのようなテストケースを作ることは非常に簡単です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19317,6 +20212,14 @@ t a
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T122712Z" creationid="hideo" creationdate="20190605T122712Z">
         <seg>Version 1.3, 3 November 2008</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Visit the mailing list archives for past discussions at https://lists.gnu.org/archive/html/sed-devel/.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T152805Z" creationid="hideo" creationdate="20190610T152805Z">
+        <seg>過去の議論のメーリングリストアーカイブはこちら。Visit the mailing list archives for past discussions at https://lists.gnu.org/archive/html/sed-devel/.</seg>
       </tuv>
     </tu>
     <tu>
@@ -19489,6 +20392,14 @@ t a
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>While this worked until sed 4.0.x, newer versions interpret this as removing the string abc|def.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T162348Z" creationid="hideo" creationdate="20190610T162348Z">
+        <seg>これは sed  4.0.xまでは機能しましたが、新しいバージョンではabc|defという文字列を削除するものとして解釈されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>With a few more commands, sed can print the exact line number corresponding to each invalid characters (line 3).</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190608T064133Z" creationid="hideo" creationdate="20190608T064133Z">
@@ -19595,10 +20506,26 @@ Content-Type: multipart/alternative;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Yes, that is in principle enough information to look for the bug, but that is not a very practical prospect.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T154349Z" creationid="hideo" creationdate="20190610T154349Z">
+        <seg>はい、それは原則としてバグを探すのに十分な情報ですが、それはあまり実用的な見通しではありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You accept the license if you copy, modify or distribute the work in a way requiring permission under copyright law.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T122736Z" creationid="hideo" creationdate="20190605T122736Z">
         <seg>You accept the license if you copy, modify or distribute the work in a way requiring permission under copyright law.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You are encountering problems with locales.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T164915Z" creationid="hideo" creationdate="20190610T164915Z">
+        <seg>あなたはロケールに関する問題に遭遇しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20769,6 +21696,14 @@ y parts.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>instead of just</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T160204Z" creationid="hideo" creationdate="20190610T160057Z">
+        <seg>GNU sedでは代わりに次のように書ける</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>interaction in s command  Note: the POSIX standard does not specify what should happen when you mix the g and number modifiers, and currently there is no widely agreed upon meaning across sed implementations.</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190606T093125Z" creationid="hideo" creationdate="20190606T085816Z">
@@ -20883,6 +21818,16 @@ And one man=</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T075033Z" creationid="hideo" creationdate="20190605T075033Z">
         <seg>p</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>print it again, etc...
+/./bx</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T150307Z" creationid="hideo" creationdate="20190610T150307Z">
+        <seg>なら再びそれをプリントして, etc...
+/./bx</seg>
       </tuv>
     </tu>
     <tu>
@@ -21435,6 +22380,14 @@ sed -n '\;^/home/alice/documents/;p'</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>seder’s grabbag: http://sed.sf.net/grabbag</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T153103Z" creationid="hideo" creationdate="20190610T153103Z">
+        <seg>sed福袋: http://sed.sf.net/grabbag</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>selecting a range of lines</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T165852Z" creationid="hideo" creationdate="20190603T165852Z">
@@ -21565,6 +22518,18 @@ To: Jane Smith &lt;jsmith@gnu.org&gt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>then ignore it, and get next... this will
+# remove ALL empty lines
+/./!bz</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T150859Z" creationid="hideo" creationdate="20190610T150803Z">
+        <seg>ならばそれを無視、そして次を取得...
+# 全ての空行を削除
+/./!bz</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>under the terms of the GNU Free Documentation License, Version 1.3</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T123052Z" creationid="hideo" creationdate="20190605T123052Z">
@@ -21643,6 +22608,14 @@ do</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T123112Z" creationid="hideo" creationdate="20190605T123112Z">
         <seg>with the Invariant Sections being list their titles, with</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>would depend on whether foo has an even or an odd number of lines12.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T155901Z" creationid="hideo" creationdate="20190610T155901Z">
+        <seg>は、fooの行数が偶数か奇数かに依存します。12.</seg>
       </tuv>
     </tu>
     <tu>
@@ -22083,6 +23056,14 @@ bx</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T120923Z" creationid="hideo" creationdate="20190605T120923Z">
         <seg>‘abcdef’</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>‘sed -i’ will not ever open for writing a file that is already on disk.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T163741Z" creationid="hideo" creationdate="20190610T163741Z">
+        <seg>' sed -i 'はすでにディスク上にあるファイルを書き込むために開くことはありません。</seg>
       </tuv>
     </tu>
     <tu>

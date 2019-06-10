@@ -2372,7 +2372,7 @@ aab
 <a name="ERE-syntax"></a>
 <div class="header">
 <p>
-次: <a href="#Character-Classes-and-Bracket-Expressions" accesskey="n" rel="next">文字クラスと角括弧式</a>, 前: <a href="#BRE-syntax" accesskey="p" rel="prev">BRE syntax</a>, 上: <a href="#sed-regular-expressions" accesskey="u" rel="up">sedの正規表現</a> &nbsp; [<a href="#SEC_Contents" title="目次" rel="contents">目次</a>][<a href="#Concept-Index" title="索引" rel="index">索引</a>]</p>
+次: <a href="#Character-Classes-and-Bracket-Expressions" accesskey="n" rel="next">文字クラスと角括弧式</a>, 前: <a href="#BRE-syntax" accesskey="p" rel="prev">BRE 文法</a>, 上: <a href="#sed-regular-expressions" accesskey="u" rel="up">sedの正規表現</a> &nbsp; [<a href="#SEC_Contents" title="目次" rel="contents">目次</a>][<a href="#Concept-Index" title="索引" rel="index">索引</a>]</p>
 </div>
 <a name="Overview-of-extended-regular-expression-syntax"></a>
 <h3 class="section">5.4 拡張正規表現文法概要</h3>
@@ -4103,13 +4103,7 @@ h
 </p>
 <p>通常どおり、積算合計はホールドスペースに保持されます。
 </p>
-<p>On the last line, we convert the abacus form back to decimal.
-For the sake of variety, this is done with a loop rather than
-with some 80 <code>s</code> commands<a name="DOCF11" href="#FOOT11"><sup>11</sup></a>: first we
-convert units, removing ‘<samp>a</samp>’s from the number; then we
-rotate letters so that tens become ‘<samp>a</samp>’s, and so on
-until no more letters remain.
-
+<p>最終行で、そろばん形式を10進数に戻します。多様性のために、これは80個の<code>s</code>コマンドではなくループで行われます。最初に1の位を変換し、数字から‘<samp>a</samp>’の並びを削除します。 それから、数十の位が‘<samp>a</samp>’の並びになるように文字をローテートさせ、文字がなくなるまで続けます。
 </p>
 <div class="example">
 <pre class="example">#!/usr/bin/sed -nf
@@ -4171,21 +4165,11 @@ p
 <a name="Counting-Words"></a>
 <h3 class="section">7.13 単語数を数える</h3>
 
-<p>This script is almost the same as the previous one, once each
-of the words on the line is converted to a single ‘<samp>a</samp>’
-(in the previous script each letter was changed to an ‘<samp>a</samp>’).
-
+<p>このスクリプトは、行の各単語が1つの ‘<samp>a</samp>’に変換されると、前のスクリプトとほぼ同じになります(前のスクリプトでは、各文字が ‘<samp>a</samp>’に変更されました)。
 </p>
-<p>It is interesting that real <code>wc</code> programs have optimized
-loops for ‘<samp>wc -c</samp>’, so they are much slower at counting
-words rather than characters.  This script’s bottleneck,
-instead, is arithmetic, and hence the word-counting one
-is faster (it has to manage smaller numbers).
-
+<p>本物の<code> wc </code>プログラムが '<samp> wc -c </samp>'のために最適化されたループを持っているのは興味深いですが、それらは文字よりもむしろ単語を数える方がはるかに遅いです。代わりに、このスクリプトのボトルネックは算術演算です。したがって、単語数を数えるほうが速くなります（小さい数を管理する必要はあります）。
 </p>
-<p>Again, the common parts are not commented to show the importance
-of commenting <code>sed</code> scripts.
-
+<p>繰り返しますが、前のと共通部分は<code> sed </code>スクリプトにコメントすることの重要性を示すために敢えてコメントしていません
 </p>
 <div class="example">
 <pre class="example">#!/usr/bin/sed -nf
@@ -4255,7 +4239,7 @@ $=
 <a name="Printing-the-First-Lines"></a>
 <h3 class="section">7.15 最初の数行をプリントする</h3>
 
-<p>このスクリプトはおそらく最も簡単で便利な<code> sed </code>スクリプトです。It displays the first 10 lines of input; the number of displayed lines is right before the <code>q</code> command.
+<p>このスクリプトはおそらく最も簡単で便利な<code> sed </code>スクリプトです。表示される行数は<code> q </code>コマンドの直前までです。
 </p>
 <div class="example">
 <pre class="example">#!/usr/bin/sed -f
@@ -4271,14 +4255,9 @@ $=
 <a name="Printing-the-Last-Lines"></a>
 <h3 class="section">7.16 末尾の数行をプリントする</h3>
 
-<p>Printing the last <var>n</var> lines rather than the first is more complex
-but indeed possible.  <var>n</var> is encoded in the second line, before
-the bang character.
-
+<p>最初の行ではなく最後の<var> n </var>行を印刷するのは、より複雑だけども可能ではあります。<var>n</var>は、スクリプト2行目の'!'(bang文字)の前に書いてあります(。
 </p>
-<p>This script is similar to the <code>tac</code> script in that it keeps the
-final output in the hold space and prints it at the end:
-
+<p>このスクリプトは<code> tac </code>スクリプトと似ていますが、最終的な出力をホールドスペースに保持し、最後に出力するという点です。
 </p>
 <div class="example">
 <pre class="example">#!/usr/bin/sed -nf
@@ -4289,29 +4268,14 @@ $p
 h
 </pre></div>
 
-<p>Mainly, the scripts keeps a window of 10 lines and slides it
-by adding a line and deleting the oldest (the substitution command
-on the second line works like a <code>D</code> command but does not
-restart the loop).
-
+<p>主に、スクリプトは10行のウィンドウを保持し、行を追加して最も古い行を削除することによってそれをスライドさせます（2行目の置換コマンドは<code> D </code>コマンドのように機能しますがループを再開しません）。
 </p>
-<p>The “sliding window” technique is a very powerful way to write
-efficient and complex <code>sed</code> scripts, because commands like
-<code>P</code> would require a lot of work if implemented manually.
-
+<p>「スライディングウィンドウ」技術は、効率的で複雑な<code> sed </code>スクリプトを書くための非常に強力な方法です。なぜなら、手動で実装した場合、<code> P </code>のようなコマンドは多くの作業を必要とするからです。
 </p>
-<p>To introduce the technique, which is fully demonstrated in the
-rest of this chapter and is based on the <code>N</code>, <code>P</code>
-and <code>D</code> commands, here is an implementation of <code>tail</code>
-using a simple “sliding window.”
-
+<p>191/5000
+<code>N</code>、<code>P</code>、<code>D</code> コマンドに基づいたテクニックをこの章の残りの部分で十分に紹介するために、ここでは「スライディングウィンドウ」を使った<code>tail</code>を実装します。
 </p>
-<p>This looks complicated but in fact the working is the same as
-the last script: after we have kicked in the appropriate number
-of lines, however, we stop using the hold space to keep inter-line
-state, and instead use <code>N</code> and <code>D</code> to slide pattern
-space by one line:
-
+<p>これは複雑に見えますが、実際の作業はさっきのスクリプトと同じです。ただし、適切な行数を入力した後は、行間の状態を維持するためにホールドスペースを使用せず、代わりに<code>N</code> と<code>D</code> を使用して一行でパターンスペースをスライドします。
 </p>
 <div class="example">
 <pre class="example">#!/usr/bin/sed -f
@@ -4324,11 +4288,7 @@ N
 D
 </pre></div>
 
-<p>Note how the first, second and fourth line are inactive after
-the first ten lines of input.  After that, all the script does
-is: exiting on the last line of input, appending the next input
-line to pattern space, and removing the first line.
-
+<p>最初の10行の入力後、1行目、2行目、4行目が非アクティブになっていることに注意してください。その後、スクリプトはすべて、入力の最後の行で終了し、次の入力行をパターンスペースに追加して、最初の行を削除します。
 </p>
 <hr>
 <a name="uniq"></a>
@@ -4339,9 +4299,7 @@ line to pattern space, and removing the first line.
 <a name="Make-Duplicate-Lines-Unique"></a>
 <h3 class="section">7.17 同一行を1つにまとめる</h3>
 
-<p>This is an example of the art of using the <code>N</code>, <code>P</code>
-and <code>D</code> commands, probably the most difficult to master.
-
+<p>これは<code> N </code>、<code> P </code>、および<code> D </code>コマンドを使用する技術の例の中で、おそらく習得が最も困難です。
 </p>
 <div class="example">
 <pre class="example">#!/usr/bin/sed -f
@@ -4353,7 +4311,7 @@ h
 $b
 N
 /^\(.*\)\n\1$/ {
-    # The two lines are identical.  Undo the effect of
+    # The two lines are identical.  効果を元に戻す - 
     # the n command.
     g
     bb
@@ -4370,9 +4328,7 @@ P
 D
 </pre></div>
 
-<p>As you can see, we maintain a 2-line window using <code>P</code> and <code>D</code>.
-This technique is often used in advanced <code>sed</code> scripts.
-
+<p>ご覧のとおり、<code> P </code>と<code> D </code>を使用して2行のウィンドウを管理しています。このテクニックは、高度な<code> sed </code>スクリプトでよく使われます。
 </p>
 <hr>
 <a name="uniq-_002dd"></a>
@@ -4383,8 +4339,7 @@ This technique is often used in advanced <code>sed</code> scripts.
 <a name="Print-Duplicated-Lines-of-Input"></a>
 <h3 class="section">7.18 重複した行のみプリントする。</h3>
 
-<p>This script prints only duplicated lines, like ‘<samp>uniq -d</samp>’.
-
+<p>このスクリプトは、 '<samp> uniq -d </samp>'のように、重複した行だけを出力します。
 </p>
 <div class="example">
 <pre class="example">#!/usr/bin/sed -nf
@@ -4426,13 +4381,12 @@ D
 <a name="Remove-All-Duplicated-Lines"></a>
 <h3 class="section">7.19 重複行を全て取り除く（重複してない行のみプリントする）</h3>
 
-<p>This script prints only unique lines, like ‘<samp>uniq -u</samp>’.
-
+<p>このスクリプトは '<samp> uniq -u </samp>'のようにユニークな行だけを印刷します。
 </p>
 <div class="example">
 <pre class="example">#!/usr/bin/sed -f
 
-</pre><pre class="example"># Search for a duplicate line --- until that, print what you find.
+</pre><pre class="example"># 重複行を検索します---それまでは、見つけたものを印刷します。
 $b
 N
 /^\(.*\)\n\1$/ !{
@@ -4442,12 +4396,12 @@ N
 </pre><pre class="example">
 
 </pre><pre class="example">:c
-# Got two equal lines in pattern space.  At the
-# end of the file we simply exit
+# Got two equal lines in pattern space.  
+# ファイルの終わりで、単に終了します
 $d
 </pre><pre class="example">
 
-</pre><pre class="example"># Else, we keep reading lines with <code>N</code> until we
+</pre><pre class="example"># そうでなければ、私たちは<code> N </code>で行を読み続けます。
 # find a different one
 s/.*\n//
 N
@@ -4470,14 +4424,9 @@ D
 <a name="Squeezing-Blank-Lines"></a>
 <h3 class="section">7.20 連続する空白行を1行の空白行にする</h3>
 
-<p>As a final example, here are three scripts, of increasing complexity
-and speed, that implement the same function as ‘<samp>cat -s</samp>’, that is
-squeezing blank lines.
-
+<p>最後の例として、これは複雑さとスピードを増す3つのスクリプトです。これらは「<samp> cat -s </samp>」と同じ機能を実装しています。
 </p>
-<p>The first leaves a blank line at the beginning and end if there are
-some already.
-
+<p>最初の行は最初と最後に空白行を残します。
 </p>
 <div class="example">
 <pre class="example">#!/usr/bin/sed -f
@@ -4491,28 +4440,25 @@ bx
 }
 </pre><pre class="example">
 
-</pre><pre class="example"># now, squeeze all '\n', this can be also done by:
-# s/^\(\n\)*/\1/
+</pre><pre class="example"># 今、連続する'\n'を1つにする。無い時は何もしない
+# s/^\(\n\)*/\1/ と同等
 s/\n*/\
 /
 </pre></div>
 
-<p>This one is a bit more complex and removes all empty lines
-at the beginning.  It does leave a single blank line at end
-if one was there.
-
+<p>これはもう少し複雑で、最初に空の行をすべて削除します。最後に1行の空白行があったとしても、それは残ります。
 </p>
 <div class="example">
 <pre class="example">#!/usr/bin/sed -f
 
-</pre><pre class="example"># delete all leading empty lines
+</pre><pre class="example"># 先行する全ての空行を削除
 1,/^./{
 /./!d
 }
 </pre><pre class="example">
 
-</pre><pre class="example"># on an empty line we remove it and all the following
-# empty lines, but one
+</pre><pre class="example"># 空行であればそれを削除し、
+# それに続く空行も同じです。
 :x
 /./!{
 N
@@ -4521,41 +4467,37 @@ tx
 }
 </pre></div>
 
-<p>This removes leading and trailing blank lines.  It is also the
-fastest.  Note that loops are completely done with <code>n</code> and
-<code>b</code>, without relying on <code>sed</code> to restart the
-script automatically at the end of a line.
-
+<p>これは先導する空行達と後続する空行達を削除しますそれも最速です。ループは<code> n </code>と<code> b </code>で全部処理され、各行末で次のサイクルに移る通常の自動的な動作が全くありません。
 </p>
 <div class="example">
 <pre class="example">#!/usr/bin/sed -nf
 
-</pre><pre class="example"># delete all (leading) blanks
+</pre><pre class="example"># 全ての(先導する)空白を削除
 /./!d
 </pre><pre class="example">
 
-</pre><pre class="example"># get here: so there is a non empty
+</pre><pre class="example"># ここに居る、すなわち空でない
 :x
-# print it
+# それをプリント
 p
-# get next
+# 次の入力行を得る
 n
-# got chars? print it again, etc...
+# 文字(列)があった?なら再びそれをプリントして, etc...
 /./bx
 </pre><pre class="example">
 
-</pre><pre class="example"># no, don't have chars: got an empty line
+</pre><pre class="example"># 文字が無かった。つまり空行を得た
 :z
-# get next, if last line we finish here so no trailing
-# empty lines are written
+# 次を読み込んで、ここが最終行の場合は、
+# 後続の空行達は書き込みません
 n
-# also empty? then ignore it, and get next... this will
-# remove ALL empty lines
+# 空かな？ならばそれを無視、そして次を取得...
+# 全ての空行を削除
 /./!bz
 </pre><pre class="example">
 
-</pre><pre class="example"># all empty lines were deleted/ignored, but we have a non empty.  As
-# what we want to do is to squeeze, insert a blank line artificially
+</pre><pre class="example"># 全ての空行は削除/無視した。全く無くなった。しかし我々は空にしたい訳じゃない
+# 我々は圧縮(squeeze)したいのだ。よって露骨に空行を挿入する。
 i\
 </pre><pre class="example">
 
@@ -4573,21 +4515,9 @@ bx
 
 <a name="index-GNU-extensions_002c-unlimited-line-length"></a>
 <a name="index-Portability_002c-line-length-limitations"></a>
-<p>For those who want to write portable <code>sed</code> scripts,
-be aware that some implementations have been known to
-limit line lengths (for the pattern and hold spaces)
-to be no more than 4000 bytes.
-The <small>POSIX</small> standard specifies that conforming <code>sed</code>
-implementations shall support at least 8192 byte line lengths.
-GNU <code>sed</code> has no built-in limit on line length;
-as long as it can <code>malloc()</code> more (virtual) memory,
-you can feed or construct lines as long as you like.
-
+<p>移植可能な<code> sed </code>スクリプトを書きたいという人は、(パターンスペースとホールドスペースのための)行の長さを4000バイト以下に制限する実装があることに注意してください。<small> POSIX </small>規格では、準拠した<code> sed </code>の実装で少なくとも8192バイトの行の長さをサポートすることを規定しています。GNU <code> sed </code>には行の長さに関する制限は組み込まれていません。 より多くの(仮想)メモリを<code>malloc()</code>できれば、好きなだけ行を注いだりしたり構築したりすることができます。
 </p>
-<p>However, recursion is used to handle subpatterns and indefinite
-repetition.  This means that the available stack space may limit
-the size of the buffer that can be processed by certain patterns.
-
+<p>ただし、再帰はサブパターンと不定の繰り返しを処理するために使用されます。これは、利用可能なスタックスペースが、特定のパターンで処理できるバッファのサイズを制限する可能性があることを意味します。
 </p>
 
 <hr>
@@ -4599,33 +4529,21 @@ the size of the buffer that can be processed by certain patterns.
 <a name="Other-Resources-for-Learning-About-sed"></a>
 <h2 class="chapter">9 <code>sed</code>について学べる、本やWebページなど</h2>
 
-<p>For up to date information about GNU <code>sed</code> please
-visit <a href="https://www.gnu.org/software/sed/">https://www.gnu.org/software/sed/</a>.
-
+<p>GNU <code>sed</code> の最新情報についてはこちら。<a href="https://www.gnu.org/software/sed/">https://www.gnu.org/software/sed/</a>
 </p>
-<p>Send general questions and suggestions to <a href="mailto:sed-devel@gnu.org">sed-devel@gnu.org</a>.
-Visit the mailing list archives for past discussions at
-<a href="https://lists.gnu.org/archive/html/sed-devel/">https://lists.gnu.org/archive/html/sed-devel/</a>.
-
+<p>一般的な質問や提案の送り先： <a href="mailto:sed-devel@gnu.org">sed-devel@gnu.org</a>. 過去の議論のメーリングリストアーカイブはこちら。Visit the mailing list archives for past discussions at <a href="https://lists.gnu.org/archive/html/sed-devel/">https://lists.gnu.org/archive/html/sed-devel/</a>.
 </p>
 <a name="index-Additional-reading-about-sed"></a>
-<p>The following resources provide information about <code>sed</code>
-(both GNU <code>sed</code> and other variations). Note these not maintained by
-GNU <code>sed</code> developers.
-
+<p>以下、<code> sed </code>（GNU <code> sed </code>とその他のバリエーションの両方）に関する情報を提供します。これらはGNU <code> sed </code>開発者によって保守されていないことに注意してください。
 </p>
 <ul>
 <li>  sed <code>$HOME</code>: <a href="http://sed.sf.net">http://sed.sf.net</a>
 
 </li><li>  sed FAQ: <a href="http://sed.sf.net/sedfaq.html">http://sed.sf.net/sedfaq.html</a>
 
-</li><li>  seder’s grabbag: <a href="http://sed.sf.net/grabbag">http://sed.sf.net/grabbag</a>
+</li><li> sed福袋: <a href="http://sed.sf.net/grabbag">http://sed.sf.net/grabbag</a>
 
-</li><li>  The <code>sed-users</code> mailing list maintained by Sven Guckes:
-<a href="http://groups.yahoo.com/group/sed-users/">http://groups.yahoo.com/group/sed-users/</a>
-(note this is <em>not</em> the GNU <code>sed</code> mailing list).
-
-
+</li><li> <code>sed-users</code> メーリングリストはSven Guckesが維持しています。 <a href="http://groups.yahoo.com/group/sed-users/">http://groups.yahoo.com/group/sed-users/</a> (注意これは GNU <code>sed</code> メーリングリストでは<em>ありません</em>)。
 
 </li></ul>
 
@@ -4639,13 +4557,9 @@ GNU <code>sed</code> developers.
 <h2 class="chapter">10 報告済のバグ</h2>
 
 <a name="index-Bugs_002c-reporting"></a>
-<p>Email bug reports to <a href="mailto:bug-sed@gnu.org">bug-sed@gnu.org</a>.
-Also, please include the output of ‘<samp>sed --version</samp>’ in the body
-of your report if at all possible.
-
+<p>バグ報告はこちらへ(もちろん英語で) <a href="mailto:bug-sed@gnu.org">bug-sed@gnu.org</a>. また、可能なかぎり報告本文に‘<samp>sed --version</samp>’の出力を含めて下さい。
 </p>
-<p>Please do not send a bug report like this:
-
+<p>以下のようなバグレポートは送らないでください。
 </p>
 <div class="example">
 <pre class="example"><i><i><span class="roman">while building frobme-1.3.4</span></i></i>
@@ -4653,206 +4567,102 @@ $ configure
 error→ sed: file sedscr line 1: Unknown option to 's'
 </pre></div>
 
-<p>If GNU <code>sed</code> doesn’t configure your favorite package, take a
-few extra minutes to identify the specific problem and make a stand-alone
-test case.  Unlike other programs such as C compilers, making such test
-cases for <code>sed</code> is quite simple.
-
+<p>もしGNU <code> sed </code>があなたのお気に入りのパッケージを設定しないならば、特定の問題を識別して、独立したテストケースを作るために数分余分に時間をかけてください。Cコンパイラのような他のプログラムとは異なり、<code> sed </code>のためのそのようなテストケースを作ることは非常に簡単です。
 </p>
-<p>A stand-alone test case includes all the data necessary to perform the
-test, and the specific invocation of <code>sed</code> that causes the problem.
-The smaller a stand-alone test case is, the better.  A test case should
-not involve something as far removed from <code>sed</code> as “try to configure
-frobme-1.3.4”.  Yes, that is in principle enough information to look
-for the bug, but that is not a very practical prospect.
-
+<p>独立したテストケースには、テストを実行するために必要なすべてのデータと、問題を引き起こす<code> sed </code>の特定の呼び出しを含めます。. 独立したテストケースは短いほどいいです。テストケースの<code> sed </code>から「frobme-1.3.4を設定してみてください」というようなものを削除してはいけません。はい、それは原則としてバグを探すのに十分な情報ですが、それはあまり実用的な見通しではありません。
 </p>
-<p>Here are a few commonly reported bugs that are not bugs.
-
+<p>以下は俗に言う「既知のバグ」であってわざわざ報告するようなバグではありません。
 </p>
 <dl compact="compact">
 <dd><a name="N_005fcommand_005flast_005fline"></a></dd>
-<dt><code>N</code> command on the last line</dt>
+<dt>最終行での<code>N</code> コマンドの振る舞い</dt>
 <dd><a name="index-Portability_002c-N-command-on-the-last-line"></a>
 <a name="index-Non_002dbugs_002c-N-command-on-the-last-line"></a>
 
-<p>Most versions of <code>sed</code> exit without printing anything when
-the <code>N</code> command is issued on the last line of a file.
-GNU <code>sed</code> prints pattern space before exiting unless of course
-the <code>-n</code> command switch has been specified.  This choice is
-by design.
-
+<p><code> sed </code>のほとんどのバージョンは、ファイルの最後の行で<code> N </code>コマンドが発行されると、何も表示せずに終了します。<code> -n </code>コマンドラインオプションが指定されていない限り、GNU <code> sed </code>は終了する前にパターンスペースを表示します。この選択は仕様によるものです。
 </p>
-<p>Default behavior (gnu extension, non-POSIX conforming):
-
+<p>デフォルトの動作（GNU拡張、非POSIX準拠）：
 </p><div class="example">
 <pre class="example">$ seq 3 | sed N
 1
 2
 3
 </pre></div>
-<p>To force POSIX-conforming behavior:
-
+<p>POSIX準拠の動作を強制：
 </p><div class="example">
 <pre class="example">$ seq 3 | sed --posix N
 1
 2
 </pre></div>
 
-<p>For example, the behavior of
-
+<p>たとえば、次の振る舞い
 </p><div class="example">
 <pre class="example">sed N foo bar
 </pre></div>
-<p>would depend on whether foo has an even or an odd number of
-lines<a name="DOCF12" href="#FOOT12"><sup>12</sup></a>.  Or, when writing a script to read the
-next few lines following a pattern match, traditional
-implementations of <code>sed</code> would force you to write
-something like
-
+<p>は、fooの行数が偶数か奇数かに依存します。<a name="DOCF12" href="#FOOT12"><sup>12</sup></a>. また、パターンマッチの後に続く数行を読むためのスクリプトを書くとき、伝統的な実装の<code> sed </code>はあなたに次のようなものを書くことを強いるでしょう。
 </p><div class="example">
 <pre class="example">/foo/{ $!N; $!N; $!N; $!N; $!N; $!N; $!N; $!N; $!N }
 </pre></div>
-<p>instead of just
-
+<p>GNU sedでは代わりに次のように書ける
 </p><div class="example">
 <pre class="example">/foo/{ N;N;N;N;N;N;N;N;N; }
 </pre></div>
 
 <a name="index-POSIXLY_005fCORRECT-behavior_002c-N-command"></a>
-<p>In any case, the simplest workaround is to use <code>$d;N</code> in
-scripts that rely on the traditional behavior, or to set
-the <code>POSIXLY_CORRECT</code> variable to a non-empty value.
-
+<p>いずれにせよ、最も簡単な回避策は、従来の振る舞いに依存するスクリプトで<code> $ d; N </code>を使うか、または<code> POSIXLY_CORRECT </code>変数を空でない値に設定することです。
 </p>
 </dd>
-<dt>Regex syntax clashes (problems with backslashes)</dt>
+<dt>正規表現クラッシュ(バックスラッシュ問題)</dt>
 <dd><a name="index-GNU-extensions_002c-to-basic-regular-expressions-5"></a>
 <a name="index-Non_002dbugs_002c-regex-syntax-clashes"></a>
-<p><code>sed</code> uses the <small>POSIX</small> basic regular expression syntax.  According to
-the standard, the meaning of some escape sequences is undefined in
-this syntax;  notable in the case of <code>sed</code> are <code>\|</code>,
-<code>\+</code>, <code>\?</code>, <code>\`</code>, <code>\'</code>, <code>\&lt;</code>,
-<code>\&gt;</code>, <code>\b</code>, <code>\B</code>, <code>\w</code>, and <code>\W</code>.
-
+<p><code>sed</code> は <small>POSIX</small> 基本正規表現文法を使います。規格によると、いくつかのエスケープシーケンスの意味はこの文法では定義されていません。 <code> sed </code>の場合、<code> \ | </code>、<code> \ + </code>、<code> \？</code>、<code> \ `&lt; / c6&gt;、<code> \ '</code>、<code> \ &lt;</code>、<code>\&gt; </code>、<code> \ b </code>、<code> \ B &lt; / c11&gt;、<code> \ w </code>、および<code> \ W </code>
 </p>
-<p>As in all GNU programs that use <small>POSIX</small> basic regular
-expressions, <code>sed</code> interprets these escape sequences as special
-characters.  So, <code>x\+</code> matches one or more occurrences of ‘<samp>x</samp>’.
-<code>abc\|def</code> matches either ‘<samp>abc</samp>’ or ‘<samp>def</samp>’.
-
+<p><small> POSIX </small>基本正規表現を使用するすべてのGNUプログラムと同様に、<code> sed </code>はこれらのエスケープシーケンスを特殊文字として解釈します。<code>x\+</code> は、1つまたはそれ以上現れる‘<samp>x</samp>’にマッチします。. <code>abc\|def</code> は‘<samp>abc</samp>’または‘<samp>def</samp>’のいずれかにマッチします。
 </p>
-<p>This syntax may cause problems when running scripts written for other
-<code>sed</code>s.  Some <code>sed</code> programs have been written with the
-assumption that <code>\|</code> and <code>\+</code> match the literal characters
-<code>|</code> and <code>+</code>.  Such scripts must be modified by removing the
-spurious backslashes if they are to be used with modern implementations
-of <code>sed</code>, like
-GNU <code>sed</code>.
-
+<p>これらの文法が問題を引き起こすのは他の<code>sed</code>の為に書かれたスクリプトを実行するときです。いくつかの<code>sed</code> プログラムは <code>\|</code> や <code>\+</code> は 文字<code>|</code> や <code>+</code> するものだと決めつけています。このようなスクリプトは、GNU <code> sed </code>のような現代的な<code> sed </code>の実装で使用する場合には、誤ったバックスラッシュを削除して修正する必要があります。
 </p>
-<p>On the other hand, some scripts use s|abc\|def||g to remove occurrences
-of <em>either</em> <code>abc</code> or <code>def</code>.  While this worked until
-<code>sed</code> 4.0.x, newer versions interpret this as removing the
-string <code>abc|def</code>.  This is again undefined behavior according to
-POSIX, and this interpretation is arguably more robust: older
-<code>sed</code>s, for example, required that the regex matcher parsed
-<code>\/</code> as <code>/</code> in the common case of escaping a slash, which is
-again undefined behavior; the new behavior avoids this, and this is good
-because the regex matcher is only partially under our control.
-
+<p>一方、スクリプトによっては s|abc\|def||g を使用して、<code>abc</code>または<code>def</code>の<em>どちらかの</em>出現を削除します。これは<code> sed </code> 4.0.xまでは機能しましたが、新しいバージョンでは<code>abc|def</code>という文字列を削除するものとして解釈されます。POSIXによれば、これもまた未定義の振る舞いであり、この解釈は間違いなくより健全(robust)です。例えば、より古い<code>sed</code>では、スラッシュをエスケープする一般的なケースでは正規表現照合プログラムが <code>\/</code>を <code>/</code>として解析する必要がありました。 新しい振る舞いはこれを避けています、そしてこれは良いことです。正規表現マッチ機構は部分的にしか私たちの管理下にないからです。
 </p>
 <a name="index-GNU-extensions_002c-special-escapes-1"></a>
-<p>In addition, this version of <code>sed</code> supports several escape characters
-(some of which are multi-character) to insert non-printable characters
-in scripts (<code>\a</code>, <code>\c</code>, <code>\d</code>, <code>\o</code>, <code>\r</code>,
-<code>\t</code>, <code>\v</code>, <code>\x</code>).  These can cause similar problems
-with scripts written for other <code>sed</code>s.
-
+<p>さらに、このバージョンの<code> sed </code>では、スクリプトに印刷不可能な文字を挿入するための複数のエスケープ文字（そのうちのいくつかは複数文字）がサポートされています(<code>\a</code>, <code>\c</code>, <code>\d</code>, <code>\o</code>, <code>\r</code>, <code>\t</code>, <code>\v</code>, <code>\x</code>)。これらも他の<code> sed </code>用に書かれたスクリプトで同様の問題を引き起こす可能性があります。
 </p>
 </dd>
-<dt><samp>-i</samp> clobbers read-only files</dt>
+<dt><samp>-i</samp> が読み込み専用ファイルを壊す問題</dt>
 <dd><a name="index-In_002dplace-editing"></a>
 <a name="index-GNU-extensions_002c-in_002dplace-editing-1"></a>
 <a name="index-Non_002dbugs_002c-in_002dplace-editing"></a>
 
-<p>In short, ‘<samp>sed -i</samp>’ will let you delete the contents of
-a read-only file, and in general the <samp>-i</samp> option
-(see <a href="#Invoking-sed">Invocation</a>) lets you clobber
-protected files.  This is not a bug, but rather a consequence
-of how the Unix file system works.
-
+<p>要するに、 '<samp> sed -i </samp>'を指定すると、読み取り専用ファイルの内容を削除できます。一般に、<samp> -i </samp>オプション(<a href="#Invoking-sed">起動</a>を参照)を使用すると、保護されているファイルを破壊できます。これはバグではなく、むしろUnixファイルシステムがどのように機能するかの結果です。
 </p>
-<p>The permissions on a file say what can happen to the data
-in that file, while the permissions on a directory say what can
-happen to the list of files in that directory.  ‘<samp>sed -i</samp>’
-will not ever open for writing  a file that is already on disk.
-Rather, it will work on a temporary file that is finally renamed
-to the original name: if you rename or delete files, you’re actually
-modifying the contents of the directory, so the operation depends on
-the permissions of the directory, not of the file.  For this same
-reason, <code>sed</code> does not let you use <samp>-i</samp> on a writable file
-in a read-only directory, and will break hard or symbolic links when
-<samp>-i</samp> is used on such a file.
-
+<p>ファイルに対する許可は、そのファイル内のデータに何が起こり得るかを示し、ディレクトリに対する許可は、そのディレクトリ内のファイルのリストに何が起こりうるかを示します。'<samp> sed -i </samp>'はすでにディスク上にあるファイルを書き込むために開くことはありません。そうではなく、一時的なファイルに対して操作し最終的に元の名前に変更されます。ファイルの名前を変更または削除すると、実際にはディレクトリの内容が変更されるため、操作はファイルの権限ではなくディレクトリの権限に依存します。 同じ理由で、<code> sed </code>は読み取り専用ディレクトリの書き込み可能なファイルに '-i'を使用させず、 '-i'がそのようなファイルに使用されるとハードリンクまたはシンボリックリンクを解除します。
 </p>
 </dd>
-<dt><code>0a</code> does not work (gives an error)</dt>
+<dt><code>0a</code> が動作しない(エラーになる)問題</dt>
 <dd><a name="index-0-address"></a>
 <a name="index-GNU-extensions_002c-0-address-1"></a>
 <a name="index-Non_002dbugs_002c-0-address"></a>
 
-<p>There is no line 0.  0 is a special address that is only used to treat
-addresses like <code>0,/<var>RE</var>/</code> as active when the script starts: if
-you write <code>1,/abc/d</code> and the first line includes the word ‘<samp>abc</samp>’,
-then that match would be ignored because address ranges must span at least
-two lines (barring the end of the file); but what you probably wanted is
-to delete every line up to the first one including ‘<samp>abc</samp>’, and this
-is obtained with <code>0,/abc/d</code>.
-
+<p>行番号0の行は存在しません。0は、スクリプトの起動時に <code>0,/<var>RE</var>/</code>のようなアドレスをアクティブとして扱うためだけに使用される特殊なアドレスです。 <code>1,/abc/d</code>と書き、最初の行に ‘<samp>abc</samp>’という単語が含まれていると、アドレス範囲は少なくとも2行にわたる（ファイルの終わりを除く）ので、その一致は無視されます。アドレス範囲は少なくとも2行にわたる必要があるため（ファイルの終わりを除く）、その一致は無視されます。 しかし、おそらくあなたが望んでいたのは ‘<samp>abc</samp>’を含む最初の行まですべての行を削除することです。これは <code>0,/abc/d</code>で得られます。
 </p>
 </dd>
-<dt><code>[a-z]</code> is case insensitive</dt>
+<dt><code>[a-z]</code> が大文字小文字を区別しない問題</dt>
 <dd><a name="index-Non_002dbugs_002c-localization_002drelated"></a>
 
-<p>You are encountering problems with locales.  POSIX mandates that <code>[a-z]</code>
-uses the current locale’s collation order – in C parlance, that means using
-<code>strcoll(3)</code> instead of <code>strcmp(3)</code>.  Some locales have a
-case-insensitive collation order, others don’t.
-
+<p>あなたはロケールに関する問題に遭遇しています。POSIXは<code>[a-z]</code> に現在のロケールの照合順序を使用することを強制しています。C言語で言えば <code>strcmp(3)</code>の代わりに<code>strcoll(3)</code>を使用することを意味します。大/小文字を区別しない照合順を持つロケールもあれば、そうでないロケールもあります。
 </p>
-<p>Another problem is that <code>[a-z]</code> tries to use collation symbols.
-This only happens if you are on the GNU system, using
-GNU libc’s regular expression matcher instead of compiling the
-one supplied with GNU sed.  In a Danish locale, for example,
-the regular expression <code>^[a-z]$</code> matches the string ‘<samp>aa</samp>’,
-because this is a single collating symbol that comes after ‘<samp>a</samp>’
-and before ‘<samp>b</samp>’; ‘<samp>ll</samp>’ behaves similarly in Spanish
-locales, or ‘<samp>ij</samp>’ in Dutch locales.
-
+<p>別の問題は、<code>[a-z]</code> が照合記号を使おうとしていることです。これは、GNU sedを提供しているものをコンパイルするのではなく、GNU libcの正規表現マッチャーを使用して、GNUシステムを使用している場合にのみ発生します。たとえば、デンマーク語のロケールでは、正規表現 <code>^[a-z]$</code>は文字列 ‘<samp>aa</samp>’と一致します。これは、 ‘<samp>a</samp>’の後で、 ‘<samp>b</samp>’の前にある単一の照合記号だからです。 ‘<samp>ll</samp>’はスペイン語のロケールでも‘<samp>ij</samp>’のオランダ語のロケールでも同じように動作します。
 </p>
-<p>To work around these problems, which may cause bugs in shell scripts, set
-the <code>LC_COLLATE</code> and <code>LC_CTYPE</code> environment variables to ‘<samp>C</samp>’.
-
+<p>シェルスクリプトでバグを引き起こす可能性があるこれらの問題を回避するには、<code> LC_COLLATE </code>および<code> LC_CTYPE </code>環境変数を ‘<samp>C</samp>’に設定してください。
 </p>
 </dd>
-<dt><code>s/.*//</code> does not clear pattern space</dt>
+<dt><code>s/.*//</code> がパターンスペースを全削除しない問題</dt>
 <dd><a name="index-Non_002dbugs_002c-localization_002drelated-1"></a>
 <a name="index-GNU-extensions_002c-emptying-pattern-space-1"></a>
 <a name="index-Emptying-pattern-space-1"></a>
 
-<p>This happens if your input stream includes invalid multibyte
-sequences.  <small>POSIX</small> mandates that such sequences
-are <em>not</em> matched by ‘<samp>.</samp>’, so that ‘<samp>s/.*//</samp>’ will not clear
-pattern space as you would expect.  In fact, there is no way to clear
-sed’s buffers in the middle of the script in most multibyte locales
-(including UTF-8 locales).  For this reason, GNU <code>sed</code> provides a ‘z’
-command (for ‘zap’) as an extension.
-
+<p>これは入力ストリームが不正なマルチバイトつづりを含んでいると発生します。<small>POSIX</small>は、そのようなシーケンスは ‘<samp>.</samp>’と<em>一致しない</em>ことを強制しているので、 ‘<samp>s/.*//</samp>’はあなたが期待するようにパターンスペースを全削除しないでしょう。実際、ほとんどのマルチバイトロケール（UTF-8ロケールを含む）では、スクリプトの途中でsedのバッファを全削除することはできません。このため、GNU <code> sed </code>では、（zap用の）zコマンドが拡張機能として提供されています。
 </p>
-<p>To work around these problems, which may cause bugs in shell scripts, set
-the <code>LC_COLLATE</code> and <code>LC_CTYPE</code> environment variables to ‘<samp>C</samp>’.
-
+<p>シェルスクリプトでバグを引き起こす可能性があるこれらの問題を回避するには、<code> LC_COLLATE </code>および<code> LC_CTYPE </code>環境変数を ‘<samp>C</samp>’に設定してください。
 </p></dd>
 </dl>
 
@@ -5489,7 +5299,7 @@ to permit their use in free software.
 <tr><td></td><td valign="top"><a href="#index-addresses_002c-numeric">addresses, numeric</a>(数値指定アドレス):</td><td>&nbsp;</td><td valign="top"><a href="#Addresses-overview"> アドレス概要</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-addresses_002c-range">addresses, range</a>(範囲指定アドレス):</td><td>&nbsp;</td><td valign="top"><a href="#Addresses-overview"> アドレス概要</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-addresses_002c-regular-expression">addresses, regular expression</a>(正規表現アドレス):</td><td>&nbsp;</td><td valign="top"><a href="#Addresses-overview"> アドレス概要</a></td></tr>
-<tr><td></td><td valign="top"><a href="#index-addresses_002c-syntax">addresses, syntax</a>(アドレス、その構文):</td><td>&nbsp;</td><td valign="top"><a href="#sed-script-overview">sedスクリプト概要</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-addresses_002c-syntax">addresses, syntax</a>(アドレス、その文法):</td><td>&nbsp;</td><td valign="top"><a href="#sed-script-overview">sedスクリプト概要</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-alphabetic-characters">alphabetic characters</a>(英字):</td><td>&nbsp;</td><td valign="top"><a href="#Character-Classes-and-Bracket-Expressions"> 文字クラスと角括弧式</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-alphanumeric-characters">alphanumeric characters</a>(英数字):</td><td>&nbsp;</td><td valign="top"><a href="#Character-Classes-and-Bracket-Expressions"> 文字クラスと角括弧式</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-Append-hold-space-to-pattern-space">Append hold space to pattern space</a>(パターンスペースにホールドスペースを追加):</td><td>&nbsp;</td><td valign="top"><a href="#Other-Commands">他のコマンド</a></td></tr>
@@ -5549,7 +5359,7 @@ to permit their use in free software.
 <tr><td></td><td valign="top"><a href="#index-exit-status">exit status</a>(終了ステータス):</td><td>&nbsp;</td><td valign="top"><a href="#Exit-status"> 終了ステータス</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-exit-status_002c-example">exit statusとその例</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Exit-status"> 終了ステータス</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-Extended-regular-expressions_002c-choosing">Extended regular expressions, choosing</a>(拡張正規表現とそれによる選択):</td><td>&nbsp;</td><td valign="top"><a href="#Command_002dLine-Options"> コマンドラインオプション</a></td></tr>
-<tr><td></td><td valign="top"><a href="#index-Extended-regular-expressions_002c-syntax">Extended regular expressions, syntax</a>(拡張正規表現とその構文):</td><td>&nbsp;</td><td valign="top"><a href="#ERE-syntax">ERE構文</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Extended-regular-expressions_002c-syntax">Extended regular expressions, syntax</a>(拡張正規表現とその文法):</td><td>&nbsp;</td><td valign="top"><a href="#ERE-syntax">ERE構文</a></td></tr>
 <tr><td colspan="4"> <hr></td></tr>
 <tr><th><a name="Concept-Index_cp_letter-F">F</a></th><td></td><td></td></tr>
 <tr><td></td><td valign="top"><a href="#index-File-name_002c-printing">File name, printing</a>(現在の入力ファイル名をプリント):</td><td>&nbsp;</td><td valign="top"><a href="#Extended-Commands">拡張コマンド達</a></td></tr>
