@@ -4615,7 +4615,7 @@ error→ sed: file sedscr line 1: Unknown option to 's'
 <dt>正規表現クラッシュ(バックスラッシュ問題)</dt>
 <dd><a name="index-GNU-extensions_002c-to-basic-regular-expressions-5"></a>
 <a name="index-Non_002dbugs_002c-regex-syntax-clashes"></a>
-<p><code>sed</code> は <small>POSIX</small> 基本正規表現文法を使います。規格によると、いくつかのエスケープシーケンスの意味はこの文法では定義されていません。 <code> sed </code>の場合、<code> \ | </code>、<code> \ + </code>、<code> \？</code>、<code> \ `&lt; / c6&gt;、<code> \ '</code>、<code> \ &lt;</code>、<code>\&gt; </code>、<code> \ b </code>、<code> \ B &lt; / c11&gt;、<code> \ w </code>、および<code> \ W </code>
+<p><code>sed</code> は <small>POSIX</small> 基本正規表現文法を使います。規格によると、いくつかのエスケープシーケンスの意味はこの文法では定義されていません。 <code> sed </code>の場合、<code>\|</code>、<code>\+</code>、 <code>\?</code>、<code>\`</code>、<code>\'</code>、<code>\&lt;</code>、 <code>\&gt;</code>、<code>\b</code>、<code>\B</code>、<code>\w</code>、 <code>\W</code> です。
 </p>
 <p><small> POSIX </small>基本正規表現を使用するすべてのGNUプログラムと同様に、<code> sed </code>はこれらのエスケープシーケンスを特殊文字として解釈します。<code>x\+</code> は、1つまたはそれ以上現れる‘<samp>x</samp>’にマッチします。. <code>abc\|def</code> は‘<samp>abc</samp>’または‘<samp>def</samp>’のいずれかにマッチします。
 </p>
@@ -4642,7 +4642,7 @@ error→ sed: file sedscr line 1: Unknown option to 's'
 <a name="index-GNU-extensions_002c-0-address-1"></a>
 <a name="index-Non_002dbugs_002c-0-address"></a>
 
-<p>行番号0の行は存在しません。0は、スクリプトの起動時に <code>0,/<var>RE</var>/</code>のようなアドレスをアクティブとして扱うためだけに使用される特殊なアドレスです。 <code>1,/abc/d</code>と書き、最初の行に ‘<samp>abc</samp>’という単語が含まれていると、アドレス範囲は少なくとも2行にわたる（ファイルの終わりを除く）ので、その一致は無視されます。アドレス範囲は少なくとも2行にわたる必要があるため（ファイルの終わりを除く）、その一致は無視されます。 しかし、おそらくあなたが望んでいたのは ‘<samp>abc</samp>’を含む最初の行まですべての行を削除することです。これは <code>0,/abc/d</code>で得られます。
+<p>行番号0の行は存在しません。0は、スクリプトの起動時に <code>0,/<var>RE</var>/</code>のようなアドレスをアクティブとして扱うためだけに使用される特殊なアドレスです。 <code>1,/abc/d</code>と書き、最初の行に ‘<samp>abc</samp>’という単語が含まれていると、アドレス範囲は少なくとも2行にわたる必要があるため（ファイルの終わりを除く）、その一致は無視されます。 しかし、おそらくあなたが望んでいたのは ‘<samp>abc</samp>’を含む最初の行まですべての行を削除することです。これは <code>0,/abc/d</code>で得られます。
 </p>
 </dd>
 <dt><code>[a-z]</code> が大文字小文字を区別しない問題</dt>

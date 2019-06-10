@@ -7465,8 +7465,8 @@ sed -e "=" $@ | sed -e '</seg>
       <tuv lang="EN-US">
         <seg>0 is a special address that is only used to treat addresses like &lt;c0&gt;0,/&lt;v1&gt;RE&lt;/v1&gt;/&lt;/c0&gt; as active when the script starts: if you write &lt;c2&gt;1,/abc/d&lt;/c2&gt; and the first line includes the word ‘&lt;s3&gt;abc&lt;/s3&gt;’, then that match would be ignored because address ranges must span at least two lines (barring the end of the file); but what you probably wanted is to delete every line up to the first one including ‘&lt;s4&gt;abc&lt;/s4&gt;’, and this is obtained with &lt;c5&gt;0,/abc/d&lt;/c5&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190610T164833Z" creationid="hideo" creationdate="20190610T164833Z">
-        <seg>0は、スクリプトの起動時に &lt;c0&gt;0,/&lt;v1&gt;RE&lt;/v1&gt;/&lt;/c0&gt;のようなアドレスをアクティブとして扱うためだけに使用される特殊なアドレスです。 &lt;c2&gt;1,/abc/d&lt;/c2&gt;と書き、最初の行に ‘&lt;s3&gt;abc&lt;/s3&gt;’という単語が含まれていると、アドレス範囲は少なくとも2行にわたる（ファイルの終わりを除く）ので、その一致は無視されます。アドレス範囲は少なくとも2行にわたる必要があるため（ファイルの終わりを除く）、その一致は無視されます。 しかし、おそらくあなたが望んでいたのは ‘&lt;s4&gt;abc&lt;/s4&gt;’を含む最初の行まですべての行を削除することです。これは &lt;c5&gt;0,/abc/d&lt;/c5&gt;で得られます。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T203852Z" creationid="hideo" creationdate="20190610T164833Z">
+        <seg>0は、スクリプトの起動時に &lt;c0&gt;0,/&lt;v1&gt;RE&lt;/v1&gt;/&lt;/c0&gt;のようなアドレスをアクティブとして扱うためだけに使用される特殊なアドレスです。 &lt;c2&gt;1,/abc/d&lt;/c2&gt;と書き、最初の行に ‘&lt;s3&gt;abc&lt;/s3&gt;’という単語が含まれていると、アドレス範囲は少なくとも2行にわたる必要があるため（ファイルの終わりを除く）、その一致は無視されます。 しかし、おそらくあなたが望んでいたのは ‘&lt;s4&gt;abc&lt;/s4&gt;’を含む最初の行まですべての行を削除することです。これは &lt;c5&gt;0,/abc/d&lt;/c5&gt;で得られます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11669,8 +11669,8 @@ error→ sed: file sedscr line 1: Unknown option to 's'</seg>
       <tuv lang="EN-US">
         <seg>According to the standard, the meaning of some escape sequences is undefined in this syntax; notable in the case of &lt;c2&gt;sed&lt;/c2&gt; are &lt;c3&gt;\|&lt;/c3&gt;, &lt;c4&gt;\+&lt;/c4&gt;, &lt;c5&gt;\?&lt;/c5&gt;, &lt;c6&gt;\`&lt;/c6&gt;, &lt;c7&gt;\'&lt;/c7&gt;, &lt;c8&gt;\&lt;&lt;/c8&gt;, &lt;c9&gt;\&gt;&lt;/c9&gt;, &lt;c10&gt;\b&lt;/c10&gt;, &lt;c11&gt;\B&lt;/c11&gt;, &lt;c12&gt;\w&lt;/c12&gt;, and &lt;c13&gt;\W&lt;/c13&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190610T161127Z" creationid="hideo" creationdate="20190610T160515Z">
-        <seg>規格によると、いくつかのエスケープシーケンスの意味はこの文法では定義されていません。 &lt;c2&gt; sed &lt;/c2&gt;の場合、&lt;c3&gt; \ | &lt;/c3&gt;、&lt;c4&gt; \ + &lt;/c4&gt;、&lt;c5&gt; \？&lt;/c5&gt;、&lt;c6&gt; \ `&lt; / c6&gt;、&lt;c7&gt; \ '&lt;/c7&gt;、&lt;c8&gt; \ &lt;&lt;/c8&gt;、&lt;c9&gt;\&gt; &lt;/c9&gt;、&lt;c10&gt; \ b &lt;/c10&gt;、&lt;c11&gt; \ B &lt; / c11&gt;、&lt;c12&gt; \ w &lt;/c12&gt;、および&lt;c13&gt; \ W &lt;/c13&gt;</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T203808Z" creationid="hideo" creationdate="20190610T160515Z">
+        <seg>規格によると、いくつかのエスケープシーケンスの意味はこの文法では定義されていません。 &lt;c2&gt; sed &lt;/c2&gt;の場合、&lt;c3&gt;\|&lt;/c3&gt;、&lt;c4&gt;\+&lt;/c4&gt;、 &lt;c5&gt;\?&lt;/c5&gt;、&lt;c6&gt;\`&lt;/c6&gt;、&lt;c7&gt;\'&lt;/c7&gt;、&lt;c8&gt;\&lt;&lt;/c8&gt;、 &lt;c9&gt;\&gt;&lt;/c9&gt;、&lt;c10&gt;\b&lt;/c10&gt;、&lt;c11&gt;\B&lt;/c11&gt;、&lt;c12&gt;\w&lt;/c12&gt;、 &lt;c13&gt;\W&lt;/c13&gt; です。</seg>
       </tuv>
     </tu>
     <tu>

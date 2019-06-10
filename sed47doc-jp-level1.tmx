@@ -7465,8 +7465,8 @@ sed -e "=" $@ | sed -e '</seg>
       <tuv lang="EN-US">
         <seg>0 is a special address that is only used to treat addresses like 0,/RE/ as active when the script starts: if you write 1,/abc/d and the first line includes the word ‘abc’, then that match would be ignored because address ranges must span at least two lines (barring the end of the file); but what you probably wanted is to delete every line up to the first one including ‘abc’, and this is obtained with 0,/abc/d.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190610T164833Z" creationid="hideo" creationdate="20190610T164833Z">
-        <seg>0は、スクリプトの起動時に 0,/RE/のようなアドレスをアクティブとして扱うためだけに使用される特殊なアドレスです。 1,/abc/dと書き、最初の行に ‘abc’という単語が含まれていると、アドレス範囲は少なくとも2行にわたる（ファイルの終わりを除く）ので、その一致は無視されます。アドレス範囲は少なくとも2行にわたる必要があるため（ファイルの終わりを除く）、その一致は無視されます。 しかし、おそらくあなたが望んでいたのは ‘abc’を含む最初の行まですべての行を削除することです。これは 0,/abc/dで得られます。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T203852Z" creationid="hideo" creationdate="20190610T164833Z">
+        <seg>0は、スクリプトの起動時に 0,/RE/のようなアドレスをアクティブとして扱うためだけに使用される特殊なアドレスです。 1,/abc/dと書き、最初の行に ‘abc’という単語が含まれていると、アドレス範囲は少なくとも2行にわたる必要があるため（ファイルの終わりを除く）、その一致は無視されます。 しかし、おそらくあなたが望んでいたのは ‘abc’を含む最初の行まですべての行を削除することです。これは 0,/abc/dで得られます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11669,8 +11669,8 @@ error→ sed: file sedscr line 1: Unknown option to 's'</seg>
       <tuv lang="EN-US">
         <seg>According to the standard, the meaning of some escape sequences is undefined in this syntax; notable in the case of sed are \|, \+, \?, \`, \', \&lt;, \&gt;, \b, \B, \w, and \W.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190610T161127Z" creationid="hideo" creationdate="20190610T160515Z">
-        <seg>規格によると、いくつかのエスケープシーケンスの意味はこの文法では定義されていません。  sed の場合、 \ | 、 \ + 、 \？、 \ `&lt; / c6&gt;、 \ '、 \ &lt;、\&gt; 、 \ b 、 \ B &lt; / c11&gt;、 \ w 、および \ W </seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190610T203808Z" creationid="hideo" creationdate="20190610T160515Z">
+        <seg>規格によると、いくつかのエスケープシーケンスの意味はこの文法では定義されていません。  sed の場合、\|、\+、 \?、\`、\'、\&lt;、 \&gt;、\b、\B、\w、 \W です。</seg>
       </tuv>
     </tu>
     <tu>
