@@ -374,8 +374,8 @@ $b</seg>
       <tuv xml:lang="EN-US">
         <seg># WRONG USAGE: 'FILE' will be truncated.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190603T151209Z" creationid="hideo" creationdate="20190603T151209Z">
-        <seg># WRONG USAGE: 'FILE' will be truncated.</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T053826Z" creationid="hideo" creationdate="20190603T151209Z">
+        <seg># 間違った使用法： 'FILE'は切り捨てられます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6873,8 +6873,8 @@ N
       <tuv xml:lang="EN-US">
         <seg>(To learn more about <bpt i="8" x="8">&lt;c8&gt;</bpt>N<ept i="8">&lt;/c8&gt;</ept>, <bpt i="9" x="9">&lt;c9&gt;</bpt>P<ept i="9">&lt;/c9&gt;</ept> and <bpt i="10" x="10">&lt;c10&gt;</bpt>D<ept i="10">&lt;/c10&gt;</ept> commands see <bpt i="11" x="11">&lt;a11&gt;</bpt>Multiline techniques<ept i="11">&lt;/a11&gt;</ept>).</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T084239Z" creationid="hideo" creationdate="20190608T084239Z">
-        <seg>（<bpt i="8" x="8">&lt;c8&gt;</bpt> N <ept i="8">&lt;/c8&gt;</ept>、<bpt i="9" x="9">&lt;c9&gt;</bpt> P <ept i="9">&lt;/c9&gt;</ept>、<bpt i="10" x="10">&lt;c10&gt;</bpt> D <ept i="10">&lt;/c10&gt;</ept>コマンドの詳細については、<bpt i="11" x="11">&lt;a11&gt;</bpt>複数行テクニック<ept i="11">&lt;/a11&gt;</ept>をご覧ください）。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060830Z" creationid="hideo" creationdate="20190608T084239Z">
+        <seg>(<bpt i="8" x="8">&lt;c8&gt;</bpt> N <ept i="8">&lt;/c8&gt;</ept>、<bpt i="9" x="9">&lt;c9&gt;</bpt> P <ept i="9">&lt;/c9&gt;</ept>、<bpt i="10" x="10">&lt;c10&gt;</bpt> D <ept i="10">&lt;/c10&gt;</ept>コマンドの詳細については、「<bpt i="11" x="11">&lt;a11&gt;</bpt>複数行テクニック<ept i="11">&lt;/a11&gt;</ept>」参照)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7059,8 +7059,8 @@ esac</seg>
       <tuv xml:lang="EN-US">
         <seg>--in-place[=<bpt i="0" x="0">&lt;v0&gt;</bpt>SUFFIX<ept i="0">&lt;/v0&gt;</ept>]</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190603T151150Z" creationid="hideo" creationdate="20190603T151150Z">
-        <seg>--in-place[=<bpt i="0" x="0">&lt;v0&gt;</bpt>SUFFIX<ept i="0">&lt;/v0&gt;</ept>]</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T061159Z" creationid="hideo" creationdate="20190603T151150Z">
+        <seg>--in-place[=<bpt i="0" x="0">&lt;v0&gt;</bpt>SUFFIX<ept i="0">&lt;/v0&gt;</ept>],</seg>
       </tuv>
     </tu>
     <tu>
@@ -8075,8 +8075,8 @@ D</seg>
       <tuv xml:lang="EN-US">
         <seg>9 Other Resources for Learning About <bpt i="0" x="0">&lt;c0&gt;</bpt>sed<ept i="0">&lt;/c0&gt;</ept></seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190603T145211Z" creationid="hideo" creationdate="20190603T145211Z">
-        <seg>9 <bpt i="0" x="0">&lt;c0&gt;</bpt>sed<ept i="0">&lt;/c0&gt;</ept>について学べる、本やWebページなど</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T055103Z" creationid="hideo" creationdate="20190603T145211Z">
+        <seg>9 <bpt i="0" x="0">&lt;c0&gt;</bpt>sed<ept i="0">&lt;/c0&gt;</ept>を習得するためのこの文書以外の資料</seg>
       </tuv>
     </tu>
     <tu>
@@ -10943,8 +10943,8 @@ of this license document, but changing it is not allowed.</seg>
       <tuv xml:lang="EN-US">
         <seg><bpt i="0" x="0">&lt;c0&gt;</bpt>sed<ept i="0">&lt;/c0&gt;</ept> commands follow this syntax:</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T065400Z" creationid="hideo" creationdate="20190605T065400Z">
-        <seg><bpt i="0" x="0">&lt;c0&gt;</bpt>sed<ept i="0">&lt;/c0&gt;</ept>は構文は次の通り。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T053219Z" creationid="hideo" creationdate="20190605T065400Z">
+        <seg><bpt i="0" x="0">&lt;c0&gt;</bpt>sed<ept i="0">&lt;/c0&gt;</ept>コマンド文法は次の通り。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11159,8 +11159,8 @@ of this license document, but changing it is not allowed.</seg>
       <tuv xml:lang="EN-US">
         <seg><bpt i="5" x="5">&lt;c5&gt;</bpt>[addr]<ept i="5">&lt;/c5&gt;</ept> can be a single line number, a regular expression, or a range of lines (see <bpt i="6" x="6">&lt;a6&gt;</bpt>sed addresses<ept i="6">&lt;/a6&gt;</ept>).</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T065736Z" creationid="hideo" creationdate="20190605T065736Z">
-        <seg><bpt i="5" x="5">&lt;c5&gt;</bpt>[addr]<ept i="5">&lt;/c5&gt;</ept>は行番号一つ、または正規表現、または行範囲を指定する事ができます(<bpt i="6" x="6">&lt;a6&gt;</bpt>sedアドレス<ept i="6">&lt;/a6&gt;</ept>参照)。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060305Z" creationid="hideo" creationdate="20190605T065736Z">
+        <seg><bpt i="5" x="5">&lt;c5&gt;</bpt>[addr]<ept i="5">&lt;/c5&gt;</ept>は行番号一つ、または正規表現、または行範囲を指定する事ができます(「<bpt i="6" x="6">&lt;a6&gt;</bpt>sedアドレス<ept i="6">&lt;/a6&gt;</ept>」参照)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12013,8 +12013,8 @@ error→ sed: file sedscr line 1: Unknown option to 's'</seg>
       <tuv xml:lang="EN-US">
         <seg>Append <bpt i="0" x="0">&lt;v0&gt;</bpt>text<ept i="0">&lt;/v0&gt;</ept> after a line (alternative syntax).</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T112731Z" creationid="hideo" creationdate="20190605T074922Z">
-        <seg>(append)行の後ろに <bpt i="0" x="0">&lt;v0&gt;</bpt>text<ept i="0">&lt;/v0&gt;</ept> を追加する(代替構文)。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T062256Z" creationid="hideo" creationdate="20190605T074922Z">
+        <seg>(append)行の後ろに <bpt i="0" x="0">&lt;v0&gt;</bpt>text<ept i="0">&lt;/v0&gt;</ept> を追加する(代替文法)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12285,8 +12285,8 @@ $d</seg>
       <tuv xml:lang="EN-US">
         <seg>BRE syntax</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190607T161259Z" creationid="hideo" creationdate="20190607T161259Z">
-        <seg>BRE構文</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T062840Z" creationid="hideo" creationdate="20190607T161259Z">
+        <seg>BRE文法</seg>
       </tuv>
     </tu>
     <tu>
@@ -12301,8 +12301,8 @@ $d</seg>
       <tuv xml:lang="EN-US">
         <seg>Back-references and subexpressions are used in two cases: in the regular expression search pattern, and in the <bpt i="0" x="0">&lt;v0&gt;</bpt>replacement<ept i="0">&lt;/v0&gt;</ept> part of the <bpt i="1" x="1">&lt;c1&gt;</bpt>s<ept i="1">&lt;/c1&gt;</ept> command (see <bpt i="2" x="2">&lt;a2&gt;</bpt>Regular Expression Addresses<ept i="2">&lt;/a2&gt;</ept> and <bpt i="3" x="3">&lt;a3&gt;</bpt>The "s" Command<ept i="3">&lt;/a3&gt;</ept>).</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190607T232540Z" creationid="hideo" creationdate="20190607T232540Z">
-        <seg>後方参照と部分式は、正規表現検索パターンの中と<bpt i="1" x="1">&lt;c1&gt;</bpt>s<ept i="1">&lt;/c1&gt;</ept>コマンド<bpt i="0" x="0">&lt;v0&gt;</bpt>replacement<ept i="0">&lt;/v0&gt;</ept>の部分の2つの場合に使用されます(<bpt i="2" x="2">&lt;a2&gt;</bpt>正規表現アドレス<ept i="2">&lt;/a2&gt;</ept>と<bpt i="3" x="3">&lt;a3&gt;</bpt>The "s" Command<ept i="3">&lt;/a3&gt;</ept>も参照下さい)。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060656Z" creationid="hideo" creationdate="20190607T232540Z">
+        <seg>後方参照と部分式は、正規表現検索パターンの中と<bpt i="1" x="1">&lt;c1&gt;</bpt>s<ept i="1">&lt;/c1&gt;</ept>コマンド<bpt i="0" x="0">&lt;v0&gt;</bpt>replacement<ept i="0">&lt;/v0&gt;</ept>の部分の2つの場合に使用されます(「<bpt i="2" x="2">&lt;a2&gt;</bpt>正規表現アドレス<ept i="2">&lt;/a2&gt;</ept>」と「<bpt i="3" x="3">&lt;a3&gt;</bpt>The "s" Command<ept i="3">&lt;/a3&gt;</ept>」参照)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12341,24 +12341,24 @@ $d</seg>
       <tuv xml:lang="EN-US">
         <seg>Basic (BRE) and extended (ERE) regular expression syntax</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T120257Z" creationid="hideo" creationdate="20190605T120257Z">
-        <seg>基本正規表現(basic;BRE) と拡張正規表現(extended; ERE)の構文。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T062603Z" creationid="hideo" creationdate="20190605T120257Z">
+        <seg>基本正規表現(basic;BRE) と拡張正規表現(extended; ERE)の文法。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Basic Regular Expression (BRE) syntax is the default in <bpt i="0" x="0">&lt;c0&gt;</bpt>sed<ept i="0">&lt;/c0&gt;</ept> (and similarly in <bpt i="1" x="1">&lt;c1&gt;</bpt>grep<ept i="1">&lt;/c1&gt;</ept>).</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190607T121747Z" creationid="hideo" creationdate="20190607T121747Z">
-        <seg>基本正規表現(BRE)構文は<bpt i="0" x="0">&lt;c0&gt;</bpt> sed <ept i="0">&lt;/c0&gt;</ept>(および<bpt i="1" x="1">&lt;c1&gt;</bpt> grep <ept i="1">&lt;/c1&gt;</ept>でも同様)のデフォルトです。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T062642Z" creationid="hideo" creationdate="20190607T121747Z">
+        <seg>基本正規表現(BRE)文法は<bpt i="0" x="0">&lt;c0&gt;</bpt> sed <ept i="0">&lt;/c0&gt;</ept>(および<bpt i="1" x="1">&lt;c1&gt;</bpt> grep <ept i="1">&lt;/c1&gt;</ept>でも同様)のデフォルトです。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Basic and extended regular expressions are two variations on the syntax of the specified pattern.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190607T121647Z" creationid="hideo" creationdate="20190607T121647Z">
-        <seg>基本正規表現と拡張正規表現は、指定されたパターンの構文に対する2つのバリエーションです。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T062628Z" creationid="hideo" creationdate="20190607T121647Z">
+        <seg>基本正規表現と拡張正規表現は、指定されたパターンの文法に対する2つのバリエーションです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12563,8 +12563,8 @@ s/^.*$/\
       <tuv xml:lang="EN-US">
         <seg>By default, <bpt i="0" x="0">&lt;c0&gt;</bpt>sed<ept i="0">&lt;/c0&gt;</ept> prints out the pattern space at the end of each cycle through the script (see <bpt i="1" x="1">&lt;a1&gt;</bpt>How <bpt i="2" x="2">&lt;c2&gt;</bpt>sed<ept i="2">&lt;/c2&gt;</ept> works<ept i="1">&lt;/a1&gt;</ept>).</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190604T061109Z" creationid="hideo" creationdate="20190604T061016Z">
-        <seg>デフォルトでは<bpt i="0" x="0">&lt;c0&gt;</bpt>sed<ept i="0">&lt;/c0&gt;</ept>はスクリプトを実行し、各サイクルが終わるとパターンスペースの内容をプリントします(<bpt i="1" x="1">&lt;a1&gt;</bpt><bpt i="2" x="2">&lt;c2&gt;</bpt>sed<ept i="2">&lt;/c2&gt;</ept>はどのように動くか <ept i="1">&lt;/a1&gt;</ept>をご覧ください)。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060232Z" creationid="hideo" creationdate="20190604T061016Z">
+        <seg>デフォルトでは<bpt i="0" x="0">&lt;c0&gt;</bpt>sed<ept i="0">&lt;/c0&gt;</ept>はスクリプトを実行し、各サイクルが終わるとパターンスペースの内容をプリントします(「<bpt i="1" x="1">&lt;a1&gt;</bpt><bpt i="2" x="2">&lt;c2&gt;</bpt>sed<ept i="2">&lt;/c2&gt;</ept>はどのように動くか <ept i="1">&lt;/a1&gt;</ept>」参照)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12667,8 +12667,8 @@ s/^.*$/\
       <tuv xml:lang="EN-US">
         <seg>Commands <bpt i="0" x="0">&lt;c0&gt;</bpt>a<ept i="0">&lt;/c0&gt;</ept>, <bpt i="1" x="1">&lt;c1&gt;</bpt>c<ept i="1">&lt;/c1&gt;</ept>, <bpt i="2" x="2">&lt;c2&gt;</bpt>i<ept i="2">&lt;/c2&gt;</ept>, due to their syntax, cannot be followed by semicolons working as command separators and thus should be terminated with newlines or be placed at the end of a <bpt i="3" x="3">&lt;v3&gt;</bpt>script<ept i="3">&lt;/v3&gt;</ept> or <bpt i="4" x="4">&lt;v4&gt;</bpt>script-file<ept i="4">&lt;/v4&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T093605Z" creationid="hideo" creationdate="20190605T093605Z">
-        <seg>sedコマンド'<bpt i="0" x="0">&lt;c0&gt;</bpt>a<ept i="0">&lt;/c0&gt;</ept>'、'<bpt i="1" x="1">&lt;c1&gt;</bpt>c<ept i="1">&lt;/c1&gt;</ept>'、'<bpt i="2" x="2">&lt;c2&gt;</bpt>i<ept i="2">&lt;/c2&gt;</ept>'は構文上、続くコマンドとの区切り文字としてセミコロンを使うことはできません。したがって改行で終了させるから、<bpt i="3" x="3">&lt;v3&gt;</bpt>スクリプト<ept i="3">&lt;/v3&gt;</ept>または<bpt i="4" x="4">&lt;v4&gt;</bpt>スクリプトファイル<ept i="4">&lt;/v4&gt;</ept>の最後に置く必要があります。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T054412Z" creationid="hideo" creationdate="20190605T093605Z">
+        <seg>sedコマンド'<bpt i="0" x="0">&lt;c0&gt;</bpt>a<ept i="0">&lt;/c0&gt;</ept>'、'<bpt i="1" x="1">&lt;c1&gt;</bpt>c<ept i="1">&lt;/c1&gt;</ept>'、'<bpt i="2" x="2">&lt;c2&gt;</bpt>i<ept i="2">&lt;/c2&gt;</ept>'は文法上、続くコマンドとの区切り文字としてセミコロンを使うことはできません。よって改行で終了せるか、または<bpt i="3" x="3">&lt;v3&gt;</bpt>スクリプト<ept i="3">&lt;/v3&gt;</ept>や<bpt i="4" x="4">&lt;v4&gt;</bpt>スクリプトファイル<ept i="4">&lt;/v4&gt;</ept>の最後に置く必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12941,8 +12941,8 @@ s/^.*$/\
       <tuv xml:lang="EN-US">
         <seg>Details and examples for each command are in the following sections.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T081947Z" creationid="hideo" creationdate="20190605T081947Z">
-        <seg>各コマンドの詳細と例は次の節をご覧ください。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T063636Z" creationid="hideo" creationdate="20190605T081947Z">
+        <seg>各コマンドの詳細と例は次の節をご覧ください(訳注：説明の都合上、コマンドとコマンドオプションの間に空白が開いていますが、空白無しで続けても構いません。sedのコマンドは1文字なので最初の1文字読み取った時点で何のコマンドか判ります)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12989,8 +12989,8 @@ s/^.*$/\
       <tuv xml:lang="EN-US">
         <seg>ERE syntax</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190607T160705Z" creationid="hideo" creationdate="20190607T160705Z">
-        <seg>ERE構文</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T062835Z" creationid="hideo" creationdate="20190607T160705Z">
+        <seg>ERE文法</seg>
       </tuv>
     </tu>
     <tu>
@@ -13341,8 +13341,8 @@ s/^.*$/\
       <tuv xml:lang="EN-US">
         <seg>For details about <bpt i="0" x="0">&lt;v0&gt;</bpt>regexp<ept i="0">&lt;/v0&gt;</ept> syntax see <bpt i="1" x="1">&lt;a1&gt;</bpt>Regular Expression Addresses<ept i="1">&lt;/a1&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T124226Z" creationid="hideo" creationdate="20190605T124226Z">
-        <seg><bpt i="0" x="0">&lt;v0&gt;</bpt>正規表現<ept i="0">&lt;/v0&gt;</ept>構文について詳しくは<bpt i="1" x="1">&lt;a1&gt;</bpt>正規表現アドレス<ept i="1">&lt;/a1&gt;</ept>をご覧ください。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T062532Z" creationid="hideo" creationdate="20190605T124226Z">
+        <seg><bpt i="0" x="0">&lt;v0&gt;</bpt>正規表現<ept i="0">&lt;/v0&gt;</ept>文法について詳しくは「<bpt i="1" x="1">&lt;a1&gt;</bpt>正規表現アドレス<ept i="1">&lt;/a1&gt;</ept>」参照。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13429,24 +13429,24 @@ s/^.*$/\
       <tuv xml:lang="EN-US">
         <seg>For more annotated examples, see <bpt i="0" x="0">&lt;a0&gt;</bpt>Text search across multiple lines<ept i="0">&lt;/a0&gt;</ept> and <bpt i="1" x="1">&lt;a1&gt;</bpt>Line length adjustment<ept i="1">&lt;/a1&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190602T194619Z" creationid="hideo" creationdate="20190602T194619Z">
-        <seg>注釈付きの例については、<bpt i="0" x="0">&lt;a0&gt;</bpt>複数行にわたるテキスト検索<ept i="0">&lt;/a0&gt;</ept>や<bpt i="1" x="1">&lt;a1&gt;</bpt>行の長さを揃える<ept i="1">&lt;/a1&gt;</ept>を参照下さい。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060740Z" creationid="hideo" creationdate="20190602T194619Z">
+        <seg>注釈付きの例については、「<bpt i="0" x="0">&lt;a0&gt;</bpt>複数行にわたるテキスト検索<ept i="0">&lt;/a0&gt;</ept>」や「<bpt i="1" x="1">&lt;a1&gt;</bpt>行の長さを揃える<ept i="1">&lt;/a1&gt;</ept>」参照。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>For more information about branching and labels see <bpt i="6" x="6">&lt;a6&gt;</bpt>Branching and flow control<ept i="6">&lt;/a6&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190603T155358Z" creationid="hideo" creationdate="20190603T155358Z">
-        <seg>分岐とラベルについて更に詳しくは<bpt i="6" x="6">&lt;a6&gt;</bpt>分岐と制御構文<ept i="6">&lt;/a6&gt;</ept>をご覧ください。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060501Z" creationid="hideo" creationdate="20190603T155358Z">
+        <seg>分岐とラベルについて更に詳しくは「<bpt i="6" x="6">&lt;a6&gt;</bpt>分岐と制御構文<ept i="6">&lt;/a6&gt;</ept>」参照。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>For more line-joining examples see <bpt i="0" x="0">&lt;a0&gt;</bpt>Joining lines<ept i="0">&lt;/a0&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T050645Z" creationid="hideo" creationdate="20190608T050645Z">
-        <seg>更に行連結の例を見たい方は<bpt i="0" x="0">&lt;a0&gt;</bpt>行連結<ept i="0">&lt;/a0&gt;</ept>を参照下さい。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060841Z" creationid="hideo" creationdate="20190608T050645Z">
+        <seg>更に行連結の例を見たい方は「<bpt i="0" x="0">&lt;a0&gt;</bpt>行連結<ept i="0">&lt;/a0&gt;</ept>」参照。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13581,8 +13581,8 @@ s/^.*$/\
       <tuv xml:lang="EN-US">
         <seg>GNU <bpt i="0" x="0">&lt;c0&gt;</bpt>sed<ept i="0">&lt;/c0&gt;</ept> provides an extension address syntax of <bpt i="1" x="1">&lt;v1&gt;</bpt>first<ept i="1">&lt;/v1&gt;</ept>~<bpt i="2" x="2">&lt;v2&gt;</bpt>step<ept i="2">&lt;/v2&gt;</ept> to achieve the same result:</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190606T141738Z" creationid="hideo" creationdate="20190606T141738Z">
-        <seg>GNU <bpt i="0" x="0">&lt;c0&gt;</bpt>sed<ept i="0">&lt;/c0&gt;</ept>はこれと同様の結果を得る'<bpt i="1" x="1">&lt;v1&gt;</bpt>first<ept i="1">&lt;/v1&gt;</ept>~<bpt i="2" x="2">&lt;v2&gt;</bpt>step<ept i="2">&lt;/v2&gt;</ept>'というアドレス構文の拡張を提供しています。 </seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T062540Z" creationid="hideo" creationdate="20190606T141738Z">
+        <seg>GNU <bpt i="0" x="0">&lt;c0&gt;</bpt>sed<ept i="0">&lt;/c0&gt;</ept>はこれと同様の結果を得る'<bpt i="1" x="1">&lt;v1&gt;</bpt>first<ept i="1">&lt;/v1&gt;</ept>~<bpt i="2" x="2">&lt;v2&gt;</bpt>step<ept i="2">&lt;/v2&gt;</ept>'というアドレス文法の拡張を提供しています。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -13685,8 +13685,8 @@ s/^.*$/\
       <tuv xml:lang="EN-US">
         <seg>Here is a brief description of regular expression syntax as used in <bpt i="0" x="0">&lt;c0&gt;</bpt>sed<ept i="0">&lt;/c0&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190607T123730Z" creationid="hideo" creationdate="20190607T123730Z">
-        <seg>本節では<bpt i="0" x="0">&lt;c0&gt;</bpt>sed<ept i="0">&lt;/c0&gt;</ept>で使われる正規表現構文をさらっと説明します。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T062730Z" creationid="hideo" creationdate="20190607T123730Z">
+        <seg>本節では<bpt i="0" x="0">&lt;c0&gt;</bpt>sed<ept i="0">&lt;/c0&gt;</ept>で使われる正規表現文法をさらっと説明します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13765,8 +13765,8 @@ s/^.*$/\
       <tuv xml:lang="EN-US">
         <seg>However, in <bpt i="1" x="1">&lt;c1&gt;</bpt>sed<ept i="1">&lt;/c1&gt;</ept> the <bpt i="2" x="2">&lt;c2&gt;</bpt>i<ept i="2">&lt;/c2&gt;</ept> is used for the insert command (see <bpt i="3" x="3">&lt;a3&gt;</bpt>insert command<ept i="3">&lt;/a3&gt;</ept>).</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190607T055316Z" creationid="hideo" creationdate="20190607T055316Z">
-        <seg>でも <bpt i="1" x="1">&lt;c1&gt;</bpt>sed<ept i="1">&lt;/c1&gt;</ept> では、既に <bpt i="2" x="2">&lt;c2&gt;</bpt>i<ept i="2">&lt;/c2&gt;</ept> は挿入コマンドを表す文字としてつかわれているのです(<bpt i="3" x="3">&lt;a3&gt;</bpt>insert command<ept i="3">&lt;/a3&gt;</ept>(挿入コマンド)も参照下さい)。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060534Z" creationid="hideo" creationdate="20190607T055316Z">
+        <seg>でも <bpt i="1" x="1">&lt;c1&gt;</bpt>sed<ept i="1">&lt;/c1&gt;</ept> では、既に <bpt i="2" x="2">&lt;c2&gt;</bpt>i<ept i="2">&lt;/c2&gt;</ept> は挿入コマンドを表す文字としてつかわれているのです(「<bpt i="3" x="3">&lt;a3&gt;</bpt>insert command<ept i="3">&lt;/a3&gt;</ept>(挿入コマンド)」参照)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13813,8 +13813,8 @@ s/^.*$/\
       <tuv xml:lang="EN-US">
         <seg>If <bpt i="2" x="2">&lt;s2&gt;</bpt>-E<ept i="2">&lt;/s2&gt;</ept> or <bpt i="3" x="3">&lt;s3&gt;</bpt>-r<ept i="3">&lt;/s3&gt;</ept> options are used, The regular expression should be in <bpt i="4" x="4">&lt;a4&gt;</bpt>Extended Regular Expression (ERE)<ept i="4">&lt;/a4&gt;</ept> syntax.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190606T200415Z" creationid="hideo" creationdate="20190606T200415Z">
-        <seg><bpt i="2" x="2">&lt;s2&gt;</bpt>-E<ept i="2">&lt;/s2&gt;</ept> や <bpt i="3" x="3">&lt;s3&gt;</bpt>-r<ept i="3">&lt;/s3&gt;</ept> コマンドラインオプションを指定した場合、正規表現の構文は<bpt i="4" x="4">&lt;a4&gt;</bpt>Extended Regular Expression (ERE)<ept i="4">&lt;/a4&gt;</ept>(拡張正規表現)でなければなりません。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T062553Z" creationid="hideo" creationdate="20190606T200415Z">
+        <seg><bpt i="2" x="2">&lt;s2&gt;</bpt>-E<ept i="2">&lt;/s2&gt;</ept> や <bpt i="3" x="3">&lt;s3&gt;</bpt>-r<ept i="3">&lt;/s3&gt;</ept> コマンドラインオプションを指定した場合、正規表現の文法は<bpt i="4" x="4">&lt;a4&gt;</bpt>Extended Regular Expression (ERE)<ept i="4">&lt;/a4&gt;</ept>(拡張正規表現)でなければなりません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13973,16 +13973,16 @@ s/^.*$/\
       <tuv xml:lang="EN-US">
         <seg>If such line is found, <bpt i="1" x="1">&lt;c1&gt;</bpt>sed<ept i="1">&lt;/c1&gt;</ept> will terminate with exit status 42.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T070342Z" creationid="hideo" creationdate="20190605T070342Z">
-        <seg>その次の例は行頭に‘<bpt i="0" x="0">&lt;s0&gt;</bpt>foo<ept i="0">&lt;/s0&gt;</ept>’がある行を見つけると<bpt i="1" x="1">&lt;c1&gt;</bpt>sed<ept i="1">&lt;/c1&gt;</ept>自身を終了させ、終了ステータス 42を返します。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T063143Z" creationid="hideo" creationdate="20190605T070342Z">
+        <seg>そして行頭に‘<bpt i="0" x="0">&lt;s0&gt;</bpt>foo<ept i="0">&lt;/s0&gt;</ept>’がある行を見つかると、<bpt i="1" x="1">&lt;c1&gt;</bpt>sed<ept i="1">&lt;/c1&gt;</ept>自身を終了させ、終了ステータス 42を返します。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>If such line was not found (and no other error occurred), <bpt i="2" x="2">&lt;c2&gt;</bpt>sed<ept i="2">&lt;/c2&gt;</ept> will exit with status 0.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T070520Z" creationid="hideo" creationdate="20190605T070520Z">
-        <seg>行頭に‘<bpt i="0" x="0">&lt;s0&gt;</bpt>foo<ept i="0">&lt;/s0&gt;</ept>’がある行が見つからなかった時(そして他のエラーが発生しなかった時)は<bpt i="2" x="2">&lt;c2&gt;</bpt>sed<ept i="2">&lt;/c2&gt;</ept>終了時に終了ステータス 0 を返します。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T063226Z" creationid="hideo" creationdate="20190605T070520Z">
+        <seg>行頭に‘<bpt i="0" x="0">&lt;s0&gt;</bpt>foo<ept i="0">&lt;/s0&gt;</ept>’がある行が見つからなかった時(そして他のエラーが発生しなかった時)は、<bpt i="2" x="2">&lt;c2&gt;</bpt>sed<ept i="2">&lt;/c2&gt;</ept>終了時に終了ステータス 0 を返します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14454,8 +14454,8 @@ s/^.*$/\
       <tuv xml:lang="EN-US">
         <seg>In most scripts, pattern space is initialized to the content of each line (see <bpt i="0" x="0">&lt;a0&gt;</bpt>How <bpt i="1" x="1">&lt;c1&gt;</bpt>sed<ept i="1">&lt;/c1&gt;</ept> works<ept i="0">&lt;/a0&gt;</ept>).</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190607T131515Z" creationid="hideo" creationdate="20190607T131515Z">
-        <seg>ほとんどのスクリプトでは、パターンスペースは各行の内容に初期化されます(<bpt i="0" x="0">&lt;a0&gt;</bpt><bpt i="1" x="1">&lt;c1&gt;</bpt>sed<ept i="1">&lt;/c1&gt;</ept>はどのように動くか<ept i="0">&lt;/a0&gt;</ept> を参照下さい)。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060601Z" creationid="hideo" creationdate="20190607T131515Z">
+        <seg>ほとんどのスクリプトでは、パターンスペースは各行の内容に初期化されます(「<bpt i="0" x="0">&lt;a0&gt;</bpt><bpt i="1" x="1">&lt;c1&gt;</bpt>sed<ept i="1">&lt;/c1&gt;</ept>はどのように動くか<ept i="0">&lt;/a0&gt;</ept>」参照)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14734,8 +14734,8 @@ s/^.*$/\
       <tuv xml:lang="EN-US">
         <seg>Invalid command, invalid syntax, invalid regular expression or a GNU <bpt i="0" x="0">&lt;c0&gt;</bpt>sed<ept i="0">&lt;/c0&gt;</ept> extension command used with <bpt i="1" x="1">&lt;s1&gt;</bpt>--posix<ept i="1">&lt;/s1&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190604T223713Z" creationid="hideo" creationdate="20190604T223713Z">
-        <seg>不正なコマンドまたは不正な構文または不正な正規表現または、<bpt i="1" x="1">&lt;s1&gt;</bpt>--posix<ept i="1">&lt;/s1&gt;</ept>コマンドラインオプションが指定されているのにGNU <bpt i="0" x="0">&lt;c0&gt;</bpt>sed<ept i="0">&lt;/c0&gt;</ept>拡張が使われている。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T062454Z" creationid="hideo" creationdate="20190604T223713Z">
+        <seg>不正なコマンドまたは不正な文法または不正な正規表現または、<bpt i="1" x="1">&lt;s1&gt;</bpt>--posix<ept i="1">&lt;/s1&gt;</ept>コマンドラインオプションが指定されているのにGNU <bpt i="0" x="0">&lt;c0&gt;</bpt>sed<ept i="0">&lt;/c0&gt;</ept>拡張が使われている。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15468,8 +15468,8 @@ D</seg>
       <tuv xml:lang="EN-US">
         <seg>Multiple commands syntax</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T224231Z" creationid="hideo" creationdate="20190603T153403Z">
-        <seg> 複数コマンド構文</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T062433Z" creationid="hideo" creationdate="20190603T153403Z">
+        <seg> 複数コマンド文法</seg>
       </tuv>
     </tu>
     <tu>
@@ -16372,16 +16372,16 @@ D</seg>
       <tuv xml:lang="EN-US">
         <seg>Other Resources</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190606T000948Z" creationid="hideo" creationdate="20190606T000948Z">
-        <seg>資料</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T055124Z" creationid="hideo" creationdate="20190606T000948Z">
+        <seg>この文書以外の資料</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Other resources for learning about <bpt i="0" x="0">&lt;c0&gt;</bpt>sed<ept i="0">&lt;/c0&gt;</ept></seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190603T150243Z" creationid="hideo" creationdate="20190603T150228Z">
-        <seg><bpt i="0" x="0">&lt;c0&gt;</bpt>sed<ept i="0">&lt;/c0&gt;</ept>を学ぶための資料</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T055112Z" creationid="hideo" creationdate="20190603T150228Z">
+        <seg><bpt i="0" x="0">&lt;c0&gt;</bpt>sed<ept i="0">&lt;/c0&gt;</ept>を習得するためのこの文書以外の資料</seg>
       </tuv>
     </tu>
     <tu>
@@ -16998,8 +16998,8 @@ D</seg>
       <tuv xml:lang="EN-US">
         <seg>Regex syntax clashes (problems with backslashes)</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T160336Z" creationid="hideo" creationdate="20190610T160328Z">
-        <seg>正規表現クラッシュ(バックスラッシュ問題)</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T062814Z" creationid="hideo" creationdate="20190610T160328Z">
+        <seg>正規表現文法破壊(バックスラッシュ問題)</seg>
       </tuv>
     </tu>
     <tu>
@@ -17054,7 +17054,7 @@ D</seg>
       <tuv xml:lang="EN-US">
         <seg>Replace (change) lines with <bpt i="0" x="0">&lt;v0&gt;</bpt>text<ept i="0">&lt;/v0&gt;</ept> (alternative syntax).</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T082456Z" creationid="hideo" creationdate="20190605T074939Z">
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T062300Z" creationid="hideo" creationdate="20190605T074939Z">
         <seg>(change)行を <bpt i="0" x="0">&lt;v0&gt;</bpt>text<ept i="0">&lt;/v0&gt;</ept> で置き換える(代替文法)。</seg>
       </tuv>
     </tu>
@@ -17190,8 +17190,8 @@ D</seg>
       <tuv xml:lang="EN-US">
         <seg>See <bpt i="0" x="0">&lt;a0&gt;</bpt>The "s" Command<ept i="0">&lt;/a0&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T050528Z" creationid="hideo" creationdate="20190608T050505Z">
-        <seg>参照：<bpt i="0" x="0">&lt;a0&gt;</bpt>The "s" Command<ept i="0">&lt;/a0&gt;</ept></seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060709Z" creationid="hideo" creationdate="20190608T050505Z">
+        <seg>「<bpt i="0" x="0">&lt;a0&gt;</bpt>The "s" Command<ept i="0">&lt;/a0&gt;</ept>」参照</seg>
       </tuv>
     </tu>
     <tu>
@@ -17206,112 +17206,112 @@ D</seg>
       <tuv xml:lang="EN-US">
         <seg>See <bpt i="1" x="1">&lt;a1&gt;</bpt>ERE syntax<ept i="1">&lt;/a1&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T055518Z" creationid="hideo" creationdate="20190608T055518Z">
-        <seg>参照：<bpt i="1" x="1">&lt;a1&gt;</bpt>ERE構文<ept i="1">&lt;/a1&gt;</ept>.</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T062752Z" creationid="hideo" creationdate="20190608T055518Z">
+        <seg>「<bpt i="1" x="1">&lt;a1&gt;</bpt>ERE文法<ept i="1">&lt;/a1&gt;</ept>」参照。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>See <bpt i="1" x="1">&lt;a1&gt;</bpt>Execution Cycle<ept i="1">&lt;/a1&gt;</ept> and <bpt i="2" x="2">&lt;a2&gt;</bpt>Addresses overview<ept i="2">&lt;/a2&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190602T200528Z" creationid="hideo" creationdate="20190602T200528Z">
-        <seg><bpt i="1" x="1">&lt;a1&gt;</bpt>実行サイクル<ept i="1">&lt;/a1&gt;</ept>と<bpt i="2" x="2">&lt;a2&gt;</bpt>アドレス概要<ept i="2">&lt;/a2&gt;</ept>も参照下さい。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060756Z" creationid="hideo" creationdate="20190602T200528Z">
+        <seg>「<bpt i="1" x="1">&lt;a1&gt;</bpt>実行サイクル<ept i="1">&lt;/a1&gt;</ept>」と「<bpt i="2" x="2">&lt;a2&gt;</bpt>アドレス概要<ept i="2">&lt;/a2&gt;</ept>」参照。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>See <bpt i="23" x="23">&lt;a23&gt;</bpt>Escapes<ept i="23">&lt;/a23&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190607T222009Z" creationid="hideo" creationdate="20190607T222009Z">
-        <seg><bpt i="23" x="23">&lt;a23&gt;</bpt>エスケープ<ept i="23">&lt;/a23&gt;</ept>もご覧ください。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060632Z" creationid="hideo" creationdate="20190607T222009Z">
+        <seg>「<bpt i="23" x="23">&lt;a23&gt;</bpt>エスケープ<ept i="23">&lt;/a23&gt;</ept>」参照。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>See <bpt i="2" x="2">&lt;a2&gt;</bpt>Multiline techniques<ept i="2">&lt;/a2&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T055422Z" creationid="hideo" creationdate="20190608T055422Z">
-        <seg>参照：<bpt i="2" x="2">&lt;a2&gt;</bpt>複数行テクニック<ept i="2">&lt;/a2&gt;</ept>.</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060931Z" creationid="hideo" creationdate="20190608T055422Z">
+        <seg>「<bpt i="2" x="2">&lt;a2&gt;</bpt>複数行テクニック<ept i="2">&lt;/a2&gt;</ept>」参照</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>See <bpt i="2" x="2">&lt;a2&gt;</bpt>N command on the last line<ept i="2">&lt;/a2&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T232253Z" creationid="hideo" creationdate="20190605T232238Z">
-        <seg><bpt i="2" x="2">&lt;a2&gt;</bpt>最終行でのNコマンド<ept i="2">&lt;/a2&gt;</ept>も参照下さい。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060449Z" creationid="hideo" creationdate="20190605T232238Z">
+        <seg>「<bpt i="2" x="2">&lt;a2&gt;</bpt>最終行でのNコマンド<ept i="2">&lt;/a2&gt;</ept>」参照。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>See <bpt i="3" x="3">&lt;a3&gt;</bpt>Back-references and Subexpressions<ept i="3">&lt;/a3&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T055502Z" creationid="hideo" creationdate="20190608T055502Z">
-        <seg>参照：<bpt i="3" x="3">&lt;a3&gt;</bpt>後方参照と部分式<ept i="3">&lt;/a3&gt;</ept>.</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060953Z" creationid="hideo" creationdate="20190608T055502Z">
+        <seg>「<bpt i="3" x="3">&lt;a3&gt;</bpt>後方参照と部分式<ept i="3">&lt;/a3&gt;</ept>」参照。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>See <bpt i="3" x="3">&lt;a3&gt;</bpt>Multiline techniques<ept i="3">&lt;/a3&gt;</ept> and <bpt i="4" x="4">&lt;a4&gt;</bpt>Branching and flow control<ept i="4">&lt;/a4&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T055642Z" creationid="hideo" creationdate="20190608T055642Z">
-        <seg>参照：<bpt i="3" x="3">&lt;a3&gt;</bpt>複数行テクニック<ept i="3">&lt;/a3&gt;</ept>、<bpt i="4" x="4">&lt;a4&gt;</bpt>分岐とフロー制御<ept i="4">&lt;/a4&gt;</ept>.</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T061029Z" creationid="hideo" creationdate="20190608T055642Z">
+        <seg>「<bpt i="3" x="3">&lt;a3&gt;</bpt>複数行テクニック<ept i="3">&lt;/a3&gt;</ept>」、「<bpt i="4" x="4">&lt;a4&gt;</bpt>分岐とフロー制御<ept i="4">&lt;/a4&gt;</ept>」参照。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>See <bpt i="4" x="4">&lt;a4&gt;</bpt>regexp extensions<ept i="4">&lt;/a4&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T055442Z" creationid="hideo" creationdate="20190608T055442Z">
-        <seg>参照：<bpt i="4" x="4">&lt;a4&gt;</bpt>正規表現<ept i="4">&lt;/a4&gt;</ept>.</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060943Z" creationid="hideo" creationdate="20190608T055442Z">
+        <seg>「<bpt i="4" x="4">&lt;a4&gt;</bpt>正規表現<ept i="4">&lt;/a4&gt;</ept>」参照</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>See <bpt i="5" x="5">&lt;a5&gt;</bpt>BRE vs ERE<ept i="5">&lt;/a5&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T232452Z" creationid="hideo" creationdate="20190605T232452Z">
-        <seg><bpt i="5" x="5">&lt;a5&gt;</bpt>BRE vs ERE<ept i="5">&lt;/a5&gt;</ept>も参照下さい。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060512Z" creationid="hideo" creationdate="20190605T232452Z">
+        <seg>「<bpt i="5" x="5">&lt;a5&gt;</bpt>BRE vs ERE<ept i="5">&lt;/a5&gt;</ept>」参照。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>See <bpt i="5" x="5">&lt;a5&gt;</bpt>Multiline techniques<ept i="5">&lt;/a5&gt;</ept> and <bpt i="6" x="6">&lt;a6&gt;</bpt>Branching and flow control<ept i="6">&lt;/a6&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T085059Z" creationid="hideo" creationdate="20190608T085059Z">
-        <seg>参照：<bpt i="5" x="5">&lt;a5&gt;</bpt>複数行テクニック<ept i="5">&lt;/a5&gt;</ept>、<bpt i="6" x="6">&lt;a6&gt;</bpt>分岐とフロー制御<ept i="6">&lt;/a6&gt;</ept>.</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060859Z" creationid="hideo" creationdate="20190608T085059Z">
+        <seg>「<bpt i="5" x="5">&lt;a5&gt;</bpt>複数行テクニック<ept i="5">&lt;/a5&gt;</ept>」、「<bpt i="6" x="6">&lt;a6&gt;</bpt>分岐とフロー制御<ept i="6">&lt;/a6&gt;</ept>」参照。.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>See <bpt i="5" x="5">&lt;a5&gt;</bpt>Multiple commands syntax<ept i="5">&lt;/a5&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T074429Z" creationid="hideo" creationdate="20190605T074429Z">
-        <seg><bpt i="5" x="5">&lt;a5&gt;</bpt>複数コマンド構文<ept i="5">&lt;/a5&gt;</ept>も参照下さい。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060316Z" creationid="hideo" creationdate="20190605T074429Z">
+        <seg>「<bpt i="5" x="5">&lt;a5&gt;</bpt>複数コマンド文法<ept i="5">&lt;/a5&gt;</ept>」参照。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>See <bpt i="6" x="6">&lt;a6&gt;</bpt>Extended regular expressions<ept i="6">&lt;/a6&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190604T204439Z" creationid="hideo" creationdate="20190604T204439Z">
-        <seg><bpt i="6" x="6">&lt;a6&gt;</bpt>拡張正規表現<ept i="6">&lt;/a6&gt;</ept>も参照下さい。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060217Z" creationid="hideo" creationdate="20190604T204439Z">
+        <seg>「<bpt i="6" x="6">&lt;a6&gt;</bpt>拡張正規表現<ept i="6">&lt;/a6&gt;</ept>」参照。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>See <bpt i="7" x="7">&lt;a7&gt;</bpt>Character Classes and Bracket Expressions<ept i="7">&lt;/a7&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190607T215517Z" creationid="hideo" creationdate="20190607T134917Z">
-        <seg><bpt i="7" x="7">&lt;a7&gt;</bpt>文字クラスと角括弧式<ept i="7">&lt;/a7&gt;</ept>も参照下さい。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060614Z" creationid="hideo" creationdate="20190607T134917Z">
+        <seg>「<bpt i="7" x="7">&lt;a7&gt;</bpt>文字クラスと角括弧式<ept i="7">&lt;/a7&gt;</ept>」参照。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>See <bpt i="9" x="9">&lt;a9&gt;</bpt>Overview<ept i="9">&lt;/a9&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T065320Z" creationid="hideo" creationdate="20190605T065320Z">
-        <seg><bpt i="9" x="9">&lt;a9&gt;</bpt>概要<ept i="9">&lt;/a9&gt;</ept>もご覧ください。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060254Z" creationid="hideo" creationdate="20190605T065320Z">
+        <seg>「<bpt i="9" x="9">&lt;a9&gt;</bpt>概要<ept i="9">&lt;/a9&gt;</ept>」参照。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17334,8 +17334,8 @@ D</seg>
       <tuv xml:lang="EN-US">
         <seg>See the <bpt i="0" x="0">&lt;c0&gt;</bpt>tr<ept i="0">&lt;/c0&gt;</ept> command from GNU coreutils for similar functionality.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190606T143156Z" creationid="hideo" creationdate="20190606T143156Z">
-        <seg>同じ機能を持つ、GNU coreutils の <bpt i="0" x="0">&lt;c0&gt;</bpt>tr<ept i="0">&lt;/c0&gt;</ept> コマンドを参照下さい。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060411Z" creationid="hideo" creationdate="20190606T143156Z">
+        <seg>同じ機能を持つ、GNU coreutils の <bpt i="0" x="0">&lt;c0&gt;</bpt>tr<ept i="0">&lt;/c0&gt;</ept> コマンド参照。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17350,8 +17350,8 @@ D</seg>
       <tuv xml:lang="EN-US">
         <seg>See the “<bpt i="2" x="2">&lt;c2&gt;</bpt>N<ept i="2">&lt;/c2&gt;</ept> command on the last line” paragraph in <bpt i="3" x="3">&lt;a3&gt;</bpt>Reporting Bugs<ept i="3">&lt;/a3&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T065508Z" creationid="hideo" creationdate="20190608T065508Z">
-        <seg><bpt i="3" x="3">&lt;a3&gt;</bpt>報告されているバグ<ept i="3">&lt;/a3&gt;</ept>の “最終行での<bpt i="2" x="2">&lt;c2&gt;</bpt>N<ept i="2">&lt;/c2&gt;</ept>コマンド"段落参照。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060807Z" creationid="hideo" creationdate="20190608T065508Z">
+        <seg>「<bpt i="3" x="3">&lt;a3&gt;</bpt>報告されているバグ<ept i="3">&lt;/a3&gt;</ept>」の “最終行での<bpt i="2" x="2">&lt;c2&gt;</bpt>N<ept i="2">&lt;/c2&gt;</ept>コマンド"段落参照。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17904,8 +17904,8 @@ D</seg>
       <tuv xml:lang="EN-US">
         <seg>The <bpt i="0" x="0">&lt;s0&gt;</bpt>-E<ept i="0">&lt;/s0&gt;</ept> option enables extended regular expression syntax, alleviating the need to add backslashes before the parenthesis.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T213139Z" creationid="hideo" creationdate="20190608T213139Z">
-        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>-E<ept i="0">&lt;/s0&gt;</ept>オプションを使用すると、正規表現の構文が拡張され、丸括弧の前にバックスラッシュ'\'を追加する必要がなくなります。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T062746Z" creationid="hideo" creationdate="20190608T213139Z">
+        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>-E<ept i="0">&lt;/s0&gt;</ept>オプションを使用すると、正規表現の文法が拡張され、丸括弧の前にバックスラッシュ'\'を追加する必要がなくなります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18403,8 +18403,8 @@ D</seg>
       <tuv xml:lang="EN-US">
         <seg>The following example prints all input until a line starting with the word ‘<bpt i="0" x="0">&lt;s0&gt;</bpt>foo<ept i="0">&lt;/s0&gt;</ept>’ is found.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T070100Z" creationid="hideo" creationdate="20190605T070100Z">
-        <seg>次の例は行頭に‘<bpt i="0" x="0">&lt;s0&gt;</bpt>foo<ept i="0">&lt;/s0&gt;</ept>’がある行を全てプリントします。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T053552Z" creationid="hideo" creationdate="20190605T070100Z">
+        <seg>次の例は行頭に‘<bpt i="0" x="0">&lt;s0&gt;</bpt>foo<ept i="0">&lt;/s0&gt;</ept>’がある行が見つかるまで全てプリントします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18475,8 +18475,8 @@ D</seg>
       <tuv xml:lang="EN-US">
         <seg>The following resources provide information about <bpt i="0" x="0">&lt;c0&gt;</bpt>sed<ept i="0">&lt;/c0&gt;</ept> (both GNU <bpt i="1" x="1">&lt;c1&gt;</bpt>sed<ept i="1">&lt;/c1&gt;</ept> and other variations).</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190610T152909Z" creationid="hideo" creationdate="20190610T152848Z">
-        <seg>以下、<bpt i="0" x="0">&lt;c0&gt;</bpt> sed <ept i="0">&lt;/c0&gt;</ept>（GNU <bpt i="1" x="1">&lt;c1&gt;</bpt> sed <ept i="1">&lt;/c1&gt;</ept>とその他のバリエーションの両方）に関する情報を提供します。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T055037Z" creationid="hideo" creationdate="20190610T152848Z">
+        <seg>以下、<bpt i="0" x="0">&lt;c0&gt;</bpt> sed <ept i="0">&lt;/c0&gt;</ept>（GNU <bpt i="1" x="1">&lt;c1&gt;</bpt> sed <ept i="1">&lt;/c1&gt;</ept>とその他のバリエーションの両方）に関する資料です</seg>
       </tuv>
     </tu>
     <tu>
@@ -18531,8 +18531,8 @@ D</seg>
       <tuv xml:lang="EN-US">
         <seg>The hold space, on the other hand, keeps its data between cycles (see commands ‘<bpt i="1" x="1">&lt;s1&gt;</bpt>h<ept i="1">&lt;/s1&gt;</ept>’, ‘<bpt i="2" x="2">&lt;s2&gt;</bpt>H<ept i="2">&lt;/s2&gt;</ept>’, ‘<bpt i="3" x="3">&lt;s3&gt;</bpt>x<ept i="3">&lt;/s3&gt;</ept>’, ‘<bpt i="4" x="4">&lt;s4&gt;</bpt>g<ept i="4">&lt;/s4&gt;</ept>’, ‘<bpt i="5" x="5">&lt;s5&gt;</bpt>G<ept i="5">&lt;/s5&gt;</ept>’ to move data between both buffers).</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190602T194825Z" creationid="hideo" creationdate="20190602T164957Z">
-        <seg>一方ホールドスペースの内容はサイクル毎に削除しません。以降の新しいサイクルが始まっても内容を保持しています（両バッファの間でデータを移動させるためのコマンド、 ‘<bpt i="1" x="1">&lt;s1&gt;</bpt>h<ept i="1">&lt;/s1&gt;</ept>’, ‘<bpt i="2" x="2">&lt;s2&gt;</bpt>H<ept i="2">&lt;/s2&gt;</ept>’, ‘<bpt i="3" x="3">&lt;s3&gt;</bpt>x<ept i="3">&lt;/s3&gt;</ept>’, ‘<bpt i="4" x="4">&lt;s4&gt;</bpt>g<ept i="4">&lt;/s4&gt;</ept>’, ‘<bpt i="5" x="5">&lt;s5&gt;</bpt>G<ept i="5">&lt;/s5&gt;</ept>’ も参照下さい）。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060720Z" creationid="hideo" creationdate="20190602T164957Z">
+        <seg>一方ホールドスペースの内容はサイクル毎に削除しません。以降の新しいサイクルが始まっても内容を保持しています（両バッファの間でデータを移動させるためのコマンド、 ‘<bpt i="1" x="1">&lt;s1&gt;</bpt>h<ept i="1">&lt;/s1&gt;</ept>’, ‘<bpt i="2" x="2">&lt;s2&gt;</bpt>H<ept i="2">&lt;/s2&gt;</ept>’, ‘<bpt i="3" x="3">&lt;s3&gt;</bpt>x<ept i="3">&lt;/s3&gt;</ept>’, ‘<bpt i="4" x="4">&lt;s4&gt;</bpt>g<ept i="4">&lt;/s4&gt;</ept>’, ‘<bpt i="5" x="5">&lt;s5&gt;</bpt>G<ept i="5">&lt;/s5&gt;</ept>’ 参照）。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18773,8 +18773,8 @@ tx</seg>
       <tuv xml:lang="EN-US">
         <seg>The syntax of the <bpt i="2" x="2">&lt;c2&gt;</bpt>s<ept i="2">&lt;/c2&gt;</ept> command is ‘<bpt i="3" x="3">&lt;s3&gt;</bpt>s/<bpt i="4" x="4">&lt;v4&gt;</bpt>regexp<ept i="4">&lt;/v4&gt;</ept>/<bpt i="5" x="5">&lt;v5&gt;</bpt>replacement<ept i="5">&lt;/v5&gt;</ept>/<bpt i="6" x="6">&lt;v6&gt;</bpt>flags<ept i="6">&lt;/v6&gt;</ept><ept i="3">&lt;/s3&gt;</ept>’.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T114727Z" creationid="hideo" creationdate="20190605T114303Z">
-        <seg><bpt i="2" x="2">&lt;c2&gt;</bpt>s<ept i="2">&lt;/c2&gt;</ept> コマンドの構文は ‘<bpt i="3" x="3">&lt;s3&gt;</bpt>s/<bpt i="4" x="4">&lt;v4&gt;</bpt>regexp<ept i="4">&lt;/v4&gt;</ept>/<bpt i="5" x="5">&lt;v5&gt;</bpt>replacement<ept i="5">&lt;/v5&gt;</ept>/<bpt i="6" x="6">&lt;v6&gt;</bpt>flags<ept i="6">&lt;/v6&gt;</ept><ept i="3">&lt;/s3&gt;</ept>’です。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T062520Z" creationid="hideo" creationdate="20190605T114303Z">
+        <seg><bpt i="2" x="2">&lt;c2&gt;</bpt>s<ept i="2">&lt;/c2&gt;</ept> コマンドの文法は ‘<bpt i="3" x="3">&lt;s3&gt;</bpt>s/<bpt i="4" x="4">&lt;v4&gt;</bpt>regexp<ept i="4">&lt;/v4&gt;</ept>/<bpt i="5" x="5">&lt;v5&gt;</bpt>replacement<ept i="5">&lt;/v5&gt;</ept>/<bpt i="6" x="6">&lt;v6&gt;</bpt>flags<ept i="6">&lt;/v6&gt;</ept><ept i="3">&lt;/s3&gt;</ept>’です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19129,8 +19129,8 @@ t a
       <tuv xml:lang="EN-US">
         <seg>This GNU <bpt i="1" x="1">&lt;c1&gt;</bpt>sed<ept i="1">&lt;/c1&gt;</ept> extension allows the user to consider them as separate files: range addresses (such as ‘<bpt i="2" x="2">&lt;s2&gt;</bpt>/abc/,/def/<ept i="2">&lt;/s2&gt;</ept>’) are not allowed to span several files, line numbers are relative to the start of each file, <bpt i="3" x="3">&lt;c3&gt;</bpt>$<ept i="3">&lt;/c3&gt;</ept> refers to the last line of each file, and files invoked from the <bpt i="4" x="4">&lt;c4&gt;</bpt>R<ept i="4">&lt;/c4&gt;</ept> commands are rewound at the start of each file.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190604T205242Z" creationid="hideo" creationdate="20190604T205242Z">
-        <seg>このGNU <bpt i="1" x="1">&lt;c1&gt;</bpt>sed<ept i="1">&lt;/c1&gt;</ept>拡張はファイルをそれぞれに分けて処理することを可能にします。範囲アドレス(‘<bpt i="2" x="2">&lt;s2&gt;</bpt>/abc/,/def/<ept i="2">&lt;/s2&gt;</ept>’のような)が複数のファイルに渡らないようにしたり、行番号をファイルごとにリセットしたり、'<bpt i="3" x="3">&lt;c3&gt;</bpt>$<ept i="3">&lt;/c3&gt;</ept>'が各ファイルの最終行にマッチするようにしたり、'<bpt i="4" x="4">&lt;c4&gt;</bpt>R<ept i="4">&lt;/c4&gt;</ept>'コマンドで読み込むファイルからの読み込み位置をファイルごとに巻き戻したり。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T053934Z" creationid="hideo" creationdate="20190604T205242Z">
+        <seg>このGNU <bpt i="1" x="1">&lt;c1&gt;</bpt>sed<ept i="1">&lt;/c1&gt;</ept>拡張はファイルをそれぞれに分けて処理することを可能にします。(‘<bpt i="2" x="2">&lt;s2&gt;</bpt>/abc/,/def/<ept i="2">&lt;/s2&gt;</ept>’のような)範囲アドレスが複数のファイルに渡らないようにしたり、行番号をファイルごとにリセットしたり、'<bpt i="3" x="3">&lt;c3&gt;</bpt>$<ept i="3">&lt;/c3&gt;</ept>'が各ファイルの最終行にマッチするようにしたり、'<bpt i="4" x="4">&lt;c4&gt;</bpt>R<ept i="4">&lt;/c4&gt;</ept>'コマンドで読み込むファイルからの読み込み位置をファイルごとに巻き戻したりします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19337,24 +19337,24 @@ t a
       <tuv xml:lang="EN-US">
         <seg>This is a GNU extension to the standard <bpt i="1" x="1">&lt;c1&gt;</bpt>a<ept i="1">&lt;/c1&gt;</ept> command - see below for details.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190606T143322Z" creationid="hideo" creationdate="20190606T143322Z">
-        <seg>これは標準の <bpt i="1" x="1">&lt;c1&gt;</bpt>a<ept i="1">&lt;/c1&gt;</ept> コマンドに対するGNU拡張です。詳細は以下をご覧ください。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060423Z" creationid="hideo" creationdate="20190606T143322Z">
+        <seg>これは標準の <bpt i="1" x="1">&lt;c1&gt;</bpt>a<ept i="1">&lt;/c1&gt;</ept> コマンドに対するGNU拡張です。詳細は以下を参照。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>This is a GNU extension to the standard <bpt i="1" x="1">&lt;c1&gt;</bpt>c<ept i="1">&lt;/c1&gt;</ept> command - see below for details.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190606T145444Z" creationid="hideo" creationdate="20190606T145444Z">
-        <seg>これは、標準の<bpt i="1" x="1">&lt;c1&gt;</bpt> c <ept i="1">&lt;/c1&gt;</ept>コマンドに対するGNU拡張です。詳細は以下を参照してください。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060437Z" creationid="hideo" creationdate="20190606T145444Z">
+        <seg>これは、標準の<bpt i="1" x="1">&lt;c1&gt;</bpt> c <ept i="1">&lt;/c1&gt;</ept>コマンドに対するGNU拡張です。詳細は以下を参照。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>This is a GNU extension to the standard <bpt i="1" x="1">&lt;c1&gt;</bpt>i<ept i="1">&lt;/c1&gt;</ept> command - see below for details.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190606T145042Z" creationid="hideo" creationdate="20190606T145042Z">
-        <seg>これは、標準の<bpt i="1" x="1">&lt;c1&gt;</bpt> i <ept i="1">&lt;/c1&gt;</ept>コマンドに対するGNU拡張です。詳細は以下を参照してください。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060431Z" creationid="hideo" creationdate="20190606T145042Z">
+        <seg>これは、標準の<bpt i="1" x="1">&lt;c1&gt;</bpt> i <ept i="1">&lt;/c1&gt;</ept>コマンドに対するGNU拡張です。詳細は以下を参照。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19585,8 +19585,8 @@ t a
       <tuv xml:lang="EN-US">
         <seg>This option implies <bpt i="0" x="0">&lt;s0&gt;</bpt>-s<ept i="0">&lt;/s0&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190604T113305Z" creationid="hideo" creationdate="20190604T113305Z">
-        <seg>このオプションは'<bpt i="0" x="0">&lt;s0&gt;</bpt>-s<ept i="0">&lt;/s0&gt;</ept>'コマンドラインオプションの動作もします。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T061214Z" creationid="hideo" creationdate="20190604T113305Z">
+        <seg>このオプションは'<bpt i="0" x="0">&lt;s0&gt;</bpt>-s<ept i="0">&lt;/s0&gt;</ept>'、--separate コマンドラインオプションの動作もします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20082,8 +20082,8 @@ t a
       <tuv xml:lang="EN-US">
         <seg>Use <bpt i="1" x="1">&lt;s1&gt;</bpt>-i<ept i="1">&lt;/s1&gt;</ept> to edit files in-place instead of printing to standard output.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190604T052256Z" creationid="hideo" creationdate="20190604T052256Z">
-        <seg><bpt i="1" x="1">&lt;s1&gt;</bpt>-i<ept i="1">&lt;/s1&gt;</ept>コマンドラインオプションを指定すると、標準出力の代わりに、コマンドラインで指定した入力ファイル自身を編集する。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T055311Z" creationid="hideo" creationdate="20190604T052256Z">
+        <seg><bpt i="1" x="1">&lt;s1&gt;</bpt>-i<ept i="1">&lt;/s1&gt;</ept>コマンドラインオプションを指定すると、標準出力の代わりに、コマンドラインで指定した入力ファイル自身を編集します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20098,8 +20098,8 @@ t a
       <tuv xml:lang="EN-US">
         <seg>Use <bpt i="3" x="3">&lt;s3&gt;</bpt>-s<ept i="3">&lt;/s3&gt;</ept> to reverse this behavior.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190604T053410Z" creationid="hideo" creationdate="20190604T053410Z">
-        <seg><bpt i="3" x="3">&lt;s3&gt;</bpt>-s<ept i="3">&lt;/s3&gt;</ept>コマンドラインオプションを使うとこの振る舞いを逆にします。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T055849Z" creationid="hideo" creationdate="20190604T053410Z">
+        <seg><bpt i="3" x="3">&lt;s3&gt;</bpt>-s<ept i="3">&lt;/s3&gt;</ept>、--separate コマンドラインオプションを使うと逆にファイル単位で扱います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20138,8 +20138,8 @@ t a
       <tuv xml:lang="EN-US">
         <seg>Use the POSIX-specified <bpt i="2" x="2">&lt;s2&gt;</bpt>-E<ept i="2">&lt;/s2&gt;</ept> option (<bpt i="3" x="3">&lt;s3&gt;</bpt>-r<ept i="3">&lt;/s3&gt;</ept>, <bpt i="4" x="4">&lt;s4&gt;</bpt>--regexp-extended<ept i="4">&lt;/s4&gt;</ept>) to enable Extended Regular Expression (ERE) syntax.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190607T121859Z" creationid="hideo" creationdate="20190607T121859Z">
-        <seg>POSIX指定の<bpt i="2" x="2">&lt;s2&gt;</bpt> -E <ept i="2">&lt;/s2&gt;</ept>オプション(<bpt i="3" x="3">&lt;s3&gt;</bpt> -r <ept i="3">&lt;/s3&gt;</ept>、<bpt i="4" x="4">&lt;s4&gt;</bpt> --regexp-extended <ept i="4">&lt;/s4&gt;</ept>)を使用して、拡張正規表現(ERE)構文を有効にします。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T062650Z" creationid="hideo" creationdate="20190607T121859Z">
+        <seg>POSIX指定の<bpt i="2" x="2">&lt;s2&gt;</bpt> -E <ept i="2">&lt;/s2&gt;</ept>オプション(<bpt i="3" x="3">&lt;s3&gt;</bpt> -r <ept i="3">&lt;/s3&gt;</ept>、<bpt i="4" x="4">&lt;s4&gt;</bpt> --regexp-extended <ept i="4">&lt;/s4&gt;</ept>)を使用して、拡張正規表現(ERE)文法を有効にします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20410,8 +20410,8 @@ t a
       <tuv xml:lang="EN-US">
         <seg>With basic (BRE) syntax, these characters do not have special meaning unless prefixed with a backslash (‘<bpt i="0" x="0">&lt;s0&gt;</bpt>\<ept i="0">&lt;/s0&gt;</ept>’); While with extended (ERE) syntax it is reversed: these characters are special unless they are prefixed with backslash (‘<bpt i="1" x="1">&lt;s1&gt;</bpt>\<ept i="1">&lt;/s1&gt;</ept>’).</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190607T122947Z" creationid="hideo" creationdate="20190607T122947Z">
-        <seg>基本(BRE)構文では、これらの文字はバックスラッシュ('<bpt i="0" x="0">&lt;s0&gt;</bpt>\<ept i="0">&lt;/s0&gt;</ept>')を前に付けない限り特別な意味を持ちません。 逆に拡張(ERE)構文では、これらの文字はバックスラッシュ('<bpt i="1" x="1">&lt;s1&gt;</bpt>\<ept i="1">&lt;/s1&gt;</ept>')が付いていない限り特殊文字です。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T062716Z" creationid="hideo" creationdate="20190607T122947Z">
+        <seg>基本正規表現(BRE)文法では、これらの文字はバックスラッシュ('<bpt i="0" x="0">&lt;s0&gt;</bpt>\<ept i="0">&lt;/s0&gt;</ept>')を前に付けない限り特別な意味を持ちません。 逆に拡張正規表現(ERE)文法では、これらの文字はバックスラッシュ('<bpt i="1" x="1">&lt;s1&gt;</bpt>\<ept i="1">&lt;/s1&gt;</ept>')が付いていない限り特殊文字です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21682,8 +21682,8 @@ y parts.</seg>
       <tuv xml:lang="EN-US">
         <seg>insert <bpt i="0" x="0">&lt;v0&gt;</bpt>text<ept i="0">&lt;/v0&gt;</ept> before a line (alternative syntax).</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T112858Z" creationid="hideo" creationdate="20190605T075021Z">
-        <seg>(insert)行の前に <bpt i="0" x="0">&lt;v0&gt;</bpt>text<ept i="0">&lt;/v0&gt;</ept> を挿入する(代替構文)。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T062307Z" creationid="hideo" creationdate="20190605T075021Z">
+        <seg>(insert)行の前に <bpt i="0" x="0">&lt;v0&gt;</bpt>text<ept i="0">&lt;/v0&gt;</ept> を挿入する(代替文法)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23118,8 +23118,8 @@ bx</seg>
       <tuv xml:lang="EN-US">
         <seg>• <bpt i="0" x="0">&lt;a0&gt;</bpt>BRE syntax<ept i="0">&lt;/a0&gt;</ept>:</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T120316Z" creationid="hideo" creationdate="20190605T120316Z">
-        <seg>• <bpt i="0" x="0">&lt;a0&gt;</bpt>BRE構文<ept i="0">&lt;/a0&gt;</ept>:</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T062610Z" creationid="hideo" creationdate="20190605T120316Z">
+        <seg>• <bpt i="0" x="0">&lt;a0&gt;</bpt>BRE文法<ept i="0">&lt;/a0&gt;</ept>:</seg>
       </tuv>
     </tu>
     <tu>
@@ -23198,8 +23198,8 @@ bx</seg>
       <tuv xml:lang="EN-US">
         <seg>• <bpt i="0" x="0">&lt;a0&gt;</bpt>ERE syntax<ept i="0">&lt;/a0&gt;</ept>:</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T120329Z" creationid="hideo" creationdate="20190605T120329Z">
-        <seg>• <bpt i="0" x="0">&lt;a0&gt;</bpt>ERE構文<ept i="0">&lt;/a0&gt;</ept>:</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T062616Z" creationid="hideo" creationdate="20190605T120329Z">
+        <seg>• <bpt i="0" x="0">&lt;a0&gt;</bpt>ERE文法<ept i="0">&lt;/a0&gt;</ept>:</seg>
       </tuv>
     </tu>
     <tu>
@@ -23326,8 +23326,8 @@ bx</seg>
       <tuv xml:lang="EN-US">
         <seg>• <bpt i="0" x="0">&lt;a0&gt;</bpt>Multiple commands syntax<ept i="0">&lt;/a0&gt;</ept>:</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T074516Z" creationid="hideo" creationdate="20190604T224810Z">
-        <seg>• <bpt i="0" x="0">&lt;a0&gt;</bpt>複数コマンド構文<ept i="0">&lt;/a0&gt;</ept>:</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T062501Z" creationid="hideo" creationdate="20190604T224810Z">
+        <seg>• <bpt i="0" x="0">&lt;a0&gt;</bpt>複数コマンド文法<ept i="0">&lt;/a0&gt;</ept>:</seg>
       </tuv>
     </tu>
     <tu>
@@ -23350,8 +23350,8 @@ bx</seg>
       <tuv xml:lang="EN-US">
         <seg>• <bpt i="0" x="0">&lt;a0&gt;</bpt>Other Resources<ept i="0">&lt;/a0&gt;</ept>:</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190603T150148Z" creationid="hideo" creationdate="20190603T150148Z">
-        <seg>• <bpt i="0" x="0">&lt;a0&gt;</bpt>資料<ept i="0">&lt;/a0&gt;</ept>:</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T055108Z" creationid="hideo" creationdate="20190603T150148Z">
+        <seg>• <bpt i="0" x="0">&lt;a0&gt;</bpt>この文書以外の資料<ept i="0">&lt;/a0&gt;</ept>:</seg>
       </tuv>
     </tu>
     <tu>
