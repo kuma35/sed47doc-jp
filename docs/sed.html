@@ -112,7 +112,7 @@ ul.no-bullet {list-style: none}
   </ul></li>
   <li><a name="toc-Regular-Expressions_003a-selecting-text" href="#sed-regular-expressions">5 正規表現: テキストの選択</a>
   <ul class="no-bullet">
-    <li><a name="toc-Overview-of-regular-expression-in-sed" href="#Regular-Expressions-Overview">5.1<code>sed</code>の正規表現の概要</a></li>
+    <li><a name="toc-Overview-of-regular-expression-in-sed" href="#Regular-Expressions-Overview">5.1 <code>sed</code>の正規表現の概要</a></li>
     <li><a name="toc-Basic-_0028BRE_0029-and-extended-_0028ERE_0029-regular-expression" href="#BRE-vs-ERE">5.2 基本正規表現(basic regular expression;BRE)と拡張正規表現(extended regular expression;ERE)</a></li>
     <li><a name="toc-Overview-of-basic-regular-expression-syntax" href="#BRE-syntax">5.3 基本正規表現文法概要</a></li>
     <li><a name="toc-Overview-of-extended-regular-expression-syntax" href="#ERE-syntax">5.4 拡張正規表現文法概要</a></li>
@@ -132,7 +132,7 @@ ul.no-bullet {list-style: none}
   </ul></li>
   <li><a name="toc-Advanced-sed_003a-cycles-and-buffers" href="#advanced-sed">6 <code>sed</code>の高度な話題: サイクルとバッファ</a>
   <ul class="no-bullet">
-    <li><a name="toc-How-sed-Works" href="#Execution-Cycle">6.1<code>sed</code>はどのように動いているか</a></li>
+    <li><a name="toc-How-sed-Works" href="#Execution-Cycle">6.1 <code>sed</code>はどのように動いているか</a></li>
     <li><a name="toc-Hold-and-Pattern-Buffers-1" href="#Hold-and-Pattern-Buffers">6.2 ホールド用とパターン用のバッファ</a></li>
     <li><a name="toc-Multiline-techniques-_002d-using-D_002cG_002cH_002cN_002cP-to-process-multiple-lines" href="#Multiline-techniqu">6.3 複数行テクニック - D,G,H,N,P コマンドで複数行処理</a></li>
     <li><a name="toc-Branching-and-Flow-Control" href="#Branching-and-flow-control">6.4 分岐と制御構文</a>
@@ -470,7 +470,7 @@ sed -ni 's/foo/bar/' FILE
 <dt><code>--posix</code></dt>
 <dd><a name="index-_002d_002dposix"></a>
 <a name="index-GNU-extensions_002c-disabling"></a>
-<p>GNU <code>sed</code>はPOSIX sedに数々の拡張を加えています。移植性のあるスクリプトの作成を簡単にする為に、このオプションはGNU sedで追加されたコマンド含めこの文書に述べられている全てのGNU sed拡張を無効にします。<a name="index-POSIXLY_005fCORRECT-behavior_002c-enabling"></a>ほとんどの拡張機能はPOSIXで強制される文法外の<code>sed</code> プログラムを受け付けますが、それらのいくつかは(<a href="#Reporting-Bugs">バグレポート</a>で説明している'<code>N</code>'コマンドのような振る舞いは)実際には基準を破っています。GNU 拡張を無効にしたい場合は環境変数 <code>POSIXLY_CORRECT</code> に空で無い値をセットして下さい。
+<p>GNU <code>sed</code>はPOSIX sedに数々の拡張を加えています。移植性のあるスクリプトの作成を簡単にする為に、このオプションはGNU sedで追加されたコマンド含めこの文書に述べられている全てのGNU sed拡張を無効にします。<a name="index-POSIXLY_005fCORRECT-behavior_002c-enabling"></a>ほとんどの拡張機能はPOSIXで強制される文法外の<code>sed</code> プログラムを受け付けますが、それらのいくつかは(<a href="#Reporting-Bugs">バグレポート</a>で説明している'<code>N</code>'コマンドのような振る舞いは)実際には規格を破っています。GNU 拡張を無効にしたい場合は環境変数 <code>POSIXLY_CORRECT</code> に空で無い値をセットして下さい。
 </p>
 </dd>
 <dt><code>-b</code></dt>
@@ -493,7 +493,7 @@ sed -ni 's/foo/bar/' FILE
 <a name="index-_002d_002dregexp_002dextended"></a>
 <a name="index-Extended-regular-expressions_002c-choosing"></a>
 <a name="index-GNU-extensions_002c-extended-regular-expressions"></a>
-<p>基本正規表現ではなく拡張正規表現を使います。拡張正規表現とは<code>egrep</code>が受け付けるものです。バックスラッシュの嵐を減らせるので正規表現がより分かりやすくなります。これは歴史的にはGNU拡張でしたが '<samp>-E</samp>'拡張はPOSIX標準に取り込まれた(http://austingroupbugs.net/view.php?id=528)ので、移植性の為に'<samp>-E</samp>'を使います。GNU sedは何年も前から文書化されていないオプションとして<samp> -E </samp>を受け入れていますし、*BSD sedsは何年もの間'<samp> -E </samp>'を受け入れていますが、'<samp> -E </samp>'を使うスクリプトは他の古いシステムに移植できないかもしれません。「<a href="#ERE-syntax">拡張正規表現</a>」参照。
+<p>基本正規表現ではなく拡張正規表現を使います。拡張正規表現とは<code>egrep</code>が受け付けるものです。バックスラッシュの嵐を減らせるので正規表現がより分かりやすくなります。これは歴史的にはGNU拡張でしたが、 '<samp>-E</samp>'拡張はPOSIX標準に取り込まれた(http://austingroupbugs.net/view.php?id=528)ので、移植性の為に'<samp>-E</samp>'を使います。GNU sedは何年も前から文書化されていないオプションとして<samp> -E </samp>を受け入れていますし、*BSD sedsは何年もの間'<samp> -E </samp>'を受け入れていますが、'<samp> -E </samp>'を使うスクリプトは他の古いシステムに移植できないかもしれません。「<a href="#ERE-syntax">拡張正規表現</a>」参照。
 </p>
 
 </dd>
@@ -691,7 +691,7 @@ sed -e '/^foo/d' -f script2.sed input.txt &gt; output.txt
 <a name="sed-commands-summary"></a>
 <h3 class="section">3.2 <code>sed</code>コマンド要約</h3>
 
-<p>以下のコマンド群はGNU <code>sed</code>でサポートされています。POSIX標準コマンドもあれば、GNU拡張もあります。各コマンドの詳細と例は次の節をご覧ください(訳注：説明の都合上、コマンドとコマンドオプションの間に空白が開いていますが、空白無しで続けても構いません。sedのコマンドは1文字なので最初の1文字読み取った時点で何のコマンドか判ります)。括弧内はコマンドの覚え方(mnemonic)です。
+<p>以下のコマンド群はGNU <code>sed</code>でサポートされています。POSIX標準コマンドもあれば、GNU拡張もあります。各コマンドの詳細と例は次の節をご覧ください。括弧内はコマンドの覚え方(mnemonic)です。(訳注：説明の都合上、コマンドとオプションの間に空白が開いていますが、空白無しで続けても構いません)。
 </p>
 <dl compact="compact">
 <dt><code>a\</code></dt>
@@ -804,12 +804,12 @@ sed -e '/^foo/d' -f script2.sed input.txt &gt; output.txt
 </p>
 </dd>
 <dt><code>t <var>label</var></code></dt>
-<dd><p>(test) <code>s</code>コマンドによる置換が成功した後で、かつ最後の入力行が読み込まれてないか他の条件分岐が実行されてない場合、指定の<var>ラベル</var>へジャンプします。&lt;v1&gt;ラベル&lt;/v1&gt;を省略したときは次のサイクルを開始します。
+<dd><p>(test) <code>s</code>コマンドによる置換が成功した後で、かつ最後の入力行が読み込まれてないか他の条件分岐が実行されてない場合、指定の<var>ラベル</var>へジャンプします。<var>ラベル</var>を省略したときは次のサイクルを開始します。
 
 </p>
 </dd>
 <dt><code>T <var>label</var></code></dt>
-<dd><p>(test) <code>s</code>コマンドによる置換が失敗した後で、かつ最後の入力行が読み込まれてないか他の条件分岐が実行されてない場合、指定の<var>ラベル&lt;/v0)へジャンプします。&lt;v1&gt;ラベル&lt;/v1&gt;を省略したときは次のサイクルを開始します。
+<dd><p>(test) <code>s</code>コマンドによる置換が失敗した後で、かつ最後の入力行が読み込まれてないか他の条件分岐が実行されてない場合、指定の<var>ラベル</var>へジャンプします。<var>ラベル</var>を省略したときは次のサイクルを開始します。
 
 </p>
 </dd>
@@ -884,7 +884,7 @@ sed -e '/^foo/d' -f script2.sed input.txt &gt; output.txt
 
 
 <a name="index-GNU-extensions_002c-case-modifiers-in-s-commands"></a>
-<p>最後に、GNU <code>sed</code> 拡張として、以下のスペシャルなつづりを含む事ができます。'<code>\L</code>'、'<code>\l</code>'、'<code>\U</code>'、'<code>\u</code>'、'<code>\E</code>その意味は以下のとおり。
+<p>最後に、GNU <code>sed</code>拡張として、'<code>\L</code>'、'<code>\l</code>'(訳注：小文字のエル)、'<code>\U</code>'、'<code>\u</code>'、'<code>\E</code> な特殊なつづりを含む事ができます。その意味は以下のとおり。
 </p>
 <dl compact="compact">
 <dt><code>\L</code></dt>
@@ -892,7 +892,7 @@ sed -e '/^foo/d' -f script2.sed input.txt &gt; output.txt
 </p>
 </dd>
 <dt><code>\l</code></dt>
-<dd><p>次の1文字を小文字にする。
+<dd><p>(小文字のエル)次の1文字を小文字にする。
 </p>
 </dd>
 <dt><code>\U</code></dt>
@@ -926,7 +926,7 @@ sed -e '/^foo/d' -f script2.sed input.txt &gt; output.txt
 </p>
 <a name="index-s-command_002c-option-flags"></a>
 <a name="index-Substitution-of-text_002c-options"></a>
-<p><code>s</code>はフラグ無しか1つ以上の<var>フラグ</var>を後に続ける事ができます。
+<p><code>s</code>コマンドはフラグ無しか、1つ以上の<var>フラグ</var>を後に続ける事ができます。
 </p>
 <dl compact="compact">
 <dt><code>g</code></dt>
@@ -940,14 +940,14 @@ sed -e '/^foo/d' -f script2.sed input.txt &gt; output.txt
 <p><var>number</var>番目のマッチだけ置換します。
 </p>
 <a name="index-GNU-extensions_002c-g-and-number-modifier"></a>
-<p><code>s</code>コマンドフラグの相互作用に注意： <small>POSIX</small>標準では<code>g</code>フラグと<var>number</var>フラグを混在させた時に何が起こるかは規定されていません。 <code>sed</code>の各実装の間でわりと普通の動作などというようなものもありません。実装依存です。なおGNU <code>sed</code>は、この相互作用を定義しています。指定の<var>number</var>以前のマッチを無視し、<var>number</var>番目とそれ以降全てのマッチに適用します。
+<p><code>s</code>コマンドフラグの相互作用に注意： <small>POSIX</small>規格では<code>g</code>フラグと<var>number</var>フラグを混在させた時に何が起こるかは規定されていません。 <code>sed</code>の各実装の間でわりと普通の動作などというようなものもありません。実装依存です。なおGNU <code>sed</code>では、この相互作用を定義しています。指定の<var>number</var>以前のマッチを無視し、<var>number</var>番目とそれ以降全てのマッチに適用します。
 </p>
 </dd>
 <dt><code>p</code></dt>
 <dd><a name="index-Text_002c-printing-after-substitution"></a>
 <p>置換した場合は、その結果を含むパターンスペースをプリントします。
 </p>
-<p>注意：<code>p</code>フラグと<code>e</code>フラグの両方を使った時は、その指定の順番により全然違う結果をもたらします。 普通は'<code>ep</code>'(evaluate してから print)が望みのものですが、逆順で動いてくれるとデバッグに便利です。このために、<code>s</code>コマンドのフラグは一般には1度しか評価されませんが、デバッグに便利なようにGNU <code>sed</code>の現在の版は'<code>e</code>'の前後に’<code>p</code>'を置くことができます。そうするとeval前のパターンスペースの内容とeval後のパターンスペースの内容をプリントします。(訳注:手元のGNU sed 4.7では動作確認できず)この動作は公式文書に掲載されているけれども、将来のバージョンでは変更される可能性があります。
+<p>注意：<code>p</code>フラグと<code>e</code>フラグの両方を使った時は、その指定の順番により全然違う結果をもたらします。 普通は'<code>ep</code>'(evaluate してから print)が望みのものですが、逆順で動いてくれるとデバッグに便利です。このために、<code>s</code>コマンドのフラグは一般には1度しか評価されませんが、デバッグに便利なようにGNU <code>sed</code>の現在の版は'<code>e</code>'の前後に’<code>p</code>'を置くことができます。そうするとeval前のパターンスペースの内容とeval後のパターンスペースの内容をプリントします。この動作は公式文書に掲載されているけれども、将来のバージョンでは変更される可能性があります。(訳注:手元のGNU sed 4.7では動作確認できず)
 </p>
 </dd>
 <dt><code>w <var>filename</var></code></dt>
@@ -1001,11 +1001,11 @@ sed -e '/^foo/d' -f script2.sed input.txt &gt; output.txt
 <p>'<code>#</code>'はコメントのはじまりです。次の改行まで続きます。
 </p>
 <a name="index-Portability_002c-comments"></a>
-<p>移植性を気にする場合、(POSIXに準拠していない)<code> sed </code>の実装によっては、スクリプト全体でたった1行のコメントしかサポートされないことがあります。 この場合、スクリプトの最初の文字は'<code>＃</code>'
+<p>移植性を気にする場合、(POSIXに準拠していない)<code> sed </code>の実装によっては、スクリプト全体でたった1行のコメントしかサポートされないことがあります。 この場合、スクリプトの最初の文字は'<code>＃</code>'です。
 </p>
 <a name="index-_002dn_002c-forcing-from-within-a-script"></a>
 <a name="index-Caveat-_002d_002d_002d-_0023n-on-first-line"></a>
-<p>警告：<code>sed</code>スクリプトの最初が'<code>#n</code>'のとき、'<samp>-n</samp>'(no-autoprint)オプションを指定したのと同じ効果があります(訳注： seq 3 | sed -e '#n' -e '2p' は、seq 3 | sed -n '2p' と等価です)。スクリプトの最初にコメント'#'を書き、それに'<samp>n</samp>'を続ける時は必ず大文字'<samp>N</samp>'にしてください。または'<samp>n</samp>'の前に1つ以上の空白を入れて下さい。
+<p>警告：<code>sed</code>スクリプトの最初が'<code>#n</code>'のとき、'<samp>-n</samp>'(no-autoprint)オプションを指定したのと同じ効果があります(訳注： seq 3 | sed -e '#n' -e '2p' は、seq 3 | sed -n '2p' と等価です)。スクリプトの最初にコメント'#'を書き、それに通常のコメントとしての文字'<samp>n</samp>'を続ける時は必ず大文字'<samp>N</samp>'にしてください。または'<samp>n</samp>'の前に1つ以上の空白を入れて下さい。
 </p>
 </dd>
 <dt><code>q [<var>exit-code</var>]</code></dt>
@@ -1021,7 +1021,7 @@ sed -e '/^foo/d' -f script2.sed input.txt &gt; output.txt
 2
 </pre></div>
 
-<p>このコマンドは単一のアドレスのみ受け入れます（アドレス範囲不可）。注意：'<samp>-n</samp>'オプションによってサイクル間の自動プリントが抑止されていない場合はパターンスペースの内容をプリントします。<code>sed</code>が返す終了コード値を指定できるのはGNU <code>sed</code> 拡張です。
+<p>このコマンドは単一のアドレスのみ受け入れます(アドレス範囲不可)。注意：'<samp>-n</samp>'オプションによってサイクル間の自動プリントが抑止されていない場合はパターンスペースの内容をプリントします。<code>sed</code>が返す終了コード値を指定できるのはGNU <code>sed</code> 拡張です。
 </p>
 <p>GNU <code>sed</code>拡張の'<code>Q</code>'コマンドはパターンスペースの内容をプリントせずにsedを終了します。
 </p>
@@ -1110,7 +1110,7 @@ X
 <a name="Less-Frequently_002dUsed-Commands"></a>
 <h3 class="section">3.5 あまり使われないコマンド群</h3>
 
-<p>前の節で使用されているものよりもおそらく使用頻度は低いですが、非常に小さくて便利な<code> sed </code>スクリプトをこれらのコマンドで作成することができます。
+<p>前の節で使用されているものよりも、おそらく使用頻度は低いですが、これらのコマンドを使えば非常に小さくて便利な<code> sed </code>スクリプトを作成することができます。
 </p>
 <dl compact="compact">
 <dt><code>y/<var>source-chars</var>/<var>dest-chars</var>/</code></dt>
@@ -1171,7 +1171,7 @@ hello'
 </p>
 <p><var> text </var>のエスケープシーケンスは処理されるので、<var> text </var>に'\'を文字として入れるには'<code>\\</code>'と記述する必要があります。
 </p>
-<p>最後の行(‘<samp>world</samp>’)の末尾に'<code>\</code>‘が付いてないことで、そこで a こまんどの終了とみなされ、次の行は次のコマンドの処理を続行します。
+<p>最後の行(‘<samp>world</samp>’)の末尾に'<code>\</code>‘が付いてないことで、そこで a コマンドの終了とみなされ、次の行は次のコマンドの処理を続行します。
 </p><div class="example">
 <pre class="example">$ seq 3 | sed '2a\
 hello\
@@ -1233,7 +1233,7 @@ hello'
 </p>
 <p><var> text </var>のエスケープシーケンスは処理されるので、<var> text </var>に'\'を文字として入れるには'<code>\\</code>'と記述する必要があります。
 </p>
-<p>最後の行(‘<samp>world</samp>’)の末尾に'<code>\</code>‘が付いてないことで、そこで a こまんどの終了とみなされ、次の行は次のコマンドの処理を続行します。
+<p>最後の行(‘<samp>world</samp>’)の末尾に'<code>\</code>‘が付いてないことで、そこで a コマンドの終了とみなされ、次の行は次のコマンドの処理を続行します。
 </p><div class="example">
 <pre class="example">$ seq 3 | sed '2i\
 hello\
@@ -1278,7 +1278,7 @@ hello
 <a name="index-Replacing-selected-lines-with-other-text"></a>
 <p>addressまたはaddress-rangeに一致する行を削除して、このコマンドに続くテキスト行を出力します。
 </p>
-<p>例：2行目から4行目まで‘<samp>hello</samp>’を‘<samp>world</samp>’に置換する(-| はsedの出力)。
+<p>例：2行目から4行目までを‘<samp>hello</samp>’と‘<samp>world</samp>’に置換します(-| はsedの出力)。
 </p><div class="example">
 <pre class="example">$ seq 5 | sed '2,4c\
 hello\
@@ -1318,7 +1318,7 @@ $ sed -e '2c\' -e "$VAR"
 <dd><a name="index-_003d-_0028print-line-number_0029-command"></a>
 <a name="index-Printing-line-number"></a>
 <a name="index-Line-number_002c-printing"></a>
-<p>入力業の行番号を(末尾に改行を付けて)プリントします。
+<p>入力行の行番号を(末尾に改行を付けて)プリントします。
 </p>
 <div class="example">
 <pre class="example">$ printf '%s\n' aaa bbb ccc | sed =
@@ -1337,15 +1337,15 @@ ccc
 
 
 </dd>
-<dt><code>l <var>n</var></code></dt>
+<dt><code>l <var>line-length</var></code></dt>
 <dd><a name="index-l-_0028list-unambiguously_0029-command"></a>
 <a name="index-List-pattern-space"></a>
 <a name="index-Printing-text-unambiguously"></a>
 <a name="index-Line-length_002c-setting-1"></a>
 <a name="index-GNU-extensions_002c-setting-line-length"></a>
-<p>パターンスペースを明確な(unambiguous)形式でプリントします。表示不能文字(および'<code>\</code>')はC言語スタイルのエスケープ形式でプリントします。。 長い行は分割され、分割を示す末尾の'<code>\</code>'文字が付きます。 各行の終わりは’<code>$</code>'でマークされています。
+<p>(小文字のエル)パターンスペースを明確な(unambiguous)形式でプリントします。表示不能文字(および'<code>\</code>')はC言語スタイルのエスケープ形式でプリントします。。 長い行は分割され、分割を示す末尾の'<code>\</code>'文字が付きます。 各行の終わりは’<code>$</code>'でマークされています。
 </p>
-<p><var>n</var> は行折り返しの長さを指定します。0が指定された時は行の折り返しをしません。nを省略すると、コマンドラインで指定したデフォルト値が使われます。<var>n</var> パラメータはGNU <code>sed</code> 拡張です。
+<p><var>line-length</var> は行折り返しの長さを指定します。0が指定された時は行の折り返しをしません。line-lengthを省略すると、コマンドラインで指定したデフォルト値が使われます。<var>line-length</var> パラメータはGNU <code>sed</code> 拡張です。
 </p>
 </dd>
 <dt><code>r <var>filename</var></code></dt>
@@ -1376,7 +1376,7 @@ fencepost.gnu.org
 <a name="index-Write-to-a-file"></a>
 <a name="index-GNU-extensions_002c-_002fdev_002fstdout-file-2"></a>
 <a name="index-GNU-extensions_002c-_002fdev_002fstderr-file-1"></a>
-<p>(write)パターンスペースの内容を<var>filename</var>で指定したファイルに書き込む。GNU &lt;c0&gt;sed&lt;/c0&gt; 拡張では、ファイル名として標準エラー出力の'&lt;s2&gt;/dev/stderr&lt;/s2&gt;'と、標準出力の'<samp>/dev/stdout</samp>'をサポートしています。<a name="DOCF4" href="#FOOT4"><sup>4</sup></a>
+<p>(write)パターンスペースの内容を<var>filename</var>で指定したファイルに書き込む。GNU <code>sed</code> 拡張では、ファイル名として標準エラー出力の'<samp>/dev/stderr</samp>'と、標準出力の'<samp>/dev/stdout</samp>'をサポートしています。<a name="DOCF4" href="#FOOT4"><sup>4</sup></a>
 </p>
 <p>最初の入力行が読み取られる前に出力ファイルが作成(または既存ファイルの内容切り捨て(trancate))されます。 同じ<var> filename </var>を参照するすべての<code> w </code>コマンド(成功した<code> s </code>コマンドの<code> w </code>フラグ指定分含む)のファイルへ、ファイルを閉じて再度開くことなく出力します。
 </p>
@@ -1393,7 +1393,7 @@ fencepost.gnu.org
 <a name="index-Append-next-input-line-to-pattern-space"></a>
 <p>(next)パターンスペースの内容の末尾に改行を追加し、更に次に読み込んだ一行を追加します。それ以上入力が無い時、<code>sed</code>はそれ以上コマンドを処理することなく終了します。
 </p>
-<p><samp>-z</samp> コマンドラインオプションを指定した時は、(改行 \x0a の代わりに)行と行の区切りには \x00 (ASCII ‘<samp>NUL</samp>’)が追加されます。
+<p><samp>-z</samp> コマンドラインオプションを指定した時は、行と行の間の区切りには、改行(\x0a)の代わりにASCII ‘<samp>NUL</samp>’(\x00)を追加します。
 </p>
 <p>デフォルトでは<code> sed </code>は次の入力行がなければ終了しません。これはGNUの拡張機能で、<samp> --posix </samp>で無効にすることができます。「<a href="#N_005fcommand_005flast_005fline">最終行でのNコマンド</a>」参照。
 </p>
@@ -1477,7 +1477,7 @@ fencepost.gnu.org
 <dd><a name="index-t-_0028test-and-branch-if-successful_0029-command"></a>
 <a name="index-Branch-to-a-label_002c-if-s_002f_002f_002f-succeeded"></a>
 <a name="index-Conditional-branch"></a>
-<p><code>s</code>コマンドによる置換が成功した後で、かつ最後の入力行が読み込まれてないか他の条件分岐が実行されてない場合、指定の<var>ラベル</var>へジャンプします。&lt;v1&gt;ラベル&lt;/v1&gt;を省略したときは次のサイクルを開始します。
+<p><code>s</code>コマンドによる置換が成功した後で、かつ最後の入力行が読み込まれてないか他の条件分岐が実行されてない場合、指定の<var>ラベル</var>へジャンプします。<var>ラベル</var>を省略したときは次のサイクルを開始します。
 
 </p>
 </dd>
@@ -1514,11 +1514,11 @@ fencepost.gnu.org
 <dd><a name="index-F-_0028File-name_0029-command"></a>
 <a name="index-Printing-file-name"></a>
 <a name="index-File-name_002c-printing"></a>
-<p>現在の入力ファイル名を（末尾に改行を伴って）出力します（標準入力の場合は'-'）。
+<p>現在の入力ファイル名を(末尾に改行を伴って)出力します(標準入力の場合は'-'）。
 </p>
 </dd>
 <dt><code>Q [<var>exit-code</var>]</code></dt>
-<dd><p>このコマンドは単一のアドレスのみ受け入れます（アドレス範囲不可）。
+<dd><p>このコマンドは単一のアドレスのみ受け入れます(アドレス範囲不可)。
 </p>
 <a name="index-Q-_0028silent-Quit_0029-command"></a>
 <a name="index-GNU-extensions_002c-quitting-silently"></a>
@@ -1553,7 +1553,7 @@ b eat
 <a name="index-GNU-extensions_002c-branch-if-s_002f_002f_002f-failed"></a>
 <a name="index-Branch-to-a-label_002c-if-s_002f_002f_002f-failed"></a>
 <a name="index-Conditional-branch-1"></a>
-<p><code>s</code>コマンドによる置換が失敗した後で、かつ最後の入力行が読み込まれてないか他の条件分岐が実行されてない場合(暗黙の<code>s</code>コマンド実行結果フラグがまだクリアされてない間)、指定のラベルへジャンプします。&lt;v1&gt;ラベル&lt;/v1&gt;を省略したときは次のサイクルを開始します。
+<p><code>s</code>コマンドによる置換が失敗した後で、かつ最後の入力行が読み込まれてないか他の条件分岐が実行されてない場合(暗黙の<code>s</code>コマンド実行結果フラグがまだクリアされてない間)、指定のラベルへジャンプします。<var>ラベル</var>を省略したときは次のサイクルを開始します。
 
 </p>
 </dd>
@@ -1577,7 +1577,7 @@ b eat
 <dd><a name="index-z-_0028Zap_0029-command"></a>
 <a name="index-GNU-extensions_002c-emptying-pattern-space"></a>
 <a name="index-Emptying-pattern-space"></a>
-<p>このコマンドはパターンスペースの内容を全削除します。これは‘<samp>s/.*//</samp>’と同様ですが、より有能で、入力ストリームに不正なマルチバイトつづりが現れる時も動作します。<small>POSIX</small>では‘<samp>.</samp>’によって不正マルチバイトつづりにマッチしない事を強制します。そのためほとんどのマルチバイトロケール（UTF-8ロケールを含む）ではsedのバッファをスクリプトの途中でクリアする移植性のある方法はありません。
+<p>このコマンドはパターンスペースの内容を全削除します。これは‘<samp>s/.*//</samp>’と同様ですが、より有能で、入力ストリームに不正なマルチバイトつづりが現れる時も動作します。<small>POSIX</small>では‘<samp>.</samp>’によって不正マルチバイトつづりにマッチしない事を強制します。そのためほとんどのマルチバイトロケール（UTF-8ロケールを含む）ではsedのバッファをスクリプトの途中で全削除する移植性のある方法はありません。
 </p></dd>
 </dl>
 
@@ -1634,7 +1634,7 @@ $ seq 6 | sed '{1d;3d};5d'
 6
 </pre></div>
 
-<p>ラベルを使うコマンドである'<code>b</code>'、'<code>t</code>'、'<code>T</code>'、'<code>:</code>' は当該のコマンド直後からセミコロンや改行までを読み取ります。先頭の空白文字と末尾の空白文字があっても無視されます。ラベルの例として以下の‘<samp>x</samp>’をご覧ください。最初の例はGNU <code>sed</code>用です。次の例は移植性のある(GNU sedでなくても動く)同等例です分岐とラベルについて更に詳しくは「<a href="#Branching-and-flow-control">分岐と制御構文</a>」参照。
+<p>ラベルを使うコマンドである'<code>b</code>'、'<code>t</code>'、'<code>T</code>'、'<code>:</code>' は当該のコマンド直後からセミコロンや改行までを読み取ります。先頭の空白文字と末尾の空白文字があっても無視されます。ラベルの例として以下の‘<samp>x</samp>’をご覧ください。最初の例はGNU <code>sed</code>用です。次の例は移植性のある(GNU sedでなくても動く)同等例です。分岐とラベルについて更に詳しくは「<a href="#Branching-and-flow-control">分岐と制御構文</a>」参照。
 </p>
 <div class="example">
 <pre class="example">$ seq 3 | sed '/1/b x ; s/^/=/ ; :x ; 3d'
@@ -1651,12 +1651,12 @@ $ seq 3 | sed -e '/1/bx' -e 's/^/=/' -e ':x' -e '3d'
 <a name="Commands-Requiring-a-newline"></a>
 <h4 class="subsection">3.8.1 sedコマンドに改行が必要な時</h4>
 
-<p>次のコマンドはセミコロンで区切ることができなくて改行で区切る事が必要です。:
+<p>次のコマンドはセミコロンで区切ることができなくて改行で区切る事が必要です。
 </p>
 <dl compact="compact">
 <dt><code>a</code>,<code>c</code>,<code>i</code> (append/change/insert)</dt>
 <dd>
-<p><code>a</code>、<code>c</code>、<code>i</code>コマンドの後にはappend/change/insertのためのテキストとして全ての文字を続ける事ができます。そこでセミコロンを使用すると残念な結果になります。
+<p><code>a</code>、<code>c</code>、<code>i</code>コマンドの後にはappend/change/insertのためのテキストとして全ての文字を続ける事ができます。そこにセミコロンを使用すると残念な結果になります。
 </p>
 <div class="example">
 <pre class="example">$ seq 2 | sed '1aHello ; 2d'
@@ -1837,13 +1837,13 @@ $ ls -1
 <a name="index-Selecting-non_002dmatching-lines"></a>
 <a name="index-addresses_002c-negating"></a>
 <a name="index-addresses_002c-excluding"></a>
-<p><code>!</code>文字をアドレス指定の終わり（コマンド文字の前) に指定するとマッチの否定になります。すなわち、<code>!</code>文字がアドレスやアドレス範囲の後ろにあると、選択したアドレス<em>以外</em>の行を対象とします。次のコマンドは‘<samp>apple</samp>'を<em>含まない</em>行だけ‘&lt;s1&gt;hello&lt;/s1&gt;’を‘&lt;s2&gt;world&lt;/s2&gt;’に置き換えます。
+<p><code>!</code>文字をアドレス指定の終わり（コマンド文字の前) に指定するとマッチの否定になります。すなわち、<code>!</code>文字がアドレスやアドレス範囲の後ろにあると、選択したアドレス<em>以外</em>の行を対象とします。次のコマンドは‘<samp>apple</samp>'を<em>含まない</em>行だけ‘<samp>hello</samp>’を‘<samp>world</samp>’に置き換えます。
 </p>
 <div class="example">
 <pre class="example">sed '/apple/!s/hello/world/' input.txt &gt; output.txt
 </pre></div>
 
-<p>次のコマンドは入力ファイルの1から3行と18から最終行だけ‘<samp>hello</samp>’を‘&lt;s2&gt;world&lt;/s2&gt;’に置き換えます（すなわち excluding lines 4 to 17）。
+<p>次のコマンドは入力ファイルの1から3行と18から最終行だけ‘<samp>hello</samp>’を‘<samp>world</samp>’に置き換えます（すなわち excluding lines 4 to 17）。
 </p>
 <div class="example">
 <pre class="example">sed '4,17!s/hello/world/' input.txt &gt; output.txt
@@ -1937,7 +1937,7 @@ $ seq 10 | sed -n '1~3p'
 <dd><p>('<code>％</code>'は他の任意の1文字に置き換えることができます)。
 </p>
 <a name="index-Slash-character_002c-in-regular-expressions"></a>
-<p>これも正規表現 <var>regexp</var>にマッチします。つまり'<code>/</code>'と異なる1文字を使えます。これは<var>regexp</var>自身がたくさんの'/'を含んでいる場合に特に便利です。なぜならこうすれば全ての'<code>/</code>'にエスケープするのを避ける事ができるからです。&lt;v1&gt;regexp&lt;/v1&gt; それ自身が'&lt;c2&gt;/&lt;/c2&gt;'文字を含む時は、'<code>\</code>'でエスケープしなければなりません。
+<p>これも正規表現 <var>regexp</var>にマッチします。つまり'<code>/</code>'と異なる区切りを使えます。これは<var>regexp</var>自身がたくさんの'/'を含んでいる場合に特に便利です。なぜならこうすれば全ての'<code>/</code>'にエスケープするのを避ける事ができるからです。<var>regexp</var> 内に区切り文字を含める時は、'<code>\</code>'でエスケープしなければなりません。
 </p>
 <p>次のコマンドはいずれも等価です。これらは‘<samp>/home/alice/documents/</samp>’で始まる行をプリントします。
 </p>
@@ -2132,7 +2132,7 @@ $ seq 10 | sed -n '0,/[0-9]/p'
 </p>
 </div>
 <a name="Overview-of-regular-expression-in-sed"></a>
-<h3 class="section">5.1<code>sed</code>の正規表現の概要</h3>
+<h3 class="section">5.1 <code>sed</code>の正規表現の概要</h3>
 
 
 
@@ -2222,7 +2222,7 @@ aab
 </dd>
 <dt><code>*</code></dt>
 <dd><a name="index-GNU-extensions_002c-to-basic-regular-expressions"></a>
-<p>これはその直前の正規表現の0回以上(0の時は無し)の繰り返しのつづりにマッチします。直前の正規表現はこれは普通の文字、'\'が前に付いた特殊文字、'.'(ピリオド)、グループ化された正規表現(下記参照)、あるいは角括弧式でなければなりません。GNUの拡張として、接尾辞付きの正規表現の後に<code> * </code>を続けることもできます。 たとえば、<code> a ** </code>は<code> a * </code>と同じです。POSIX 1003.1-2001は <code>*</code> が正規表現または正規表現の部分式の始めに現れるときはそれ自身を意味すると言いますが、多くの非GNU実装はこれをサポートしておらず、移植可能なスクリプトはこれらの文脈では代わりに <code>\*</code> を使うべきです。
+<p>これはその直前の正規表現の0回以上(0の時は無し)の繰り返しのつづりにマッチします。直前の正規表現は、普通の文字、'\'が前に付いた特殊文字、'.'(ピリオド)、グループ化された正規表現(下記参照)、あるいは角括弧式でなければなりません。GNUの拡張として、接尾辞付きの正規表現の後に<code> * </code>を続けることもできます。 たとえば、<code> a ** </code>は<code> a * </code>と同じです。POSIX 1003.1-2001は <code>*</code> が正規表現または正規表現の部分式の始めに現れるときはそれ自身を意味すると言いますが、多くの非GNU実装はこれをサポートしておらず、移植可能なスクリプトはこれらの文脈では代わりに <code>\*</code> を使うべきです。
 </p></dd>
 <dt><code>.</code></dt>
 <dd><p>任意のキャラクタにマッチします。改行も含みます。
@@ -2231,7 +2231,7 @@ aab
 <dt><code>^</code></dt>
 <dd><p>パターンスペースの最初のNUL文字にマッチします。すなわち、'^'(曲折アクセント記号)に後ろに続くものはパターンスペースの最初の文字になります。
 </p>
-<p>ほとんどのスクリプトでは、パターンスペースは各行の内容に初期化されます(「<a href="#Execution-Cycle"><code>sed</code>はどのように動くか</a>」参照)。だから、<code>^#include</code> は、行の最初に'<samp>#include</samp>'がある行のみに一致するものと単純化すると分かりやすいです。例えば、その前にスペースがある場合はマッチは失敗します。この単純化は、元のパターンスペースの内容が変更されていない限り、たとえば<code> s </code>コマンドで有効です。
+<p>ほとんどのスクリプトでは、パターンスペースは各行の内容に初期化されます(「<a href="#Execution-Cycle"><code>sed</code>はどのように動くか</a>」参照)。なので、<code>^#include</code> は、行の最初に'<samp>#include</samp>'がある行のみに一致するものと単純化すると分かりやすいです。例えば、その前にスペースがある場合はマッチは失敗します。この単純化は、元のパターンスペースの内容が変更されていない限り有効です。例えば<code> s </code>コマンドで有効です。
 </p>
 <p><code> ^ </code>は、正規表現または正規表現部分式の先頭（つまり、'<code>\(</code>'または'<code>\|</code>'の後)でのみ特殊文字として機能します。ただし、POSIXでは<code> ^ </code>をその文脈では通常の文字として扱う実装が許されているため、移植可能なスクリプトでは、正規表現部分式の冒頭で<code> ^ </code>を使用しないでください。
 </p>
@@ -2273,7 +2273,7 @@ aab
 </p>
 <ul>
 <li> <a name="index-GNU-extensions_002c-to-basic-regular-expressions-3"></a>
-<code>\(abcd\)*</code> のように後置演算子を適用すると、ni: this will search for z‘<samp>abcd</samp>’つづり全体が0個以上現れるつづりを検索します。一方、<code>abcd*</code>と書くと、‘<samp>abc</samp>’に続く0個以上の文字‘<samp>d</samp>’のつづりをけんさくします。POSIX 1003.1-2001では<code> \(abcd \)* </code>のサポートが必要ですが、多くの非GNU実装はそれをサポートしていないので普遍的に移植できません。
+<code>\(abcd\)*</code> のように後置演算子を適用すると、‘<samp>abcd</samp>’つづり全体が0個以上現れるつづりを検索します。一方、<code>abcd*</code>と書くと、‘<samp>abc</samp>’に続く0個以上の文字‘<samp>d</samp>’のつづりを検索します。POSIX 1003.1-2001では<code> \(abcd \)* </code>のサポートが必要ですが、多くの非GNU実装はそれをサポートしていないので普遍的に移植できません。
 
 </li><li> 後方参照を使用してください(下記参照)。
 </li></ul>
@@ -2298,13 +2298,13 @@ aab
 </p>
 </dd>
 <dt><code>\<var>char</var></code></dt>
-<dd><p><var>char</var>が、 <code>$</code>, <code>*</code>, <code>.</code>, <code>[</code>, <code>\</code>、<code>^</code> のいずれかであるとき、その文字自身にマッチします(特殊文字としての機能を打ち消します)。注意：移植可能と想定できるC言語風のバックスラッシュつづり<code> \ n </code>と<code> \\ </code>だけです。 特に<code> \t </code>は移植性がなく、タブ文字ではなく<code> sed </code>のほとんどの実装では'<samp>t</samp>'に一致します。
+<dd><p><var>char</var>が、 <code>$</code>, <code>*</code>, <code>.</code>, <code>[</code>, <code>\</code>、<code>^</code> のいずれかであるとき、その文字自身にマッチします(特殊文字としての機能を打ち消します)。注意：移植可能と想定できるC言語風のバックスラッシュつづりは'<code>\n</code>'と'<code>\\</code>'だけです。 特に'<code>\t</code>'は移植性がなく、<code>sed</code>のほとんどの実装では、タブ文字ではなく'<samp>t</samp>'にマッチします。
 </p>
 </dd>
 </dl>
 
 <a name="index-Greedy-regular-expression-matching"></a>
-<p>注意：正規表現マッチの中の人は貪欲である、すなわち、マッチは左から右へ試みられ、そして同じ文字から始めて２つ以上のマッチが可能であるならば、その最長を選択する。
+<p>注意：正規表現マッチ機構は貪欲です。すなわち、マッチは左から右へ試みられ、そして同じ文字から始めて２つ以上のマッチが可能であるならば、その最長を選択します。
 </p>
 <p>例:
 </p><dl compact="compact">
@@ -2349,8 +2349,8 @@ aab
 <dd><p>Cロケールでは、これはASCII文字と数字にマッチします。
 </p>
 </dd>
-<dt>‘<samp>[^ <kbd><span class="key">TAB</span></kbd>]\+</samp>’</dt>
-<dd><p>(ここで <kbd><span class="key">TAB</span></kbd> タブはタブ文字(ASCII \x09)を表します)上記はスペース(0x20)またはタブ(0x09)以外の任意の文字の1文字以上にマッチします。通常これは(英語の)単語を意味します。
+<dt>‘<samp>[^ <kbd><span class="key">«TAB»</span></kbd>]\+</samp>’</dt>
+<dd><p>(ここで <kbd><span class="key">«TAB»</span></kbd> はタブ文字(ASCII HT;\x09)を表します)上記はスペース(0x20)またはタブ(0x09)以外の任意の文字の1文字以上にマッチします。通常これは(英語の)単語を意味します。
 </p>
 </dd>
 <dt>‘<samp>^\(.*\)\n\1$</samp>’</dt>
@@ -2358,11 +2358,11 @@ aab
 </p>
 </dd>
 <dt>‘<samp>.\{9\}A$</samp>’</dt>
-<dd><p>これは9文字にマッチし、その後に行末に<samp> A </samp>が続きます。
+<dd><p>これは9文字にマッチし、その後に行末に'<samp>A</samp>'が続きます。
 </p>
 </dd>
 <dt>‘<samp>^.\{15\}A</samp>’</dt>
-<dd><p>これは16文字でかつその最後が‘<samp>A</samp>’である文字列にマッチする。
+<dd><p>これは16文字でかつその最後が‘<samp>A</samp>’である文字列にマッチします。
 </p>
 </dd>
 </dl>
@@ -2383,7 +2383,7 @@ aab
 <p>例:
 </p><dl compact="compact">
 <dt><code>abc?</code></dt>
-<dd><p>上記は拡張正規表現を使用すると、'<samp>abc\?</samp>'になります。上記は拡張正規表現ではリテラル文字列‘<samp>abc?</samp>’にマッチします。
+<dd><p>上記は拡張正規表現を使用すると、'<samp>abc\?</samp>'になります。'<samp>abc\?</samp>'は、拡張正規表現ではリテラル文字列‘<samp>abc?</samp>’にマッチします。
 </p>
 </dd>
 <dt><code>c\+</code></dt>
@@ -2399,7 +2399,7 @@ aab
 </p>
 </dd>
 <dt><code>\(abc*\)\1</code></dt>
-<dd><p>拡張正規表現では‘<samp>(abc*)\1</samp>’となります。後方参照は拡張正規表現でも依然としてエスケープされる必要があります。expressions.
+<dd><p>拡張正規表現では‘<samp>(abc*)\1</samp>’となります。後方参照は拡張正規表現でも依然としてエスケープされる必要があります。
 </p>
 </dd>
 <dt><code>a\|b</code></dt>
@@ -2419,7 +2419,7 @@ aab
 
 <a name="index-bracket-expression"></a>
 <a name="index-character-class"></a>
-<p><em>角括弧式</em>は ‘<samp>[</samp>’と‘<samp>]</samp>’で囲まれた文字のリストです。リスト内の任意の1文字にマッチします。最初の文字がの時はリストに<strong>無い</strong>任意の1文字にマッチします。次のコマンドは‘<samp>gray</samp>’または‘<samp>grey</samp>’を‘<samp>blue</samp>’に置き換えます。
+<p><em>角括弧式</em>は ‘<samp>[</samp>’と‘<samp>]</samp>’で囲まれた文字のリストです。リスト内の任意の1文字にマッチします。最初の文字が‘<samp>^</samp>’の時はリストに<strong>無い</strong>任意の1文字にマッチします。次のコマンドは‘<samp>gray</samp>’または‘<samp>grey</samp>’を‘<samp>blue</samp>’に置き換えます。
 </p>
 <div class="example">
 <pre class="example">sed  's/gr[ae]y/blue/'
@@ -2753,7 +2753,7 @@ The name is Bond, James Bond.
 </pre></div>
 
 
-<p>alternation('|')が使用されている時、部分マッチした側にグループが含まれていないと、後方参照は全体のマッチを失敗させる。例えば‘<samp>a(.)|b\1</samp>’は‘<samp>ba</samp>’にはマッチしない。<samp>-e</samp> やファイル(‘<samp>-f <var>file</var></samp>’)で複数の正規表現を指定する時、後方参照は指定ごとの各正規表現ローカルです。
+<p>alternation('|')が使用されている時、部分マッチした側にグループが含まれていないと、後方参照は全体のマッチを失敗させます。例えば‘<samp>a(.)|b\1</samp>’は‘<samp>ba</samp>’にはマッチしません。<samp>-e</samp> やファイル(‘<samp>-f <var>file</var></samp>’)で複数の正規表現を指定する時、後方参照は指定ごとの各正規表現ローカルです。
 </p>
 
 <hr>
@@ -2810,17 +2810,17 @@ The name is Bond, James Bond.
 <dd><p><small> ASCII </small>値が8進数の<var> xxx </var>の文字を生成またはマッチします。
 </p>
 </dd>
-<dt><code>\x<var>xx</var></code></dt>
-<dd><p><small> ASCII </small>値が16進数の<var> xxx </var>の文字を生成またはマッチします。
+<dt><code>\x<var>yy</var></code></dt>
+<dd><p><small> ASCII </small>値が16進数の<var> yy </var>の文字を生成またはマッチします。
 </p></dd>
 </dl>
 
-<p>「<samp> \ b </samp>」（バックスペース）は、既存の「単語境界」の意味と競合するため省かれています。
+<p>‘<samp>\b</samp>’（バックスペース）は、既存の「単語境界」の意味と競合するため省かれています。
 </p>
 <a name="Escaping-Precedence"></a>
 <h4 class="subsection">5.8.1 エスケープ文字の打ち消し</h4>
 
-<p>GNU <code>sed</code> は <code>s///</code>コマンドの正規表現マッチングやアドレスのマッチングにテキストを渡す前にエスケープシーケンスを処理します。次の2つのコマンドは等価です(‘<samp>0x5e</samp>’は16進表記された文字‘<samp>^</samp>’の<small>ASCII</small>値)。
+<p>GNU <code>sed</code> は <code>s///</code>コマンドの正規表現マッチングやアドレスのマッチングにテキストを渡す前にエスケープシーケンスを処理します。次の2つのコマンドは等価です(‘<samp>0x5e</samp>’は16進表記した文字‘<samp>^</samp>’の<small>ASCII</small>値)。
 </p>
 <div class="example">
 <pre class="example">$ echo 'a^c' | sed 's/^/b/'
@@ -2839,7 +2839,7 @@ $ echo abc | sed 's/\x5ba\x5d/x/'
 Xbc
 </pre></div>
 
-<p>ただし、予期しないエッジケースが発生するため、このような特殊文字は避けてください。例えば次の2つの例は等価ではありません。
+<p>ただし、予期しない境界ギリギリの状態(edge-case)が発生するため、このような特殊文字は避けてください。例えば次の2つの例は等価ではありません。
 </p>
 <div class="example">
 <pre class="example">$ echo 'a^c' | sed 's/\^/b/'
@@ -2890,7 +2890,7 @@ XXXX
 
 <p>マルチバイトロケールでの<code>sed</code>の正規表現は不正なマルチバイトつづりにマッチできません。
 </p>
-<p>次の例は不完全なマルチバイト文字である<code>0xCE</code>です（�と表示されます）。正規表現<samp>.</samp>はこれにマッチできません。
+<p>次の例は不完全なマルチバイト文字である<code>0xCE</code>です（�と表示されます）。正規表現‘<samp>.</samp>’はこれにマッチできません。
 </p>
 <div class="example">
 <pre class="example">$ printf 'a\xCEb\n'
@@ -2946,7 +2946,7 @@ $ sed -n 's/.//g ; H ; ${x;s/\n//g;l}' invalid.txt
 \316\316$
 </pre></div>
 
-<p>さらにいくつかのコマンドを使用すると、<code> sed </code>は無効な各文字に対応する正確な行番号を表示できます（3行目）。これらの文字は、<code> C </code>ロケールを強制し、8進エスケープシーケンスを使用することで削除できます。
+<p>さらにいくつかのコマンドを使用すると、<code> sed </code>は無効な各文字に対応する正確な行(この例では3行目)の行番号を表示できます。これらの文字は、<code> C </code>ロケールを強制し、8進エスケープシーケンスを使用することで削除できます。
 </p>
 <div class="example">
 <pre class="example">$ sed -n 's/.//g;=;l' invalid.txt | paste - -  | awk '$2!="$"'
@@ -2976,7 +2976,7 @@ abcσ
 <h4 class="subsection">5.9.3 マルチバイト正規表現文字クラス</h4>
 
 
-<p>他のロケールでは、ソート順は指定されておらず、 ‘<samp>[a-d]</samp>’は‘<samp>[abcd]</samp>’または ‘<samp>[aBbCcDd]</samp>’と同等であるか、または任意の文字、またはそれが一致する文字のセットと一致しない可能性があります。マッチは不規則かもしれません。角括弧式の伝統的な解釈を取得するために、環境変数<code> LC_ALL </code>を値<samp> C </samp>に設定して '<samp> C </samp>'ロケールを使用できます。 
+<p>Cロケール以外の他のロケールでは、ソート順は指定されておらず、 ‘<samp>[a-d]</samp>’は‘<samp>[abcd]</samp>’または ‘<samp>[aBbCcDd]</samp>’と同等であるか、または任意の文字、またはそれが一致する文字のセットと一致しない可能性があります。マッチは不規則かもしれません。角括弧式の伝統的な解釈を取得するために、環境変数<code> LC_ALL </code>を値<samp> C </samp>に設定して '<samp> C </samp>'ロケールを使用できます。 
 </p>
 <div class="example">
 <pre class="example"># TODO: is there any real-world system/locale where 'A'
@@ -3024,7 +3024,7 @@ clichX
 </p>
 </div>
 <a name="How-sed-Works"></a>
-<h3 class="section">6.1<code>sed</code>はどのように動いているか</h3>
+<h3 class="section">6.1 <code>sed</code>はどのように動いているか</h3>
 
 <a name="index-Buffer-spaces_002c-pattern-and-hold"></a>
 <a name="index-Spaces_002c-pattern-and-hold"></a>
@@ -3059,7 +3059,7 @@ clichX
 <a name="Multiline-techniques-_002d-using-D_002cG_002cH_002cN_002cP-to-process-multiple-lines"></a>
 <h3 class="section">6.3 複数行テクニック - D,G,H,N,P コマンドで複数行処理</h3>
 
-<p>複数行は <code>D</code>,<code>G</code>,<code>H</code>,<code>N</code>,<code>P</code> コマンドを使って1つのバッファで処理できます。これらに対応する小文字の（<code>d</code>,<code>g</code>, <code>h</code>,<code>n</code>,<code>p</code>）は), except that these commands append or subtract data while respecting embedded newlines - allowing adding and removing lines from the pattern and hold spaces.
+<p>複数行は <code>D</code>,<code>G</code>,<code>H</code>,<code>N</code>,<code>P</code> コマンドを使って1つのバッファで処理できます。これらは、それぞれ対応する小文字のコマンド(<code>d</code>,<code>g</code>,<code>h</code>,<code>n</code>,<code>p</code>)と似ていますが、埋め込まれた改行を尊重しながらデータを追加または削除するという点が異なります。パターンスペースとホールドスペースで行を追加・削除できます。
 </p>
 <p>これらのコマンドの動作は以下の通り。
 </p><dl compact="compact">
@@ -3100,7 +3100,7 @@ clichX
 <ol>
 <li> <code>sed</code>は最初の1行をパターンスペースに読み込み（すなわちパターンスペースの内容は‘<samp>1</samp>’）
 </li><li> 毎度のサイクルを始めます。<code>N</code>コマンドは(最初の1行をパターンスペースに読み込む時に取り除いた)改行を追加し、更に次の1行をパターンスペースに読み込みます( すなわちパターンスペースの内容は‘<samp>1</samp>’, ‘<samp>\n</samp>’, ‘<samp>2</samp>’ となる）。
-</li><li> <code>l</code>コマンドはパターンスペースの内容を非表示文字等含めて目に見える形でプリントします(削除はしない)。
+</li><li> <code>l</code>(小文字のエル)コマンドはパターンスペースの内容を非表示文字等含めて目に見える形でプリントします(削除はしない)。
 </li><li> <code>D</code>コマンドはパターンスペースの内容を最初の改行まで(その改行含む)削除し、そして<code>D</code>パターンスペースの削除をスキップして次のサイクルを開始します （よって、次のサイクルは(2行目の)<samp>2</samp>’だけ状態から始まる）。
 </li><li> そのサイクルで<code>N</code>コマンドは同様に削除してあった改行追加し入力行をパターンスペースに追加します（すなわち、‘<samp>2</samp>’, ‘<samp>\n</samp>’, ‘<samp>3</samp>’).
 </li></ol>
@@ -3175,7 +3175,7 @@ cc cc cc cc
 </p>
 <dl compact="compact">
 <dt><code>d</code></dt>
-<dd><p>パターンスペースの内容を全部クリアし、このコマンド以降のスクリプトの実行をスキップしてパターンスペースの内容をプリントせずに次のサイクルを開始する。
+<dd><p>パターンスペースの内容を全削除し、このコマンド以降のスクリプトの実行をスキップしてパターンスペースの内容をプリントせずに次のサイクルを開始する。
 </p>
 </dd>
 <dt><code>D</code></dt>
@@ -3186,11 +3186,11 @@ cc cc cc cc
 <dt><code>[addr]{ X ; X ; X }</code></dt>
 <dt><code>/regexp/X</code></dt>
 <dt><code>/regexp/{ X ; X ; X }</code></dt>
-<dd><p>アドレスや正規表現は<code>if/then</code>構文として使える。If パターンスペースの内容が<var>[addr]</var>  に合致 then コマンド実行。例：<code>/^#/d</code> は、<em>if</em> パターンスペースが正規表現<code>^#</code>（行頭が#）に合致する <em>then</em> <code>d</code> コマンド実行（当該行を削除し、プリントせず、次のサイクルを開始する）。
+<dd><p>アドレスや正規表現は<code>if/then</code>構文として使える。「if パターンスペースの内容が<var>[addr]</var>  にマッチ then コマンド実行」。例：<code>/^#/d</code> は、「<em>if</em> パターンスペースが正規表現<code>^#</code>（行頭が#）にマッチする <em>then</em> <code>d</code> コマンド実行（当該行を削除し、プリントせず、次のサイクルを開始する）」。
 </p>
 </dd>
 <dt><code>b</code></dt>
-<dd><p>無条件分岐（指定のラベルへジャンプ。当該スクリプトの中で前にジャンプしてループを構成するのに使ったり、条件と組み合わせてelse部分をスキップするのに使える。あくまで当該スクリプトの中でジャンプするだけで当該サイクルを終了したり次のサイクルを開始することはない）分岐はアドレスと組み合わせると、条件に適合した時だけジャンプさせることができます。
+<dd><p>無条件分岐（指定のラベルへジャンプ。当該スクリプトの中で前にジャンプしてループを構成するのに使ったり、条件と組み合わせてelse部分をスキップするのに使える。あくまで当該スクリプトの中でジャンプするだけで当該サイクルを終了したり次のサイクルを開始することはない）。分岐はアドレスと組み合わせると、条件に適合した時だけジャンプさせることができます。
 </p>
 </dd>
 <dt><code>t</code></dt>
@@ -3198,7 +3198,7 @@ cc cc cc cc
 </p>
 </dd>
 <dt><code>T</code></dt>
-<dd><p><code>t</code>コマンドと逆に、最後に読み込まれた入力行の&lt;c1&gt;s///&lt;/c1&gt;コマンドが失敗した場合に分岐する。
+<dd><p><code>t</code>コマンドと逆に、最後に読み込まれた入力行の's'コマンドが<em>失敗</em>した場合に分岐する。
 </p></dd>
 </dl>
 
@@ -3225,7 +3225,7 @@ z6
 <a name="index-omitting-labels"></a>
 <a name="index-cycle_002c-restarting"></a>
 <a name="index-restarting-a-cycle"></a>
-<p><code>b</code>コマンドや<code>t</code>コマンドや<code>T</code>コマンドは、コマンドに続くジャンプ先ラベルが必要です（通常はアルファベット1文字）。ラベルはコロン(:)に続く1文字またはそれ以上の文字列です（例えば‘<samp>:x</samp>’）。なお、ブランチコマンドでラベルを省略すると次のサイクルを開始します。ブランチコマンドによるジャンプと次のサイクルの開始との違いに注意して下さい。次のサイクルの開始時は<code>sed</code>はまずパターンスペースの内容をプリントして次に入力ストリームから1行パターンスペースに読み込みます。一方ラベルへのジャンプは（それがたとえプログラムの先頭へジャンプしたとしても）、パターンスペースの内容はプリントされませんし入力ストリームから次の1行を読み込む事もありません。
+<p><code>b</code>コマンドや<code>t</code>コマンドや<code>T</code>コマンドは、コマンドに続くジャンプ先ラベルが必要です（通常はアルファベット1文字）。飛び先ラベルはコロン(:)に続く1文字またはそれ以上の文字列として定義します（例えば‘<samp>:x</samp>’）。なお、ブランチコマンドでラベルを省略すると次のサイクルを開始します。ブランチコマンドによるジャンプと次のサイクルの開始との違いに注意して下さい。次のサイクルの開始時は<code>sed</code>はまずパターンスペースの内容をプリントして次に入力ストリームから1行パターンスペースに読み込みます。一方ラベルへのジャンプは（それがたとえプログラムの先頭へジャンプしたとしても）、パターンスペースの内容はプリントされませんし入力ストリームから次の1行を読み込む事もありません。
 </p>
 <p>以下のプログラム自身は何もしません。（このプログラム唯一のコマンドである）<code>b</code>コマンドは飛び先ラベルが書かれていないので次のサイクルを開始します。よってどのサイクルでもパターンスペースの内容がプリントされて入力ストリームから次の入力行を読み取ります。
 </p>
@@ -3270,9 +3270,9 @@ $ seq 3 | sed ':x ; N ; bx'
 <ul>
 <li> 両例とも、決して新しいサイクルを始めることは無いにもかかわらず無限ループになりません。
 
-</li><li> 最初の例では<code>n</code>コマンドは最初にパターンスペースの内容をプリントし、それからパターンスペースの内容を全削除し、それから次の入力行を読み込みます。
+</li><li> 最初の例では<code>n</code>コマンドは最初にパターンスペースの内容をプリントし、それからパターンスペースの内容を全削除し、それから次の入力行を読み込みます。入力ストリームからこれ以上入力行が読み込めなくなると<code>n</code>コマンドはsedを終了させます。
 
-</li><li> ２番目の例では、<code>N</code>コマンドはひたすら次の行を（改行付きで）パターンスペースに追加していきます。入力ストリームからこれ以上入力行が読み込めなくなるまで入力行をパターンスペースに蓄積します。そして<code>N</code>コマンドは<code>sed</code>を終了させます。プログラムが終了する時はサイクル終了のアクションが実行されます。つまりパターンスペースの内容がプリントされます。
+</li><li> ２番目の例では、<code>N</code>コマンドはひたすら次の行を（改行付きで）パターンスペースに追加していきます。入力ストリームからこれ以上入力行が読み込めなくなるまで入力行をパターンスペースに蓄積します。そして入力ストリームからこれ以上入力行が読み込めなくなると<code>N</code>コマンドは<code>sed</code>を終了させます。プログラムが終了する時はサイクル終了のアクションが実行されます。つまりパターンスペースの内容がプリントされます。
 
 </li><li> 次の例はGNU <code>sed</code>を要求します。なぜなら<code>N</code>のPOSIX標準外の動作を使っているからです。. 「<a href="#Reporting-Bugs">報告されているバグ</a>」の “最終行での<code>N</code>コマンド"段落参照。
 
@@ -3355,12 +3355,12 @@ And one man in his time plays many parts.
 <a name="Some-Sample-Scripts"></a>
 <h2 class="chapter">7 スクリプト例をいくつか</h2>
 
-<p>ここには、<code>sed</code>をマスターする参考になるいくつかのスクリプトがあります。
+<p>ここには、<code>sed</code>をマスターするのに参考になる、いくつかのスクリプトがあります。
 </p>
 <table class="menu" border="0" cellspacing="0">
 <tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
 
-便利な一行野郎たち：
+便利な一行野郎：
 </pre></th></tr><tr><td align="left" valign="top">• <a href="#Joining-lines" accesskey="1">行連結</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
 </td></tr>
 <tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
@@ -3389,8 +3389,7 @@ And one man in his time plays many parts.
 </td></tr>
 <tr><td align="left" valign="top">• <a href="#cat-_002db">cat -b</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">空行以外に行番号を付ける
 </td></tr>
-<tr><td align="left" valign="top">• <a href="#wc-_002dc">wc -c</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Counting chars
-
+<tr><td align="left" valign="top">• <a href="#wc-_002dc">wc -c</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">文字数を数える
 </td></tr>
 <tr><td align="left" valign="top">• <a href="#wc-_002dw">wc -w</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">単語数を数える
 </td></tr>
@@ -3402,7 +3401,7 @@ And one man in his time plays many parts.
 </td></tr>
 <tr><td align="left" valign="top">• <a href="#uniq">uniq</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">重複行を取り除く
 </td></tr>
-<tr><td align="left" valign="top">• <a href="#uniq-_002dd">uniq -d</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">入力から重複した行をプリンtのする。
+<tr><td align="left" valign="top">• <a href="#uniq-_002dd">uniq -d</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">入力から重複した行をプリントする。
 </td></tr>
 <tr><td align="left" valign="top">• <a href="#uniq-_002du">uniq -u</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">全ての重複した行を削除する。
 </td></tr>
@@ -3421,7 +3420,7 @@ And one man in his time plays many parts.
 
 <p>この節では、<code> N </code>、<code> D </code>、<code> P </code>コマンドを使用して複数行を処理し、<code>b</code> と <code>t</code>コマンドを使用して分岐します。「<a href="#Multiline-techniqu">複数行テクニック</a>」、「<a href="#Branching-and-flow-control">分岐とフロー制御</a>」参照。.
 </p>
-<p>指定行を連結する(例：Join specific lines (e.g. 2行目と3行目を結合する必要がある場合)。
+<p>指定行を連結する(例：2行目と3行目を結合する必要がある場合)。
 </p>
 <div class="example">
 <pre class="example">$ cat lines.txt
@@ -3496,7 +3495,7 @@ To: Jane Smith &lt;jsmith@gnu.org&gt;
 <a name="Centering-Lines"></a>
 <h3 class="section">7.2 センタリング</h3>
 
-<p>このスクリプトは全ての行を80カラム幅でセンタリングします。幅を変更するには、<code> \ {…\} </code>の数を置き換え、追加スペースの数も変更する必要があります。
+<p>このスクリプトは全ての行を80カラム幅でセンタリングします。幅を変更するには、'<code>\{…\}</code>'の数を置き換え、追加スペースの数も変更する必要があります。
 </p>
 <p>正規表現内の分かれた部分を一致させるためにbufferコマンドを使用する方法に注意してください。これは一般的なテクニックです。
 </p>
@@ -3586,7 +3585,7 @@ y/_/0/
 <a name="Rename-Files-to-Lower-Case"></a>
 <h3 class="section">7.4 ファイル名を小文字にする</h3>
 
-<p>これは<code> sed </code>のかなり奇妙な使い方です。テキストを変換し、それをシェルコマンドに変換してから、単にそれらをシェルに送ります。だがご心配なく。<code> sed </code>を使用するともっとひどいハックだって行えます。私は <code> date </code>の出力を<code> bc </code>プログラムに変換するスクリプトを見たことがあります。
+<p>これは<code> sed </code>のかなり奇妙な使い方です。テキストを変換し、それをシェルコマンドに変換してから、単にそれらをシェルに送ります。だがご心配なく。<code> sed </code>を使用するともっとひどいハックだってあります。私は <code> date </code>の出力を<code> bc </code>プログラムに変換するスクリプトを見たことがあります。
 </p>
 <p>この本体は<code> sed </code>スクリプトで、名前を下から上に（またはその逆に）再マップし、再マップされた名前が元の名前と同じであるかどうかを調べます。スクリプトがシェル変数と適切な引用符を使用してどのようにパラメータ化されるかに注意してください。
 </p>
@@ -3717,7 +3716,7 @@ s/^\(.*\/\)\(.*\)\n\(.*\)$/mv "\1\2" "\1\3"/p
 <a name="Print-bash-Environment"></a>
 <h3 class="section">7.5 <code>bash</code>の環境変数をプリント</h3>
 
-<p>このスクリプトは、<code> set </code> Bourne-shellコマンドの出力からシェル関数の定義を取り除きます。
+<p>このスクリプトは、Bourne-shellの<code> set </code>コマンドの出力からシェル関数の定義を取り除きます。
 </p>
 <div class="example">
 <pre class="example">#!/bin/sh
@@ -3803,7 +3802,7 @@ s/\n//g
 </p>
 <p>これらの例では、文書内で同じ単語が2回出現することを検出します。
 </p>
-<p>二重の単語を一行で見つけるのは、GNU <code> grep </code>を使えば簡単で、それはGNU <code> sed </code>でも同じです。
+<p>二重の単語を一行内で探すのは、GNU <code> grep </code>を使えば簡単で、それはGNU <code> sed </code>でも同じです。
 </p>
 <div class="example">
 <pre class="example">$ cat two-cities-dup1.txt
@@ -4272,8 +4271,7 @@ h
 </p>
 <p>「スライディングウィンドウ」技術は、効率的で複雑な<code> sed </code>スクリプトを書くための非常に強力な方法です。なぜなら、手動で実装した場合、<code> P </code>のようなコマンドは多くの作業を必要とするからです。
 </p>
-<p>191/5000
-<code>N</code>、<code>P</code>、<code>D</code> コマンドに基づいたテクニックをこの章の残りの部分で十分に紹介するために、ここでは「スライディングウィンドウ」を使った<code>tail</code>を実装します。
+<p><code>N</code>、<code>P</code>、<code>D</code> コマンドに基づいたテクニックをこの章の残りの部分で十分に紹介するために、ここでは「スライディングウィンドウ」を使った<code>tail</code>を実装します。
 </p>
 <p>これは複雑に見えますが、実際の作業はさっきのスクリプトと同じです。ただし、適切な行数を入力した後は、行間の状態を維持するためにホールドスペースを使用せず、代わりに<code>N</code> と<code>D</code> を使用して一行でパターンスペースをスライドします。
 </p>
@@ -4426,7 +4424,7 @@ D
 
 <p>最後の例として、これは複雑さとスピードを増す3つのスクリプトです。これらは「<samp> cat -s </samp>」と同じ機能を実装しています。
 </p>
-<p>最初の行は最初と最後に空白行を残します。
+<p>最初と最後に既に空行が1行以上会った場合、それぞれ空行1行だけは残さなければなりません。
 </p>
 <div class="example">
 <pre class="example">#!/usr/bin/sed -f
@@ -4467,7 +4465,7 @@ tx
 }
 </pre></div>
 
-<p>これは先導する空行達と後続する空行達を削除しますそれも最速です。ループは<code> n </code>と<code> b </code>で全部処理され、各行末で次のサイクルに移る通常の自動的な動作が全くありません。
+<p>これは先導する空行達と後続する空行達を削除します。それも最速です。ループは<code> n </code>と<code> b </code>で全部処理され、各行末で次のサイクルに移る通常の自動的な動作が全くありません。
 </p>
 <div class="example">
 <pre class="example">#!/usr/bin/sed -nf
@@ -4515,7 +4513,7 @@ bx
 
 <a name="index-GNU-extensions_002c-unlimited-line-length"></a>
 <a name="index-Portability_002c-line-length-limitations"></a>
-<p>移植可能な<code> sed </code>スクリプトを書きたいという人は、(パターンスペースとホールドスペースのための)行の長さを4000バイト以下に制限する実装があることに注意してください。<small> POSIX </small>規格では、準拠した<code> sed </code>の実装で少なくとも8192バイトの行の長さをサポートすることを規定しています。GNU <code> sed </code>には行の長さに関する制限は組み込まれていません。 より多くの(仮想)メモリを<code>malloc()</code>できれば、好きなだけ行を注いだりしたり構築したりすることができます。
+<p>移植可能な<code> sed </code>スクリプトを書きたいという人は、(パターンスペースとホールドスペースのための)行の長さを4000バイト以下に制限する実装があることに注意してください。<small> POSIX </small>規格では、準拠した<code> sed </code>の実装で少なくとも8192バイトの行の長さをサポートすることを規定しています。GNU <code> sed </code>には行の長さに関する制限は組み込まれていません。 より多くの(仮想)メモリを<code>malloc()</code>できれば、好きなだけ行を注ぎ込んだり構築したりすることができます。
 </p>
 <p>ただし、再帰はサブパターンと不定の繰り返しを処理するために使用されます。これは、利用可能なスタックスペースが、特定のパターンで処理できるバッファのサイズを制限する可能性があることを意味します。
 </p>
@@ -4569,9 +4567,9 @@ error→ sed: file sedscr line 1: Unknown option to 's'
 
 <p>もしGNU <code> sed </code>があなたのお気に入りのパッケージを設定しないならば、特定の問題を識別して、独立したテストケースを作るために数分余分に時間をかけてください。Cコンパイラのような他のプログラムとは異なり、<code> sed </code>のためのそのようなテストケースを作ることは非常に簡単です。
 </p>
-<p>独立したテストケースには、テストを実行するために必要なすべてのデータと、問題を引き起こす<code> sed </code>の特定の呼び出しを含めます。. 独立したテストケースは短いほどいいです。テストケースの<code> sed </code>から「frobme-1.3.4を設定してみてください」というようなものを削除してはいけません。はい、それは原則としてバグを探すのに十分な情報ですが、それはあまり実用的な見通しではありません。
+<p>独立したテストケースには、テストを実行するために必要なすべてのデータと、問題を引き起こす<code> sed </code>の特定の呼び出しを含めます。独立したテストケースは短いほどいいです。テストケースの<code> sed </code>から「frobme-1.3.4を設定してみてください」というようなものを削除してはいけません。もちろん、それは基礎的なバグを探すのには十分な情報ですが、それは非常に役立つ技術情報というわけではありません。
 </p>
-<p>以下は俗に言う「既知のバグ」であってわざわざ報告するようなバグではありません。
+<p>なお以下は俗に言う「既知のバグ」であって、再度再度報告して頂くようなバグではありません。
 </p>
 <dl compact="compact">
 <dd><a name="N_005fcommand_005flast_005fline"></a></dd>
@@ -5788,7 +5786,7 @@ to permit their use in free software.
   </ul></li>
   <li><a name="toc-Regular-Expressions_003a-selecting-text" href="#sed-regular-expressions">5 正規表現: テキストの選択</a>
   <ul class="no-bullet">
-    <li><a name="toc-Overview-of-regular-expression-in-sed" href="#Regular-Expressions-Overview">5.1<code>sed</code>の正規表現の概要</a></li>
+    <li><a name="toc-Overview-of-regular-expression-in-sed" href="#Regular-Expressions-Overview">5.1 <code>sed</code>の正規表現の概要</a></li>
     <li><a name="toc-Basic-_0028BRE_0029-and-extended-_0028ERE_0029-regular-expression" href="#BRE-vs-ERE">5.2 基本正規表現(basic regular expression;BRE)と拡張正規表現(extended regular expression;ERE)</a></li>
     <li><a name="toc-Overview-of-basic-regular-expression-syntax" href="#BRE-syntax">5.3 基本正規表現文法概要</a></li>
     <li><a name="toc-Overview-of-extended-regular-expression-syntax" href="#ERE-syntax">5.4 拡張正規表現文法概要</a></li>
@@ -5808,7 +5806,7 @@ to permit their use in free software.
   </ul></li>
   <li><a name="toc-Advanced-sed_003a-cycles-and-buffers" href="#advanced-sed">6 <code>sed</code>の高度な話題: サイクルとバッファ</a>
   <ul class="no-bullet">
-    <li><a name="toc-How-sed-Works" href="#Execution-Cycle">6.1<code>sed</code>はどのように動いているか</a></li>
+    <li><a name="toc-How-sed-Works" href="#Execution-Cycle">6.1 <code>sed</code>はどのように動いているか</a></li>
     <li><a name="toc-Hold-and-Pattern-Buffers-1" href="#Hold-and-Pattern-Buffers">6.2 ホールド用とパターン用のバッファ</a></li>
     <li><a name="toc-Multiline-techniques-_002d-using-D_002cG_002cH_002cN_002cP-to-process-multiple-lines" href="#Multiline-techniqu">6.3 複数行テクニック - D,G,H,N,P コマンドで複数行処理</a></li>
     <li><a name="toc-Branching-and-Flow-Control" href="#Branching-and-flow-control">6.4 分岐と制御構文</a>

@@ -6809,8 +6809,8 @@ N
       <tuv lang="EN-US">
         <seg>(Here TAB stands for a single tab character.) This matches a string of one or more characters, none of which is a space or a tab.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190607T151702Z" creationid="hideo" creationdate="20190607T151702Z">
-        <seg>(ここで TAB タブはタブ文字(ASCII \x09)を表します)上記はスペース(0x20)またはタブ(0x09)以外の任意の文字の1文字以上にマッチします。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T130424Z" creationid="hideo" creationdate="20190607T151702Z">
+        <seg>(ここで «TAB» はタブ文字(ASCII HT;\x09)を表します)上記はスペース(0x20)またはタブ(0x09)以外の任意の文字の1文字以上にマッチします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6825,8 +6825,8 @@ N
       <tuv lang="EN-US">
         <seg>(Mnemonics) are shown in parentheses.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190605T094529Z" creationid="hideo" creationdate="20190605T082420Z">
-        <seg>括弧内はコマンドの覚え方(mnemonic)です。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T083050Z" creationid="hideo" creationdate="20190605T082420Z">
+        <seg>括弧内はコマンドの覚え方(mnemonic)です。(訳注：説明の都合上、コマンドとオプションの間に空白が開いていますが、空白無しで続けても構いません)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6937,7 +6937,7 @@ N
       <tuv lang="EN-US">
         <seg>(test) Branch to label only if there has been a successful substitution since the last input line was read or conditional branch was taken.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190605T095155Z" creationid="hideo" creationdate="20190605T095001Z">
+      <tuv lang="JA" changeid="hideo" changedate="20190612T083429Z" creationid="hideo" creationdate="20190605T095001Z">
         <seg>(test) sコマンドによる置換が成功した後で、かつ最後の入力行が読み込まれてないか他の条件分岐が実行されてない場合、指定のラベルへジャンプします。</seg>
       </tuv>
     </tu>
@@ -6945,8 +6945,8 @@ N
       <tuv lang="EN-US">
         <seg>(test) Branch to label only if there have been no successful substitutions since the last input line was read or conditional branch was taken.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190605T095130Z" creationid="hideo" creationdate="20190605T095130Z">
-        <seg>(test) sコマンドによる置換が失敗した後で、かつ最後の入力行が読み込まれてないか他の条件分岐が実行されてない場合、指定のラベル&lt;/v0)へジャンプします。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T083558Z" creationid="hideo" creationdate="20190605T095130Z">
+        <seg>(test) sコマンドによる置換が失敗した後で、かつ最後の入力行が読み込まれてないか他の条件分岐が実行されてない場合、指定のラベルへジャンプします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7515,6 +7515,22 @@ sed -e "=" $@ | sed -e '</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190603T145217Z" creationid="hideo" creationdate="20190603T145217Z">
         <seg>10</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>15.3.6.1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T233317Z" creationid="hideo" creationdate="20190612T233317Z">
+        <seg>15.3.6.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>15.3.6.2</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T233947Z" creationid="hideo" creationdate="20190612T233947Z">
+        <seg>15.3.6.2</seg>
       </tuv>
     </tu>
     <tu>
@@ -10831,8 +10847,8 @@ of this license document, but changing it is not allowed.</seg>
       <tuv lang="EN-US">
         <seg> Most of the extensions accept sed programs that are outside the syntax mandated by POSIX, but some of them (such as the behavior of the N command described in Reporting Bugs) actually violate the standard.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190604T193725Z" creationid="hideo" creationdate="20190604T193725Z">
-        <seg>ほとんどの拡張機能はPOSIXで強制される文法外のsed プログラムを受け付けますが、それらのいくつかは(バグレポートで説明している'N'コマンドのような振る舞いは)実際には基準を破っています。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T124157Z" creationid="hideo" creationdate="20190604T193725Z">
+        <seg>ほとんどの拡張機能はPOSIXで強制される文法外のsed プログラムを受け付けますが、それらのいくつかは(バグレポートで説明している'N'コマンドのような振る舞いは)実際には規格を破っています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11251,8 +11267,8 @@ error→ sed: file sedscr line 1: Unknown option to 's'</seg>
       <tuv lang="EN-US">
         <seg>POSIX mandates that such sequences are not matched by ‘.’, so that there is no portable way to clear sed’s buffers in the middle of the script in most multibyte locales (including UTF-8 locales).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190607T133831Z" creationid="hideo" creationdate="20190604T005212Z">
-        <seg>POSIXでは‘.’によって不正マルチバイトつづりにマッチしない事を強制します。そのためほとんどのマルチバイトロケール（UTF-8ロケールを含む）ではsedのバッファをスクリプトの途中でクリアする移植性のある方法はありません。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T162522Z" creationid="hideo" creationdate="20190604T005212Z">
+        <seg>POSIXでは‘.’によって不正マルチバイトつづりにマッチしない事を強制します。そのためほとんどのマルチバイトロケール（UTF-8ロケールを含む）ではsedのバッファをスクリプトの途中で全削除する移植性のある方法はありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11299,8 +11315,8 @@ error→ sed: file sedscr line 1: Unknown option to 's'</seg>
       <tuv lang="EN-US">
         <seg>n specifies the desired line-wrap length; a length of 0 (zero) means to never wrap long lines.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190606T191036Z" creationid="hideo" creationdate="20190606T191036Z">
-        <seg>n は行折り返しの長さを指定します。0が指定された時は行の折り返しをしません。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T161027Z" creationid="hideo" creationdate="20190606T191036Z">
+        <seg>line-length は行折り返しの長さを指定します。0が指定された時は行の折り返しをしません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11365,6 +11381,14 @@ error→ sed: file sedscr line 1: Unknown option to 's'</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190607T215548Z" creationid="hideo" creationdate="20190607T154852Z">
         <seg>角括弧式は ‘[’と‘]’で囲まれた文字のリストです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A equivalence class expression is a set of collating elements which all belong to the same equivalence class.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T234229Z" creationid="hideo" creationdate="20190612T234229Z">
+        <seg>同値クラス式は、すべて同じ同値クラスに属する一連の照合要素です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11557,8 +11581,8 @@ error→ sed: file sedscr line 1: Unknown option to 's'</seg>
       <tuv lang="EN-US">
         <seg>A stand-alone test case includes all the data necessary to perform the test, and the specific invocation of sed that causes the problem.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190610T154017Z" creationid="hideo" creationdate="20190610T154017Z">
-        <seg>独立したテストケースには、テストを実行するために必要なすべてのデータと、問題を引き起こす sed の特定の呼び出しを含めます。.</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T140925Z" creationid="hideo" creationdate="20190610T154017Z">
+        <seg>独立したテストケースには、テストを実行するために必要なすべてのデータと、問題を引き起こす sed の特定の呼び出しを含めます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11749,8 +11773,8 @@ error→ sed: file sedscr line 1: Unknown option to 's'</seg>
       <tuv lang="EN-US">
         <seg>Addresses and regular expressions can be used as an if/then conditional: If [addr] matches the current pattern space, execute the command(s).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T174142Z" creationid="hideo" creationdate="20190602T174142Z">
-        <seg>アドレスや正規表現はif/then構文として使える。If パターンスペースの内容が[addr]  に合致 then コマンド実行。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T133539Z" creationid="hideo" creationdate="20190602T174142Z">
+        <seg>アドレスや正規表現はif/then構文として使える。「if パターンスペースの内容が[addr]  にマッチ then コマンド実行」。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12069,8 +12093,8 @@ error→ sed: file sedscr line 1: Unknown option to 's'</seg>
       <tuv lang="EN-US">
         <seg>Apply postfix operators, like \(abcd\)*: this will search for zero or more whole sequences of ‘abcd’, while abcd* would search for ‘abc’ followed by zero or more occurrences of ‘d’.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190607T142351Z" creationid="hideo" creationdate="20190607T142123Z">
-        <seg>\(abcd\)* のように後置演算子を適用すると、ni: this will search for z‘abcd’つづり全体が0個以上現れるつづりを検索します。一方、abcd*と書くと、‘abc’に続く0個以上の文字‘d’のつづりをけんさくします。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T125759Z" creationid="hideo" creationdate="20190607T142123Z">
+        <seg>\(abcd\)* のように後置演算子を適用すると、‘abcd’つづり全体が0個以上現れるつづりを検索します。一方、abcd*と書くと、‘abc’に続く0個以上の文字‘d’のつづりを検索します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12137,7 +12161,7 @@ i\</seg>
       <tuv lang="EN-US">
         <seg>As a GNU sed extension, two special values of filename are supported: /dev/stderr, which writes the result to the standard error, and /dev/stdout, which writes to the standard output.4</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190606T192741Z" creationid="hideo" creationdate="20190606T192741Z">
+      <tuv lang="JA" changeid="hideo" changedate="20190612T161409Z" creationid="hideo" creationdate="20190606T192741Z">
         <seg>GNU sed 拡張では、ファイル名として標準エラー出力の'/dev/stderr'と、標準出力の'/dev/stdout'をサポートしています。4</seg>
       </tuv>
     </tu>
@@ -12317,8 +12341,8 @@ $d</seg>
       <tuv lang="EN-US">
         <seg>Backreferences must still be escaped when using extended regular expressions.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190607T154411Z" creationid="hideo" creationdate="20190607T154411Z">
-        <seg>後方参照は拡張正規表現でも依然としてエスケープされる必要があります。expressions.</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T130903Z" creationid="hideo" creationdate="20190607T154411Z">
+        <seg>後方参照は拡張正規表現でも依然としてエスケープされる必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12633,10 +12657,58 @@ s/^.*$/\
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Character Class Operators</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T233930Z" creationid="hideo" creationdate="20190612T233930Z">
+        <seg>Character Class Operators</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Character Classes and Bracket Expressions</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190608T224318Z" creationid="hideo" creationdate="20190603T075248Z">
         <seg> 文字クラスと角括弧式</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Character-Class-Operators.html#Character-Class-Operators</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T233929Z" creationid="hideo" creationdate="20190612T233929Z">
+        <seg>Character-Class-Operators.html#Character-Class-Operators</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Collating Symbol Operators</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T233933Z" creationid="hideo" creationdate="20190612T233933Z">
+        <seg>Collating Symbol Operators</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Collating Symbol Operators ([. … .])</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T233344Z" creationid="hideo" creationdate="20190612T233344Z">
+        <seg>照合シンボル演算子 ([. … .])</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Collating symbols can be represented inside lists.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T233412Z" creationid="hideo" creationdate="20190612T233412Z">
+        <seg>照合シンボルはリスト内で表すことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Collating-Symbol-Operators.html#Collating-Symbol-Operators</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T233932Z" creationid="hideo" creationdate="20190612T233932Z">
+        <seg>Collating-Symbol-Operators.html#Collating-Symbol-Operators</seg>
       </tuv>
     </tu>
     <tu>
@@ -12859,8 +12931,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>Counting chars</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T051447Z" creationid="hideo" creationdate="20190608T051447Z">
-        <seg>Counting chars</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T135307Z" creationid="hideo" creationdate="20190608T051447Z">
+        <seg>文字数を数える</seg>
       </tuv>
     </tu>
     <tu>
@@ -12941,8 +13013,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>Details and examples for each command are in the following sections.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190612T063636Z" creationid="hideo" creationdate="20190605T081947Z">
-        <seg>各コマンドの詳細と例は次の節をご覧ください(訳注：説明の都合上、コマンドとコマンドオプションの間に空白が開いていますが、空白無しで続けても構いません。sedのコマンドは1文字なので最初の1文字読み取った時点で何のコマンドか判ります)。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T082801Z" creationid="hideo" creationdate="20190605T081947Z">
+        <seg>各コマンドの詳細と例は次の節をご覧ください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12973,8 +13045,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>Don’t worry, even worse hacks are done when using sed; I have seen a script converting the output of date into a bc program!</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T105939Z" creationid="hideo" creationdate="20190608T105939Z">
-        <seg>だがご心配なく。 sed を使用するともっとひどいハックだって行えます。私は  date の出力を bc プログラムに変換するスクリプトを見たことがあります。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T135712Z" creationid="hideo" creationdate="20190608T105939Z">
+        <seg>だがご心配なく。 sed を使用するともっとひどいハックだってあります。私は  date の出力を bc プログラムに変換するスクリプトを見たことがあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13023,6 +13095,30 @@ s/^.*$/\
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190609T135832Z" creationid="hideo" creationdate="20190609T135832Z">
         <seg>' cat -b 'をエミュレートすることは、 ' cat -n 'とほぼ同じです。どの行に番号を付け、どの行に番号を付けないかを選択するだけです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Equivalence Class Operators</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T234903Z" creationid="hideo" creationdate="20190612T234903Z">
+        <seg>Equivalence Class Operators</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Equivalence Class Operators ([= … =])</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T234001Z" creationid="hideo" creationdate="20190612T234001Z">
+        <seg>等価クラス演算子 ([= … =])</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Equivalence-Class-Operators.html#Equivalence-Class-Operators</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T234901Z" creationid="hideo" creationdate="20190612T234901Z">
+        <seg>Equivalence-Class-Operators.html#Equivalence-Class-Operators</seg>
       </tuv>
     </tu>
     <tu>
@@ -13109,8 +13205,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>Example: Replace 2nd to 4th lines with the words ‘hello’ and ‘world’ (-| indicates printed output lines):</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190606T145636Z" creationid="hideo" creationdate="20190606T145636Z">
-        <seg>例：2行目から4行目まで‘hello’を‘world’に置換する(-| はsedの出力)。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T160610Z" creationid="hideo" creationdate="20190606T145636Z">
+        <seg>例：2行目から4行目までを‘hello’と‘world’に置換します(-| はsedの出力)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13293,8 +13389,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>Finally, as a GNU sed extension, you can include a special sequence made of a backslash and one of the letters L, l, U, u, or E.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190607T133613Z" creationid="hideo" creationdate="20190605T125620Z">
-        <seg>最後に、GNU sed 拡張として、以下のスペシャルなつづりを含む事ができます。'\L'、'\l'、'\U'、'\u'、'\E</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T084114Z" creationid="hideo" creationdate="20190605T125620Z">
+        <seg>最後に、GNU sed拡張として、'\L'、'\l'(訳注：小文字のエル)、'\U'、'\u'、'\E な特殊なつづりを含む事ができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13309,8 +13405,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>Finding doubled words in a single line is easy using GNU grep and similarly with GNU sed:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T212223Z" creationid="hideo" creationdate="20190608T212223Z">
-        <seg>二重の単語を一行で見つけるのは、GNU  grep を使えば簡単で、それはGNU  sed でも同じです。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T140004Z" creationid="hideo" creationdate="20190608T212223Z">
+        <seg>二重の単語を一行内で探すのは、GNU  grep を使えば簡単で、それはGNU  sed でも同じです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13325,8 +13421,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>For GNU sed, the interaction is defined to be: ignore matches before the numberth, and then match and replace all matches from the numberth on.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190606T093333Z" creationid="hideo" creationdate="20190606T093118Z">
-        <seg>なおGNU sedは、この相互作用を定義しています。指定のnumber以前のマッチを無視し、number番目とそれ以降全てのマッチに適用します。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T084525Z" creationid="hideo" creationdate="20190606T093118Z">
+        <seg>なおGNU sedでは、この相互作用を定義しています。指定のnumber以前のマッチを無視し、number番目とそれ以降全てのマッチに適用します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13351,6 +13447,22 @@ s/^.*$/\
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190607T220609Z" creationid="hideo" creationdate="20190607T220609Z">
         <seg>例えば、[\*] は文字‘\’か文字‘*’のどちらかにマッチします。なぜなら\ は特殊文字ではないからです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, if ‘a’ and ‘A’ were an equivalence class, then both ‘[[=a=]]’ and ‘[[=A=]]’ would match both ‘a’ and ‘A’.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T234645Z" creationid="hideo" creationdate="20190612T234645Z">
+        <seg>例えば、もし‘a’と‘A’が等価なクラスならば、‘[[=a=]]’と‘[[=A=]]’の両方は、‘a’と‘A’の両方にマッチします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, if ‘ll’ is a collating element, then ‘[[.ll.]]’ would match ‘ll’.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T233823Z" creationid="hideo" creationdate="20190612T233823Z">
+        <seg>たとえば、‘ll’が照合要素の場合、‘[[.ll.]]’は‘ll’と一致します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13397,8 +13509,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>For example, ‘a(.)|b\1’ will not match ‘ba’.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T011114Z" creationid="hideo" creationdate="20190608T011114Z">
-        <seg>例えば‘a(.)|b\1’は‘ba’にはマッチしない。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T131156Z" creationid="hideo" creationdate="20190608T011114Z">
+        <seg>例えば‘a(.)|b\1’は‘ba’にはマッチしません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13421,8 +13533,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>For example: The command /^#/d means: if the current pattern matches the regular expression ^# (a line starting with a hash), then execute the d command: delete the line without printing it, and restart the program cycle immediately.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T174510Z" creationid="hideo" creationdate="20190602T174510Z">
-        <seg>例：/^#/d は、if パターンスペースが正規表現^#（行頭が#）に合致する then d コマンド実行（当該行を削除し、プリントせず、次のサイクルを開始する）。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T133532Z" creationid="hideo" creationdate="20190602T174510Z">
+        <seg>例：/^#/d は、「if パターンスペースが正規表現^#（行頭が#）にマッチする then d コマンド実行（当該行を削除し、プリントせず、次のサイクルを開始する）」。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13469,8 +13581,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>For this reason, the current version of GNU sed interprets specially the presence of p options both before and after e, printing the pattern space before and after evaluation, while in general flags for the s command show their effect just once.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190606T102711Z" creationid="hideo" creationdate="20190606T095935Z">
-        <seg>このために、sコマンドのフラグは一般には1度しか評価されませんが、デバッグに便利なようにGNU sedの現在の版は'e'の前後に’p'を置くことができます。そうするとeval前のパターンスペースの内容とeval後のパターンスペースの内容をプリントします。(訳注:手元のGNU sed 4.7では動作確認できず)</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T155044Z" creationid="hideo" creationdate="20190606T095935Z">
+        <seg>このために、sコマンドのフラグは一般には1度しか評価されませんが、デバッグに便利なようにGNU sedの現在の版は'e'の前後に’p'を置くことができます。そうするとeval前のパターンスペースの内容とeval後のパターンスペースの内容をプリントします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13621,8 +13733,24 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>GNU sed has no built-in limit on line length; as long as it can malloc() more (virtual) memory, you can feed or construct lines as long as you like.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190610T152239Z" creationid="hideo" creationdate="20190610T152239Z">
-        <seg>GNU  sed には行の長さに関する制限は組み込まれていません。 より多くの(仮想)メモリをmalloc()できれば、好きなだけ行を注いだりしたり構築したりすることができます。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T140841Z" creationid="hideo" creationdate="20190610T152239Z">
+        <seg>GNU  sed には行の長さに関する制限は組み込まれていません。 より多くの(仮想)メモリをmalloc()できれば、好きなだけ行を注ぎ込んだり構築したりすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>GNU Gnulib: Collating Symbol Operators</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T233100Z" creationid="hideo" creationdate="20190612T233100Z">
+        <seg>GNU Gnulib: 照合シンボル演算子</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>GNU Gnulib: Equivalence Class Operators</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T233906Z" creationid="hideo" creationdate="20190612T233906Z">
+        <seg>GNU Gnulib: 等価クラス演算子</seg>
       </tuv>
     </tu>
     <tu>
@@ -13669,16 +13797,16 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>Here are a few commonly reported bugs that are not bugs.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190610T154907Z" creationid="hideo" creationdate="20190610T154907Z">
-        <seg>以下は俗に言う「既知のバグ」であってわざわざ報告するようなバグではありません。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T141442Z" creationid="hideo" creationdate="20190610T154907Z">
+        <seg>なお以下は俗に言う「既知のバグ」であって、再度再度報告して頂くようなバグではありません。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Here are some sed scripts to guide you in the art of mastering sed.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T084832Z" creationid="hideo" creationdate="20190608T084832Z">
-        <seg>ここには、sedをマスターする参考になるいくつかのスクリプトがあります。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T135156Z" creationid="hideo" creationdate="20190608T084832Z">
+        <seg>ここには、sedをマスターするのに参考になる、いくつかのスクリプトがあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13717,8 +13845,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>Historically this was a GNU extension, but the -E extension has since been added to the POSIX standard (http://austingroupbugs.net/view.php?id=528), so use -E for portability.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190604T202800Z" creationid="hideo" creationdate="20190604T202557Z">
-        <seg>これは歴史的にはGNU拡張でしたが '-E'拡張はPOSIX標準に取り込まれた(http://austingroupbugs.net/view.php?id=528)ので、移植性の為に'-E'を使います。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T124256Z" creationid="hideo" creationdate="20190604T202557Z">
+        <seg>これは歴史的にはGNU拡張でしたが、 '-E'拡張はPOSIX標準に取り込まれた(http://austingroupbugs.net/view.php?id=528)ので、移植性の為に'-E'を使います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13733,8 +13861,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>How sed Works</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T100044Z" creationid="hideo" creationdate="20190602T100044Z">
-        <seg>sedはどのように動いているか</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T132538Z" creationid="hideo" creationdate="20190602T100044Z">
+        <seg> sedはどのように動いているか</seg>
       </tuv>
     </tu>
     <tu>
@@ -13749,8 +13877,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>However it is recommended to avoid such special characters due to unexpected edge-cases.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T063519Z" creationid="hideo" creationdate="20190608T063519Z">
-        <seg>ただし、予期しないエッジケースが発生するため、このような特殊文字は避けてください。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T132021Z" creationid="hideo" creationdate="20190608T063519Z">
+        <seg>ただし、予期しない境界ギリギリの状態(edge-case)が発生するため、このような特殊文字は避けてください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13837,8 +13965,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>If regexp itself includes any delimiter characters, each must be escaped by a backslash (\).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190607T054719Z" creationid="hideo" creationdate="20190607T054719Z">
-        <seg>regexp それ自身が'/'文字を含む時は、'\'でエスケープしなければなりません。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T125119Z" creationid="hideo" creationdate="20190607T054719Z">
+        <seg>regexp 内に区切り文字を含める時は、'\'でエスケープしなければなりません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13949,8 +14077,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>If omitted, the default as specified on the command line is used.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190606T191219Z" creationid="hideo" creationdate="20190606T191219Z">
-        <seg>nを省略すると、コマンドラインで指定したデフォルト値が使われます。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T161036Z" creationid="hideo" creationdate="20190606T191219Z">
+        <seg>line-lengthを省略すると、コマンドラインで指定したデフォルト値が使われます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14039,6 +14167,14 @@ s/^.*$/\
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T122922Z" creationid="hideo" creationdate="20190605T122922Z">
         <seg>If the Modified Version includes new front-matter sections or appendices that qualify as Secondary Sections and contain no material copied from the Document, you may at your option designate some or all of these sections as invariant.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the collating element in an equivalence class expression isn’t part of an equivalence class, then the matcher considers the equivalence class expression to be a collating symbol.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T234835Z" creationid="hideo" creationdate="20190612T234835Z">
+        <seg>同値クラス式の照合要素が同値クラスの一部ではない場合、正規表現マッチャーは同値クラス式を照合記号と見なします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14173,8 +14309,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>If you are concerned about portability, be aware that some implementations of sed (which are not POSIX conforming) may only support a single one-line comment, and then only when the very first character of the script is a #.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190606T135438Z" creationid="hideo" creationdate="20190606T135242Z">
-        <seg>移植性を気にする場合、(POSIXに準拠していない) sed の実装によっては、スクリプト全体でたった1行のコメントしかサポートされないことがあります。 この場合、スクリプトの最初の文字は'＃'</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T155303Z" creationid="hideo" creationdate="20190606T135242Z">
+        <seg>移植性を気にする場合、(POSIXに準拠していない) sed の実装によっては、スクリプト全体でたった1行のコメントしかサポートされないことがあります。 この場合、スクリプトの最初の文字は'＃'です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14262,8 +14398,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>If you want to put a comment in the first line of your script and that comment begins with the letter ‘n’ and you do not want this behavior, then be sure to either use a capital ‘N’, or place at least one space before the ‘n’.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190606T140147Z" creationid="hideo" creationdate="20190606T140147Z">
-        <seg>スクリプトの最初にコメント'#'を書き、それに'n'を続ける時は必ず大文字'N'にしてください。または'n'の前に1つ以上の空白を入れて下さい。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T155502Z" creationid="hideo" creationdate="20190606T140147Z">
+        <seg>スクリプトの最初にコメント'#'を書き、それに通常のコメントとしての文字'n'を続ける時は必ず大文字'N'にしてください。または'n'の前に1つ以上の空白を入れて下さい。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14478,8 +14614,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>In other locales, the sorting sequence is not specified, and ‘[a-d]’ might be equivalent to ‘[abcd]’ or to ‘[aBbCcDd]’, or it might fail to match any character, or the set of characters that it matches might even be erratic.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T064651Z" creationid="hideo" creationdate="20190608T064651Z">
-        <seg>他のロケールでは、ソート順は指定されておらず、 ‘[a-d]’は‘[abcd]’または ‘[aBbCcDd]’と同等であるか、または任意の文字、またはそれが一致する文字のセットと一致しない可能性があります。マッチは不規則かもしれません。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T132439Z" creationid="hideo" creationdate="20190608T064651Z">
+        <seg>Cロケール以外の他のロケールでは、ソート順は指定されておらず、 ‘[a-d]’は‘[abcd]’または ‘[aBbCcDd]’と同等であるか、または任意の文字、またはそれが一致する文字のセットと一致しない可能性があります。マッチは不規則かもしれません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14558,8 +14694,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>In the first example, the n commands first prints the content of the pattern space, empties the pattern space then reads the next input line.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T204201Z" creationid="hideo" creationdate="20190602T204201Z">
-        <seg>最初の例ではnコマンドは最初にパターンスペースの内容をプリントし、それからパターンスペースの内容を全削除し、それから次の入力行を読み込みます。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T134929Z" creationid="hideo" creationdate="20190602T204201Z">
+        <seg>最初の例ではnコマンドは最初にパターンスペースの内容をプリントし、それからパターンスペースの内容を全削除し、それから次の入力行を読み込みます。入力ストリームからこれ以上入力行が読み込めなくなるとnコマンドはsedを終了させます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14696,6 +14832,14 @@ s/^.*$/\
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T133805Z" creationid="hideo" creationdate="20190605T133805Z">
         <seg>索引見出し</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Index.html#Index</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T233226Z" creationid="hideo" creationdate="20190612T233226Z">
+        <seg>Index.html#Index</seg>
       </tuv>
     </tu>
     <tu>
@@ -14846,8 +14990,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>It matches any single character in that list; if the first character of the list is the caret ‘^’, then it matches any character not in the list.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190607T155008Z" creationid="hideo" creationdate="20190607T155008Z">
-        <seg>リスト内の任意の1文字にマッチします。最初の文字がの時はリストに無い任意の1文字にマッチします。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T130949Z" creationid="hideo" creationdate="20190607T155008Z">
+        <seg>リスト内の任意の1文字にマッチします。最初の文字が‘^’の時はリストに無い任意の1文字にマッチします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14878,8 +15022,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>It matches the literal string ‘abc?’.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190607T153904Z" creationid="hideo" creationdate="20190607T153904Z">
-        <seg>上記は拡張正規表現ではリテラル文字列‘abc?’にマッチします。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T130804Z" creationid="hideo" creationdate="20190607T153904Z">
+        <seg>'abc\?'は、拡張正規表現ではリテラル文字列‘abc?’にマッチします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14950,8 +15094,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>Join specific lines (e.g. if lines 2 and 3 need to be joined):</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T085200Z" creationid="hideo" creationdate="20190608T085200Z">
-        <seg>指定行を連結する(例：Join specific lines (e.g. 2行目と3行目を結合する必要がある場合)。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T135434Z" creationid="hideo" creationdate="20190608T085200Z">
+        <seg>指定行を連結する(例：2行目と3行目を結合する必要がある場合)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14992,8 +15136,8 @@ UPPER='ABCDEFGHIJKLMNOPQRSTUVWXYZ'</seg>
       <tuv lang="EN-US">
         <seg>Labels are defined with a colon followed by one or more letters (e.g. ‘:x’).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T182445Z" creationid="hideo" creationdate="20190602T182445Z">
-        <seg>ラベルはコロン(:)に続く1文字またはそれ以上の文字列です（例えば‘:x’）。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T134021Z" creationid="hideo" creationdate="20190602T182445Z">
+        <seg>飛び先ラベルはコロン(:)に続く1文字またはそれ以上の文字列として定義します（例えば‘:x’）。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15100,8 +15244,16 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Lines are accumulated in the pattern space until there are no more input lines to read, then the N command terminates the sed program.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T204439Z" creationid="hideo" creationdate="20190602T204439Z">
-        <seg>入力ストリームからこれ以上入力行が読み込めなくなるまで入力行をパターンスペースに蓄積します。そしてNコマンドはsedを終了させます。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T135043Z" creationid="hideo" creationdate="20190602T204439Z">
+        <seg>入力ストリームからこれ以上入力行が読み込めなくなるまで入力行をパターンスペースに蓄積します。そして入力ストリームからこれ以上入力行が読み込めなくなるとNコマンドはsedを終了させます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>List Operators</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T233923Z" creationid="hideo" creationdate="20190612T233923Z">
+        <seg>List Operators</seg>
       </tuv>
     </tu>
     <tu>
@@ -15110,6 +15262,14 @@ D</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T122852Z" creationid="hideo" creationdate="20190605T122852Z">
         <seg>List on the Title Page, as authors, one or more persons or entities responsible for authorship of the modifications in the Modified Version, together with at least five of the principal authors of the Document (all of its principal authors, if it has fewer than five), unless they release you from this requirement.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>List-Operators.html#List-Operators</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T233922Z" creationid="hideo" creationdate="20190612T233922Z">
+        <seg>List-Operators.html#List-Operators</seg>
       </tuv>
     </tu>
     <tu>
@@ -15204,8 +15364,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Matches a sequence of zero or more instances of matches for the preceding regular expression, which must be an ordinary character, a special character preceded by \, a ., a grouped regexp (see below), or a bracket expression.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190607T215451Z" creationid="hideo" creationdate="20190607T125636Z">
-        <seg>これはその直前の正規表現の0回以上(0の時は無し)の繰り返しのつづりにマッチします。直前の正規表現はこれは普通の文字、'\'が前に付いた特殊文字、'.'(ピリオド)、グループ化された正規表現(下記参照)、あるいは角括弧式でなければなりません。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T125410Z" creationid="hideo" creationdate="20190607T125636Z">
+        <seg>これはその直前の正規表現の0回以上(0の時は無し)の繰り返しのつづりにマッチします。直前の正規表現は、普通の文字、'\'が前に付いた特殊文字、'.'(ピリオド)、グループ化された正規表現(下記参照)、あるいは角括弧式でなければなりません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15554,6 +15714,14 @@ D</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Next: Character Class Operators, Previous: Collating Symbol Operators, Up: List Operators   [Contents][Index]</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T233945Z" creationid="hideo" creationdate="20190612T233945Z">
+        <seg></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Next: Character Classes and Bracket Expressions, Previous: BRE syntax, Up: sed regular expressions   [Contents][Index]</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190610T192744Z" creationid="hideo" creationdate="20190607T152520Z">
@@ -15597,6 +15765,14 @@ D</seg>
         <seg>Next: ERE syntax, Previous: BRE vs ERE, Up: sed regular expressions   [Contents][Index]</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190610T192736Z" creationid="hideo" creationdate="20190607T123337Z">
+        <seg></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Next: Equivalence Class Operators, Up: List Operators   [Contents][Index]</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T233307Z" creationid="hideo" creationdate="20190612T233307Z">
         <seg></seg>
       </tuv>
     </tu>
@@ -16092,16 +16268,16 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Note that the only C-like backslash sequences that you can portably assume to be interpreted are \n and \\; in particular \t is not portable, and matches a ‘t’ under most implementations of sed, rather than a tab character.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190607T144325Z" creationid="hideo" creationdate="20190607T144325Z">
-        <seg>注意：移植可能と想定できるC言語風のバックスラッシュつづり \ n と \\ だけです。 特に \t は移植性がなく、タブ文字ではなく sed のほとんどの実装では't'に一致します。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T130039Z" creationid="hideo" creationdate="20190607T144325Z">
+        <seg>注意：移植可能と想定できるC言語風のバックスラッシュつづりは'\n'と'\\'だけです。 特に'\t'は移植性がなく、sedのほとんどの実装では、タブ文字ではなく't'にマッチします。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Note that the regular expression matcher is greedy, i.e., matches are attempted from left to right and, if two or more matches are possible starting at the same character, it selects the longest.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190607T144509Z" creationid="hideo" creationdate="20190607T144509Z">
-        <seg>注意：正規表現マッチの中の人は貪欲である、すなわち、マッチは左から右へ試みられ、そして同じ文字から始めて２つ以上のマッチが可能であるならば、その最長を選択する。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T130150Z" creationid="hideo" creationdate="20190607T144509Z">
+        <seg>注意：正規表現マッチ機構は貪欲です。すなわち、マッチは左から右へ試みられ、そして同じ文字から始めて２つ以上のマッチが可能であるならば、その最長を選択します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16436,8 +16612,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Overview of regular expression in sed</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190604T043439Z" creationid="hideo" creationdate="20190604T043439Z">
-        <seg>sedの正規表現の概要</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T125232Z" creationid="hideo" creationdate="20190604T043439Z">
+        <seg> sedの正規表現の概要</seg>
       </tuv>
     </tu>
     <tu>
@@ -16646,24 +16822,24 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Print duplicated lines of input</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T051714Z" creationid="hideo" creationdate="20190608T051714Z">
-        <seg>入力から重複した行をプリンtのする。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T135333Z" creationid="hideo" creationdate="20190608T051714Z">
+        <seg>入力から重複した行をプリントする。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Print out the current input line number (with a trailing newline).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190605T231849Z" creationid="hideo" creationdate="20190605T231849Z">
-        <seg>入力業の行番号を(末尾に改行を付けて)プリントします。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T160740Z" creationid="hideo" creationdate="20190605T231849Z">
+        <seg>入力行の行番号を(末尾に改行を付けて)プリントします。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Print out the file name of the current input file (with a trailing newline).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T225237Z" creationid="hideo" creationdate="20190603T225237Z">
-        <seg>現在の入力ファイル名を（末尾に改行を伴って）出力します（標準入力の場合は'-'）。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T162206Z" creationid="hideo" creationdate="20190603T225237Z">
+        <seg>現在の入力ファイル名を(末尾に改行を伴って)出力します(標準入力の場合は'-'）。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16718,8 +16894,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Print the pattern space in an unambiguous form: non-printable characters (and the \ character) are printed in C-style escaped form; long lines are split, with a trailing \ character to indicate the split; the end of each line is marked with a $.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190606T190920Z" creationid="hideo" creationdate="20190606T190920Z">
-        <seg>パターンスペースを明確な(unambiguous)形式でプリントします。表示不能文字(および'\')はC言語スタイルのエスケープ形式でプリントします。。 長い行は分割され、分割を示す末尾の'\'文字が付きます。 各行の終わりは’$'でマークされています。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T160840Z" creationid="hideo" creationdate="20190606T190920Z">
+        <seg>(小文字のエル)パターンスペースを明確な(unambiguous)形式でプリントします。表示不能文字(および'\')はC言語スタイルのエスケープ形式でプリントします。。 長い行は分割され、分割を示す末尾の'\'文字が付きます。 各行の終わりは’$'でマークされています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16830,8 +17006,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Produces or matches a character whose hexadecimal ASCII value is xx.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T040800Z" creationid="hideo" creationdate="20190608T040800Z">
-        <seg> ASCII 値が16進数の xxx の文字を生成またはマッチします。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T131358Z" creationid="hideo" creationdate="20190608T040800Z">
+        <seg> ASCII 値が16進数の yy の文字を生成またはマッチします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16992,6 +17168,14 @@ D</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190607T055815Z" creationid="hideo" creationdate="20190607T055815Z">
         <seg>正規表現アドレスの場合はパターンスペースの現在の内容に作用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Regex recognizes equivalence class expressions inside lists.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T234026Z" creationid="hideo" creationdate="20190612T234026Z">
+        <seg>正規表現はリスト内の等価クラス式を認識します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17406,8 +17590,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>So, it is a useful simplification to think of ^#include as matching only lines where ‘#include’ is the first thing on line—if there are spaces before, for example, the match fails.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190607T132111Z" creationid="hideo" creationdate="20190607T131910Z">
-        <seg>だから、^#include は、行の最初に'#include'がある行のみに一致するものと単純化すると分かりやすいです。例えば、その前にスペースがある場合はマッチは失敗します。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T125519Z" creationid="hideo" creationdate="20190607T131910Z">
+        <seg>なので、^#include は、行の最初に'#include'がある行のみに一致するものと単純化すると分かりやすいです。例えば、その前にスペースがある場合はマッチは失敗します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17806,8 +17990,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>The l command prints the content of the pattern space unambiguously.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T192014Z" creationid="hideo" creationdate="20190602T171750Z">
-        <seg>lコマンドはパターンスペースの内容を非表示文字等含めて目に見える形でプリントします(削除はしない)。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T133306Z" creationid="hideo" creationdate="20190602T171750Z">
+        <seg>l(小文字のエル)コマンドはパターンスペースの内容を非表示文字等含めて目に見える形でプリントします(削除はしない)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17840,8 +18024,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>The s command can be followed by zero or more of the following flags:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190606T085104Z" creationid="hideo" creationdate="20190606T085104Z">
-        <seg>sはフラグ無しか1つ以上のフラグを後に続ける事ができます。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T084408Z" creationid="hideo" creationdate="20190606T085104Z">
+        <seg>sコマンドはフラグ無しか、1つ以上のフラグを後に続ける事ができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17936,15 +18120,15 @@ D</seg>
       <tuv lang="EN-US">
         <seg>The n parameter is a GNU sed extension.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190606T191252Z" creationid="hideo" creationdate="20190606T191252Z">
-        <seg>n パラメータはGNU sed 拡張です。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T161050Z" creationid="hideo" creationdate="20190606T191252Z">
+        <seg>line-length パラメータはGNU sed 拡張です。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>The label may be omitted, in which case the next cycle is started.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190605T095241Z" creationid="hideo" creationdate="20190604T000002Z">
+      <tuv lang="JA" changeid="hideo" changedate="20190612T083438Z" creationid="hideo" creationdate="20190604T000002Z">
         <seg>ラベルを省略したときは次のサイクルを開始します。
 </seg>
       </tuv>
@@ -18105,8 +18289,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>The commands resume after the last line without a backslash (\) - ‘world’ in the following example:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190606T144810Z" creationid="hideo" creationdate="20190606T144611Z">
-        <seg>最後の行(‘world’)の末尾に'\‘が付いてないことで、そこで a こまんどの終了とみなされ、次の行は次のコマンドの処理を続行します。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T160116Z" creationid="hideo" creationdate="20190606T144611Z">
+        <seg>最後の行(‘world’)の末尾に'\‘が付いてないことで、そこで a コマンドの終了とみなされ、次の行は次のコマンドの処理を続行します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18209,8 +18393,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>The first leaves a blank line at the beginning and end if there are some already.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190610T075507Z" creationid="hideo" creationdate="20190610T075507Z">
-        <seg>最初の行は最初と最後に空白行を残します。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T140728Z" creationid="hideo" creationdate="20190610T075507Z">
+        <seg>最初と最後に既に空行が1行以上会った場合、それぞれ空行1行だけは残さなければなりません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18291,7 +18475,7 @@ D</seg>
       <tuv lang="EN-US">
         <seg>The following command replaces the word ‘hello’ with ‘world’ only in lines 1 to 3 and 18 till the last line of the input file (i.e. excluding lines 4 to 17):</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T172006Z" creationid="hideo" creationdate="20190603T171919Z">
+      <tuv lang="JA" changeid="hideo" changedate="20190612T170148Z" creationid="hideo" creationdate="20190603T171919Z">
         <seg>次のコマンドは入力ファイルの1から3行と18から最終行だけ‘hello’を‘world’に置き換えます（すなわち excluding lines 4 to 17）。</seg>
       </tuv>
     </tu>
@@ -18323,7 +18507,7 @@ D</seg>
       <tuv lang="EN-US">
         <seg>The following command replaces the word ‘hello’ with ‘world’ only in lines not containing the word ‘apple’:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T171932Z" creationid="hideo" creationdate="20190603T171757Z">
+      <tuv lang="JA" changeid="hideo" changedate="20190612T170106Z" creationid="hideo" creationdate="20190603T171757Z">
         <seg>次のコマンドは‘apple'を含まない行だけ‘hello’を‘world’に置き換えます。</seg>
       </tuv>
     </tu>
@@ -18355,8 +18539,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>The following commands cannot be separated by a semicolon and require a newline:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T155640Z" creationid="hideo" creationdate="20190603T155640Z">
-        <seg>次のコマンドはセミコロンで区切ることができなくて改行で区切る事が必要です。:</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T162855Z" creationid="hideo" creationdate="20190603T155640Z">
+        <seg>次のコマンドはセミコロンで区切ることができなくて改行で区切る事が必要です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18725,8 +18909,8 @@ tx</seg>
       <tuv lang="EN-US">
         <seg>The regular expression ‘.’ does not match it:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T082245Z" creationid="hideo" creationdate="20190603T082051Z">
-        <seg>正規表現.はこれにマッチできません。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T132119Z" creationid="hideo" creationdate="20190603T082051Z">
+        <seg>正規表現‘.’はこれにマッチできません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18749,8 +18933,8 @@ tx</seg>
       <tuv lang="EN-US">
         <seg>The second is a portable equivalent.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T214548Z" creationid="hideo" creationdate="20190603T155257Z">
-        <seg>次の例は移植性のある(GNU sedでなくても動く)同等例です</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T162646Z" creationid="hideo" creationdate="20190603T155257Z">
+        <seg>次の例は移植性のある(GNU sedでなくても動く)同等例です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19089,8 +19273,8 @@ t a
       <tuv lang="EN-US">
         <seg>They are similar to their lowercase counterparts (d,g, h,n,p), except that these commands append or subtract data while respecting embedded newlines - allowing adding and removing lines from the pattern and hold spaces.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T165551Z" creationid="hideo" creationdate="20190602T165551Z">
-        <seg>これらに対応する小文字の（d,g, h,n,p）は), except that these commands append or subtract data while respecting embedded newlines - allowing adding and removing lines from the pattern and hold spaces.</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T133150Z" creationid="hideo" creationdate="20190602T165551Z">
+        <seg>これらは、それぞれ対応する小文字のコマンド(d,g,h,n,p)と似ていますが、埋め込まれた改行を尊重しながらデータを追加または削除するという点が異なります。パターンスペースとホールドスペースで行を追加・削除できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19177,8 +19361,8 @@ t a
       <tuv lang="EN-US">
         <seg>This also matches the regular expression regexp, but allows one to use a different delimiter than /.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190607T054436Z" creationid="hideo" creationdate="20190607T054436Z">
-        <seg>これも正規表現 regexpにマッチします。つまり'/'と異なる1文字を使えます。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T125017Z" creationid="hideo" creationdate="20190607T054436Z">
+        <seg>これも正規表現 regexpにマッチします。つまり'/'と異なる区切りを使えます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19193,8 +19377,8 @@ t a
       <tuv lang="EN-US">
         <seg>This behavior, although documented, might change in future versions.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190606T100147Z" creationid="hideo" creationdate="20190606T100147Z">
-        <seg>この動作は公式文書に掲載されているけれども、将来のバージョンでは変更される可能性があります。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T155048Z" creationid="hideo" creationdate="20190606T100147Z">
+        <seg>この動作は公式文書に掲載されているけれども、将来のバージョンでは変更される可能性があります。(訳注:手元のGNU sed 4.7では動作確認できず)</seg>
       </tuv>
     </tu>
     <tu>
@@ -19225,8 +19409,8 @@ t a
       <tuv lang="EN-US">
         <seg>This command accepts only one address.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T225556Z" creationid="hideo" creationdate="20190603T225538Z">
-        <seg>このコマンドは単一のアドレスのみ受け入れます（アドレス範囲不可）。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T162227Z" creationid="hideo" creationdate="20190603T225538Z">
+        <seg>このコマンドは単一のアドレスのみ受け入れます(アドレス範囲不可)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19529,16 +19713,16 @@ t a
       <tuv lang="EN-US">
         <seg>This matches nine characters followed by an ‘A’ at the end of a line.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190607T152116Z" creationid="hideo" creationdate="20190607T152116Z">
-        <seg>これは9文字にマッチし、その後に行末に A が続きます。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T130524Z" creationid="hideo" creationdate="20190607T152116Z">
+        <seg>これは9文字にマッチし、その後に行末に'A'が続きます。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>This matches the start of a string that contains 16 characters, the last of which is an ‘A’.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190607T152343Z" creationid="hideo" creationdate="20190607T152343Z">
-        <seg>これは16文字でかつその最後が‘A’である文字列にマッチする。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T130536Z" creationid="hideo" creationdate="20190607T152343Z">
+        <seg>これは16文字でかつその最後が‘A’である文字列にマッチします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19625,8 +19809,8 @@ t a
       <tuv lang="EN-US">
         <seg>This removes leading and trailing blank lines.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190610T145417Z" creationid="hideo" creationdate="20190610T145155Z">
-        <seg>これは先導する空行達と後続する空行達を削除します</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T140759Z" creationid="hideo" creationdate="20190610T145155Z">
+        <seg>これは先導する空行達と後続する空行達を削除します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19729,8 +19913,8 @@ t a
       <tuv lang="EN-US">
         <seg>This script strips the definition of the shell functions from the output of the set Bourne-shell command.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T110146Z" creationid="hideo" creationdate="20190608T110146Z">
-        <seg>このスクリプトは、 set  Bourne-shellコマンドの出力からシェル関数の定義を取り除きます。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T135818Z" creationid="hideo" creationdate="20190608T110146Z">
+        <seg>このスクリプトは、Bourne-shellの set コマンドの出力からシェル関数の定義を取り除きます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19769,8 +19953,8 @@ t a
       <tuv lang="EN-US">
         <seg>This simplification is valid as long as the original content of pattern space is not modified, for example with an s command.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190607T132223Z" creationid="hideo" creationdate="20190607T132223Z">
-        <seg>この単純化は、元のパターンスペースの内容が変更されていない限り、たとえば s コマンドで有効です。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T125611Z" creationid="hideo" creationdate="20190607T132223Z">
+        <seg>この単純化は、元のパターンスペースの内容が変更されていない限り有効です。例えば s コマンドで有効です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19817,16 +20001,16 @@ t a
       <tuv lang="EN-US">
         <seg>Though perhaps less frequently used than those in the previous section, some very small yet useful sed scripts can be built with these commands.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190606T142204Z" creationid="hideo" creationdate="20190606T142204Z">
-        <seg>前の節で使用されているものよりもおそらく使用頻度は低いですが、非常に小さくて便利な sed スクリプトをこれらのコマンドで作成することができます。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T155854Z" creationid="hideo" creationdate="20190606T142204Z">
+        <seg>前の節で使用されているものよりも、おそらく使用頻度は低いですが、これらのコマンドを使えば非常に小さくて便利な sed スクリプトを作成することができます。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Thus the follwing two commands are equivalent (‘0x5e’ is the hexadecimal ASCII value of the character ‘^’):</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T062544Z" creationid="hideo" creationdate="20190608T062229Z">
-        <seg>次の2つのコマンドは等価です(‘0x5e’は16進表記された文字‘^’のASCII値)。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T131559Z" creationid="hideo" creationdate="20190608T062229Z">
+        <seg>次の2つのコマンドは等価です(‘0x5e’は16進表記した文字‘^’のASCII値)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19857,8 +20041,8 @@ t a
       <tuv lang="EN-US">
         <seg>To change that width, the number in \{…\} must be replaced, and the number of added spaces also must be changed.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T085303Z" creationid="hideo" creationdate="20190608T085303Z">
-        <seg>幅を変更するには、 \ {…\} の数を置き換え、追加スペースの数も変更する必要があります。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T135540Z" creationid="hideo" creationdate="20190608T085303Z">
+        <seg>幅を変更するには、'\{…\}'の数を置き換え、追加スペースの数も変更する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19913,9 +20097,8 @@ t a
       <tuv lang="EN-US">
         <seg>To introduce the technique, which is fully demonstrated in the rest of this chapter and is based on the N, P and D commands, here is an implementation of tail using a simple “sliding window.”</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190610T074225Z" creationid="hideo" creationdate="20190610T074225Z">
-        <seg>191/5000
-N、P、D コマンドに基づいたテクニックをこの章の残りの部分で十分に紹介するために、ここでは「スライディングウィンドウ」を使ったtailを実装します。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T140206Z" creationid="hideo" creationdate="20190610T074225Z">
+        <seg>N、P、D コマンドに基づいたテクニックをこの章の残りの部分で十分に紹介するために、ここでは「スライディングウィンドウ」を使ったtailを実装します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19986,8 +20169,8 @@ N、P、D コマンドに基づいたテクニックをこの章の残りの部�
       <tuv lang="EN-US">
         <seg>Turn the next character to lowercase,</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190605T130010Z" creationid="hideo" creationdate="20190605T130010Z">
-        <seg>次の1文字を小文字にする。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T084153Z" creationid="hideo" creationdate="20190605T130010Z">
+        <seg>(小文字のエル)次の1文字を小文字にする。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20154,8 +20337,8 @@ N、P、D コマンドに基づいたテクニックをこの章の残りの部�
       <tuv lang="EN-US">
         <seg>Useful one-liners:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T050839Z" creationid="hideo" creationdate="20190608T050839Z">
-        <seg>便利な一行野郎たち：</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T135222Z" creationid="hideo" creationdate="20190608T050839Z">
+        <seg>便利な一行野郎：</seg>
       </tuv>
     </tu>
     <tu>
@@ -20170,8 +20353,8 @@ N、P、D コマンドに基づいたテクニックをこの章の残りの部�
       <tuv lang="EN-US">
         <seg>Using a semicolon leads to undesirable results:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T155943Z" creationid="hideo" creationdate="20190603T155943Z">
-        <seg>そこでセミコロンを使用すると残念な結果になります。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T162933Z" creationid="hideo" creationdate="20190603T155943Z">
+        <seg>そこにセミコロンを使用すると残念な結果になります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20282,8 +20465,8 @@ N、P、D コマンドに基づいたテクニックをこの章の残りの部�
       <tuv lang="EN-US">
         <seg>When -z is used, a zero byte (the ascii ‘NUL’ character) is added between the lines (instead of a new line).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190606T194131Z" creationid="hideo" creationdate="20190606T194131Z">
-        <seg>-z コマンドラインオプションを指定した時は、(改行 \x0a の代わりに)行と行の区切りには \x00 (ASCII ‘NUL’)が追加されます。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T161818Z" creationid="hideo" creationdate="20190606T194131Z">
+        <seg>-z コマンドラインオプションを指定した時は、行と行の間の区切りには、改行(\x0a)の代わりにASCII ‘NUL’(\x00)を追加します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20370,8 +20553,8 @@ N、P、D コマンドに基づいたテクニックをこの章の残りの部�
       <tuv lang="EN-US">
         <seg>When used with alternation, if the group does not participate in the match then the back-reference makes the whole match fail.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T011045Z" creationid="hideo" creationdate="20190608T011045Z">
-        <seg>alternation('|')が使用されている時、部分マッチした側にグループが含まれていないと、後方参照は全体のマッチを失敗させる。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T131127Z" creationid="hideo" creationdate="20190608T011045Z">
+        <seg>alternation('|')が使用されている時、部分マッチした側にグループが含まれていないと、後方参照は全体のマッチを失敗させます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20402,8 +20585,8 @@ N、P、D コマンドに基づいたテクニックをこの章の残りの部�
       <tuv lang="EN-US">
         <seg>With a few more commands, sed can print the exact line number corresponding to each invalid characters (line 3).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T064133Z" creationid="hideo" creationdate="20190608T064133Z">
-        <seg>さらにいくつかのコマンドを使用すると、 sed は無効な各文字に対応する正確な行番号を表示できます（3行目）。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T132308Z" creationid="hideo" creationdate="20190608T064133Z">
+        <seg>さらにいくつかのコマンドを使用すると、 sed は無効な各文字に対応する正確な行(この例では3行目)の行番号を表示できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20508,8 +20691,8 @@ Content-Type: multipart/alternative;</seg>
       <tuv lang="EN-US">
         <seg>Yes, that is in principle enough information to look for the bug, but that is not a very practical prospect.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190610T154349Z" creationid="hideo" creationdate="20190610T154349Z">
-        <seg>はい、それは原則としてバグを探すのに十分な情報ですが、それはあまり実用的な見通しではありません。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T141325Z" creationid="hideo" creationdate="20190610T154349Z">
+        <seg>もちろん、それは基礎的なバグを探すのには十分な情報ですが、それは非常に役立つ技術情報というわけではありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20534,6 +20717,22 @@ Content-Type: multipart/alternative;</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190605T221723Z" creationid="hideo" creationdate="20190605T221723Z">
         <seg>それでも、'w'、'W'コマンドに /dev/stdout を指定して標準出力に書き込む事ができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You form a collating symbol by putting a collating element between an open-collating-symbol operator and a close-collating-symbol operator.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T233625Z" creationid="hideo" creationdate="20190612T233625Z">
+        <seg>オープン照合シンボル演算子とクローズ照合シンボル演算子の間に照合エレメントを配置することによって、照合シンボルを形成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You form an equivalence class expression by putting a collating element between an open-equivalence-class operator and a close-equivalence-class operator.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T234411Z" creationid="hideo" creationdate="20190612T234411Z">
+        <seg>オープン等価クラス演算子とクローズ等価クラス演算子の間に照合要素を入れることで、等価クラス式を作成します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20988,8 +21187,8 @@ Content-Type: multipart/alternative;</seg>
       <tuv lang="EN-US">
         <seg>\xxx</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190605T121606Z" creationid="hideo" creationdate="20190605T121606Z">
-        <seg>\xxx</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T131309Z" creationid="hideo" creationdate="20190605T121606Z">
+        <seg>\xyy</seg>
       </tuv>
     </tu>
     <tu>
@@ -21210,8 +21409,8 @@ Authentication-Results: mx.gnu.org;</seg>
       <tuv lang="EN-US">
         <seg>branch unconditionally (that is: always jump to a label, skipping or repeating other commands, without restarting a new cycle).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T175619Z" creationid="hideo" creationdate="20190602T175619Z">
-        <seg>無条件分岐（指定のラベルへジャンプ。当該スクリプトの中で前にジャンプしてループを構成するのに使ったり、条件と組み合わせてelse部分をスキップするのに使える。あくまで当該スクリプトの中でジャンプするだけで当該サイクルを終了したり次のサイクルを開始することはない）</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T133650Z" creationid="hideo" creationdate="20190602T175619Z">
+        <seg>無条件分岐（指定のラベルへジャンプ。当該スクリプトの中で前にジャンプしてループを構成するのに使ったり、条件と組み合わせてelse部分をスキップするのに使える。あくまで当該スクリプトの中でジャンプするだけで当該サイクルを終了したり次のサイクルを開始することはない）。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21390,8 +21589,8 @@ Usage: $0 [-n] [-r] [-h] files...</seg>
       <tuv lang="EN-US">
         <seg>delete (clears) the current pattern space, and restart the program cycle without processing the rest of the commands and without printing the pattern space.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T173616Z" creationid="hideo" creationdate="20190602T173616Z">
-        <seg>パターンスペースの内容を全部クリアし、このコマンド以降のスクリプトの実行をスキップしてパターンスペースの内容をプリントせずに次のサイクルを開始する。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T133345Z" creationid="hideo" creationdate="20190602T173616Z">
+        <seg>パターンスペースの内容を全削除し、このコマンド以降のスクリプトの実行をスキップしてパターンスペースの内容をプリントせずに次のサイクルを開始する。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21680,6 +21879,22 @@ y parts.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>index.html#SEC_Contents</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T233233Z" creationid="hideo" creationdate="20190612T233233Z">
+        <seg>index.html#SEC_Contents</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>index.html#Top</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T233124Z" creationid="hideo" creationdate="20190612T233124Z">
+        <seg>index.html#Top</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>insert text before a line (alternative syntax).</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190612T062307Z" creationid="hideo" creationdate="20190605T075021Z">
@@ -21706,8 +21921,8 @@ y parts.</seg>
       <tuv lang="EN-US">
         <seg>interaction in s command  Note: the POSIX standard does not specify what should happen when you mix the g and number modifiers, and currently there is no widely agreed upon meaning across sed implementations.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190606T093125Z" creationid="hideo" creationdate="20190606T085816Z">
-        <seg>sコマンドフラグの相互作用に注意： POSIX標準ではgフラグとnumberフラグを混在させた時に何が起こるかは規定されていません。 sedの各実装の間でわりと普通の動作などというようなものもありません。実装依存です。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T084451Z" creationid="hideo" creationdate="20190606T085816Z">
+        <seg>sコマンドフラグの相互作用に注意： POSIX規格ではgフラグとnumberフラグを混在させた時に何が起こるかは規定されていません。 sedの各実装の間でわりと普通の動作などというようなものもありません。実装依存です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21722,8 +21937,8 @@ y parts.</seg>
       <tuv lang="EN-US">
         <seg>l n</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190605T115449Z" creationid="hideo" creationdate="20190605T115449Z">
-        <seg>l n</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T161017Z" creationid="hideo" creationdate="20190605T115449Z">
+        <seg>l line-length</seg>
       </tuv>
     </tu>
     <tu>
@@ -22434,8 +22649,8 @@ done</seg>
       <tuv lang="EN-US">
         <seg>similar but opposite to the t command: branch only if there has been no successful substitutions since the last input line was read.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190602T180651Z" creationid="hideo" creationdate="20190602T180450Z">
-        <seg>tコマンドと逆に、最後に読み込まれた入力行のs///コマンドが失敗した場合に分岐する。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T133855Z" creationid="hideo" creationdate="20190602T180450Z">
+        <seg>tコマンドと逆に、最後に読み込まれた入力行の's'コマンドが失敗した場合に分岐する。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22942,8 +23157,8 @@ bx</seg>
       <tuv lang="EN-US">
         <seg>‘[^ TAB]\+’</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190605T121011Z" creationid="hideo" creationdate="20190605T121011Z">
-        <seg>‘[^ TAB]\+’</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T130429Z" creationid="hideo" creationdate="20190605T121011Z">
+        <seg>‘[^ «TAB»]\+’</seg>
       </tuv>
     </tu>
     <tu>
@@ -22974,8 +23189,8 @@ bx</seg>
       <tuv lang="EN-US">
         <seg>‘\b’ (backspace) was omitted because of the conflict with the existing “word boundary” meaning.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T040938Z" creationid="hideo" creationdate="20190608T040938Z">
-        <seg>「 \ b 」（バックスペース）は、既存の「単語境界」の意味と競合するため省かれています。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190613T131453Z" creationid="hideo" creationdate="20190608T040938Z">
+        <seg>‘\b’（バックスペース）は、既存の「単語境界」の意味と競合するため省かれています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23072,6 +23287,22 @@ bx</seg>
       </tuv>
       <tuv lang="JA" changeid="hideo" changedate="20190609T225313Z" creationid="hideo" creationdate="20190609T225313Z">
         <seg>' a 'は1の位の数、 ' b 'は10の位の数などです。現在の行の文字数を1の位の数として追加してから、桁上がり(キャリー)を伝播します。 数十、数百などに。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>‘[.’ represents the open-collating-symbol operator and ‘.]’ represents the close-collating-symbol operator.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T233716Z" creationid="hideo" creationdate="20190612T233716Z">
+        <seg>‘[.’はオープン照合記号演算子を表し、‘.]’はクローズ照合記号演算子を表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>‘[=’ represents the open-equivalence-class operator and ‘=]’ represents the close-equivalence-class operator.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hideo" changedate="20190612T234451Z" creationid="hideo" creationdate="20190612T234451Z">
+        <seg>‘[=’はオープン等価クラス演算子を表し、‘=]’はクローズ等価クラス演算子を表します。</seg>
       </tuv>
     </tu>
     <tu>
