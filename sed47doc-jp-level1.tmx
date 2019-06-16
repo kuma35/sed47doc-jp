@@ -7019,7 +7019,7 @@ esac</seg>
       <tuv lang="EN-US">
         <seg>--debug</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190603T151131Z" creationid="hideo" creationdate="20190603T151131Z">
+      <tuv lang="JA" changeid="hideo" changedate="20190615T050914Z" creationid="hideo" creationdate="20190615T050914Z">
         <seg>--debug</seg>
       </tuv>
     </tu>
@@ -16878,8 +16878,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Print the input sed program in canonical form, and annotate program execution.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190604T061819Z" creationid="hideo" creationdate="20190604T061819Z">
-        <seg>入力されたプログラムを標準形式でプリントし、注釈付きで実行します。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190615T050906Z" creationid="hideo" creationdate="20190604T061819Z">
+        <seg>(v 4.6)入力されたプログラムを標準形式でプリントし、注釈付きで実行します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17286,8 +17286,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Reporting Bugs</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T224512Z" creationid="hideo" creationdate="20190603T145247Z">
-        <seg> 報告済のバグ</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190616T213719Z" creationid="hideo" creationdate="20190603T145247Z">
+        <seg>バグ報告</seg>
       </tuv>
     </tu>
     <tu>
@@ -17550,8 +17550,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Send general questions and suggestions to sed-devel@gnu.org.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190610T152702Z" creationid="hideo" creationdate="20190610T152702Z">
-        <seg>一般的な質問や提案の送り先： sed-devel@gnu.org.</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190616T214316Z" creationid="hideo" creationdate="20190610T152702Z">
+        <seg>一般的な質問や提案の送り先： sed-devel@gnu.org(訳注：このMLに参加するには https://lists.gnu.org/mailman/listinfo/sed-devel のページ従って操作すると自分宛てに確認メールが届くのでそれに従って下さい)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20401,8 +20401,8 @@ t a
       <tuv lang="EN-US">
         <seg>Visit the mailing list archives for past discussions at https://lists.gnu.org/archive/html/sed-devel/.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190610T152805Z" creationid="hideo" creationdate="20190610T152805Z">
-        <seg>過去の議論のメーリングリストアーカイブはこちら。Visit the mailing list archives for past discussions at https://lists.gnu.org/archive/html/sed-devel/.</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190616T214044Z" creationid="hideo" creationdate="20190610T152805Z">
+        <seg>過去の議論のメーリングリストアーカイブはこちら。https://lists.gnu.org/archive/html/sed-devel/.</seg>
       </tuv>
     </tu>
     <tu>

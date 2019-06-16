@@ -166,7 +166,7 @@ ul.no-bullet {list-style: none}
   </ul></li>
   <li><a name="toc-GNU-sed_0027s-Limitations-and-Non_002dlimitations" href="#Limitations">8 GNU <code>sed</code>の制限と、GNU <code>sed</code>で撤廃された制限</a></li>
   <li><a name="toc-Other-Resources-for-Learning-About-sed" href="#Other-Resources&lt;a0&gt;address range, example&lt;/a0&gt;">9 <code>sed</code>を習得するためのこの文書以外の資料</a></li>
-  <li><a name="toc-Reporting-Bugs-1" href="#Reporting-Bugs">10 報告済のバグ</a></li>
+  <li><a name="toc-Reporting-Bugs-1" href="#Reporting-Bugs">10バグ報告</a></li>
   <li><a name="toc-GNU-Free-Documentation-License-1" href="#GNU-Free-Documentation-License">Appendix A GNU Free Documentation License</a></li>
   <li><a name="toc-Concept-Index-1" href="#Concept-Index">概念索引</a></li>
   <li><a name="toc-Command-and-Option-Index-1" href="#Command-and-Option-Index">sedコマンドとそのオプションの索引</a></li>
@@ -390,7 +390,7 @@ sed --file=myscript.sed input.txt &gt; output.txt
 <dt><code>--debug</code></dt>
 <dd><a name="index-_002d_002ddebug"></a>
 <a name="index-GNU-extensions_002c-debug"></a>
-<p>入力されたプログラムを標準形式でプリントし、注釈付きで実行します。
+<p>(v 4.6)入力されたプログラムを標準形式でプリントし、注釈付きで実行します。
 </p><div class="example">
 <pre class="example">$ echo 1 | sed '\%1%s21232'
 3
@@ -4529,7 +4529,7 @@ bx
 
 <p>GNU <code>sed</code> の最新情報についてはこちら。<a href="https://www.gnu.org/software/sed/">https://www.gnu.org/software/sed/</a>
 </p>
-<p>一般的な質問や提案の送り先： <a href="mailto:sed-devel@gnu.org">sed-devel@gnu.org</a>. 過去の議論のメーリングリストアーカイブはこちら。Visit the mailing list archives for past discussions at <a href="https://lists.gnu.org/archive/html/sed-devel/">https://lists.gnu.org/archive/html/sed-devel/</a>.
+<p>一般的な質問や提案の送り先： <a href="mailto:sed-devel@gnu.org">sed-devel@gnu.org</a>(訳注：このMLに参加するには https://lists.gnu.org/mailman/listinfo/sed-devel のページ従って操作すると自分宛てに確認メールが届くのでそれに従って下さい)。過去の議論のメーリングリストアーカイブはこちら。<a href="https://lists.gnu.org/archive/html/sed-devel/">https://lists.gnu.org/archive/html/sed-devel/</a>.
 </p>
 <a name="index-Additional-reading-about-sed"></a>
 <p>以下、<code> sed </code>（GNU <code> sed </code>とその他のバリエーションの両方）に関する資料ですこれらはGNU <code> sed </code>開発者によって保守されていないことに注意してください。
@@ -4552,7 +4552,7 @@ bx
 </p>
 </div>
 <a name="Reporting-Bugs-1"></a>
-<h2 class="chapter">10 報告済のバグ</h2>
+<h2 class="chapter">10バグ報告</h2>
 
 <a name="index-Bugs_002c-reporting"></a>
 <p>バグ報告はこちらへ(もちろん英語で) <a href="mailto:bug-sed@gnu.org">bug-sed@gnu.org</a>. また、可能なかぎり報告本文に‘<samp>sed --version</samp>’の出力を含めて下さい。
@@ -5277,7 +5277,7 @@ to permit their use in free software.
 <tr><td></td><td valign="top"><a href="#index-_002ds_002c-example">-s とその例</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Overview"> 概要</a></td></tr>
 <tr><td colspan="4"> <hr></td></tr>
 <tr><th><a name="Concept-Index_cp_symbol-2">0</a></th><td></td><td></td></tr>
-<tr><td></td><td valign="top"><a href="#index-0-address"><code>0</code> (ゼロ)アドレス</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs"> 報告済のバグ</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-0-address"><code>0</code> (ゼロ)アドレス</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs">バグ報告</a></td></tr>
 <tr><td colspan="4"> <hr></td></tr>
 <tr><th><a name="Concept-Index_cp_symbol-3">;</a></th><td></td><td></td></tr>
 <tr><td></td><td valign="top"><a href="#index-_003b_002c-command-separator">;, コマンド区切り</a>:</td><td>&nbsp;</td><td valign="top"><a href="#sed-script-overview">sedスクリプト概要</a></td></tr>
@@ -5319,7 +5319,7 @@ to permit their use in free software.
 <tr><td></td><td valign="top"><a href="#index-branching_002c-infinite-loop">branching, infinite loop</a>(分岐と無限ループ):</td><td>&nbsp;</td><td valign="top"><a href="#Branching-and-flow-control">分岐とフロー制御</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-branching_002c-joining-lines">branching, joining lines</a>(分岐と行連結):</td><td>&nbsp;</td><td valign="top"><a href="#Branching-and-flow-control">分岐とフロー制御</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-Buffer-spaces_002c-pattern-and-hold">Buffer spaces, pattern and hold</a>(パターンスペースとホールドスペース):</td><td>&nbsp;</td><td valign="top"><a href="#Execution-Cycle">実行サイクル</a></td></tr>
-<tr><td></td><td valign="top"><a href="#index-Bugs_002c-reporting">Bugs, reporting</a>(報告されているバグ):</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs"> 報告済のバグ</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Bugs_002c-reporting">Bugs, reporting</a>(報告されているバグ):</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs">バグ報告</a></td></tr>
 <tr><td colspan="4"> <hr></td></tr>
 <tr><th><a name="Concept-Index_cp_letter-C">C</a></th><td></td><td></td></tr>
 <tr><td></td><td valign="top"><a href="#index-c_002c-and-semicolons"><code>c</code>, and semicolons</a>(cコマンドとセミコロン';'):</td><td>&nbsp;</td><td valign="top"><a href="#sed-script-overview">sedスクリプト概要</a></td></tr>
@@ -5347,7 +5347,7 @@ to permit their use in free software.
 <tr><th><a name="Concept-Index_cp_letter-E">E</a></th><td></td><td></td></tr>
 <tr><td></td><td valign="top"><a href="#index-empty-regular-expression">empty regular expression</a>(空の正規表現'//'):</td><td>&nbsp;</td><td valign="top"><a href="#Regexp-Addresses">正規表現アドレス</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-Emptying-pattern-space">Emptying pattern space</a>(パターンスペースの内容を空にする):</td><td>&nbsp;</td><td valign="top"><a href="#Extended-Commands">拡張コマンド達</a></td></tr>
-<tr><td></td><td valign="top"><a href="#index-Emptying-pattern-space-1">Emptying pattern space</a>(パターンスペースの内容を空にする):</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs"> 報告済のバグ</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Emptying-pattern-space-1">Emptying pattern space</a>(パターンスペースの内容を空にする):</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs">バグ報告</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-Evaluate-Bourne_002dshell-commands">Evaluate Bourne-shell commands</a>(eval bashコマンド):</td><td>&nbsp;</td><td valign="top"><a href="#Extended-Commands">拡張コマンド達</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-Evaluate-Bourne_002dshell-commands_002c-after-substitution">Evaluate Bourne-shell commands, after substitution</a>(置換後の eval bash コマンド):</td><td>&nbsp;</td><td valign="top"><a href="#The-_0022s_0022-Command">The "s" Command</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-example_002c-address-range">example, address range</a>(アドレス範囲例):</td><td>&nbsp;</td><td valign="top"><a href="#sed-script-overview">sedスクリプト概要</a></td></tr>
@@ -5374,7 +5374,7 @@ to permit their use in free software.
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-_002fdev_002fstdout-file-1">GNU 拡張: <samp>/dev/stdout</samp> ファイル指定</a>:</td><td>&nbsp;</td><td valign="top"><a href="#The-_0022s_0022-Command">The "s" Command</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-_002fdev_002fstdout-file-2">GNU 拡張: <samp>/dev/stdout</samp> ファイル指定</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Other-Commands">他のコマンド</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-0-address">GNU 拡張: <code>0</code>(ゼロ)アドレス</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Range-Addresses"> 範囲アドレス</a></td></tr>
-<tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-0-address-1">GNU 拡張: <code>0</code>(ゼロ)アドレス</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs"> 報告済のバグ</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-0-address-1">GNU 拡張: <code>0</code>(ゼロ)アドレス</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs">バグ報告</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-0_002caddr2-addressing">GNU 拡張: 0,<var>addr2</var> 範囲アドレス指定</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Range-Addresses"> 範囲アドレス</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-addr1_002c_002bN-addressing">GNU 拡張: <var>addr1</var>,+<var>N</var> 範囲アドレス指定</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Range-Addresses"> 範囲アドレス</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-addr1_002c_007eN-addressing">GNU 拡張: <var>addr1</var>,~<var>N</var> アドレス指定</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Range-Addresses"> 範囲アドレス</a></td></tr>
@@ -5384,7 +5384,7 @@ to permit their use in free software.
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-debug">GNU 拡張: debug</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Command_002dLine-Options"> コマンドラインオプション</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-disabling">GNU 拡張: disabling</a>(GNU拡張を無効にする):</td><td>&nbsp;</td><td valign="top"><a href="#Command_002dLine-Options"> コマンドラインオプション</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-emptying-pattern-space">GNU 拡張: emptying pattern space</a>(パターンスペースを空にする):</td><td>&nbsp;</td><td valign="top"><a href="#Extended-Commands">拡張コマンド達</a></td></tr>
-<tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-emptying-pattern-space-1">GNU 拡張: emptying pattern space</a>(パターンスペースを空にする):</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs"> 報告済のバグ</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-emptying-pattern-space-1">GNU 拡張: emptying pattern space</a>(パターンスペースを空にする):</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs">バグ報告</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-evaluating-Bourne_002dshell-commands">GNU 拡張: evaluating Bourne-shell commands</a>(eval bashコマンド):</td><td>&nbsp;</td><td valign="top"><a href="#The-_0022s_0022-Command">The "s" Command</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-evaluating-Bourne_002dshell-commands-1">GNU 拡張: evaluating Bourne-shell commands</a>(eval bashコマンド):</td><td>&nbsp;</td><td valign="top"><a href="#Extended-Commands">拡張コマンド達</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-extended-regular-expressions">GNU 拡張: extended regular expressions</a>(拡張正規表現):</td><td>&nbsp;</td><td valign="top"><a href="#Command_002dLine-Options"> コマンドラインオプション</a></td></tr>
@@ -5392,7 +5392,7 @@ to permit their use in free software.
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-I-modifier">GNU extensions, <code>I</code> modifier</a>:</td><td>&nbsp;</td><td valign="top"><a href="#The-_0022s_0022-Command">The "s" Command</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-I-modifier-1">GNU extensions, <code>I</code> modifier</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Regexp-Addresses">正規表現アドレス</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-in_002dplace-editing">GNU拡張, in-place editing</a>(入力ファイル書き換え):</td><td>&nbsp;</td><td valign="top"><a href="#Command_002dLine-Options"> コマンドラインオプション</a></td></tr>
-<tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-in_002dplace-editing-1">GNU拡張, in-place editing</a>(入力ファイル書き換え):</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs"> 報告済のバグ</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-in_002dplace-editing-1">GNU拡張, in-place editing</a>(入力ファイル書き換え):</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs">バグ報告</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-M-modifier">GNU拡張, <code>M</code> modifier</a>:</td><td>&nbsp;</td><td valign="top"><a href="#The-_0022s_0022-Command">The "s" Command</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-M-modifier-1">GNU拡張, <code>M</code> modifier</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Regexp-Addresses">正規表現アドレス</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-modifiers-and-the-empty-regular-expression">GNU拡張, modifiers and the empty regular expression</a>(空の正規表現とフラグ):</td><td>&nbsp;</td><td valign="top"><a href="#Regexp-Addresses">正規表現アドレス</a></td></tr>
@@ -5404,7 +5404,7 @@ to permit their use in free software.
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-returning-an-exit-code-1">GNU拡張, returning an exit code</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Extended-Commands">拡張コマンド達</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-setting-line-length">GNU拡張, setting line length</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Other-Commands">他のコマンド</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-special-escapes">GNU拡張, special escapes</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Escapes">エスケープ</a></td></tr>
-<tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-special-escapes-1">GNU拡張, special escapes</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs"> 報告済のバグ</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-special-escapes-1">GNU拡張, special escapes</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs">バグ報告</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-special-two_002daddress-forms">GNU拡張, special two-address forms</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Range-Addresses"> 範囲アドレス</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-subprocesses">GNU拡張, subprocesses</a>:(正規表現部分式)</td><td>&nbsp;</td><td valign="top"><a href="#The-_0022s_0022-Command">The "s" Command</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-subprocesses-1">GNU拡張, subprocesses</a>:(正規表現部分式)</td><td>&nbsp;</td><td valign="top"><a href="#Extended-Commands">拡張コマンド達</a></td></tr>
@@ -5413,7 +5413,7 @@ to permit their use in free software.
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-to-basic-regular-expressions-2">GNU拡張, to basic regular expressions</a>:</td><td>&nbsp;</td><td valign="top"><a href="#BRE-syntax">BRE文法</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-to-basic-regular-expressions-3">GNU拡張, to basic regular expressions</a>:</td><td>&nbsp;</td><td valign="top"><a href="#BRE-syntax">BRE文法</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-to-basic-regular-expressions-4">GNU拡張, to basic regular expressions</a>:</td><td>&nbsp;</td><td valign="top"><a href="#BRE-syntax">BRE文法</a></td></tr>
-<tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-to-basic-regular-expressions-5">GNU拡張, to basic regular expressions</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs"> 報告済のバグ</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-to-basic-regular-expressions-5">GNU拡張, to basic regular expressions</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs">バグ報告</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-two-addresses-supported-by-most-commands">GNU拡張, two addresses supported by most commands</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Other-Commands">他のコマンド</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-two-addresses-supported-by-most-commands-1">GNU拡張, two addresses supported by most commands</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Other-Commands">他のコマンド</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-GNU-extensions_002c-two-addresses-supported-by-most-commands-2">GNU拡張, two addresses supported by most commands</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Other-Commands">他のコマンド</a></td></tr>
@@ -5436,7 +5436,7 @@ to permit their use in free software.
 <tr><td colspan="4"> <hr></td></tr>
 <tr><th><a name="Concept-Index_cp_letter-I">I</a></th><td></td><td></td></tr>
 <tr><td></td><td valign="top"><a href="#index-i_002c-and-semicolons"><code>i</code>, and semicolons(';')</a>:</td><td>&nbsp;</td><td valign="top"><a href="#sed-script-overview">sedスクリプト概要</a></td></tr>
-<tr><td></td><td valign="top"><a href="#index-In_002dplace-editing">In-place editing</a>(入力ファイル書き換え):</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs"> 報告済のバグ</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-In_002dplace-editing">In-place editing</a>(入力ファイル書き換え):</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs">バグ報告</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-In_002dplace-editing_002c-activating">In-place editing, activating</a>(その内部動作):</td><td>&nbsp;</td><td valign="top"><a href="#Command_002dLine-Options"> コマンドラインオプション</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-In_002dplace-editing_002c-Perl_002dstyle-backup-file-names">In-place editing, Perl-style backup file names</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Command_002dLine-Options"> コマンドラインオプション</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-infinite-loop_002c-branching">infinite loop, branching</a>(無限ループ、分岐):</td><td>&nbsp;</td><td valign="top"><a href="#Branching-and-flow-control">分岐とフロー制御</a></td></tr>
@@ -5472,12 +5472,12 @@ to permit their use in free software.
 <tr><td></td><td valign="top"><a href="#index-newline_002c-command-separator">newline, command separator</a>:</td><td>&nbsp;</td><td valign="top"><a href="#sed-script-overview">sedスクリプト概要</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-Next-input-line_002c-append-to-pattern-space">Next input line, append to pattern space</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Other-Commands">他のコマンド</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-Next-input-line_002c-replace-pattern-space-with">Next input line, replace pattern space with</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Common-Commands">一般コマンド達</a></td></tr>
-<tr><td></td><td valign="top"><a href="#index-Non_002dbugs_002c-0-address">Non-bugs(それはバグじゃない), <code>0</code> address</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs"> 報告済のバグ</a></td></tr>
-<tr><td></td><td valign="top"><a href="#index-Non_002dbugs_002c-in_002dplace-editing">Non-bugs(それはバグじゃない), in-place editing</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs"> 報告済のバグ</a></td></tr>
-<tr><td></td><td valign="top"><a href="#index-Non_002dbugs_002c-localization_002drelated">Non-bugs(それはバグじゃない), localization-related</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs"> 報告済のバグ</a></td></tr>
-<tr><td></td><td valign="top"><a href="#index-Non_002dbugs_002c-localization_002drelated-1">Non-bugs(それはバグじゃない), localization-related</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs"> 報告済のバグ</a></td></tr>
-<tr><td></td><td valign="top"><a href="#index-Non_002dbugs_002c-N-command-on-the-last-line">Non-bugs(それはバグじゃない), <code>N</code> command on the last line</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs"> 報告済のバグ</a></td></tr>
-<tr><td></td><td valign="top"><a href="#index-Non_002dbugs_002c-regex-syntax-clashes">Non-bugs(それはバグじゃない), regex syntax clashes</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs"> 報告済のバグ</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Non_002dbugs_002c-0-address">Non-bugs(それはバグじゃない), <code>0</code> address</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs">バグ報告</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Non_002dbugs_002c-in_002dplace-editing">Non-bugs(それはバグじゃない), in-place editing</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs">バグ報告</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Non_002dbugs_002c-localization_002drelated">Non-bugs(それはバグじゃない), localization-related</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs">バグ報告</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Non_002dbugs_002c-localization_002drelated-1">Non-bugs(それはバグじゃない), localization-related</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs">バグ報告</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Non_002dbugs_002c-N-command-on-the-last-line">Non-bugs(それはバグじゃない), <code>N</code> command on the last line</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs">バグ報告</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Non_002dbugs_002c-regex-syntax-clashes">Non-bugs(それはバグじゃない), regex syntax clashes</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs">バグ報告</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-numeric-addresses">numeric addresses</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Addresses-overview"> アドレス概要</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-numeric-characters">numeric characters</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Character-Classes-and-Bracket-Expressions"> 文字クラスと角括弧式</a></td></tr>
 <tr><td colspan="4"> <hr></td></tr>
@@ -5494,11 +5494,11 @@ to permit their use in free software.
 <tr><td></td><td valign="top"><a href="#index-Pattern-space_002c-definition">Pattern space, definition</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Execution-Cycle">実行サイクル</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-Portability_002c-comments">Portability, comments</a>(コメントの移植性):</td><td>&nbsp;</td><td valign="top"><a href="#Common-Commands">一般コマンド達</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-Portability_002c-line-length-limitations">Portability, line length limitations</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Limitations">制限</a></td></tr>
-<tr><td></td><td valign="top"><a href="#index-Portability_002c-N-command-on-the-last-line">Portability, <code>N</code> command on the last line</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs"> 報告済のバグ</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Portability_002c-N-command-on-the-last-line">Portability, <code>N</code> command on the last line</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs">バグ報告</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-POSIXLY_005fCORRECT-behavior_002c-bracket-expressions"><code>POSIXLY_CORRECT</code> behavior, bracket expressions</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Character-Classes-and-Bracket-Expressions"> 文字クラスと角括弧式</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-POSIXLY_005fCORRECT-behavior_002c-enabling"><code>POSIXLY_CORRECT</code> behavior, enabling</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Command_002dLine-Options"> コマンドラインオプション</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-POSIXLY_005fCORRECT-behavior_002c-escapes"><code>POSIXLY_CORRECT</code> behavior, escapes</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Escapes">エスケープ</a></td></tr>
-<tr><td></td><td valign="top"><a href="#index-POSIXLY_005fCORRECT-behavior_002c-N-command"><code>POSIXLY_CORRECT</code> behavior, <code>N</code> command</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs"> 報告済のバグ</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-POSIXLY_005fCORRECT-behavior_002c-N-command"><code>POSIXLY_CORRECT</code> behavior, <code>N</code> command</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs">バグ報告</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-Print-first-line-from-pattern-space">Print first line from pattern space</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Other-Commands">他のコマンド</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-printable-characters">printable characters</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Character-Classes-and-Bracket-Expressions"> 文字クラスと角括弧式</a></td></tr>
 <tr><td></td><td valign="top"><a href="#index-Printing-file-name">Printing file name</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Extended-Commands">拡張コマンド達</a></td></tr>
@@ -5840,7 +5840,7 @@ to permit their use in free software.
   </ul></li>
   <li><a name="toc-GNU-sed_0027s-Limitations-and-Non_002dlimitations" href="#Limitations">8 GNU <code>sed</code>の制限と、GNU <code>sed</code>で撤廃された制限</a></li>
   <li><a name="toc-Other-Resources-for-Learning-About-sed" href="#Other-Resources&lt;a0&gt;address range, example&lt;/a0&gt;">9 <code>sed</code>を習得するためのこの文書以外の資料</a></li>
-  <li><a name="toc-Reporting-Bugs-1" href="#Reporting-Bugs">10 報告済のバグ</a></li>
+  <li><a name="toc-Reporting-Bugs-1" href="#Reporting-Bugs">10バグ報告</a></li>
   <li><a name="toc-GNU-Free-Documentation-License-1" href="#GNU-Free-Documentation-License">Appendix A GNU Free Documentation License</a></li>
   <li><a name="toc-Concept-Index-1" href="#Concept-Index">概念索引</a></li>
   <li><a name="toc-Command-and-Option-Index-1" href="#Command-and-Option-Index">sedコマンドとそのオプションの索引</a></li>
