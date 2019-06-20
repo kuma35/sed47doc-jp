@@ -8,8 +8,8 @@
       <tuv lang="EN-US">
         <seg>" # $ % &amp; ' ( ) * + , - .</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190605T121150Z" creationid="hideo" creationdate="20190605T121150Z">
-        <seg>" # $ % &amp; ' ( ) * + , - .</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190620T021821Z" creationid="hideo" creationdate="20190605T121150Z">
+        <seg> ” # $ % &amp; ' ( ) * + , - .</seg>
       </tuv>
     </tu>
     <tu>
@@ -1889,8 +1889,8 @@ $=</seg>
       <tuv lang="EN-US">
         <seg>#Other-Resources</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190606T001140Z" creationid="hideo" creationdate="20190603T144823Z">
-        <seg>#Other-Resourcesaddress range, example</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190620T022134Z" creationid="hideo" creationdate="20190620T022134Z">
+        <seg>#Other-Resources</seg>
       </tuv>
     </tu>
     <tu>
@@ -11355,8 +11355,8 @@ error→ sed: file sedscr line 1: Unknown option to 's'</seg>
       <tuv lang="EN-US">
         <seg>@ [ \ ] ^ _ ` { | } ~.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190605T121156Z" creationid="hideo" creationdate="20190605T121156Z">
-        <seg>@ [ \ ] ^ _ ` { | } ~.</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190620T020820Z" creationid="hideo" creationdate="20190605T121156Z">
+        <seg>@ [ \ ] ^ _ ` { | } ~</seg>
       </tuv>
     </tu>
     <tu>
@@ -12611,8 +12611,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>By using N and D commands, sed can apply regular expressions on multiple lines (that is, multiple lines are stored in the pattern space, and the regular expression works on it):</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T213558Z" creationid="hideo" creationdate="20190608T213558Z">
-        <seg>DN およびDコマンドを使用することで、sedは複数行に正規表現を適用できます(つまり、正規表現はパターンスペースに格納した複数行に作用します)。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190620T025614Z" creationid="hideo" creationdate="20190608T213558Z">
+        <seg>NやDコマンドを使用することで、sedは複数行に正規表現を適用できます(つまり、正規表現はパターンスペースに格納した複数行に作用します)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16918,8 +16918,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Printable characters: ‘[:alnum:]’, ‘[:punct:]’, and space.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190607T200714Z" creationid="hideo" creationdate="20190607T200408Z">
-        <seg>Printable characters(表示可能文字)。‘[:alnum:]’と‘[:punct:]’と空白です。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190620T020813Z" creationid="hideo" creationdate="20190607T200408Z">
+        <seg>Printable characters(表示可能文字)。‘[:alnum:]’と‘[:punct:]’と空白です</seg>
       </tuv>
     </tu>
     <tu>
@@ -17062,8 +17062,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Punctuation characters; in the ‘C’ locale and ASCII character encoding, this is !</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190607T200621Z" creationid="hideo" creationdate="20190607T200451Z">
-        <seg>Punctuation characters(句読点文字)。‘C’ロケールでASCIIエンコーディングではこれは以下のものです。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190620T020909Z" creationid="hideo" creationdate="20190607T200451Z">
+        <seg>Punctuation characters(句読点文字)。‘C’ロケールでASCIIエンコーディングではこれは以下のものです。!</seg>
       </tuv>
     </tu>
     <tu>
@@ -17462,8 +17462,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>See Multiline techniques and Branching and flow control.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190612T060859Z" creationid="hideo" creationdate="20190608T085059Z">
-        <seg>「複数行テクニック」、「分岐とフロー制御」参照。.</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190620T022426Z" creationid="hideo" creationdate="20190608T085059Z">
+        <seg>「複数行テクニック」、「分岐とフロー制御」参照。</seg>
       </tuv>
     </tu>
     <tu>

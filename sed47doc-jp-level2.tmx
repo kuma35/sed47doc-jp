@@ -8,8 +8,8 @@
       <tuv xml:lang="EN-US">
         <seg>" # $ % &amp; ' ( ) * + , - .</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T121150Z" creationid="hideo" creationdate="20190605T121150Z">
-        <seg>" # $ % &amp; ' ( ) * + , - .</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190620T021821Z" creationid="hideo" creationdate="20190605T121150Z">
+        <seg> ” # $ % &amp; ' ( ) * + , - .</seg>
       </tuv>
     </tu>
     <tu>
@@ -1889,8 +1889,8 @@ $=</seg>
       <tuv xml:lang="EN-US">
         <seg>#Other-Resources</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190606T001140Z" creationid="hideo" creationdate="20190603T144823Z">
-        <seg>#Other-Resources<bpt i="0" x="0">&lt;a0&gt;</bpt>address range, example<ept i="0">&lt;/a0&gt;</ept></seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190620T022134Z" creationid="hideo" creationdate="20190620T022134Z">
+        <seg>#Other-Resources</seg>
       </tuv>
     </tu>
     <tu>
@@ -11355,8 +11355,8 @@ error→ sed: file sedscr line 1: Unknown option to 's'</seg>
       <tuv xml:lang="EN-US">
         <seg>@ [ \ ] ^ _ ` { | } ~<it pos="end" x="1">&lt;/c1&gt;</it>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190605T121156Z" creationid="hideo" creationdate="20190605T121156Z">
-        <seg>@ [ \ ] ^ _ ` { | } ~<it pos="end" x="1">&lt;/c1&gt;</it>.</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190620T020820Z" creationid="hideo" creationdate="20190605T121156Z">
+        <seg>@ [ \ ] ^ _ ` { | } ~<it pos="end" x="1">&lt;/c1&gt;</it></seg>
       </tuv>
     </tu>
     <tu>
@@ -12611,8 +12611,8 @@ s/^.*$/\
       <tuv xml:lang="EN-US">
         <seg>By using <bpt i="0" x="0">&lt;c0&gt;</bpt>N<ept i="0">&lt;/c0&gt;</ept> and <bpt i="1" x="1">&lt;c1&gt;</bpt>D<ept i="1">&lt;/c1&gt;</ept> commands, <bpt i="2" x="2">&lt;c2&gt;</bpt>sed<ept i="2">&lt;/c2&gt;</ept> can apply regular expressions on multiple lines (that is, multiple lines are stored in the pattern space, and the regular expression works on it):</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190608T213558Z" creationid="hideo" creationdate="20190608T213558Z">
-        <seg><bpt i="1" x="1">&lt;c1&gt;</bpt>D<ept i="1">&lt;/c1&gt;</ept><bpt i="0" x="0">&lt;c0&gt;</bpt>N<ept i="0">&lt;/c0&gt;</ept> および<bpt i="1" x="1">&lt;c1&gt;</bpt>D<ept i="1">&lt;/c1&gt;</ept>コマンドを使用することで、<bpt i="2" x="2">&lt;c2&gt;</bpt>sed<ept i="2">&lt;/c2&gt;</ept>は複数行に正規表現を適用できます(つまり、正規表現はパターンスペースに格納した複数行に作用します)。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190620T025614Z" creationid="hideo" creationdate="20190608T213558Z">
+        <seg><bpt i="0" x="0">&lt;c0&gt;</bpt>N<ept i="0">&lt;/c0&gt;</ept>や<bpt i="1" x="1">&lt;c1&gt;</bpt>D<ept i="1">&lt;/c1&gt;</ept>コマンドを使用することで、<bpt i="2" x="2">&lt;c2&gt;</bpt>sed<ept i="2">&lt;/c2&gt;</ept>は複数行に正規表現を適用できます(つまり、正規表現はパターンスペースに格納した複数行に作用します)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16918,8 +16918,8 @@ D</seg>
       <tuv xml:lang="EN-US">
         <seg>Printable characters: ‘<bpt i="0" x="0">&lt;s0&gt;</bpt>[:alnum:]<ept i="0">&lt;/s0&gt;</ept>’, ‘<bpt i="1" x="1">&lt;s1&gt;</bpt>[:punct:]<ept i="1">&lt;/s1&gt;</ept>’, and space.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190607T200714Z" creationid="hideo" creationdate="20190607T200408Z">
-        <seg>Printable characters(表示可能文字)。‘<bpt i="0" x="0">&lt;s0&gt;</bpt>[:alnum:]<ept i="0">&lt;/s0&gt;</ept>’と‘<bpt i="1" x="1">&lt;s1&gt;</bpt>[:punct:]<ept i="1">&lt;/s1&gt;</ept>’と空白です。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190620T020813Z" creationid="hideo" creationdate="20190607T200408Z">
+        <seg>Printable characters(表示可能文字)。‘<bpt i="0" x="0">&lt;s0&gt;</bpt>[:alnum:]<ept i="0">&lt;/s0&gt;</ept>’と‘<bpt i="1" x="1">&lt;s1&gt;</bpt>[:punct:]<ept i="1">&lt;/s1&gt;</ept>’と空白です</seg>
       </tuv>
     </tu>
     <tu>
@@ -17062,8 +17062,8 @@ D</seg>
       <tuv xml:lang="EN-US">
         <seg>Punctuation characters; in the ‘<bpt i="0" x="0">&lt;s0&gt;</bpt>C<ept i="0">&lt;/s0&gt;</ept>’ locale and ASCII character encoding, this is <it pos="begin" x="1">&lt;c1&gt;</it>!</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190607T200621Z" creationid="hideo" creationdate="20190607T200451Z">
-        <seg>Punctuation characters(句読点文字)。‘<bpt i="0" x="0">&lt;s0&gt;</bpt>C<ept i="0">&lt;/s0&gt;</ept>’ロケールでASCIIエンコーディングではこれは以下のものです。</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190620T020909Z" creationid="hideo" creationdate="20190607T200451Z">
+        <seg>Punctuation characters(句読点文字)。‘<bpt i="0" x="0">&lt;s0&gt;</bpt>C<ept i="0">&lt;/s0&gt;</ept>’ロケールでASCIIエンコーディングではこれは以下のものです。<it pos="begin" x="1">&lt;c1&gt;</it>!</seg>
       </tuv>
     </tu>
     <tu>
@@ -17462,8 +17462,8 @@ D</seg>
       <tuv xml:lang="EN-US">
         <seg>See <bpt i="5" x="5">&lt;a5&gt;</bpt>Multiline techniques<ept i="5">&lt;/a5&gt;</ept> and <bpt i="6" x="6">&lt;a6&gt;</bpt>Branching and flow control<ept i="6">&lt;/a6&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="hideo" changedate="20190612T060859Z" creationid="hideo" creationdate="20190608T085059Z">
-        <seg>「<bpt i="5" x="5">&lt;a5&gt;</bpt>複数行テクニック<ept i="5">&lt;/a5&gt;</ept>」、「<bpt i="6" x="6">&lt;a6&gt;</bpt>分岐とフロー制御<ept i="6">&lt;/a6&gt;</ept>」参照。.</seg>
+      <tuv xml:lang="JA" changeid="hideo" changedate="20190620T022426Z" creationid="hideo" creationdate="20190608T085059Z">
+        <seg>「<bpt i="5" x="5">&lt;a5&gt;</bpt>複数行テクニック<ept i="5">&lt;/a5&gt;</ept>」、「<bpt i="6" x="6">&lt;a6&gt;</bpt>分岐とフロー制御<ept i="6">&lt;/a6&gt;</ept>」参照。</seg>
       </tuv>
     </tu>
     <tu>

@@ -8,8 +8,8 @@
       <tuv lang="EN-US">
         <seg>" # $ % &amp; ' ( ) * + , - .</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190605T121150Z" creationid="hideo" creationdate="20190605T121150Z">
-        <seg>" # $ % &amp; ' ( ) * + , - .</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190620T021821Z" creationid="hideo" creationdate="20190605T121150Z">
+        <seg> ” # $ % &amp; ' ( ) * + , - .</seg>
       </tuv>
     </tu>
     <tu>
@@ -1889,8 +1889,8 @@ $=</seg>
       <tuv lang="EN-US">
         <seg>#Other-Resources</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190606T001140Z" creationid="hideo" creationdate="20190603T144823Z">
-        <seg>#Other-Resources&lt;a0&gt;address range, example&lt;/a0&gt;</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190620T022134Z" creationid="hideo" creationdate="20190620T022134Z">
+        <seg>#Other-Resources</seg>
       </tuv>
     </tu>
     <tu>
@@ -11355,8 +11355,8 @@ error→ sed: file sedscr line 1: Unknown option to 's'</seg>
       <tuv lang="EN-US">
         <seg>@ [ \ ] ^ _ ` { | } ~&lt;/c1&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190605T121156Z" creationid="hideo" creationdate="20190605T121156Z">
-        <seg>@ [ \ ] ^ _ ` { | } ~&lt;/c1&gt;.</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190620T020820Z" creationid="hideo" creationdate="20190605T121156Z">
+        <seg>@ [ \ ] ^ _ ` { | } ~&lt;/c1&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -12611,8 +12611,8 @@ s/^.*$/\
       <tuv lang="EN-US">
         <seg>By using &lt;c0&gt;N&lt;/c0&gt; and &lt;c1&gt;D&lt;/c1&gt; commands, &lt;c2&gt;sed&lt;/c2&gt; can apply regular expressions on multiple lines (that is, multiple lines are stored in the pattern space, and the regular expression works on it):</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190608T213558Z" creationid="hideo" creationdate="20190608T213558Z">
-        <seg>&lt;c1&gt;D&lt;/c1&gt;&lt;c0&gt;N&lt;/c0&gt; および&lt;c1&gt;D&lt;/c1&gt;コマンドを使用することで、&lt;c2&gt;sed&lt;/c2&gt;は複数行に正規表現を適用できます(つまり、正規表現はパターンスペースに格納した複数行に作用します)。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190620T025614Z" creationid="hideo" creationdate="20190608T213558Z">
+        <seg>&lt;c0&gt;N&lt;/c0&gt;や&lt;c1&gt;D&lt;/c1&gt;コマンドを使用することで、&lt;c2&gt;sed&lt;/c2&gt;は複数行に正規表現を適用できます(つまり、正規表現はパターンスペースに格納した複数行に作用します)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16918,8 +16918,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Printable characters: ‘&lt;s0&gt;[:alnum:]&lt;/s0&gt;’, ‘&lt;s1&gt;[:punct:]&lt;/s1&gt;’, and space.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190607T200714Z" creationid="hideo" creationdate="20190607T200408Z">
-        <seg>Printable characters(表示可能文字)。‘&lt;s0&gt;[:alnum:]&lt;/s0&gt;’と‘&lt;s1&gt;[:punct:]&lt;/s1&gt;’と空白です。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190620T020813Z" creationid="hideo" creationdate="20190607T200408Z">
+        <seg>Printable characters(表示可能文字)。‘&lt;s0&gt;[:alnum:]&lt;/s0&gt;’と‘&lt;s1&gt;[:punct:]&lt;/s1&gt;’と空白です</seg>
       </tuv>
     </tu>
     <tu>
@@ -17062,8 +17062,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>Punctuation characters; in the ‘&lt;s0&gt;C&lt;/s0&gt;’ locale and ASCII character encoding, this is &lt;c1&gt;!</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190607T200621Z" creationid="hideo" creationdate="20190607T200451Z">
-        <seg>Punctuation characters(句読点文字)。‘&lt;s0&gt;C&lt;/s0&gt;’ロケールでASCIIエンコーディングではこれは以下のものです。</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190620T020909Z" creationid="hideo" creationdate="20190607T200451Z">
+        <seg>Punctuation characters(句読点文字)。‘&lt;s0&gt;C&lt;/s0&gt;’ロケールでASCIIエンコーディングではこれは以下のものです。&lt;c1&gt;!</seg>
       </tuv>
     </tu>
     <tu>
@@ -17462,8 +17462,8 @@ D</seg>
       <tuv lang="EN-US">
         <seg>See &lt;a5&gt;Multiline techniques&lt;/a5&gt; and &lt;a6&gt;Branching and flow control&lt;/a6&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hideo" changedate="20190612T060859Z" creationid="hideo" creationdate="20190608T085059Z">
-        <seg>「&lt;a5&gt;複数行テクニック&lt;/a5&gt;」、「&lt;a6&gt;分岐とフロー制御&lt;/a6&gt;」参照。.</seg>
+      <tuv lang="JA" changeid="hideo" changedate="20190620T022426Z" creationid="hideo" creationdate="20190608T085059Z">
+        <seg>「&lt;a5&gt;複数行テクニック&lt;/a5&gt;」、「&lt;a6&gt;分岐とフロー制御&lt;/a6&gt;」参照。</seg>
       </tuv>
     </tu>
     <tu>
